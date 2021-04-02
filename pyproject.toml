@@ -4,11 +4,14 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "mtg_parser"
-version = "0.0.1-alpha.0"
+version = "0.0.1-alpha.1"
 license = "MIT"
-description = ""
-readme = 'README.md'
+description = "Magic: the Gathering decklist parser"
+readme = "README.md"
 authors = ["Ludovic Heyberger <940408+lheyberger@users.noreply.github.com>"]
+homepage = "https://github.com/lheyberger/mtg-parser"
+repository = "https://github.com/lheyberger/mtg-parser"
+documentation = "https://github.com/lheyberger/mtg-parser"
 
 [tool.poetry.dependencies]
 python = "^3.7"

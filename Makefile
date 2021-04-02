@@ -61,6 +61,9 @@ test-publish:
 	poetry config repositories.testpypi https://test.pypi.org/legacy/
 	poetry publish -r testpypi
 
+publish:
+	poetry publish
+
 .PHONY : test-publish
 
 
