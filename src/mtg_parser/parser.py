@@ -26,8 +26,10 @@ def _cleanup_tags(line):
     return line
 
 
-def parse_deck(deckstring):
-    lines = filter(len, map(str.strip, deckstring.splitlines()))
+def parse_deck(decklist):
+    lines = decklist.splitlines()
+    lines = map(str.strip, lines)
+    lines = filter(len, lines)
     lines = map(LINE.parseString, lines)
     lines = map(lambda line: line.asDict(), lines)
     lines = _collapse_comments(lines)
