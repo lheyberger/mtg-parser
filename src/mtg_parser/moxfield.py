@@ -16,7 +16,7 @@ def _get_card_data(key, value):
         'card_name': key,
         'scryfall_url': 'https://api.scryfall.com/cards/{}'.format(
             value['card']['scryfall_id']
-        )    
+        )
     }
 
 

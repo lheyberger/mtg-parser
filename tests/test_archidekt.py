@@ -16,13 +16,13 @@ def test_get_archidekt_deck(archidekt_id):
 
 @pytest.mark.parametrize('deck', [{
     'categories': [
-        { 'includedInDeck': True, 'name': 'Commander' },
+        {'includedInDeck': True, 'name': 'Commander'},
     ],
     'cards': [{
         'quantity': 1,
         'card': {
-            'oracleCard': { 'name': 'Urza, Lord High Artificer'},
-            'edition': { 'editioncode': 'mh1' },
+            'oracleCard': {'name': 'Urza, Lord High Artificer'},
+            'edition': {'editioncode': 'mh1'},
             'collectorNumber': '75',
         },
         'categories': ['Commander'],

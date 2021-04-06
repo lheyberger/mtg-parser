@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from tabulate import tabulate
 import pytest
 import mtg_parser
-from tabulate import tabulate
 
 
 @pytest.mark.parametrize('deck1,deck2', [
@@ -15,15 +15,15 @@ from tabulate import tabulate
         ],
         [
             {'card_name': 'Portent'},
-            {'card_name': 'Ponder'}, 
-            {'card_name': 'Opt'}, 
+            {'card_name': 'Ponder'},
+            {'card_name': 'Opt'},
         ],
     ],
 ])
 def test_diff(deck1, deck2):
     result = mtg_parser.diff(deck1, deck2)
 
-    for key, value in result.items():
+    for _, value in result.items():
         assert value and all(value)
 
 
