@@ -34,7 +34,7 @@ lint :
 	poetry run pylint ${SRC_DIR} ${TESTS_DIR}
 
 test:
-	poetry run coverage run -m pytest -rP
+	poetry run coverage run -m pytest -rP -m 'not verbose'
 	poetry run coverage report --fail-under=100
 
 .PHONY : lint test
