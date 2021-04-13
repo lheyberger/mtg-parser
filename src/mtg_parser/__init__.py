@@ -6,6 +6,7 @@ from .gramar import * # noqa
 from .decklist import * # noqa
 from .moxfield import * # noqa
 from .archidekt import * # noqa
+from .deckstats import * # noqa
 
 from .diff import * # noqa
 

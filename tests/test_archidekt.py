@@ -5,6 +5,7 @@ import pytest
 import mtg_parser
 
 
+@pytest.mark.slow
 @pytest.mark.parametrize('archidekt_id', [
     '1300410',
 ])

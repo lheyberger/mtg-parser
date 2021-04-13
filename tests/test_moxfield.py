@@ -5,6 +5,7 @@ import pytest
 import mtg_parser
 
 
+@pytest.mark.slow
 @pytest.mark.parametrize('moxfield_id', [
     '7CBqQtCVKES6e49vKXfIBQ',
 ])
