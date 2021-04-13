@@ -69,4 +69,6 @@ def test_mixed_decklist():
 def test_decklist_sections(string, expected):
     result = parse_deck(string)
 
-    assert_objects_are_equal(list(result), expected)
+    for card, expected_card in zip(result, expected):
+        for key in expected_card.keys():
+            assert_objects_are_equal(card[key], expected_card[key])
