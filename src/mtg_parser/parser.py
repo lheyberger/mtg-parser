@@ -5,7 +5,7 @@ from .gramar import LINE
 
 
 __all__ = [
-    'parse_deck',
+    'parse_decklist',
 ]
 
 
@@ -43,7 +43,7 @@ def _add_scryfall_url(line):
     return line
 
 
-def parse_deck(decklist):
+def parse_decklist(decklist):
     lines = decklist.splitlines()
     lines = map(str.strip, lines)
     lines = filter(len, lines)

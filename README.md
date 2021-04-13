@@ -37,7 +37,7 @@ Then, clone the repository and:
 		3 Brainstorm #Card Advantage #Draw
 	"""
 	
-	cards = mtg_parser.parse_deck(decklist)
+	cards = mtg_parser.parse_decklist(decklist)
 	
 	for card in cards:
 		print(card['quantity'], card['card_name'])

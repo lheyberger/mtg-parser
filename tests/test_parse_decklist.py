@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-from mtg_parser import parse_deck
+from mtg_parser import parse_decklist
 from .asserts import assert_objects_are_equal
 
 
@@ -24,7 +24,7 @@ def test_mixed_decklist():
         (3, "Brainstorm"),
     )
 
-    cards = parse_deck(decklist)
+    cards = parse_decklist(decklist)
 
     for card, expected_card in zip(cards, expected_cards):
         assert card['quantity'] == expected_card[0]
@@ -67,7 +67,7 @@ def test_mixed_decklist():
     ],
 ])
 def test_decklist_sections(string, expected):
-    result = parse_deck(string)
+    result = parse_decklist(string)
 
     for card, expected_card in zip(result, expected):
         for key in expected_card.keys():
