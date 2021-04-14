@@ -3,7 +3,21 @@
 
 import pytest
 import mtg_parser
-from .asserts import assert_objects_are_equal
+from .utils import assert_objects_are_equal
+
+
+@pytest.mark.parametrize('src', [
+    """
+        1 Atraxa, Praetors' Voice
+        1 Imperial Seal
+        1 Jeweled Lotus (CMR) 319
+        1 Lim-Dûl's Vault
+        1 Llanowar Elves (M12) 182
+        3 Brainstorm #Card Advantage #Draw
+    """
+])
+def test_can_handle(src):
+    assert mtg_parser.decklist.can_handle(src)
 
 
 def test_mixed_decklist():
@@ -24,7 +38,7 @@ def test_mixed_decklist():
         (3, "Brainstorm"),
     )
 
-    cards = mtg_parser.parse_decklist(decklist)
+    cards = mtg_parser.decklist.parse_deck(decklist)
 
     for card, expected_card in zip(cards, expected_cards):
         assert card['quantity'] == expected_card[0]
@@ -67,7 +81,7 @@ def test_mixed_decklist():
     ],
 ])
 def test_decklist_sections(string, expected):
-    result = mtg_parser.parse_decklist(string)
+    result = mtg_parser.decklist.parse_deck(string)
 
     for card, expected_card in zip(result, expected):
         for key in expected_card.keys():

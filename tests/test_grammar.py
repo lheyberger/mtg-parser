@@ -3,7 +3,7 @@
 
 import pytest
 import mtg_parser
-from .asserts import assert_objects_are_equal
+from .utils import assert_objects_are_equal
 
 
 @pytest.mark.parametrize('symbol,string,expected', [

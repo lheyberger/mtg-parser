@@ -2,6 +2,9 @@
 # -*- coding: utf-8 -*-
 
 
+__all__ = []
+
+
 def scryfal_url_from_name(name):
     name = name.split()
     name = map(str.strip, name)

@@ -4,13 +4,35 @@
 import re
 import json
 import requests
-from .utils import scryfal_url_from_name
+from mtg_parser.utils import scryfal_url_from_name
 
 
-__all__ = [
-    'get_deckstats_deck',
-    'parse_deckstats_deck',
-]
+__all__ = []
+
+
+def can_handle(src):
+    return (
+        isinstance(src, str)
+        and
+        bool(re.match(r'https://deckstats.net/decks/\d+/\d+-.*', src))
+    )
+
+
+def parse_deck(src):
+    return _parse_deck(_download_deck(src))
+
+
+def _download_deck(src):
+    result = requests.get(src).text.splitlines()
+    result = next(line for line in result if 'init_deck_data' in line)
+    result = re.match(r'.*init_deck_data\((.*?)\);', result)
+    return json.loads(result.group(1))
+
+
+def _parse_deck(deck):
+    for section in deck.get('sections', []):
+        for card in section.get('cards', {}):
+            yield _get_card_data(card)
 
 
 def _get_card_data(card):
@@ -24,17 +46,3 @@ def _get_card_data(card):
         'scryfall_url': scryfal_url_from_name(card['name']),
         'tags': tags,
     }
-
-
-def parse_deckstats_deck(deck):
-    for section in deck.get('sections', []):
-        for card in section.get('cards', {}):
-            yield _get_card_data(card)
-
-
-def get_deckstats_deck(deckstats_id):
-    url = 'https://deckstats.net/decks/{}'.format(deckstats_id)
-    result = requests.get(url).text.splitlines()
-    result = next(line for line in result if 'init_deck_data' in line)
-    result = re.match(r'.*init_deck_data\((.*?)\);', result)
-    return json.loads(result.group(1))

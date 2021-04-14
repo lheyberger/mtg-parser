@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from tabulate import tabulate
+import requests_mock
 import pytest
 import mtg_parser
+from .utils import mock_response
 
 
 @pytest.mark.parametrize('deck1,deck2', [
@@ -27,16 +28,21 @@ def test_diff(deck1, deck2):
         assert value and all(value)
 
 
-@pytest.mark.verbose
-def test_diff_moxfield_decks():
-    deck1 = '7CBqQtCVKES6e49vKXfIBQ'
-    deck1 = mtg_parser.get_moxfield_deck(deck1)
-    deck1 = mtg_parser.parse_moxfield_deck(deck1)
+@pytest.mark.parametrize('src1, response1, src2, response2', [
+    [
+        'https://www.archidekt.com/api/decks/1300410/',
+        'mock_archidekt_1300410',
+        'https://deckstats.net/decks/30198/1297260-feather-the-redeemed',
+        'mock_deckstats_30198_1297260-feather-the-redeemed',
+    ],
+])
+def test_diff_decks(requests_mock, src1, response1, src2, response2):
+    mock_response(requests_mock, src1, response1)
+    deck1 = mtg_parser.parse_deck(src1)
+    mock_response(requests_mock, src2, response2)
+    deck2 = mtg_parser.parse_deck(src2)
 
-    deck2 = 'jT8Y9X4tlUmeNZ2AjkD1Vg'
-    deck2 = mtg_parser.get_moxfield_deck(deck2)
-    deck2 = mtg_parser.parse_moxfield_deck(deck2)
+    result = mtg_parser.diff(deck1, deck2)
 
-    result = mtg_parser.diff(deck1, deck2, differences_only=True)
-
-    print(tabulate(result, headers='keys'))
+    for _, value in result.items():
+        assert value and all(value)

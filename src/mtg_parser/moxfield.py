@@ -4,23 +4,26 @@
 import requests
 
 
-__all__ = [
-    'get_moxfield_deck',
-    'parse_moxfield_deck',
-]
+__all__ = []
 
 
-def _get_card_data(key, value):
-    return {
-        'quantity': value['quantity'],
-        'card_name': key,
-        'scryfall_url': 'https://api.scryfall.com/cards/{}'.format(
-            value['card']['scryfall_id']
-        )
-    }
+def can_handle(src):
+    return (
+        isinstance(src, str)
+        and
+        src.strip().startswith('https://api.moxfield.com/v2/decks/all/')
+    )
 
 
-def parse_moxfield_deck(deck):
+def parse_deck(src):
+    return _parse_deck(_download_deck(src))
+
+
+def _download_deck(src):
+    return requests.get(src).json()
+
+
+def _parse_deck(deck):
     for key, value in deck['commanders'].items():
         card = _get_card_data(key, value)
         card.setdefault('tags', []).append('commander')
@@ -36,7 +39,11 @@ def parse_moxfield_deck(deck):
         yield card
 
 
-def get_moxfield_deck(moxfield_id):
-    url = 'https://api.moxfield.com/v2/decks/all/{}'.format(moxfield_id)
-    result = requests.get(url)
-    return result.json()
+def _get_card_data(key, value):
+    return {
+        'quantity': value['quantity'],
+        'card_name': key,
+        'scryfall_url': 'https://api.scryfall.com/cards/{}'.format(
+            value['card']['scryfall_id']
+        )
+    }
