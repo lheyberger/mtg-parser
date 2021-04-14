@@ -25,7 +25,7 @@ def test_get_deckstats_deck(deckstats_id):
                 'supertype_group_extended': 'creatures',
             },
         }]
-    },{
+    }, {
         'cards': [{
             'amount': 1,
             'name': 'Brainstorm',

@@ -9,27 +9,27 @@ TMP_DIR = tmp
 ##
 # ALL
 ##
-all : install test build clean
+all: install test build clean
 
-.PHONY : all
+.PHONY: all
 
 
 ##
 # INSTALL
 ##
-install :
+install:
 	poetry install --remove-untracked
 
-update :
+update:
 	poetry update
 
-.PHONY : install update
+.PHONY: install update
 
 
 ##
 # LINT & TESTS
 ##
-lint :
+lint:
 	poetry run flake8 ${SRC_DIR} ${TESTS_DIR}
 	poetry run pylint ${SRC_DIR} ${TESTS_DIR}
 
@@ -37,21 +37,25 @@ test:
 	poetry run coverage run -m pytest -rP -m 'not verbose and not slow'
 	poetry run coverage report --fail-under=100
 
-.PHONY : lint test
+test-all:
+	poetry run coverage run -m pytest -rP
+	poetry run coverage report --fail-under=100
+
+.PHONY: lint test test-all
 
 
 ##
 # BUILD
 #
-sync-version :
+sync-version:
 	sed -i '' "s/__version__.*/__version__ = \'`poetry version -s`\'/" `find ${SRC_DIR} -type f -print | xargs grep -l "__version__"` || true
 
-build :	sync-version
+build: sync-version
 	poetry check
 	poetry build
 	poetry run check-wheel-contents ${DIST_DIR}
 
-.PHONY : build sync-version
+.PHONY: build sync-version
 
 
 ##
@@ -64,7 +68,7 @@ test-publish:
 publish:
 	poetry publish
 
-.PHONY : test-publish
+.PHONY: test-publish
 
 
 ##
@@ -74,16 +78,16 @@ define remove_dir
 	find $(2) -type d -name $(1) -print0 | xargs -0 -I {} rm -rf '{}'
 endef
 
-clean-packages :
+clean-packages:
 	$(call remove_dir,${DIST_DIR},.)
 
-clean :
+clean:
 	poetry run coverage erase
 	$(call remove_dir,${TMP_DIR},.)
 	$(call remove_dir,'__pycache__',.)
 	$(call remove_dir,'.pytest_cache',.)
 	$(call remove_dir,'*.egg-info',${SRC_DIR} ${TESTS_DIR})
 
-distclean : clean clean-packages
+distclean: clean clean-packages
 
-.PHONY : clean clean-packages distclean
+.PHONY: clean clean-packages distclean
