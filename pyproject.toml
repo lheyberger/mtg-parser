@@ -2,9 +2,10 @@
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
+
 [tool.poetry]
 name = "mtg_parser"
-version = "0.0.1-alpha.7"
+version = "0.0.1-alpha.8"
 license = "MIT"
 description = "Magic: the Gathering decklist parser"
 readme = "README.md"
@@ -13,10 +14,12 @@ homepage = "https://github.com/lheyberger/mtg-parser"
 repository = "https://github.com/lheyberger/mtg-parser"
 documentation = "https://github.com/lheyberger/mtg-parser"
 
+
 [tool.poetry.dependencies]
 python = "^3.7"
 pyparsing = "^2.4.7"
 requests = "^2.25.1"
+
 
 [tool.poetry.dev-dependencies]
 coverage = {extras = ["toml"], version = "^5.5"}
@@ -26,6 +29,7 @@ pylint = "^2.7.4"
 flake8 = "^3.9.0"
 requests-mock = "^1.8.0"
 
+
 [tool.pylint."MESSAGES CONTROL"]
 disable = [
     "missing-module-docstring",
@@ -34,8 +38,16 @@ disable = [
     "duplicate-code",
 ]
 
+
 [tool.coverage.run]
 source = [ "src" ]
 
+
 [tool.coverage.paths]
 source = [ "src" ]
+
+
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+]

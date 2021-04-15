@@ -10,16 +10,19 @@ from mtg_parser.utils import get_scryfall_url
 __all__ = []
 
 
-def can_handle(src):
+def parse_deck(src):
+    deck = None
+    if _can_handle(src):
+        deck = _parse_deck(_download_deck(src))
+    return deck
+
+
+def _can_handle(src):
     return (
         isinstance(src, str)
         and
         bool(re.match(r'https://deckstats.net/decks/\d+/\d+-.*', src))
     )
-
-
-def parse_deck(src):
-    return _parse_deck(_download_deck(src))
 
 
 def _download_deck(src):

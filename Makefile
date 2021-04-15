@@ -33,15 +33,19 @@ lint:
 	poetry run flake8 ${SRC_DIR}
 	poetry run pylint ${SRC_DIR}
 
-lint-all:
+lint-all: lint
 	poetry run flake8 ${TESTS_DIR} || true
 	poetry run pylint ${TESTS_DIR} || true
 
 test:
+	poetry run coverage run -m pytest -rP -m 'not slow'
+	poetry run coverage report --fail-under=100
+
+test-all:
 	poetry run coverage run -m pytest -rP
 	poetry run coverage report --fail-under=100
 
-.PHONY: lint lint-all test
+.PHONY: lint lint-all test test-all
 
 
 ##

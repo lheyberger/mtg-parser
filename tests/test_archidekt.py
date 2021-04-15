@@ -7,21 +7,15 @@ import mtg_parser
 from .utils import mock_response
 
 
-@pytest.mark.parametrize('src', [
-    'https://www.archidekt.com/api/decks/1300410/'
-])
-def test_can_handle(src):
-    assert mtg_parser.archidekt.can_handle(src)
-
-
-@pytest.mark.parametrize('src, response', [
+@pytest.mark.parametrize('src, pattern, response', [
     [
-        'https://www.archidekt.com/api/decks/1300410/small/',
+        'https://www.archidekt.com/decks/1300410/',
+        r'https://www.archidekt.com/',
         'mock_archidekt_1300410_small',
     ],
 ])
-def test_parse_deck(requests_mock, src, response):
-    mock_response(requests_mock, src, response)
+def test_parse_deck(requests_mock, src, pattern, response):
+    mock_response(requests_mock, pattern, response)
 
     result = mtg_parser.archidekt.parse_deck(src)
 
@@ -48,11 +42,11 @@ def test_internal_parse_deck(deck):
     assert result and all(result)
 
 
+@pytest.mark.slow
 @pytest.mark.parametrize('src', [
-    'https://www.archidekt.com/api/decks/1300410/small/',
+    'https://www.archidekt.com/decks/1300410/',
 ])
-def test_parse_deck(src):
+def test_parse_deck_no_mock(src):
     result = mtg_parser.archidekt.parse_deck(src)
 
-    print(len(list(result)))
     assert result and all(result)

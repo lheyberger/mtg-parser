@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import re
 import requests
 from mtg_parser.utils import get_scryfall_url
 
@@ -8,20 +9,26 @@ from mtg_parser.utils import get_scryfall_url
 __all__ = []
 
 
-def can_handle(src):
+def parse_deck(src):
+    deck = None
+    if _can_handle(src):
+        deck = _parse_deck(_download_deck(src))
+    return deck
+
+
+def _can_handle(src):
     return (
         isinstance(src, str)
         and
-        src.strip().startswith('https://www.archidekt.com/api/decks/')
+        src.startswith('https://www.archidekt.com')
     )
 
 
-def parse_deck(src):
-    return _parse_deck(_download_deck(src))
-
-
 def _download_deck(src):
-    return requests.get(src).json()
+    url = 'https://www.archidekt.com/api/decks/{}/small/'.format(
+        re.search(r'decks/(\d+)', src).group(1)
+    )
+    return requests.get(url).json()
 
 
 def _parse_deck(deck):

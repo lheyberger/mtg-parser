@@ -8,12 +8,19 @@ from mtg_parser.utils import get_scryfall_url
 __all__ = []
 
 
-def can_handle(src):
+def parse_deck(src):
+    deck = None
+    if _can_handle(src):
+        deck = _parse_deck(src)
+    return deck
+
+
+def _can_handle(src):
     return isinstance(src, str)
 
 
-def parse_deck(decklist):
-    lines = decklist.splitlines()
+def _parse_deck(deck):
+    lines = deck.splitlines()
     lines = map(str.strip, lines)
     lines = filter(len, lines)
     lines = map(LINE.parseString, lines)

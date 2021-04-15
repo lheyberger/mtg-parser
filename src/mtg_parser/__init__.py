@@ -12,4 +12,4 @@ from mtg_parser.tappedout import * # noqa
 from mtg_parser.utils import * # noqa
 
 
-__version__ = '0.0.1-alpha.7'
+__version__ = '0.0.1-alpha.8'

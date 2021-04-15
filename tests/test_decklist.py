@@ -6,20 +6,6 @@ import mtg_parser
 from .utils import assert_objects_are_equal
 
 
-@pytest.mark.parametrize('src', [
-    """
-        1 Atraxa, Praetors' Voice
-        1 Imperial Seal
-        1 Jeweled Lotus (CMR) 319
-        1 Lim-Dûl's Vault
-        1 Llanowar Elves (M12) 182
-        3 Brainstorm #Card Advantage #Draw
-    """
-])
-def test_can_handle(src):
-    assert mtg_parser.decklist.can_handle(src)
-
-
 def test_mixed_decklist():
     decklist = """
         1 Atraxa, Praetors' Voice

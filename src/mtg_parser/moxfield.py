@@ -1,26 +1,33 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import re
 import requests
 
 
 __all__ = []
 
 
-def can_handle(src):
+def parse_deck(src):
+    deck = None
+    if _can_handle(src):
+        deck = _parse_deck(_download_deck(src))
+    return deck
+
+
+def _can_handle(src):
     return (
         isinstance(src, str)
         and
-        src.strip().startswith('https://api.moxfield.com/v2/decks/all/')
+        re.match(r'https://.*?moxfield.com', src)
     )
 
 
-def parse_deck(src):
-    return _parse_deck(_download_deck(src))
-
-
 def _download_deck(src):
-    return requests.get(src).json()
+    url = 'https://api.moxfield.com/v2/decks/all/{}'.format(
+        re.search(r'https://.*?moxfield.com/.*/([a-zA-Z0-9]+)', src).group(1)
+    )
+    return requests.get(url).json()
 
 
 def _parse_deck(deck):

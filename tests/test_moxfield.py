@@ -7,21 +7,15 @@ import mtg_parser
 from .utils import mock_response
 
 
-@pytest.mark.parametrize('src', [
-    'https://api.moxfield.com/v2/decks/all/7CBqQtCVKES6e49vKXfIBQ',
-])
-def test_can_handle(src):
-    assert mtg_parser.moxfield.can_handle(src)
-
-
-@pytest.mark.parametrize('src, response', [
+@pytest.mark.parametrize('src, pattern, response', [
     [
-        'https://api.moxfield.com/v2/decks/all/7CBqQtCVKES6e49vKXfIBQ',
-        'mock_moxfield_7CBqQtCVKES6e49vKXfIBQ'
+        'https://www.moxfield.com/decks/7CBqQtCVKES6e49vKXfIBQ',
+        r'https://.*?moxfield.com',
+        'mock_moxfield_7CBqQtCVKES6e49vKXfIBQ',
     ],
 ])
-def test_parse_deck(requests_mock, src, response):
-    mock_response(requests_mock, src, response)
+def test_parse_deck(requests_mock, src, pattern, response):
+    mock_response(requests_mock, pattern, response)
 
     result = mtg_parser.moxfield.parse_deck(src)
 
@@ -56,5 +50,15 @@ def test_parse_deck(requests_mock, src, response):
 }])
 def test_internal_parse_deck(deck):
     result = mtg_parser.moxfield._parse_deck(deck)
+
+    assert result and all(result)
+
+
+@pytest.mark.slow
+@pytest.mark.parametrize('src', [
+    'https://www.moxfield.com/decks/7CBqQtCVKES6e49vKXfIBQ',
+])
+def test_parse_deck_no_mock(src):
+    result = mtg_parser.moxfield.parse_deck(src)
 
     assert result and all(result)
