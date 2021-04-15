@@ -4,7 +4,7 @@
 import re
 import json
 import requests
-from mtg_parser.utils import scryfal_url_from_name
+from mtg_parser.utils import get_scryfall_url
 
 
 __all__ = []
@@ -43,6 +43,6 @@ def _get_card_data(card):
     return {
         'quantity': card['amount'],
         'card_name': card['name'],
-        'scryfall_url': scryfal_url_from_name(card['name']),
+        'scryfall_url': get_scryfall_url(card.get('name')),
         'tags': tags,
     }

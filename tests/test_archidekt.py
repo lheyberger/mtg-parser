@@ -16,8 +16,8 @@ def test_can_handle(src):
 
 @pytest.mark.parametrize('src, response', [
     [
-        'https://www.archidekt.com/api/decks/1300410/',
-        'mock_archidekt_1300410',
+        'https://www.archidekt.com/api/decks/1300410/small/',
+        'mock_archidekt_1300410_small',
     ],
 ])
 def test_parse_deck(requests_mock, src, response):
@@ -45,4 +45,14 @@ def test_parse_deck(requests_mock, src, response):
 def test_internal_parse_deck(deck):
     result = mtg_parser.archidekt._parse_deck(deck)
 
+    assert result and all(result)
+
+
+@pytest.mark.parametrize('src', [
+    'https://www.archidekt.com/api/decks/1300410/small/',
+])
+def test_parse_deck(src):
+    result = mtg_parser.archidekt.parse_deck(src)
+
+    print(len(list(result)))
     assert result and all(result)

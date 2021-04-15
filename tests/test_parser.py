@@ -8,7 +8,7 @@ from .utils import mock_response
 
 
 @pytest.mark.parametrize('src', [
-    'https://www.archidekt.com/api/decks/1300410/',
+    'https://www.archidekt.com/api/decks/1300410/small/',
     'https://deckstats.net/decks/30198/1297260-feather-the-redeemed',
     'https://api.moxfield.com/v2/decks/all/7CBqQtCVKES6e49vKXfIBQ',
     'https://tappedout.net/mtg-decks/food-chain-sliver/',
@@ -34,8 +34,8 @@ def test_can_handle_fails(src):
 
 @pytest.mark.parametrize('src, response', [
     [
-        'https://www.archidekt.com/api/decks/1300410/',
-        'mock_archidekt_1300410',
+        'https://www.archidekt.com/api/decks/1300410/small/',
+        'mock_archidekt_1300410_small',
     ],
     [
         'https://deckstats.net/decks/30198/1297260-feather-the-redeemed',

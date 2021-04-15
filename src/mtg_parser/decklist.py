@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from mtg_parser.gramar import LINE
-from mtg_parser.utils import scryfal_url_from_name, scryfal_url_from_extension
+from mtg_parser.utils import get_scryfall_url
 
 
 __all__ = []
@@ -42,13 +42,9 @@ def _cleanup_tags(line):
 
 
 def _add_scryfall_url(line):
-    if 'extension' in line and 'collector_number' in line:
-        line['scryfall_url'] = scryfal_url_from_extension(
-            line['extension'],
-            line['collector_number'],
-        )
-    elif 'card_name' in line:
-        line['scryfall_url'] = scryfal_url_from_name(
-            line['card_name']
-        )
+    line['scryfall_url'] = get_scryfall_url(
+        line.get('card_name'),
+        line.get('extension'),
+        line.get('collector_number'),
+    )
     return line
