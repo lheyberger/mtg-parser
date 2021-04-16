@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "mtg_parser"
-version = "0.0.1-alpha.8"
+version = "0.0.1-alpha.9"
 license = "MIT"
 description = "Magic: the Gathering decklist parser"
 readme = "README.md"
@@ -19,6 +19,7 @@ documentation = "https://github.com/lheyberger/mtg-parser"
 python = "^3.7"
 pyparsing = "^2.4.7"
 requests = "^2.25.1"
+beautifulsoup4 = "^4.9.3"
 
 
 [tool.poetry.dev-dependencies]
