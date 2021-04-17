@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from mtg_parser.gramar import LINE
+from mtg_parser.grammar import parse_line
 from mtg_parser.utils import get_scryfall_url
 
 
@@ -23,7 +23,8 @@ def _parse_deck(deck):
     lines = deck.splitlines()
     lines = map(str.strip, lines)
     lines = filter(len, lines)
-    lines = map(LINE.parseString, lines)
+    lines = map(parse_line, lines)
+    lines = filter(bool, lines)
     lines = map(lambda line: line.asDict(), lines)
     lines = _collapse_comments(lines)
     lines = map(_cleanup_tags, lines)

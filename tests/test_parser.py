@@ -34,6 +34,11 @@ from .utils import mock_response
         'mock_mtggoldfish_3862693',
     ],
     [
+        'https://decks.tcgplayer.com/magic/commander/playing-with-power-mtg/s08e08---kraum---tevesh/1383584',
+        r'https://.*?tcgplayer.com',
+        'mock_tcgplayer_s08e08_kraum_tevesh',
+    ],
+    [
         """
             1 Atraxa, Praetors' Voice
             1 Imperial Seal

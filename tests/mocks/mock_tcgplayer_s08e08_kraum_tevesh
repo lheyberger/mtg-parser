@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+    
+<script type="text/javascript" src="/Scripts/GTMHelper.js?v=31335"></script>
+<script>
+    var dataLayer = [];
+    var gtmData = { "user": "" };
+</script>
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl+'&gtm_auth=9CtDD7Bjc4QB8s5QjHgo2w&gtm_preview=env-1&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MDKRQP');</script>
+<!-- End Google Tag Manager -->
+    <title>S08E08 - Kraum / Tevesh by Playing With Power MTG - TCGplayer.com: Online Gaming Store for Cards, Miniatures, Singles, Packs &amp; Booster Boxes</title>
+    
+    <meta property="fb:admins" content="643675054,673820199,201100738" />
+    <meta property="fb:app_id" content="136270296395166" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/content/sitev2.css?v=31335" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/content/header.css?v=31335" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/content/footer.css?v=31335" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/content/prettify.css?v=31335" rel="stylesheet" type="text/css" />
+    <link href="/content/jquery-ui-1.10.4.custom.css?v=31335" rel="Stylesheet" type="text/css" media="screen" />
+    <link href="/content/jquery.textcomplete.css?v=31335" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/content/tcg.deck-builder.css?v=31335" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/content/tcg.deck-builder-widget.css?v=31335" rel="stylesheet" type="text/css" media="screen" />
+
+    <script language="javascript" type="text/javascript">
+        var SITEROOT = '/';
+        var FULLSITEROOT = 'https://store.tcgplayer.com/';
+        var SECUREFULLSITEROOT = 'https://store.tcgplayer.com/';
+        var DECKSITEROOT = SITEROOT;
+    </script>
+
+    <script src="/scripts/jquery-3.5.1.min.js?v=31335" type="text/javascript"></script>
+    <script src="/scripts/bootstrap.min.js?v=31335" type="text/javascript"></script>
+    <script src="/scripts/ElementQueries.js?v=31335" type="text/javascript"></script>
+    <script src="/scripts/ResizeSensor.js?v=31335" type="text/javascript"></script>
+    <script src="/scripts/jquery-ui-1.8.17.custom.min.js?v=31335" type="text/javascript"></script>
+    <script src="/scripts/autocomplete.js?v=31335" type="text/javascript"></script>
+    <script src="/scripts/jquery.unobtrusive-ajax.min.js?v=31335" type="text/javascript"></script>
+    <script src="/scripts/prettify.js?v=31335" type="text/javascript"></script>
+    <script src="/scripts/spin.min.js?v=31335" type="text/javascript"></script>
+    <script src="/scripts/jquery.textcomplete.min.js?v=31335" type="text/javascript"></script>
+    <script src="/scripts/jquery.autosize.input.min.js?v=31335" type="text/javascript"></script>
+    <script src="/scripts/navbuilder.js?v=31335" type="text/javascript"></script>
+    <script src="/scripts/tcg.deck-builder.js?v=31335" type="text/javascript"></script>
+    <script src="/scripts/tcg.deck-builder.widgets.js?v=31335" type="text/javascript"></script>
+
+    <script>
+        var endpoint = 'https://tcgplayer.zendesk.com';
+        endpoint = endpoint.replace("https://", '');
+        /*<![CDATA[*/window.zEmbed || function (e, t) { var n, o, d, i, s, a = [], r = document.createElement("iframe"); window.zEmbed = function () { a.push(arguments) }, window.zE = window.zE || window.zEmbed, r.src = "javascript:false", r.title = "", r.role = "presentation", (r.frameElement || r).style.cssText = "display: none", d = document.getElementsByTagName("script"), d = d[d.length - 1], d.parentNode.insertBefore(r, d), i = r.contentWindow, s = i.document; try { o = s } catch (c) { n = document.domain, r.src = 'javascript:var d=document.open();d.domain="' + n + '";void(0);', o = s } o.open()._l = function () { var o = this.createElement("script"); n && (this.domain = n), o.id = "js-iframe-async", o.src = e, this.t = +new Date, this.zendeskHost = t, this.zEQueue = a, this.body.appendChild(o) }, o.write('<body onload="document._l();">'), o.close() }("https://assets.zendesk.com/embeddable_framework/main.js", endpoint);/*]]>*/
+    </script>
+
+    
+    <script src="/scripts/chart.min.js?v=31335" type="text/javascript"></script>
+
+</head>
+<body>
+
+
+<script type="text/javascript">
+    var _user_id = '';
+    var _session_id = '96575c39-dd61-4e2d-8d9a-18cb9caad4dd';
+    var _snippet_key = 'aa44fd22f8';
+
+    var _sift = window._sift = window._sift || [];
+    _sift.push(['_setAccount', _snippet_key]);
+    _sift.push(['_setUserId', _user_id]);
+    _sift.push(['_setSessionId', _session_id]);
+    _sift.push(['_trackPageview']);
+
+    (function() {
+       function ls() {
+           var e = document.createElement('script');
+           e.src = 'https://cdn.siftscience.com/s.js';
+           document.body.appendChild(e);
+       }
+       if (window.attachEvent) {
+           window.attachEvent('onload', ls);
+       } else {
+           window.addEventListener('load', ls, false);
+       }
+    })();
+</script>
+
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDKRQP&gtm_auth=9CtDD7Bjc4QB8s5QjHgo2w&gtm_preview=env-1&gtm_cookies_win=x" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="pageOverlay"></div>
+    
+    <div id="pagecontent" class="wrapper">
+        
+
+
+<script src="https://store.tcgplayer.com/scripts/tcglibrary.js"></script>
+<style>
+    .ac_even, .ac_odd, .ac_over {
+        background: #ffffff;
+    }
+
+    .ac_results li:hover {
+        background: #ffffff;
+    }
+
+    #sg-search-table .ac_over {
+        background-color: #cfdde5;
+        text-decoration: none;
+    }
+
+    .ac_results li a:hover {
+        text-decoration: none !important;
+    }
+
+    .ac_results li {
+        margin: 0 0 2px -3px;
+        padding: 2px 0 0 3px !important;
+    }
+
+    .ac_results ui {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<script type="text/javascript">
+    $(window).load(function () {
+        var currentLiIndex = -1;
+        var listItemsInSearch;
+        var listsLength;
+        var rightdiv;
+
+        $(".headerSearchBox").autocomplete("https://store.tcgplayer.com/handler/autocomplete.ashx", {
+            extraParams: {
+                r: function () { return Math.floor(Math.random() * 165468787); },
+                g: function () { return "magic"; },
+                ns: 'true',
+                useCache: 'true'
+            },
+            cacheLength: 0,
+            scrollHeight: 850,
+            selectFirst: false,
+            delay: 10,
+            minChars: 1,
+            matchContains: 1,
+            width: 600,
+            highlight: false,
+            formatItem: function (data, i, n, value) {
+                $('.ac_results').html(value);   // this manually places the autocomplete results in ac_results but outside the dynamically generated list elements
+                currentLiIndex = -1;
+                listItemsInSearch = $('.ac_results').find("li");
+                listsLength = listItemsInSearch.length;
+                rightdiv = $(".sg-search-results-bottomright li:first");
+
+                //return value;  // commented out return (how results are normally returned to autocomplete.js) because we already manually wrote the results above
+            },
+            //end formatItem
+            formatResult: function (data, value) {
+                return $(".headerSearchBox").val();
+            }
+        }).click(function () {
+            currentLiIndex = -1;
+            $(listItemsInSearch).removeClass("ac_over");
+        }).keydown(function (event) {
+            if (event.which == 40) {
+                currentLiIndex++;
+                if (currentLiIndex >= listsLength) {
+                    currentLiIndex = 0;
+                }
+                $(listItemsInSearch).removeClass("ac_over");
+                $(listItemsInSearch).eq(currentLiIndex).addClass("ac_over");
+
+            }
+            else if (event.which == 38) {
+                currentLiIndex -= 1;
+                if (currentLiIndex < 0) {
+                    currentLiIndex = listsLength - 1;
+                }
+                $(listItemsInSearch).removeClass("ac_over");
+                $(listItemsInSearch).eq(currentLiIndex).addClass("ac_over");
+            }
+            else if (event.which == 37 || event.which == 39) {
+                if (currentLiIndex !== -1) {
+                    if ($(".sg-search-results-bottomright").has($(listItemsInSearch).eq(currentLiIndex)).length > 0) {
+                        currentLiIndex = 0;
+                    } else {
+                        currentLiIndex = $(listItemsInSearch).index(rightdiv);
+                    }
+                    $(listItemsInSearch).removeClass("ac_over");
+                    $(listItemsInSearch).eq(currentLiIndex).addClass("ac_over");
+                    return false;
+                }
+            }
+            else if (event.which == 13) {
+                if (currentLiIndex == -1) {
+                    window.location = 'https://store.tcgplayer.com/productcatalog/product/show?newSearch=false&ProductType=All&IsProductNameExact=false&ProductName=' + encodeURIComponent($(".headerSearchBox").val());
+                } else {
+                    $(listItemsInSearch).eq(currentLiIndex).children(":first").trigger("click");
+                }
+            };
+        });
+
+        $(document).on("mouseenter", ".ac_results li", function () {
+            currentLiIndex = $(listItemsInSearch).index($(this));
+            $(listItemsInSearch).removeClass("ac_over");
+            $(listItemsInSearch).eq(currentLiIndex).addClass("ac_over");
+        });
+
+        $('.dropdown-toggle').dropdown();
+        $('.gameSearchDropdown').change(function () {
+            $('.default').empty();
+            $('<span>' + $('.gameSearchDropdown :selected').text() + '<span class="dropdown-arrow"> &#9662; </span></span>').prependTo('.default');
+            $('.headerGoButton').animate({
+                left: $('.default').width() + 385
+            }, 300, function () {
+            });
+            $('.advanced-search-header').animate({
+                left: $('.default').width() + 435
+            }, 300, function () {
+            });
+            $('.gameSearchDropdown').css({ 'width': $('.default').width() + 10 });
+        });
+
+        $(document).on('click', '.dropdown-menu a', function () {
+            $("a").remove(".dropdown-toggle");
+            $('<a class="btn dropdown-toggle" data-toggle="dropdown" href="#"> ' + $(this).text() + ' <span class="caret"></span></a>').prependTo(".btn-group");
+        });
+
+        //start hover function for Products rollover
+        $('div#products-wrapper').hover(function () {
+            $('#vertical-navigation').show();
+            //add vn hover
+            $('#vertical-navigation').hover(function () {
+                $('#vertical-navigation').show();
+                $('.secondary-nav').show();
+                $('.secondary-nav').css('z-index', '1000');
+            }, function () {
+                $('#vertical-navigation').hide();
+            });
+        },
+            //end hover function for Products rollover
+            function () {
+                $('div#products-wrapper').hover(function () {
+                    $('#vertical-navigation').show();
+                },
+                    function () {
+                        $('#vertical-navigation').hide();
+                    });
+
+                $('#vertical-navigation').hide();
+            });
+
+        //end document ready
+    });
+</script>
+
+<header>
+    <div class="tcgplayerlogo"><a href="/"><img src="/Content/images/new-logo.png" alt="TCG Player" border="0" /></a></div>
+
+    <div class="buyerSafeguardHeaderBanner" style="margin-left:520px; margin-top:8px; position:relative; width:314px; height:36px"></div>
+
+        <p id="welcome">
+            Welcome, Guest! -
+            [<a href="https://store.tcgplayer.com/login?returnurl=decks.tcgplayer.com%2fmagic%2fcommander%2fplaying-with-power-mtg%2fs08e08---kraum---tevesh%2f1383584" data-aid="headerLogin">Login</a>]
+            <text>
+                [<a href="https://store.tcgplayer.com/login?returnurl=decks.tcgplayer.com%2fmagic%2fcommander%2fplaying-with-power-mtg%2fs08e08---kraum---tevesh%2f1383584&amp;createAccount=true" data-aid="headerSignUp">Sign Up</a>]
+            </text>
+        </p>
+        <ul id="utilityNav">
+            <li class="last"><a href="https://store.tcgplayer.com/faq.aspx">Help</a></li>
+        </ul>
+
+    <div style="position: relative; top:15px; left: 160px;">
+        <div style="position: absolute; top: -59px; z-index:10;">
+        </div>
+        <div class="sg-search">
+            <input name="SearchProductName" id="SearchProductName" class="sg-input headerSearchBox" placeholder="Search for a product" tabindex="0">
+            <button class="sg-search-button" onclick="window.location = 'https://store.tcgplayer.com/productcatalog/product/show?newSearch=false&ProductType=All&ProductName=' + encodeURIComponent($('.headerSearchBox').val());"></button>
+        </div>
+    </div>
+
+    <div id="cart">
+        <a href="https://store.tcgplayer.com/shoppingcart">
+<span id="headerCartCount" class="cartCount">0</span>        </a>
+    </div><div id="cartlink"><a href="https://store.tcgplayer.com/shoppingcart">Cart</a></div>
+    <!--<div id="products-wrapper"><a href="#" id="products">Products</a></div>
+
+    <ul id="vertical-navigation">
+        Html.WriteFile("~/App_Data/ProductMenuContent.txt")
+    </ul>-->
+</header>
+<div class="nav-container">
+    <div class="menu-panel-main white-fade gray-gradient">
+        <div class="menu-panel-content">
+            <div class="menu-first-column"></div>
+            <div id="menuContent">
+            </div>
+            <div class="end-panel"></div>
+        </div>
+    </div>
+    <div class="nav-shell tk-proxima-nova-extra-condensed">
+        <ul class="nav-list">
+        </ul>
+    </div>
+</div>
+<div class="secondary-nav-container">
+    <div class="ghost"></div>
+    <div class="logo logo--deckbuilder">
+        <a href="/magic">
+            <img src="/Content/images/deckbuilder-beta@2x.png">
+        </a>
+    </div>
+    <div class="links">
+        <a href="/magic/deck/search?format=modern">Modern Decks</a>
+        <a href="/magic/deck/search?format=standard">Standard Decks</a>
+        <a href="/magic/deck/edit/0">Submit a Deck</a>
+        <a href="/magic/deck">Search Decks</a>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+        if ($('.headerGoButton').length != 0) {
+            $('.headerGoButton').css("left", $('.default').width() + 385);
+            $('.gameSearchDropdown').css({ 'width': $('.default').width() + 10 });
+            $('.advanced-search-header').position({
+                my: 'left center',
+                at: 'right center',
+                of: '.headerGoButton',
+                offset: '10 0'
+            });
+        };
+
+        function goAdvancedSearch() {
+            var selectedGame = document.getElementById("SearchGameName").value;
+            window.location = 'https://store.tcgplayer.com' + '/' + selectedGame.replace("&", "and").split(' ').join('-') + '?newSearch=true';
+        };
+
+
+
+
+
+
+</script>
+
+        <div id="maincontent" class="default_9">
+            <div id="maincontentfull">
+                <div class="deckBuilderContainer">
+                    
+
+
+<div class="view-content-box">
+    <div class="viewDeckHeader">
+        <h1>
+            <a href="/magic/commander/playing-with-power-mtg/s08e08---kraum---tevesh/1383584">S08E08 - Kraum / Tevesh</a>
+        </h1>
+        <h3>
+            by <a href="/magic/deck/search?player=playing-with-power-mtg">Playing With Power MTG</a>
+        </h3>
+        <div class="price-buffer">
+            
+
+<div class="tagContainer">
+</div>
+        </div>
+        <div>
+            <span class="manaSymbolWrapper">
+                <span class=manaSymbolWrapper><img class='manaSymbol' src='https://decks.tcgplayer.com/Content/images/blue-mana-symbol.png'/><img class='manaSymbol' src='https://decks.tcgplayer.com/Content/images/black-mana-symbol.png'/><img class='manaSymbol' src='https://decks.tcgplayer.com/Content/images/red-mana-symbol.png'/></span>
+            </span>
+        </div>
+        <div>
+            Format:
+            <span>
+                <a href="/magic/deck/search?format=commander">Commander</a>
+            </span>
+        </div>
+        <div>
+            Latest Set:
+            <span>
+                <a href="/magic/deck/search?format=commander&amp;latestset=kaldheim">Kaldheim</a>
+            </span>
+        </div>
+        <div>
+            Last Modified On: 3/31/2021
+        </div>
+    </div>
+
+    
+<div class="buyThisDeckContainer">
+    <div class="shareOnSocialMediaContainer bottomBuffer rightJustify">
+    <div class="colContainer">
+        <div class="col1of2 center">
+            <a href="https://twitter.com/share" class="twitter-share-button"></a>
+            <script>
+                !function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + '://platform.twitter.com/widgets.js';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, 'script', 'twitter-wjs');
+            </script>
+        </div>
+        <div class="col2of2 center">
+            <div class="fb-share-button" data-href="https://decks.tcgplayer.com/magic/commander/playing-with-power-mtg/s08e08---kraum---tevesh/1383584" data-layout="button_count"></div>
+        </div>
+    </div>
+</div>
+    <script>function trackBuyDeck() {
+            dataLayer.push({
+                "event": "trackEvent",
+                "event_category": "Buy This Deck",
+                "event_action": "Magic",
+                "event_label": "8515.2575",
+                "player": "playing with power mtg",
+                "deck_name": "s08e08 kraum tevesh",
+                "tags_deck": "",
+                "participated_in": "",
+            });
+        }</script>
+    <table class="hmlTable center fullWidth bottomBuffer">
+        <tr>
+            <th>
+                Market
+            </th>
+            <th>
+                Median
+            </th>
+            <th>
+                Low
+            </th>
+        </tr>
+        <tr>
+            <td class="market-price">
+                &mdash;
+            </td>
+            <td class="median-price">
+                $8,515.26
+            </td>
+            <td class="lowest-price">
+                $15,140.88
+            </td>
+        </tr>
+    </table>
+    <button class="green-button-lg fullWidth price-buffer" onclick="trackBuyDeck(); window.open('https://store.tcgplayer.com/MassEntry?productLine=Magic&amp;deckId=1383584')">Buy This Deck!</button>
+</div>
+
+    <div style="clear:both;"></div>
+</div>
+
+
+
+
+
+<section class="colContainer deck-details widget-section" id="DeckDetailsContainer">
+    <div class="subdecks">
+        
+
+
+
+
+     <div class="subdeck">
+            <input id="Product0ImageUrl" name="Product0ImageUrl" type="hidden" value="/deckbuilder/Content/images/Magic_Card_Back.png" />
+            <input id="Product0SearchUrl" name="Product0SearchUrl" type="hidden" value="javascript: void(0);" />
+            <input id="Product0LowestPrice" name="Product0LowestPrice" type="hidden" value="" />
+            <input id="Product0MedianPrice" name="Product0MedianPrice" type="hidden" value="" />
+            <input id="Product0MarketPrice" name="Product0MarketPrice" type="hidden" value="" />
+
+
+            <h3 class="subdeck__name">Command Zone <span class="subdeck__total-qty">2</span></h3>
+                <div class="subdeck-group">
+
+                        <a id="Product123979Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Kraum%2c+Ludevic%27s+Opus&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="123979">
+
+                            <input id="Product123979ImageUrl" name="Product123979ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/123979_200w.jpg" />
+                            <input id="Product123979SearchUrl" name="Product123979SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Kraum%2c+Ludevic%27s+Opus&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product123979LowestPrice" name="Product123979LowestPrice" type="hidden" value="3.4500" />
+                            <input id="Product123979MedianPrice" name="Product123979MedianPrice" type="hidden" value="" />
+                            <input id="Product123979MarketPrice" name="Product123979MarketPrice" type="hidden" value="4.2300" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Kraum, Ludevic&#39;s Opus</span>
+                        </a>
+                        <a id="Product226122Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Tevesh+Szat%2c+Doom+of+Fools&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="226122">
+
+                            <input id="Product226122ImageUrl" name="Product226122ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/226122_200w.jpg" />
+                            <input id="Product226122SearchUrl" name="Product226122SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Tevesh+Szat%2c+Doom+of+Fools&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product226122LowestPrice" name="Product226122LowestPrice" type="hidden" value="7.9800" />
+                            <input id="Product226122MedianPrice" name="Product226122MedianPrice" type="hidden" value="10.5800" />
+                            <input id="Product226122MarketPrice" name="Product226122MarketPrice" type="hidden" value="10.9700" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Tevesh Szat, Doom of Fools</span>
+                        </a>
+                </div>
+    </div>
+
+
+     <div class="subdeck">
+            <input id="Product0ImageUrl" name="Product0ImageUrl" type="hidden" value="/deckbuilder/Content/images/Magic_Card_Back.png" />
+            <input id="Product0SearchUrl" name="Product0SearchUrl" type="hidden" value="javascript: void(0);" />
+            <input id="Product0LowestPrice" name="Product0LowestPrice" type="hidden" value="" />
+            <input id="Product0MedianPrice" name="Product0MedianPrice" type="hidden" value="" />
+            <input id="Product0MarketPrice" name="Product0MarketPrice" type="hidden" value="" />
+
+
+            <h3 class="subdeck__name">Maindeck <span class="subdeck__total-qty">98</span></h3>
+                <div class="subdeck-group">
+                        <h4 class="subdeck-group__name">Creature <span class="subdeck-group__qty">11</span></h4>
+
+                        <a id="Product6792Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Barrin%2c+Master+Wizard&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="6792">
+
+                            <input id="Product6792ImageUrl" name="Product6792ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/6792_200w.jpg" />
+                            <input id="Product6792SearchUrl" name="Product6792SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Barrin%2c+Master+Wizard&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product6792LowestPrice" name="Product6792LowestPrice" type="hidden" value="45.0000" />
+                            <input id="Product6792MedianPrice" name="Product6792MedianPrice" type="hidden" value="74.9900" />
+                            <input id="Product6792MarketPrice" name="Product6792MarketPrice" type="hidden" value="54.7300" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Barrin, Master Wizard</span>
+                        </a>
+                        <a id="Product6293Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Cloud+of+Faeries&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="6293">
+
+                            <input id="Product6293ImageUrl" name="Product6293ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/6293_200w.jpg" />
+                            <input id="Product6293SearchUrl" name="Product6293SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Cloud+of+Faeries&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product6293LowestPrice" name="Product6293LowestPrice" type="hidden" value="1.1100" />
+                            <input id="Product6293MedianPrice" name="Product6293MedianPrice" type="hidden" value="2.9000" />
+                            <input id="Product6293MarketPrice" name="Product6293MarketPrice" type="hidden" value="3.0700" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Cloud of Faeries</span>
+                        </a>
+                        <a id="Product218385Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Dark+Confidant&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="218385">
+
+                            <input id="Product218385ImageUrl" name="Product218385ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/218385_200w.jpg" />
+                            <input id="Product218385SearchUrl" name="Product218385SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Dark+Confidant&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product218385LowestPrice" name="Product218385LowestPrice" type="hidden" value="27.0000" />
+                            <input id="Product218385MedianPrice" name="Product218385MedianPrice" type="hidden" value="32.1900" />
+                            <input id="Product218385MarketPrice" name="Product218385MarketPrice" type="hidden" value="29.3800" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Dark Confidant</span>
+                        </a>
+                        <a id="Product196486Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Dockside+Extortionist&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="196486">
+
+                            <input id="Product196486ImageUrl" name="Product196486ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/196486_200w.jpg" />
+                            <input id="Product196486SearchUrl" name="Product196486SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Dockside+Extortionist&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product196486LowestPrice" name="Product196486LowestPrice" type="hidden" value="44.9900" />
+                            <input id="Product196486MedianPrice" name="Product196486MedianPrice" type="hidden" value="50.0000" />
+                            <input id="Product196486MarketPrice" name="Product196486MarketPrice" type="hidden" value="47.6800" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Dockside Extortionist</span>
+                        </a>
+                        <a id="Product6886Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Gilded+Drake&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="6886">
+
+                            <input id="Product6886ImageUrl" name="Product6886ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/6886_200w.jpg" />
+                            <input id="Product6886SearchUrl" name="Product6886SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Gilded+Drake&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product6886LowestPrice" name="Product6886LowestPrice" type="hidden" value="324.9900" />
+                            <input id="Product6886MedianPrice" name="Product6886MedianPrice" type="hidden" value="482.9250" />
+                            <input id="Product6886MarketPrice" name="Product6886MarketPrice" type="hidden" value="327.1200" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Gilded Drake</span>
+                        </a>
+                        <a id="Product227006Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Hullbreacher&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="227006">
+
+                            <input id="Product227006ImageUrl" name="Product227006ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/227006_200w.jpg" />
+                            <input id="Product227006SearchUrl" name="Product227006SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Hullbreacher&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product227006LowestPrice" name="Product227006LowestPrice" type="hidden" value="21.7500" />
+                            <input id="Product227006MedianPrice" name="Product227006MedianPrice" type="hidden" value="26.0000" />
+                            <input id="Product227006MarketPrice" name="Product227006MarketPrice" type="hidden" value="24.1100" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Hullbreacher</span>
+                        </a>
+                        <a id="Product222408Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Notion+Thief&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="222408">
+
+                            <input id="Product222408ImageUrl" name="Product222408ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/222408_200w.jpg" />
+                            <input id="Product222408SearchUrl" name="Product222408SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Notion+Thief&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product222408LowestPrice" name="Product222408LowestPrice" type="hidden" value="0.5500" />
+                            <input id="Product222408MedianPrice" name="Product222408MedianPrice" type="hidden" value="1.5900" />
+                            <input id="Product222408MarketPrice" name="Product222408MarketPrice" type="hidden" value="1.5700" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Notion Thief</span>
+                        </a>
+                        <a id="Product47629Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Phantasmal+Image&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="47629">
+
+                            <input id="Product47629ImageUrl" name="Product47629ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/47629_200w.jpg" />
+                            <input id="Product47629SearchUrl" name="Product47629SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Phantasmal+Image&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product47629LowestPrice" name="Product47629LowestPrice" type="hidden" value="13.7600" />
+                            <input id="Product47629MedianPrice" name="Product47629MedianPrice" type="hidden" value="17.4950" />
+                            <input id="Product47629MarketPrice" name="Product47629MarketPrice" type="hidden" value="16.8000" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Phantasmal Image</span>
+                        </a>
+                        <a id="Product233914Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Simian+Spirit+Guide&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="233914">
+
+                            <input id="Product233914ImageUrl" name="Product233914ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/233914_200w.jpg" />
+                            <input id="Product233914SearchUrl" name="Product233914SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Simian+Spirit+Guide&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product233914LowestPrice" name="Product233914LowestPrice" type="hidden" value="0.1000" />
+                            <input id="Product233914MedianPrice" name="Product233914MedianPrice" type="hidden" value="0.4900" />
+                            <input id="Product233914MarketPrice" name="Product233914MarketPrice" type="hidden" value="0.4200" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Simian Spirit Guide</span>
+                        </a>
+                        <a id="Product167811Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Spellseeker&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="167811">
+
+                            <input id="Product167811ImageUrl" name="Product167811ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/167811_200w.jpg" />
+                            <input id="Product167811SearchUrl" name="Product167811SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Spellseeker&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product167811LowestPrice" name="Product167811LowestPrice" type="hidden" value="31.9900" />
+                            <input id="Product167811MedianPrice" name="Product167811MedianPrice" type="hidden" value="39.9900" />
+                            <input id="Product167811MarketPrice" name="Product167811MarketPrice" type="hidden" value="35.4300" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Spellseeker</span>
+                        </a>
+                        <a id="Product206926Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Thassa%27s+Oracle&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="206926">
+
+                            <input id="Product206926ImageUrl" name="Product206926ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/206926_200w.jpg" />
+                            <input id="Product206926SearchUrl" name="Product206926SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Thassa%27s+Oracle&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product206926LowestPrice" name="Product206926LowestPrice" type="hidden" value="9.2500" />
+                            <input id="Product206926MedianPrice" name="Product206926MedianPrice" type="hidden" value="14.7200" />
+                            <input id="Product206926MarketPrice" name="Product206926MarketPrice" type="hidden" value="13.6400" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Thassa&#39;s Oracle</span>
+                        </a>
+                </div>
+                <div class="subdeck-group">
+                        <h4 class="subdeck-group__name">Spell <span class="subdeck-group__qty">58</span></h4>
+
+                        <a id="Product227309Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Abrade&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="227309">
+
+                            <input id="Product227309ImageUrl" name="Product227309ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/227309_200w.jpg" />
+                            <input id="Product227309SearchUrl" name="Product227309SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Abrade&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product227309LowestPrice" name="Product227309LowestPrice" type="hidden" value="0.1000" />
+                            <input id="Product227309MedianPrice" name="Product227309MedianPrice" type="hidden" value="0.3600" />
+                            <input id="Product227309MarketPrice" name="Product227309MarketPrice" type="hidden" value="0.3500" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Abrade</span>
+                        </a>
+                        <a id="Product218939Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Ad+Nauseam&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="218939">
+
+                            <input id="Product218939ImageUrl" name="Product218939ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/218939_200w.jpg" />
+                            <input id="Product218939SearchUrl" name="Product218939SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Ad+Nauseam&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product218939LowestPrice" name="Product218939LowestPrice" type="hidden" value="4.5000" />
+                            <input id="Product218939MedianPrice" name="Product218939MedianPrice" type="hidden" value="8.1700" />
+                            <input id="Product218939MarketPrice" name="Product218939MarketPrice" type="hidden" value="7.0300" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Ad Nauseam</span>
+                        </a>
+                        <a id="Product236120Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Arcane+Signet&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="236120">
+
+                            <input id="Product236120ImageUrl" name="Product236120ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/236120_200w.jpg" />
+                            <input id="Product236120SearchUrl" name="Product236120SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Arcane+Signet&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product236120LowestPrice" name="Product236120LowestPrice" type="hidden" value="3.5500" />
+                            <input id="Product236120MedianPrice" name="Product236120MedianPrice" type="hidden" value="3.5500" />
+                            <input id="Product236120MarketPrice" name="Product236120MarketPrice" type="hidden" value="2.4000" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Arcane Signet</span>
+                        </a>
+                        <a id="Product10856Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Brain+Freeze&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="10856">
+
+                            <input id="Product10856ImageUrl" name="Product10856ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/10856_200w.jpg" />
+                            <input id="Product10856SearchUrl" name="Product10856SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Brain+Freeze&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product10856LowestPrice" name="Product10856LowestPrice" type="hidden" value="4.6700" />
+                            <input id="Product10856MedianPrice" name="Product10856MedianPrice" type="hidden" value="8.9900" />
+                            <input id="Product10856MarketPrice" name="Product10856MarketPrice" type="hidden" value="8.7100" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Brain Freeze</span>
+                        </a>
+                        <a id="Product236208Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Brainstorm&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="236208">
+
+                            <input id="Product236208ImageUrl" name="Product236208ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/236208_200w.jpg" />
+                            <input id="Product236208SearchUrl" name="Product236208SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Brainstorm&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product236208LowestPrice" name="Product236208LowestPrice" type="hidden" value="1.0000" />
+                            <input id="Product236208MedianPrice" name="Product236208MedianPrice" type="hidden" value="1.1000" />
+                            <input id="Product236208MarketPrice" name="Product236208MarketPrice" type="hidden" value="1.0000" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Brainstorm</span>
+                        </a>
+                        <a id="Product9616Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Cabal+Ritual&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="9616">
+
+                            <input id="Product9616ImageUrl" name="Product9616ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/9616_200w.jpg" />
+                            <input id="Product9616SearchUrl" name="Product9616SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Cabal+Ritual&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product9616LowestPrice" name="Product9616LowestPrice" type="hidden" value="2.7600" />
+                            <input id="Product9616MedianPrice" name="Product9616MedianPrice" type="hidden" value="6.1300" />
+                            <input id="Product9616MarketPrice" name="Product9616MarketPrice" type="hidden" value="5.5300" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Cabal Ritual</span>
+                        </a>
+                        <a id="Product10327Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Chain+of+Vapor&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="10327">
+
+                            <input id="Product10327ImageUrl" name="Product10327ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/10327_200w.jpg" />
+                            <input id="Product10327SearchUrl" name="Product10327SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Chain+of+Vapor&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product10327LowestPrice" name="Product10327LowestPrice" type="hidden" value="5.5900" />
+                            <input id="Product10327MedianPrice" name="Product10327MedianPrice" type="hidden" value="10.0625" />
+                            <input id="Product10327MarketPrice" name="Product10327MarketPrice" type="hidden" value="8.4100" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Chain of Vapor</span>
+                        </a>
+                        <a id="Product218811Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Chrome+Mox&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="218811">
+
+                            <input id="Product218811ImageUrl" name="Product218811ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/218811_200w.jpg" />
+                            <input id="Product218811SearchUrl" name="Product218811SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Chrome+Mox&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product218811LowestPrice" name="Product218811LowestPrice" type="hidden" value="40.0000" />
+                            <input id="Product218811MedianPrice" name="Product218811MedianPrice" type="hidden" value="68.7650" />
+                            <input id="Product218811MarketPrice" name="Product218811MarketPrice" type="hidden" value="52.3900" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Chrome Mox</span>
+                        </a>
+                        <a id="Product4307Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Culling+the+Weak&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="4307">
+
+                            <input id="Product4307ImageUrl" name="Product4307ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/4307_200w.jpg" />
+                            <input id="Product4307SearchUrl" name="Product4307SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Culling+the+Weak&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product4307LowestPrice" name="Product4307LowestPrice" type="hidden" value="2.1000" />
+                            <input id="Product4307MedianPrice" name="Product4307MedianPrice" type="hidden" value="8.0900" />
+                            <input id="Product4307MarketPrice" name="Product4307MarketPrice" type="hidden" value="7.5400" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Culling the Weak</span>
+                        </a>
+                        <a id="Product6495Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Dark+Ritual&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="6495">
+
+                            <input id="Product6495ImageUrl" name="Product6495ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/6495_200w.jpg" />
+                            <input id="Product6495SearchUrl" name="Product6495SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Dark+Ritual&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product6495LowestPrice" name="Product6495LowestPrice" type="hidden" value="0.0500" />
+                            <input id="Product6495MedianPrice" name="Product6495MedianPrice" type="hidden" value="1.2200" />
+                            <input id="Product6495MarketPrice" name="Product6495MarketPrice" type="hidden" value="1.1400" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Dark Ritual</span>
+                        </a>
+                        <a id="Product212191Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Deflecting+Swat&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="212191">
+
+                            <input id="Product212191ImageUrl" name="Product212191ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/212191_200w.jpg" />
+                            <input id="Product212191SearchUrl" name="Product212191SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Deflecting+Swat&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product212191LowestPrice" name="Product212191LowestPrice" type="hidden" value="28.5000" />
+                            <input id="Product212191MedianPrice" name="Product212191MedianPrice" type="hidden" value="33.4500" />
+                            <input id="Product212191MarketPrice" name="Product212191MarketPrice" type="hidden" value="30.1000" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Deflecting Swat</span>
+                        </a>
+                        <a id="Product4644Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Demonic+Consultation&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="4644">
+
+                            <input id="Product4644ImageUrl" name="Product4644ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/4644_200w.jpg" />
+                            <input id="Product4644SearchUrl" name="Product4644SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Demonic+Consultation&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product4644LowestPrice" name="Product4644LowestPrice" type="hidden" value="16.7900" />
+                            <input id="Product4644MedianPrice" name="Product4644MedianPrice" type="hidden" value="28.4900" />
+                            <input id="Product4644MarketPrice" name="Product4644MarketPrice" type="hidden" value="23.4200" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Demonic Consultation</span>
+                        </a>
+                        <a id="Product1388Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Demonic+Tutor&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="1388">
+
+                            <input id="Product1388ImageUrl" name="Product1388ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/1388_200w.jpg" />
+                            <input id="Product1388SearchUrl" name="Product1388SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Demonic+Tutor&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product1388LowestPrice" name="Product1388LowestPrice" type="hidden" value="39.9900" />
+                            <input id="Product1388MedianPrice" name="Product1388MedianPrice" type="hidden" value="77.4950" />
+                            <input id="Product1388MarketPrice" name="Product1388MarketPrice" type="hidden" value="52.6000" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Demonic Tutor</span>
+                        </a>
+                        <a id="Product167787Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Diabolic+Intent&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="167787">
+
+                            <input id="Product167787ImageUrl" name="Product167787ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/167787_200w.jpg" />
+                            <input id="Product167787SearchUrl" name="Product167787SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Diabolic+Intent&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product167787LowestPrice" name="Product167787LowestPrice" type="hidden" value="32.5000" />
+                            <input id="Product167787MedianPrice" name="Product167787MedianPrice" type="hidden" value="37.3800" />
+                            <input id="Product167787MarketPrice" name="Product167787MarketPrice" type="hidden" value="36.4500" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Diabolic Intent</span>
+                        </a>
+                        <a id="Product105594Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Dispel&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="105594">
+
+                            <input id="Product105594ImageUrl" name="Product105594ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/105594_200w.jpg" />
+                            <input id="Product105594SearchUrl" name="Product105594SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Dispel&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product105594LowestPrice" name="Product105594LowestPrice" type="hidden" value="0.0600" />
+                            <input id="Product105594MedianPrice" name="Product105594MedianPrice" type="hidden" value="0.2500" />
+                            <input id="Product105594MarketPrice" name="Product105594MarketPrice" type="hidden" value="0.1800" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Dispel</span>
+                        </a>
+                        <a id="Product12645Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Fellwar+Stone&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="12645">
+
+                            <input id="Product12645ImageUrl" name="Product12645ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/12645_200w.jpg" />
+                            <input id="Product12645SearchUrl" name="Product12645SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Fellwar+Stone&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product12645LowestPrice" name="Product12645LowestPrice" type="hidden" value="4.1500" />
+                            <input id="Product12645MedianPrice" name="Product12645MedianPrice" type="hidden" value="6.6950" />
+                            <input id="Product12645MarketPrice" name="Product12645MarketPrice" type="hidden" value="6.1700" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Fellwar Stone</span>
+                        </a>
+                        <a id="Product212218Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Fierce+Guardianship&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="212218">
+
+                            <input id="Product212218ImageUrl" name="Product212218ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/212218_200w.jpg" />
+                            <input id="Product212218SearchUrl" name="Product212218SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Fierce+Guardianship&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product212218LowestPrice" name="Product212218LowestPrice" type="hidden" value="33.8200" />
+                            <input id="Product212218MedianPrice" name="Product212218MedianPrice" type="hidden" value="39.7300" />
+                            <input id="Product212218MarketPrice" name="Product212218MarketPrice" type="hidden" value="37.2800" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Fierce Guardianship</span>
+                        </a>
+                        <a id="Product145340Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Flusterstorm&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="145340">
+
+                            <input id="Product145340ImageUrl" name="Product145340ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/145340_200w.jpg" />
+                            <input id="Product145340SearchUrl" name="Product145340SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Flusterstorm&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product145340LowestPrice" name="Product145340LowestPrice" type="hidden" value="13.3600" />
+                            <input id="Product145340MedianPrice" name="Product145340MedianPrice" type="hidden" value="15.9900" />
+                            <input id="Product145340MarketPrice" name="Product145340MarketPrice" type="hidden" value="14.0600" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Flusterstorm</span>
+                        </a>
+                        <a id="Product190647Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Force+of+Negation&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="190647">
+
+                            <input id="Product190647ImageUrl" name="Product190647ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/190647_200w.jpg" />
+                            <input id="Product190647SearchUrl" name="Product190647SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Force+of+Negation&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product190647LowestPrice" name="Product190647LowestPrice" type="hidden" value="73.7500" />
+                            <input id="Product190647MedianPrice" name="Product190647MedianPrice" type="hidden" value="87.4300" />
+                            <input id="Product190647MarketPrice" name="Product190647MarketPrice" type="hidden" value="75.5300" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Force of Negation</span>
+                        </a>
+                        <a id="Product218698Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Force+of+Will&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="218698">
+
+                            <input id="Product218698ImageUrl" name="Product218698ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/218698_200w.jpg" />
+                            <input id="Product218698SearchUrl" name="Product218698SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Force+of+Will&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product218698LowestPrice" name="Product218698LowestPrice" type="hidden" value="112.3900" />
+                            <input id="Product218698MedianPrice" name="Product218698MedianPrice" type="hidden" value="132.6250" />
+                            <input id="Product218698MarketPrice" name="Product218698MarketPrice" type="hidden" value="118.1900" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Force of Will</span>
+                        </a>
+                        <a id="Product6885Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Gamble&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="6885">
+
+                            <input id="Product6885ImageUrl" name="Product6885ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/6885_200w.jpg" />
+                            <input id="Product6885SearchUrl" name="Product6885SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Gamble&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product6885LowestPrice" name="Product6885LowestPrice" type="hidden" value="19.5400" />
+                            <input id="Product6885MedianPrice" name="Product6885MedianPrice" type="hidden" value="26.0000" />
+                            <input id="Product6885MarketPrice" name="Product6885MarketPrice" type="hidden" value="26.5300" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Gamble</span>
+                        </a>
+                        <a id="Product39521Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Gitaxian+Probe&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="39521">
+
+                            <input id="Product39521ImageUrl" name="Product39521ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/39521_200w.jpg" />
+                            <input id="Product39521SearchUrl" name="Product39521SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Gitaxian+Probe&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product39521LowestPrice" name="Product39521LowestPrice" type="hidden" value="0.7700" />
+                            <input id="Product39521MedianPrice" name="Product39521MedianPrice" type="hidden" value="1.9900" />
+                            <input id="Product39521MarketPrice" name="Product39521MarketPrice" type="hidden" value="2.1800" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Gitaxian Probe</span>
+                        </a>
+                        <a id="Product6323Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Grim+Monolith&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="6323">
+
+                            <input id="Product6323ImageUrl" name="Product6323ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/6323_200w.jpg" />
+                            <input id="Product6323SearchUrl" name="Product6323SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Grim+Monolith&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product6323LowestPrice" name="Product6323LowestPrice" type="hidden" value="348.0000" />
+                            <input id="Product6323MedianPrice" name="Product6323MedianPrice" type="hidden" value="500.3150" />
+                            <input id="Product6323MarketPrice" name="Product6323MarketPrice" type="hidden" value="342.4000" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Grim Monolith</span>
+                        </a>
+                        <a id="Product126214Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Imperial+Seal&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="126214">
+
+                            <input id="Product126214ImageUrl" name="Product126214ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/126214_200w.jpg" />
+                            <input id="Product126214SearchUrl" name="Product126214SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Imperial+Seal&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product126214LowestPrice" name="Product126214LowestPrice" type="hidden" value="740.9900" />
+                            <input id="Product126214MedianPrice" name="Product126214MedianPrice" type="hidden" value="" />
+                            <input id="Product126214MarketPrice" name="Product126214MarketPrice" type="hidden" value="606.9300" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Imperial Seal</span>
+                        </a>
+                        <a id="Product226653Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Jeska%27s+Will&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="226653">
+
+                            <input id="Product226653ImageUrl" name="Product226653ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/226653_200w.jpg" />
+                            <input id="Product226653SearchUrl" name="Product226653SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Jeska%27s+Will&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product226653LowestPrice" name="Product226653LowestPrice" type="hidden" value="6.5100" />
+                            <input id="Product226653MedianPrice" name="Product226653MedianPrice" type="hidden" value="10.7100" />
+                            <input id="Product226653MarketPrice" name="Product226653MarketPrice" type="hidden" value="11.5300" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Jeska&#39;s Will</span>
+                        </a>
+                        <a id="Product226669Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Jeweled+Lotus&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="226669">
+
+                            <input id="Product226669ImageUrl" name="Product226669ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/226669_200w.jpg" />
+                            <input id="Product226669SearchUrl" name="Product226669SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Jeweled+Lotus&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product226669LowestPrice" name="Product226669LowestPrice" type="hidden" value="78.0000" />
+                            <input id="Product226669MedianPrice" name="Product226669MedianPrice" type="hidden" value="94.4650" />
+                            <input id="Product226669MarketPrice" name="Product226669MarketPrice" type="hidden" value="84.0600" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Jeweled Lotus</span>
+                        </a>
+                        <a id="Product5129Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Lion%27s+Eye+Diamond&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="5129">
+
+                            <input id="Product5129ImageUrl" name="Product5129ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/5129_200w.jpg" />
+                            <input id="Product5129SearchUrl" name="Product5129SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Lion%27s+Eye+Diamond&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product5129LowestPrice" name="Product5129LowestPrice" type="hidden" value="550.0000" />
+                            <input id="Product5129MedianPrice" name="Product5129MedianPrice" type="hidden" value="769.6300" />
+                            <input id="Product5129MarketPrice" name="Product5129MarketPrice" type="hidden" value="556.3400" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Lion&#39;s Eye Diamond</span>
+                        </a>
+                        <a id="Product5615Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Lotus+Petal&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="5615">
+
+                            <input id="Product5615ImageUrl" name="Product5615ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/5615_200w.jpg" />
+                            <input id="Product5615SearchUrl" name="Product5615SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Lotus+Petal&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product5615LowestPrice" name="Product5615LowestPrice" type="hidden" value="8.2700" />
+                            <input id="Product5615MedianPrice" name="Product5615MedianPrice" type="hidden" value="21.7400" />
+                            <input id="Product5615MarketPrice" name="Product5615MarketPrice" type="hidden" value="15.7900" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Lotus Petal</span>
+                        </a>
+                        <a id="Product214835Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mana+Crypt&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="214835">
+
+                            <input id="Product214835ImageUrl" name="Product214835ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/214835_200w.jpg" />
+                            <input id="Product214835SearchUrl" name="Product214835SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mana+Crypt&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product214835LowestPrice" name="Product214835LowestPrice" type="hidden" value="145.0000" />
+                            <input id="Product214835MedianPrice" name="Product214835MedianPrice" type="hidden" value="169.0200" />
+                            <input id="Product214835MarketPrice" name="Product214835MarketPrice" type="hidden" value="148.6000" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Mana Crypt</span>
+                        </a>
+                        <a id="Product227008Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mana+Drain&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="227008">
+
+                            <input id="Product227008ImageUrl" name="Product227008ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/227008_200w.jpg" />
+                            <input id="Product227008SearchUrl" name="Product227008SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mana+Drain&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product227008LowestPrice" name="Product227008LowestPrice" type="hidden" value="48.7300" />
+                            <input id="Product227008MedianPrice" name="Product227008MedianPrice" type="hidden" value="56.9250" />
+                            <input id="Product227008MarketPrice" name="Product227008MarketPrice" type="hidden" value="51.7400" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Mana Drain</span>
+                        </a>
+                        <a id="Product2267Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mana+Vault&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="2267">
+
+                            <input id="Product2267ImageUrl" name="Product2267ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/2267_200w.jpg" />
+                            <input id="Product2267SearchUrl" name="Product2267SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mana+Vault&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product2267LowestPrice" name="Product2267LowestPrice" type="hidden" value="99.5000" />
+                            <input id="Product2267MedianPrice" name="Product2267MedianPrice" type="hidden" value="116.9900" />
+                            <input id="Product2267MarketPrice" name="Product2267MarketPrice" type="hidden" value="60.5800" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Mana Vault</span>
+                        </a>
+                        <a id="Product39543Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mental+Misstep&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="39543">
+
+                            <input id="Product39543ImageUrl" name="Product39543ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/39543_200w.jpg" />
+                            <input id="Product39543SearchUrl" name="Product39543SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mental+Misstep&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product39543LowestPrice" name="Product39543LowestPrice" type="hidden" value="3.0000" />
+                            <input id="Product39543MedianPrice" name="Product39543MedianPrice" type="hidden" value="5.1700" />
+                            <input id="Product39543MarketPrice" name="Product39543MarketPrice" type="hidden" value="6.5000" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Mental Misstep</span>
+                        </a>
+                        <a id="Product215633Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Miscast&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="215633">
+
+                            <input id="Product215633ImageUrl" name="Product215633ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/215633_200w.jpg" />
+                            <input id="Product215633SearchUrl" name="Product215633SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Miscast&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product215633LowestPrice" name="Product215633LowestPrice" type="hidden" value="0.2500" />
+                            <input id="Product215633MedianPrice" name="Product215633MedianPrice" type="hidden" value="0.9150" />
+                            <input id="Product215633MarketPrice" name="Product215633MarketPrice" type="hidden" value="1.0000" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Miscast</span>
+                        </a>
+                        <a id="Product176839Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mnemonic+Betrayal&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="176839">
+
+                            <input id="Product176839ImageUrl" name="Product176839ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/176839_200w.jpg" />
+                            <input id="Product176839SearchUrl" name="Product176839SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mnemonic+Betrayal&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product176839LowestPrice" name="Product176839LowestPrice" type="hidden" value="1.6700" />
+                            <input id="Product176839MedianPrice" name="Product176839MedianPrice" type="hidden" value="3.4100" />
+                            <input id="Product176839MarketPrice" name="Product176839MarketPrice" type="hidden" value="3.1600" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Mnemonic Betrayal</span>
+                        </a>
+                        <a id="Product5382Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mox+Diamond&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="5382">
+
+                            <input id="Product5382ImageUrl" name="Product5382ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/5382_200w.jpg" />
+                            <input id="Product5382SearchUrl" name="Product5382SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mox+Diamond&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product5382LowestPrice" name="Product5382LowestPrice" type="hidden" value="495.0000" />
+                            <input id="Product5382MedianPrice" name="Product5382MedianPrice" type="hidden" value="799.9900" />
+                            <input id="Product5382MarketPrice" name="Product5382MarketPrice" type="hidden" value="640.2500" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Mox Diamond</span>
+                        </a>
+                        <a id="Product218602Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mox+Opal&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="218602">
+
+                            <input id="Product218602ImageUrl" name="Product218602ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/218602_200w.jpg" />
+                            <input id="Product218602SearchUrl" name="Product218602SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mox+Opal&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product218602LowestPrice" name="Product218602LowestPrice" type="hidden" value="40.4900" />
+                            <input id="Product218602MedianPrice" name="Product218602MedianPrice" type="hidden" value="46.8000" />
+                            <input id="Product218602MarketPrice" name="Product218602MarketPrice" type="hidden" value="44.0900" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Mox Opal</span>
+                        </a>
+                        <a id="Product4815Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mystic+Remora&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="4815">
+
+                            <input id="Product4815ImageUrl" name="Product4815ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/4815_200w.jpg" />
+                            <input id="Product4815SearchUrl" name="Product4815SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mystic+Remora&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product4815LowestPrice" name="Product4815LowestPrice" type="hidden" value="9.9900" />
+                            <input id="Product4815MedianPrice" name="Product4815MedianPrice" type="hidden" value="14.9950" />
+                            <input id="Product4815MarketPrice" name="Product4815MarketPrice" type="hidden" value="11.9500" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Mystic Remora</span>
+                        </a>
+                        <a id="Product2663Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mystical+Tutor&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="2663">
+
+                            <input id="Product2663ImageUrl" name="Product2663ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/2663_200w.jpg" />
+                            <input id="Product2663SearchUrl" name="Product2663SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mystical+Tutor&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product2663LowestPrice" name="Product2663LowestPrice" type="hidden" value="20.2200" />
+                            <input id="Product2663MedianPrice" name="Product2663MedianPrice" type="hidden" value="26.9950" />
+                            <input id="Product2663MarketPrice" name="Product2663MarketPrice" type="hidden" value="19.8000" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Mystical Tutor</span>
+                        </a>
+                        <a id="Product233786Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Pact+of+Negation&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="233786">
+
+                            <input id="Product233786ImageUrl" name="Product233786ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/233786_200w.jpg" />
+                            <input id="Product233786SearchUrl" name="Product233786SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Pact+of+Negation&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product233786LowestPrice" name="Product233786LowestPrice" type="hidden" value="13.0000" />
+                            <input id="Product233786MedianPrice" name="Product233786MedianPrice" type="hidden" value="17.9500" />
+                            <input id="Product233786MarketPrice" name="Product233786MarketPrice" type="hidden" value="13.8000" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Pact of Negation</span>
+                        </a>
+                        <a id="Product215373Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Peer+into+the+Abyss&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="215373">
+
+                            <input id="Product215373ImageUrl" name="Product215373ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/215373_200w.jpg" />
+                            <input id="Product215373SearchUrl" name="Product215373SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Peer+into+the+Abyss&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product215373LowestPrice" name="Product215373LowestPrice" type="hidden" value="0.3000" />
+                            <input id="Product215373MedianPrice" name="Product215373MedianPrice" type="hidden" value="1.2700" />
+                            <input id="Product215373MarketPrice" name="Product215373MarketPrice" type="hidden" value="1.2900" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Peer into the Abyss</span>
+                        </a>
+                        <a id="Product39423Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Praetor%27s+Grasp&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="39423">
+
+                            <input id="Product39423ImageUrl" name="Product39423ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/39423_200w.jpg" />
+                            <input id="Product39423SearchUrl" name="Product39423SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Praetor%27s+Grasp&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product39423LowestPrice" name="Product39423LowestPrice" type="hidden" value="5.4900" />
+                            <input id="Product39423MedianPrice" name="Product39423MedianPrice" type="hidden" value="9.2700" />
+                            <input id="Product39423MarketPrice" name="Product39423MarketPrice" type="hidden" value="8.5800" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Praetor&#39;s Grasp</span>
+                        </a>
+                        <a id="Product2332Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Pyroblast&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="2332">
+
+                            <input id="Product2332ImageUrl" name="Product2332ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/2332_200w.jpg" />
+                            <input id="Product2332SearchUrl" name="Product2332SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Pyroblast&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product2332LowestPrice" name="Product2332LowestPrice" type="hidden" value="1.7000" />
+                            <input id="Product2332MedianPrice" name="Product2332MedianPrice" type="hidden" value="3.0150" />
+                            <input id="Product2332MarketPrice" name="Product2332MarketPrice" type="hidden" value="3.0000" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Pyroblast</span>
+                        </a>
+                        <a id="Product215960Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Reanimate&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="215960">
+
+                            <input id="Product215960ImageUrl" name="Product215960ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/215960_200w.jpg" />
+                            <input id="Product215960SearchUrl" name="Product215960SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Reanimate&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product215960LowestPrice" name="Product215960LowestPrice" type="hidden" value="3.2400" />
+                            <input id="Product215960MedianPrice" name="Product215960MedianPrice" type="hidden" value="11.0000" />
+                            <input id="Product215960MarketPrice" name="Product215960MarketPrice" type="hidden" value="9.3200" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Reanimate</span>
+                        </a>
+                        <a id="Product1898Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Red+Elemental+Blast&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="1898">
+
+                            <input id="Product1898ImageUrl" name="Product1898ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/1898_200w.jpg" />
+                            <input id="Product1898SearchUrl" name="Product1898SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Red+Elemental+Blast&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product1898LowestPrice" name="Product1898LowestPrice" type="hidden" value="0.3000" />
+                            <input id="Product1898MedianPrice" name="Product1898MedianPrice" type="hidden" value="2.0000" />
+                            <input id="Product1898MarketPrice" name="Product1898MarketPrice" type="hidden" value="2.0600" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Red Elemental Blast</span>
+                        </a>
+                        <a id="Product216235Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Rhystic+Study&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="216235">
+
+                            <input id="Product216235ImageUrl" name="Product216235ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/216235_200w.jpg" />
+                            <input id="Product216235SearchUrl" name="Product216235SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Rhystic+Study&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product216235LowestPrice" name="Product216235LowestPrice" type="hidden" value="40.8000" />
+                            <input id="Product216235MedianPrice" name="Product216235MedianPrice" type="hidden" value="46.2900" />
+                            <input id="Product216235MarketPrice" name="Product216235MarketPrice" type="hidden" value="42.6900" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Rhystic Study</span>
+                        </a>
+                        <a id="Product212351Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Skullclamp&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="212351">
+
+                            <input id="Product212351ImageUrl" name="Product212351ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/212351_200w.jpg" />
+                            <input id="Product212351SearchUrl" name="Product212351SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Skullclamp&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product212351LowestPrice" name="Product212351LowestPrice" type="hidden" value="3.7400" />
+                            <input id="Product212351MedianPrice" name="Product212351MedianPrice" type="hidden" value="6.7400" />
+                            <input id="Product212351MarketPrice" name="Product212351MarketPrice" type="hidden" value="7.9500" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Skullclamp</span>
+                        </a>
+                        <a id="Product236137Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Sol+Ring&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="236137">
+
+                            <input id="Product236137ImageUrl" name="Product236137ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/236137_200w.jpg" />
+                            <input id="Product236137SearchUrl" name="Product236137SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Sol+Ring&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product236137LowestPrice" name="Product236137LowestPrice" type="hidden" value="3.0000" />
+                            <input id="Product236137MedianPrice" name="Product236137MedianPrice" type="hidden" value="3.1200" />
+                            <input id="Product236137MarketPrice" name="Product236137MarketPrice" type="hidden" value="2.4000" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Sol Ring</span>
+                        </a>
+                        <a id="Product71202Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Swan+Song&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="71202">
+
+                            <input id="Product71202ImageUrl" name="Product71202ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/71202_200w.jpg" />
+                            <input id="Product71202SearchUrl" name="Product71202SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Swan+Song&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product71202LowestPrice" name="Product71202LowestPrice" type="hidden" value="11.5200" />
+                            <input id="Product71202MedianPrice" name="Product71202MedianPrice" type="hidden" value="14.0000" />
+                            <input id="Product71202MarketPrice" name="Product71202MarketPrice" type="hidden" value="13.6700" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Swan Song</span>
+                        </a>
+                        <a id="Product9439Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Tainted+Pact&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="9439">
+
+                            <input id="Product9439ImageUrl" name="Product9439ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/9439_200w.jpg" />
+                            <input id="Product9439SearchUrl" name="Product9439SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Tainted+Pact&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product9439LowestPrice" name="Product9439LowestPrice" type="hidden" value="65.0000" />
+                            <input id="Product9439MedianPrice" name="Product9439MedianPrice" type="hidden" value="90.9950" />
+                            <input id="Product9439MarketPrice" name="Product9439MarketPrice" type="hidden" value="84.0800" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Tainted Pact</span>
+                        </a>
+                        <a id="Product236215Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Talisman+of+Creativity&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="236215">
+
+                            <input id="Product236215ImageUrl" name="Product236215ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/236215_200w.jpg" />
+                            <input id="Product236215SearchUrl" name="Product236215SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Talisman+of+Creativity&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product236215LowestPrice" name="Product236215LowestPrice" type="hidden" value="2.0000" />
+                            <input id="Product236215MedianPrice" name="Product236215MedianPrice" type="hidden" value="2.5100" />
+                            <input id="Product236215MarketPrice" name="Product236215MarketPrice" type="hidden" value="1.8000" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Talisman of Creativity</span>
+                        </a>
+                        <a id="Product11561Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Talisman+of+Dominance&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="11561">
+
+                            <input id="Product11561ImageUrl" name="Product11561ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/11561_200w.jpg" />
+                            <input id="Product11561SearchUrl" name="Product11561SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Talisman+of+Dominance&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product11561LowestPrice" name="Product11561LowestPrice" type="hidden" value="4.0000" />
+                            <input id="Product11561MedianPrice" name="Product11561MedianPrice" type="hidden" value="7.8600" />
+                            <input id="Product11561MarketPrice" name="Product11561MarketPrice" type="hidden" value="7.8400" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Talisman of Dominance</span>
+                        </a>
+                        <a id="Product9232Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Timetwister&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="9232">
+
+                            <input id="Product9232ImageUrl" name="Product9232ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/9232_200w.jpg" />
+                            <input id="Product9232SearchUrl" name="Product9232SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Timetwister&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product9232LowestPrice" name="Product9232LowestPrice" type="hidden" value="8700.0000" />
+                            <input id="Product9232MedianPrice" name="Product9232MedianPrice" type="hidden" value="" />
+                            <input id="Product9232MarketPrice" name="Product9232MarketPrice" type="hidden" value="7203.9900" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Timetwister</span>
+                        </a>
+                        <a id="Product206642Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Underworld+Breach&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="206642">
+
+                            <input id="Product206642ImageUrl" name="Product206642ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/206642_200w.jpg" />
+                            <input id="Product206642SearchUrl" name="Product206642SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Underworld+Breach&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product206642LowestPrice" name="Product206642LowestPrice" type="hidden" value="5.9400" />
+                            <input id="Product206642MedianPrice" name="Product206642MedianPrice" type="hidden" value="7.8900" />
+                            <input id="Product206642MarketPrice" name="Product206642MarketPrice" type="hidden" value="7.7700" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Underworld Breach</span>
+                        </a>
+                        <a id="Product215676Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Unsubstantiate&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="215676">
+
+                            <input id="Product215676ImageUrl" name="Product215676ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/215676_200w.jpg" />
+                            <input id="Product215676SearchUrl" name="Product215676SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Unsubstantiate&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product215676LowestPrice" name="Product215676LowestPrice" type="hidden" value="0.0100" />
+                            <input id="Product215676MedianPrice" name="Product215676MedianPrice" type="hidden" value="0.2500" />
+                            <input id="Product215676MarketPrice" name="Product215676MarketPrice" type="hidden" value="0.1800" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Unsubstantiate</span>
+                        </a>
+                        <a id="Product226134Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Vampiric+Tutor&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="226134">
+
+                            <input id="Product226134ImageUrl" name="Product226134ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/226134_200w.jpg" />
+                            <input id="Product226134SearchUrl" name="Product226134SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Vampiric+Tutor&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product226134LowestPrice" name="Product226134LowestPrice" type="hidden" value="44.7500" />
+                            <input id="Product226134MedianPrice" name="Product226134MedianPrice" type="hidden" value="50.0000" />
+                            <input id="Product226134MarketPrice" name="Product226134MarketPrice" type="hidden" value="48.5300" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Vampiric Tutor</span>
+                        </a>
+                        <a id="Product1624Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Wheel+of+Fortune&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="1624">
+
+                            <input id="Product1624ImageUrl" name="Product1624ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/1624_200w.jpg" />
+                            <input id="Product1624SearchUrl" name="Product1624SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Wheel+of+Fortune&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product1624LowestPrice" name="Product1624LowestPrice" type="hidden" value="287.9400" />
+                            <input id="Product1624MedianPrice" name="Product1624MedianPrice" type="hidden" value="519.9900" />
+                            <input id="Product1624MarketPrice" name="Product1624MarketPrice" type="hidden" value="400.1200" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Wheel of Fortune</span>
+                        </a>
+                        <a id="Product231287Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Windfall&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="231287">
+
+                            <input id="Product231287ImageUrl" name="Product231287ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/231287_200w.jpg" />
+                            <input id="Product231287SearchUrl" name="Product231287SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Windfall&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product231287LowestPrice" name="Product231287LowestPrice" type="hidden" value="1.0000" />
+                            <input id="Product231287MedianPrice" name="Product231287MedianPrice" type="hidden" value="1.9950" />
+                            <input id="Product231287MarketPrice" name="Product231287MarketPrice" type="hidden" value="1.9500" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Windfall</span>
+                        </a>
+                        <a id="Product198745Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Wishclaw+Talisman&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="198745">
+
+                            <input id="Product198745ImageUrl" name="Product198745ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/198745_200w.jpg" />
+                            <input id="Product198745SearchUrl" name="Product198745SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Wishclaw+Talisman&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product198745LowestPrice" name="Product198745LowestPrice" type="hidden" value="0.6000" />
+                            <input id="Product198745MedianPrice" name="Product198745MedianPrice" type="hidden" value="1.9550" />
+                            <input id="Product198745MarketPrice" name="Product198745MarketPrice" type="hidden" value="1.9700" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Wishclaw Talisman</span>
+                        </a>
+                </div>
+                <div class="subdeck-group">
+                        <h4 class="subdeck-group__name">Land <span class="subdeck-group__qty">29</span></h4>
+
+                        <a id="Product222003Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Ancient+Tomb&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="222003">
+
+                            <input id="Product222003ImageUrl" name="Product222003ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/222003_200w.jpg" />
+                            <input id="Product222003SearchUrl" name="Product222003SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Ancient+Tomb&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product222003LowestPrice" name="Product222003LowestPrice" type="hidden" value="55.2900" />
+                            <input id="Product222003MedianPrice" name="Product222003MedianPrice" type="hidden" value="67.7700" />
+                            <input id="Product222003MarketPrice" name="Product222003MarketPrice" type="hidden" value="52.7500" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Ancient Tomb</span>
+                        </a>
+                        <a id="Product221814Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Arid+Mesa&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="221814">
+
+                            <input id="Product221814ImageUrl" name="Product221814ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/221814_200w.jpg" />
+                            <input id="Product221814SearchUrl" name="Product221814SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Arid+Mesa&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product221814LowestPrice" name="Product221814LowestPrice" type="hidden" value="37.9700" />
+                            <input id="Product221814MedianPrice" name="Product221814MedianPrice" type="hidden" value="51.4900" />
+                            <input id="Product221814MarketPrice" name="Product221814MarketPrice" type="hidden" value="43.1200" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Arid Mesa</span>
+                        </a>
+                        <a id="Product1339Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Badlands&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="1339">
+
+                            <input id="Product1339ImageUrl" name="Product1339ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/1339_200w.jpg" />
+                            <input id="Product1339SearchUrl" name="Product1339SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Badlands&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product1339LowestPrice" name="Product1339LowestPrice" type="hidden" value="290.0000" />
+                            <input id="Product1339MedianPrice" name="Product1339MedianPrice" type="hidden" value="612.4950" />
+                            <input id="Product1339MarketPrice" name="Product1339MarketPrice" type="hidden" value="389.3800" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Badlands</span>
+                        </a>
+                        <a id="Product182838Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Blood+Crypt&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="182838">
+
+                            <input id="Product182838ImageUrl" name="Product182838ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/182838_200w.jpg" />
+                            <input id="Product182838SearchUrl" name="Product182838SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Blood+Crypt&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product182838LowestPrice" name="Product182838LowestPrice" type="hidden" value="22.0000" />
+                            <input id="Product182838MedianPrice" name="Product182838MedianPrice" type="hidden" value="25.0000" />
+                            <input id="Product182838MarketPrice" name="Product182838MarketPrice" type="hidden" value="24.5300" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Blood Crypt</span>
+                        </a>
+                        <a id="Product221808Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Bloodstained+Mire&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="221808">
+
+                            <input id="Product221808ImageUrl" name="Product221808ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/221808_200w.jpg" />
+                            <input id="Product221808SearchUrl" name="Product221808SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Bloodstained+Mire&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product221808LowestPrice" name="Product221808LowestPrice" type="hidden" value="53.8000" />
+                            <input id="Product221808MedianPrice" name="Product221808MedianPrice" type="hidden" value="57.0300" />
+                            <input id="Product221808MarketPrice" name="Product221808MarketPrice" type="hidden" value="55.4600" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Bloodstained Mire</span>
+                        </a>
+                        <a id="Product11282Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=City+of+Brass&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="11282">
+
+                            <input id="Product11282ImageUrl" name="Product11282ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/11282_200w.jpg" />
+                            <input id="Product11282SearchUrl" name="Product11282SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=City+of+Brass&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product11282LowestPrice" name="Product11282LowestPrice" type="hidden" value="16.9500" />
+                            <input id="Product11282MedianPrice" name="Product11282MedianPrice" type="hidden" value="20.5000" />
+                            <input id="Product11282MarketPrice" name="Product11282MarketPrice" type="hidden" value="17.2900" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">City of Brass</span>
+                        </a>
+                        <a id="Product236151Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Command+Tower&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="236151">
+
+                            <input id="Product236151ImageUrl" name="Product236151ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/236151_200w.jpg" />
+                            <input id="Product236151SearchUrl" name="Product236151SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Command+Tower&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product236151LowestPrice" name="Product236151LowestPrice" type="hidden" value="1.0000" />
+                            <input id="Product236151MedianPrice" name="Product236151MedianPrice" type="hidden" value="1.0000" />
+                            <input id="Product236151MarketPrice" name="Product236151MarketPrice" type="hidden" value="" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Command Tower</span>
+                        </a>
+                        <a id="Product236144Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Exotic+Orchard&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="236144">
+
+                            <input id="Product236144ImageUrl" name="Product236144ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/236144_200w.jpg" />
+                            <input id="Product236144SearchUrl" name="Product236144SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Exotic+Orchard&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product236144LowestPrice" name="Product236144LowestPrice" type="hidden" value="1.0000" />
+                            <input id="Product236144MedianPrice" name="Product236144MedianPrice" type="hidden" value="1.1100" />
+                            <input id="Product236144MarketPrice" name="Product236144MarketPrice" type="hidden" value="" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Exotic Orchard</span>
+                        </a>
+                        <a id="Product190806Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Fiery+Islet&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="190806">
+
+                            <input id="Product190806ImageUrl" name="Product190806ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/190806_200w.jpg" />
+                            <input id="Product190806SearchUrl" name="Product190806SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Fiery+Islet&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product190806LowestPrice" name="Product190806LowestPrice" type="hidden" value="14.0000" />
+                            <input id="Product190806MedianPrice" name="Product190806MedianPrice" type="hidden" value="18.9200" />
+                            <input id="Product190806MarketPrice" name="Product190806MarketPrice" type="hidden" value="15.9400" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Fiery Islet</span>
+                        </a>
+                        <a id="Product221806Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Flooded+Strand&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="221806">
+
+                            <input id="Product221806ImageUrl" name="Product221806ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/221806_200w.jpg" />
+                            <input id="Product221806SearchUrl" name="Product221806SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Flooded+Strand&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product221806LowestPrice" name="Product221806LowestPrice" type="hidden" value="37.0000" />
+                            <input id="Product221806MedianPrice" name="Product221806MedianPrice" type="hidden" value="46.3200" />
+                            <input id="Product221806MarketPrice" name="Product221806MarketPrice" type="hidden" value="44.5800" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Flooded Strand</span>
+                        </a>
+                        <a id="Product234032Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Gemstone+Caverns&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="234032">
+
+                            <input id="Product234032ImageUrl" name="Product234032ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/234032_200w.jpg" />
+                            <input id="Product234032SearchUrl" name="Product234032SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Gemstone+Caverns&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product234032LowestPrice" name="Product234032LowestPrice" type="hidden" value="23.0100" />
+                            <input id="Product234032MedianPrice" name="Product234032MedianPrice" type="hidden" value="29.9900" />
+                            <input id="Product234032MarketPrice" name="Product234032MarketPrice" type="hidden" value="25.2800" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Gemstone Caverns</span>
+                        </a>
+                        <a id="Product230465Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Island&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="230465">
+
+                            <input id="Product230465ImageUrl" name="Product230465ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/230465_200w.jpg" />
+                            <input id="Product230465SearchUrl" name="Product230465SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Island&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product230465LowestPrice" name="Product230465LowestPrice" type="hidden" value="0.0500" />
+                            <input id="Product230465MedianPrice" name="Product230465MedianPrice" type="hidden" value="0.4400" />
+                            <input id="Product230465MarketPrice" name="Product230465MarketPrice" type="hidden" value="0.4200" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Island</span>
+                        </a>
+                        <a id="Product221996Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Luxury+Suite&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="221996">
+
+                            <input id="Product221996ImageUrl" name="Product221996ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/221996_200w.jpg" />
+                            <input id="Product221996SearchUrl" name="Product221996SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Luxury+Suite&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product221996LowestPrice" name="Product221996LowestPrice" type="hidden" value="23.0000" />
+                            <input id="Product221996MedianPrice" name="Product221996MedianPrice" type="hidden" value="31.0950" />
+                            <input id="Product221996MarketPrice" name="Product221996MarketPrice" type="hidden" value="30.6900" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Luxury Suite</span>
+                        </a>
+                        <a id="Product82224Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mana+Confluence&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="82224">
+
+                            <input id="Product82224ImageUrl" name="Product82224ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/82224_200w.jpg" />
+                            <input id="Product82224SearchUrl" name="Product82224SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Mana+Confluence&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product82224LowestPrice" name="Product82224LowestPrice" type="hidden" value="20.0000" />
+                            <input id="Product82224MedianPrice" name="Product82224MedianPrice" type="hidden" value="28.0550" />
+                            <input id="Product82224MarketPrice" name="Product82224MarketPrice" type="hidden" value="25.3800" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Mana Confluence</span>
+                        </a>
+                        <a id="Product221811Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Marsh+Flats&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="221811">
+
+                            <input id="Product221811ImageUrl" name="Product221811ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/221811_200w.jpg" />
+                            <input id="Product221811SearchUrl" name="Product221811SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Marsh+Flats&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product221811LowestPrice" name="Product221811LowestPrice" type="hidden" value="46.0000" />
+                            <input id="Product221811MedianPrice" name="Product221811MedianPrice" type="hidden" value="53.1000" />
+                            <input id="Product221811MarketPrice" name="Product221811MarketPrice" type="hidden" value="50.0400" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Marsh Flats</span>
+                        </a>
+                        <a id="Product221815Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Misty+Rainforest&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="221815">
+
+                            <input id="Product221815ImageUrl" name="Product221815ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/221815_200w.jpg" />
+                            <input id="Product221815SearchUrl" name="Product221815SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Misty+Rainforest&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product221815LowestPrice" name="Product221815LowestPrice" type="hidden" value="83.0000" />
+                            <input id="Product221815MedianPrice" name="Product221815MedianPrice" type="hidden" value="94.7650" />
+                            <input id="Product221815MarketPrice" name="Product221815MarketPrice" type="hidden" value="90.1300" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Misty Rainforest</span>
+                        </a>
+                        <a id="Product221816Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Morphic+Pool&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="221816">
+
+                            <input id="Product221816ImageUrl" name="Product221816ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/221816_200w.jpg" />
+                            <input id="Product221816SearchUrl" name="Product221816SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Morphic+Pool&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product221816LowestPrice" name="Product221816LowestPrice" type="hidden" value="29.7000" />
+                            <input id="Product221816MedianPrice" name="Product221816MedianPrice" type="hidden" value="35.6650" />
+                            <input id="Product221816MarketPrice" name="Product221816MarketPrice" type="hidden" value="32.7400" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Morphic Pool</span>
+                        </a>
+                        <a id="Product221807Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Polluted+Delta&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="221807">
+
+                            <input id="Product221807ImageUrl" name="Product221807ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/221807_200w.jpg" />
+                            <input id="Product221807SearchUrl" name="Product221807SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Polluted+Delta&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product221807LowestPrice" name="Product221807LowestPrice" type="hidden" value="68.9600" />
+                            <input id="Product221807MedianPrice" name="Product221807MedianPrice" type="hidden" value="75.9950" />
+                            <input id="Product221807MarketPrice" name="Product221807MarketPrice" type="hidden" value="72.3900" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Polluted Delta</span>
+                        </a>
+                        <a id="Product221812Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Scalding+Tarn&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="221812">
+
+                            <input id="Product221812ImageUrl" name="Product221812ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/221812_200w.jpg" />
+                            <input id="Product221812SearchUrl" name="Product221812SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Scalding+Tarn&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product221812LowestPrice" name="Product221812LowestPrice" type="hidden" value="79.5700" />
+                            <input id="Product221812MedianPrice" name="Product221812MedianPrice" type="hidden" value="95.7400" />
+                            <input id="Product221812MarketPrice" name="Product221812MarketPrice" type="hidden" value="90.9500" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Scalding Tarn</span>
+                        </a>
+                        <a id="Product126422Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Spire+of+Industry&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="126422">
+
+                            <input id="Product126422ImageUrl" name="Product126422ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/126422_200w.jpg" />
+                            <input id="Product126422SearchUrl" name="Product126422SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Spire+of+Industry&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product126422LowestPrice" name="Product126422LowestPrice" type="hidden" value="0.3000" />
+                            <input id="Product126422MedianPrice" name="Product126422MedianPrice" type="hidden" value="1.1000" />
+                            <input id="Product126422MarketPrice" name="Product126422MarketPrice" type="hidden" value="1.0100" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Spire of Industry</span>
+                        </a>
+                        <a id="Product175202Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Steam+Vents&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="175202">
+
+                            <input id="Product175202ImageUrl" name="Product175202ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/175202_200w.jpg" />
+                            <input id="Product175202SearchUrl" name="Product175202SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Steam+Vents&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product175202LowestPrice" name="Product175202LowestPrice" type="hidden" value="8.0000" />
+                            <input id="Product175202MedianPrice" name="Product175202MedianPrice" type="hidden" value="12.4800" />
+                            <input id="Product175202MarketPrice" name="Product175202MarketPrice" type="hidden" value="11.9500" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Steam Vents</span>
+                        </a>
+                        <a id="Product9604Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Tarnished+Citadel&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="9604">
+
+                            <input id="Product9604ImageUrl" name="Product9604ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/9604_200w.jpg" />
+                            <input id="Product9604SearchUrl" name="Product9604SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Tarnished+Citadel&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product9604LowestPrice" name="Product9604LowestPrice" type="hidden" value="22.9400" />
+                            <input id="Product9604MedianPrice" name="Product9604MedianPrice" type="hidden" value="35.0000" />
+                            <input id="Product9604MarketPrice" name="Product9604MarketPrice" type="hidden" value="26.5100" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Tarnished Citadel</span>
+                        </a>
+                        <a id="Product221359Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Training+Center&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="221359">
+
+                            <input id="Product221359ImageUrl" name="Product221359ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/221359_200w.jpg" />
+                            <input id="Product221359SearchUrl" name="Product221359SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Training+Center&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product221359LowestPrice" name="Product221359LowestPrice" type="hidden" value="5.0000" />
+                            <input id="Product221359MedianPrice" name="Product221359MedianPrice" type="hidden" value="7.5000" />
+                            <input id="Product221359MarketPrice" name="Product221359MarketPrice" type="hidden" value="6.4800" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Training Center</span>
+                        </a>
+                        <a id="Product15378Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Underground+River&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="15378">
+
+                            <input id="Product15378ImageUrl" name="Product15378ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/15378_200w.jpg" />
+                            <input id="Product15378SearchUrl" name="Product15378SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Underground+River&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product15378LowestPrice" name="Product15378LowestPrice" type="hidden" value="7.7500" />
+                            <input id="Product15378MedianPrice" name="Product15378MedianPrice" type="hidden" value="" />
+                            <input id="Product15378MarketPrice" name="Product15378MarketPrice" type="hidden" value="9.5200" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Underground River</span>
+                        </a>
+                        <a id="Product1599Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Underground+Sea&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="1599">
+
+                            <input id="Product1599ImageUrl" name="Product1599ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/1599_200w.jpg" />
+                            <input id="Product1599SearchUrl" name="Product1599SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Underground+Sea&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product1599LowestPrice" name="Product1599LowestPrice" type="hidden" value="645.0100" />
+                            <input id="Product1599MedianPrice" name="Product1599MedianPrice" type="hidden" value="1149.9950" />
+                            <input id="Product1599MarketPrice" name="Product1599MarketPrice" type="hidden" value="782.9900" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Underground Sea</span>
+                        </a>
+                        <a id="Product221813Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Verdant+Catacombs&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="221813">
+
+                            <input id="Product221813ImageUrl" name="Product221813ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/221813_200w.jpg" />
+                            <input id="Product221813SearchUrl" name="Product221813SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Verdant+Catacombs&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product221813LowestPrice" name="Product221813LowestPrice" type="hidden" value="84.0000" />
+                            <input id="Product221813MedianPrice" name="Product221813MedianPrice" type="hidden" value="95.0200" />
+                            <input id="Product221813MarketPrice" name="Product221813MarketPrice" type="hidden" value="95.0500" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Verdant Catacombs</span>
+                        </a>
+                        <a id="Product1608Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Volcanic+Island&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="1608">
+
+                            <input id="Product1608ImageUrl" name="Product1608ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/1608_200w.jpg" />
+                            <input id="Product1608SearchUrl" name="Product1608SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Volcanic+Island&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product1608LowestPrice" name="Product1608LowestPrice" type="hidden" value="649.9500" />
+                            <input id="Product1608MedianPrice" name="Product1608MedianPrice" type="hidden" value="999.9900" />
+                            <input id="Product1608MarketPrice" name="Product1608MarketPrice" type="hidden" value="698.1700" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Volcanic Island</span>
+                        </a>
+                        <a id="Product175205Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Watery+Grave&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="175205">
+
+                            <input id="Product175205ImageUrl" name="Product175205ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/175205_200w.jpg" />
+                            <input id="Product175205SearchUrl" name="Product175205SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Watery+Grave&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product175205LowestPrice" name="Product175205LowestPrice" type="hidden" value="9.0000" />
+                            <input id="Product175205MedianPrice" name="Product175205MedianPrice" type="hidden" value="12.8150" />
+                            <input id="Product175205MarketPrice" name="Product175205MarketPrice" type="hidden" value="12.3200" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Watery Grave</span>
+                        </a>
+                        <a id="Product221809Container" class="subdeck-group__card"  href="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Wooded+Foothills&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" target="_blank" onmouseover='UpdateCardSummary(this)' data-product-id="221809">
+
+                            <input id="Product221809ImageUrl" name="Product221809ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/221809_200w.jpg" />
+                            <input id="Product221809SearchUrl" name="Product221809SearchUrl" type="hidden" value="https://store.tcgplayer.com/Magic/Product/Show?ProductName=Wooded+Foothills&amp;newSearch=false&amp;ProductType=Singles&amp;IsProductNameExact=true" />
+                            <input id="Product221809LowestPrice" name="Product221809LowestPrice" type="hidden" value="44.8200" />
+                            <input id="Product221809MedianPrice" name="Product221809MedianPrice" type="hidden" value="60.8750" />
+                            <input id="Product221809MarketPrice" name="Product221809MarketPrice" type="hidden" value="44.5400" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Wooded Foothills</span>
+                        </a>
+                </div>
+    </div>
+
+
+
+
+    </div><script type="text/javascript">
+        function trackSampleHand(category) {
+            dataLayer.push({
+                "event": "trackEvent",
+                "event_category": "Draw Sample Hand",
+                "event_action": "Magic",
+                "event_label": "8515.2575",
+                "player": "playing with power mtg",
+                "deck_name": "s08e08 kraum tevesh",
+                "tags_deck": "",
+                "participated_in": "",
+            });
+        }
+        </script>
+    <div class="card-summary">
+        <div class="card-summary__wrapper">
+            <div id="CardSummaryContainer" class="card-summary-container card-summary__details">
+                
+
+
+<div id="CardSummary">
+    <a href="javascript:void(0);" target="_blank">
+        <img id="CardImage" class="card-summary__image bottomBuffer" onerror="this.src = 'https://tcgplayer-cdn.tcgplayer.com/product/0_200w.jpg'" src="/Content/images/Magic_Card_Back.png" />
+    </a>
+
+    <table class="hmlTable center fullWidth card-summary__pricing">
+        <tr>
+            <th>
+                Market
+            </th>
+            <th>
+                Median
+            </th>
+            <th>
+                Low
+            </th>
+        </tr>
+        <tr>
+            <td class="market-price">
+                &mdash;
+            </td>
+            <td class="median-price">
+                &mdash;
+            </td>
+            <td class="lowest-price">
+                &mdash;
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+                <button class="blue-button-lg bottom-align" onclick="trackSampleHand(); window.location = '/magic/deck/samplehand/1383584'">Draw A Sample Hand</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div id="deck-stats" class="view-content-box">
+    <div class="bottomBuffer">
+        
+
+<div class="statsContainer">
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        DrawColorPieChart();
+        DrawCardTypePieChart();
+        DrawManaCurveBarChart();
+    });
+
+    function DrawColorPieChart() {
+        var ctx = $('#ColorPieChart').get(0).getContext("2d");
+        var colorPieChartData = [{"label":"Blue","color":"#2A5CA7","highlight":"#1D77FC","value":34},{"label":"Black","color":"#15181C","highlight":"#2A2D31","value":22},{"label":"Red","color":"#AA3939","highlight":"#D46A6A","value":11}];
+        var colorPieChartOptions = {
+            legendTemplate: "<ul class=\"chartLegend\"><% for (var i=0; i<segments.length; i++){%><li><div class=\"chartLegendItem\" style=\"background-color:<%=segments[i].fillColor%>\"></div><%if(segments[i].label){%><%=segments[i].label%> (<%=segments[i].value%>)<%}%></li><%}%></ul>"
+        };
+
+        var colorPieChart = new Chart(ctx).Pie(colorPieChartData, colorPieChartOptions);
+        $('#ColorPieChartLegend').html(colorPieChart.generateLegend());
+    }
+
+    function DrawCardTypePieChart(){
+        var ctx = $('#CardTypePieChart').get(0).getContext("2d");
+        var cardTypePieChartData = [{"label":"Creature","color":"#2A5CA7","highlight":"#1D77FC","value":12},{"label":"Planeswalker","color":"#F4F164","highlight":"#FFFC7D","value":1},{"label":"Spell","color":"#AA3939","highlight":"#D46A6A","value":58},{"label":"Land","color":"#AEA892","highlight":"#ADADA9","value":29}];
+        var cardTypePieChartOptions = {
+            legendTemplate: "<ul class=\"chartLegend\"><% for (var i=0; i<segments.length; i++){%><li><div class=\"chartLegendItem\" style=\"background-color:<%=segments[i].fillColor%>\"></div><%if(segments[i].label){%><%=segments[i].label%> (<%=segments[i].value%>)<%}%></li><%}%></ul>"
+        };
+
+        var cardTypePieChart = new Chart(ctx).Pie(cardTypePieChartData, cardTypePieChartOptions);
+        $('#CardTypePieChartLegend').html(cardTypePieChart.generateLegend());
+    }
+
+    function DrawManaCurveBarChart(){
+        var ctx = $('#ManaCurveBarChart').get(0).getContext("2d");
+        var manaCurveBarChartData = {
+            labels: ["0 Mana","1 Mana","2 Mana","3 Mana","4 Mana","5 Mana","6 Mana","7 Mana"],
+            datasets: [{
+                label: 'Converted Mana Cost',
+                fillColor: '#152B55',
+                strokeColor: '#152B55',
+                highlightFill: '#2D4471',
+                highlightStroke: '#2D4471',
+                data: [8,22,21,14,1,4,0,1]
+            }]
+        };
+        var manaCurveBarChartOptions = {};
+
+        var manaCurveBarChart = new Chart(ctx).Bar(manaCurveBarChartData, manaCurveBarChartOptions);
+    }
+
+</script>
+
+<div class="colContainer">
+    <div id="ColorPieChartContainer" class="chartContainer col1of3">
+        <h3 class="bottomBuffer">COLORED MANA SYMBOLS</h3>
+        <canvas id="ColorPieChart" class="chart"></canvas>
+        <div id="ColorPieChartLegend" class="chartLegendContainer"></div>
+    </div>
+
+
+    <div id="CardTypePieChartContainer" class="chartContainer col2of3">
+        <h3 class="bottomBuffer">CARDS BY TYPE</h3>
+        <canvas id="CardTypePieChart" class="chart"></canvas>
+        <div id="CardTypePieChartLegend" class="chartLegendContainer"></div>
+    </div>
+
+    <div id="ManaCurveBarChartContainer" class="chartContainer col3of3">
+        <h3 class="bottomBuffer">MANA CURVE</h3>
+        <canvas id="ManaCurveBarChart" class="chart manaCurveBarChart"></canvas>
+        <div class="leftBuffer caption">Average CMC: 1.93</div>
+    </div>
+</div>
+</div>
+    </div>
+</div>
+<div id="fb-root"></div>
+<script src="https://connect.facebook.net/en_US/all.js#appId=136270296395166&xfbml=1"></script>
+<fb:comments href="https://decks.tcgplayer.com/deck/view/1383584" num_posts="20" width="925"></fb:comments>
+
+                </div>
+            </div>
+        </div>
+        
+
+             <style>
+
+ul {
+	list-style-position: outside;
+	margin: 0 0 0 25px;
+	padding: 0px;
+}
+
+a {
+	color: #0E5B93;
+	text-decoration: none;
+	font-weight: lighter;
+}
+
+.twitterShare{width:300px;text-align:center;margin:0 auto}
+.footerWrap hr{margin-right:10px}
+
+.footerWrap{margin-top:24px;}
+.footerWrap hr{margin-right:10px}
+.footerWrapInner{display:inline-block;vertical-align:top}
+
+.footerMain div:first-child{padding-left:0;}
+.footerMain div:nth-child(5){border:none;}
+
+.footerCol h3{color:#595959;margin:0;}
+.footerCol ul{margin-left:0px;margin-bottom:24px;}
+.footerCol li{padding:5px 0px}
+.footerCol{display:inline-block;width:175px;vertical-align:top;font-size:12px;line-height:14px;border-right:1px solid #DCDADB;height:300px;padding-left:16px;}
+.footerCol a{color: #0E5B93;}
+.footerCol a:hover{text-decoration:underline}
+.footerCol:nth-child(3){ width:140px}
+.footerCol:nth-child(4){width:160px}
+.footerCol h3{color:#595959}
+
+.singles_sealed_wrapper{background:url("https://magic.tcgplayer.com/reno/images/TID_1/tiny_pointer.jpg") no-repeat scroll 0 10px}
+.singles_sealed_wrapper span{margin-left:10px;}
+.prod_type{margin-left:7px;font-size:11px}
+.footerCol li{padding:5px 0px;text-align: left;}
+.copyright{display:inline-block;border-left:1px solid #dcdadb;width:240px;text-align:center;font-size:11px;padding:20px;color:#595959}
+.disclaimer{text-align:left}
+.articleContainer{width:610px;margin:30px 10px;font-size:14px; line-height:18px;}
+.articleContainer h1 { font-size:26px; line-height:28px; }
+
+.footerBanner { background-image:url('https://img.tcgplayer.com/tcg_img/mtg_page/footer_img/bkg-section_fadeup.png');background-color:#FFF;background-repeat:repeat-x; text-align: left;height:100px; }
+.socialIcons{ float: right; position: relative; top: 45px; z-index:0 !important; }
+.socialIcons img { display:inline-block; margin-right: 16px; }
+.footerMain { background-image:url('https://img.tcgplayer.com/tcg_img/mtg_page/footer_img/bkg-section_fadedown.png');text-align: left; background-color:#F9F9F9;background-repeat:repeat-x;padding: 30px 20px 10px;border-top: 1px solid #dcdadb;}
+.footerMain ul li { list-style-type: none: }
+.vertDivider { border-right:1px solid #DCDADB; width:5px; min-height:380px; display:inline-block; margin-right:16px;}
+.bottomEdge{ background-image:url('https://img.tcgplayer.com/tcg_img/mtg_page/footer_img/bkg-section_fadeup.png');background-color:#F9F9F9;background-repeat:repeat-x;height:20px; }
+.footerBottom { text-align:center;  padding:24px 0;}
+.footerBottom a {font-size:11px; color: #0E5B93; }
+.footerBottom a:hover { text-decoration: underline;}
+.footerBottom span { color: #0E5B93; }
+.footerBottom p { color:#595959;  font-size: 11px; line-height: 16px;}
+</style>
+<div style="clear: both;" />
+<BR>
+    <!-- INSERT SITEMAP -->
+
+<div class="footerWrap">
+	<div class="footerBanner">
+		<script type="text/javascript"> var images = [], CoreValueRotation = 0; images[0] = "<a href='https://shop.tcgplayer.com/help/corevalues#white' target='_blank'><img src='https://img.tcgplayer.com/tcg_img/mtg_page/footer_img/corevalue_1.png' alt='Core Value 1'></a>"; images[1] = "<a href='https://shop.tcgplayer.com/help/corevalues#blue' target='_blank'><img src='https://img.tcgplayer.com/tcg_img/mtg_page/footer_img/corevalue_2.png' alt='Core Value 2'></a>"; images[2] = "<a href='https://shop.tcgplayer.com/help/corevalues#black' target='_blank'><img src='https://img.tcgplayer.com/tcg_img/mtg_page/footer_img/corevalue_3.png' alt='Core Value 3'></a>"; images[3] = "<a href='https://shop.tcgplayer.com/help/corevalues#red' target='_blank'><img src='https://img.tcgplayer.com/tcg_img/mtg_page/footer_img/corevalue_4.png' alt='Core Value 4'></a>"; images[4] = "<a href='https://shop.tcgplayer.com/help/corevalues#green' target='_blank'><img src='https://img.tcgplayer.com/tcg_img/mtg_page/footer_img/corevalue_5.png' alt='Core Value 5'></a>";CoreValueRotation = Math.floor(Math.random() * images.length); document.write(images[CoreValueRotation]); //done </script>
+		<div class="socialIcons">
+			<a href="https://www.facebook.com/tcgplayer"><img src="https://img.tcgplayer.com/tcg_img/mtg_page/footer_img/facebook.png" /></a>
+			<a href="https://twitter.com/search?q=%40tcgplayer&src=typd"><img src="https://img.tcgplayer.com/tcg_img/mtg_page/footer_img/twitter.png" /></a>
+		</div>
+	</div>
+	<div class="footerMain">
+		<div class="footerCol">
+			<h3>SHOP</h3>
+			<ul style="list-style-type:none">
+				<li><a href="https://shop.tcgplayer.com/magic?partner=WWWTCG">Magic</a></li>
+				<li><a href="https://shop.tcgplayer.com/yugioh?partner=WWWTCG">Yugioh</a></li>
+				<li><a href="https://shop.tcgplayer.com/cardfight-vanguard?partner=WWWTCG">Cardfight Vanguard</a></li>
+				<li><a href="https://shop.tcgplayer.com/pokemon?partner=WWWTCG" title="">Pokemon</a></li>
+				<li><a href="https://shop.tcgplayer.com/force-of-will?partner=WWWTCG" title="">Force of Will</a></li>
+				<li><a href="https://shop.tcgplayer.com/weiss-schwarz?partner=WWWTCG" title="">Weiss Schwarz</a></li>
+				<li><a href="https://shop.tcgplayer.com/dice-masters?partner=WWWTCG">Dice Masters</a></li>
+				<li><a href="https://shop.tcgplayer.com/heroclix?partner=WWWTCG">Heroclix</a></li>
+				<li><a href="https://shop.tcgplayer.com/wow?partner=WWWTCG">WOW TCG</a></li>
+				<li><a href="https://shop.tcgplayer.com/boardgames?partner=WWWTCG" title="">Board Games</a></li>
+				<li><a href="https://shop.tcgplayer.com/supplies?partner=WWWTCG" title="">Supplies</a></li>
+			</ul>
+		</div>
+		<div class="footerCol">
+			<h3>EVENTS</h3>
+			<ul style="list-style-type:none" >
+				<li><a href="https://maxpoint.tcgplayer.com" title="">Magic MaxPoint Series</a></li>
+				<li><a href="https://maxpoint.tcgplayer.com/heroclix/Default" title="">HeroClix ROC Series</a></li>
+			</ul>
+			<h3>ARTICLES  &amp; DECKS</h3>
+			<ul style="list-style-type:none" >
+				<li><a href="http://magic.tcgplayer.com" title="">Magic Home Page</a></li>
+				<li><a href="http://yugioh.tcgplayer.com" title="">YuGiOh Home Page</a></li>
+			</ul>
+		</div>
+		<div class="footerCol">
+			<h3>BUY WITH US</h3>
+			<ul style="list-style-type:none" >
+				<li><a href="https://help.tcgplayer.com/hc/en-us/articles/201769673-Cart-Optimizer" title="">Cart Optimizer</a></li>
+				<li><a href="https://store.tcgplayer.com/massentry" title="">Mass Entry</a></li>
+				<li><a href="https://shop.tcgplayer.com/collection" title="">Collection Tracker</a></li>
+			</ul>
+			<h3>SELL WITH US</h3>
+			<ul style="list-style-type:none" >
+				<li><a href="https://shop.tcgplayer.com/help/sellwithtcgplayer" title="">Sell With TCGplayer</a></li>
+				<li><a href="https://help.tcgplayer.com/hc/en-us/articles/201577976-How-can-I-get-access-to-your-card-pricing-data-" title="">Price Data API's</a></li>
+				<li><a href="https://shop.tcgplayer.com/help/sellingtcgplayerdirect" title="">TCGplayer Direct</a></li>
+			</ul>
+		</div>
+		<div class="footerCol">
+			<h3>ABOUT TCGPLAYER</h3>
+			<ul style="list-style-type:none">
+				<li><a href="https://shop.tcgplayer.com/help/corevalues">Our Core Values</a></li>
+				<li><a href="https://shop.tcgplayer.com/help/workingattcgplayer">Working at TCGplayer</a></li>
+				<li><a href="https://shop.tcgplayer.com/help/careers">Careers</a></li>
+				<li><a href="https://store.tcgplayer.com/help/inthenews">In the News</a></li>
+				<li><a href="https://store.tcgplayer.com/help/inthecommunity">In the Community</a></li>
+				<li><a href="https://shop.tcgplayer.com/help/contactus">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class="footerCol">
+			<h3>HOW CAN WE HELP?</h3>
+			<ul style="list-style-type:none">
+				<li><a href="mailto:sales@tcgplayer.com"><img src="https://img.tcgplayer.com/store/img/csr_icon.png" />&nbsp;&nbsp;<b>Customer Service</b></a></li>
+				<li><a href="https://shop.tcgplayer.com/faq.aspx">Help Center</a></li>
+				<li><a href="https://shop.tcgplayer.com/help/buyersafeguard">Buyer Safeguard</a></li>
+				<li><a href="https://store.tcgplayer.com/feedback">Leave Us Feedback</a></li>
+				<li style="padding: 20px 0;"><img src="https://img.tcgplayer.com/store/img/teamtcgplayer.png" /></li>
+			</ul>
+		</div>
+	</div>
+	<div class="bottomEdge"></div>
+	<div class="footerBottom">
+		<p>All original content herein is Copyright 2021 TCGplayer, Inc. TCGplayer.com® is a trademark of TCGplayer, Inc.<br>
+        No portion of this website may be used without expressed written consent. All rights reserved. <a href="https://magic.wizards.com/en">Magic: The Gathering</a> and its respective properties are copyright <a href="http://company.wizards.com/">Wizards of the Coast.</a><br>
+        <a href="http://www.yugioh-card.com/en/">Yu-Gi-Oh!</a> and its respective properties are © 1996 Kazuki Takahashi © 2017 NAS • TV Tokyo.<br>
+        <a href="https://help.tcgplayer.com/hc/en-us/articles/201237007-Privacy-Statement-for-TCGplayer">Privacy Policy</a>&nbsp;&nbsp;&#8226;&nbsp;&nbsp;<a href="https://help.tcgplayer.com/hc/en-us/articles/205004918-Terms-of-Service">Terms of Service</a></p>
+	</div>
+</div>
+
+
+<br clear=all>
+<br><br>
+
+            </div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <span style="font-family: ProximaNovaExCn-Semibold,sans-serif; color: #ffffff;">v</span>
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-620217-1");
+    pageTracker._setDomainName(".tcgplayer.com");
+    pageTracker._setAllowHash(false);
+    pageTracker._setAllowLinker();
+    pageTracker._trackPageview();
+</script>
+<!-- Compete XL Code for tcgplayer.com -->
+<noscript>
+    <img width="1" height="1" src="https://ssl-tcgplayer-com-3b9bf7.c-col.com"/>
+</noscript>
+    
+    <script src="/scripts/sticky-kit.js"></script>
+    <script>
+        jQuery(function ($) {
+            $(".card-summary-container").stick_in_parent({
+                parent: $('.widget-section')
+            });
+        });
+
+    </script>
+</body>
+</html>

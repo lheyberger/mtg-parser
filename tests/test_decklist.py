@@ -72,3 +72,16 @@ def test_decklist_sections(string, expected):
     for card, expected_card in zip(result, expected):
         for key in expected_card.keys():
             assert_objects_are_equal(card[key], expected_card[key])
+
+
+@pytest.mark.parametrize('decklist', [
+    'https://www.archidekt.com/decks/1300410/'
+    'https://deckstats.net/decks/30198/1297260-feather-the-redeemed',
+    'https://www.moxfield.com/decks/7CBqQtCVKES6e49vKXfIBQ',
+    'https://tappedout.net/mtg-decks/food-chain-sliver/',
+    'https://www.mtggoldfish.com/deck/3862693',
+])
+def test_parse_decklist_fails(decklist):
+    result = mtg_parser.decklist.parse_deck(decklist)
+
+    assert result and not len(list(result))

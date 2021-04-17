@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from pyparsing import ParseException
 from pyparsing import nums, alphanums, pyparsing_unicode
 from pyparsing import OneOrMore, Optional, ZeroOrMore
 from pyparsing import Word, Literal, StringStart, StringEnd
@@ -52,3 +53,10 @@ COMMENT_LINE = (
 LINE = (
     COMMENT_LINE | MTGA_LINE | MTGO_LINE
 )
+
+
+def parse_line(line):
+    try:
+        return LINE.parseString(line)
+    except ParseException:
+        return None
