@@ -29,6 +29,11 @@ from .utils import mock_response
         'mock_tappedout_food-chain-sliver',
     ],
     [
+        'https://www.mtggoldfish.com/deck/3862693',
+        r'https://www.mtggoldfish.com',
+        'mock_mtggoldfish_3862693',
+    ],
+    [
         """
             1 Atraxa, Praetors' Voice
             1 Imperial Seal
