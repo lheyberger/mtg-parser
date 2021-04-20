@@ -4,7 +4,7 @@
 import re
 import requests
 from bs4 import BeautifulSoup
-from mtg_parser.utils import get_scryfall_url
+from mtg_parser.card import Card
 
 
 __all__ = []
@@ -47,23 +47,21 @@ def _parse_deck(deck):
             tags = list(_get_tags(subdeck_name, group_name))
 
             for card in group.find_all('a', class_='subdeck-group__card'):
+                name = (
+                    card
+                    .find('span', class_='subdeck-group__card-name')
+                    .get_text(strip=True)
+                )
                 quantity = (
                     card
                     .find('span', class_='subdeck-group__card-qty')
                     .get_text(strip=True)
                 )
-                card_name = (
-                    card
-                    .find('span', class_='subdeck-group__card-name')
-                    .get_text(strip=True)
+                yield Card(
+                    name,
+                    quantity,
+                    tags=tags,
                 )
-                card = {
-                    'quantity': quantity,
-                    'card_name': card_name,
-                    'scryfall_url': get_scryfall_url(card_name),
-                    'tags': tags,
-                }
-                yield card
 
 
 def _get_tags(subdeck_name, group_name):

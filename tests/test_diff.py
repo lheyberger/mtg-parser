@@ -4,20 +4,21 @@
 import requests_mock
 import pytest
 import mtg_parser
+from mtg_parser.card import Card
 from .utils import mock_response
 
 
 @pytest.mark.parametrize('deck1,deck2', [
     [
         [
-            {'card_name': 'Brainstorm'},
-            {'card_name': 'Portent'},
-            {'card_name': 'Ponder'},
+            Card('Brainstorm'),
+            Card('Portent'),
+            Card('Ponder'),
         ],
         [
-            {'card_name': 'Portent'},
-            {'card_name': 'Ponder'},
-            {'card_name': 'Opt'},
+            Card('Portent'),
+            Card('Ponder'),
+            Card('Opt'),
         ],
     ],
 ])

@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from mtg_parser.aetherhub import parse_deck as aetherhub_parse_deck
 from mtg_parser.archidekt import parse_deck as archidekt_parse_deck
 from mtg_parser.deckstats import parse_deck as deckstats_parse_deck
 from mtg_parser.moxfield import parse_deck as moxfield_parse_deck
@@ -17,6 +18,7 @@ __all__ = [
 
 def parse_deck(src):
     parsers = [
+        aetherhub_parse_deck,
         archidekt_parse_deck,
         deckstats_parse_deck,
         moxfield_parse_deck,

@@ -4,7 +4,7 @@
 import re
 import json
 import requests
-from mtg_parser.utils import get_scryfall_url
+from mtg_parser.card import Card
 
 
 __all__ = []
@@ -42,10 +42,9 @@ def _get_card_data(card):
     tags = []
     if card.get('isCommander', False):
         tags.append('commander')
-    tags.append(card['data']['supertype_group_extended'].lower())
-    return {
-        'quantity': card['amount'],
-        'card_name': card['name'],
-        'scryfall_url': get_scryfall_url(card.get('name')),
-        'tags': tags,
-    }
+    tags.append(card['data']['supertype_group_extended'])
+    return Card(
+        card['name'],
+        card['amount'],
+        tags=tags,
+    )

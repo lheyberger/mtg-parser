@@ -4,7 +4,7 @@
 import re
 import requests
 from bs4 import BeautifulSoup
-from mtg_parser.utils import get_scryfall_url
+from mtg_parser.card import Card
 
 
 __all__ = []
@@ -39,17 +39,12 @@ def _parse_deck(deck):
         if 'deck-category-header' in row.attrs.get('class', []):
             last_category = row.th.string.strip().splitlines()[0].lower()
         else:
-            extension = re.search(
-                r'\[(.*?)\]',
-                row.a.attrs.get('data-card-id')
-            ).group(1).lower()
-            card_name = row.a.string.strip()
-            card = {
-                'quantity': row.td.string.strip(),
-                'card_name': card_name,
-                'extension': extension,
-                'scryfall_url': get_scryfall_url(card_name, extension),
-            }
-            if last_category:
-                card.setdefault('tags', []).append(last_category)
-            yield card
+            yield Card(
+                row.a.string.strip(),
+                row.td.string.strip(),
+                re.search(
+                    r'\[(.*?)\]',
+                    row.a.attrs.get('data-card-id')
+                ).group(1).lower(),
+                tags=[last_category],
+            )
