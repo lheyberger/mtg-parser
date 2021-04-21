@@ -4,13 +4,25 @@
 from mtg_parser.utils import get_scryfall_url
 
 
+def _format_extension(extension):
+    if not extension:
+        return extension
+    return str(extension).strip().upper()
+
+
+def _format_number(number):
+    if not number:
+        return number
+    return str(number).strip().lower()
+
+
 def _filter_tags(tags):
     if not tags:
-        return list()
+        return set()
     tags = filter(bool, tags)
     tags = map(str, tags)
     tags = map(str.lower, tags)
-    return list(tags)
+    return set(tags)
 
 
 class Card:
@@ -25,8 +37,8 @@ class Card:
     ):
         self.name = name
         self.quantity = int(quantity)
-        self.extension = extension
-        self.number = number
+        self.extension = _format_extension(extension)
+        self.number = _format_number(number)
         self.tags = _filter_tags(tags)
         self.scryfall_url = get_scryfall_url(
             name,
@@ -39,6 +51,33 @@ class Card:
 
     def __str__(self):
         return ' '.join(self._get_parts())
+
+    def __eq__(self, other):
+        return self._to_tuple() == other._to_tuple()
+
+    def __ne__(self, other):
+        return self._to_tuple() != other._to_tuple()
+
+    def __lt__(self, other):
+        return self._to_tuple() < other._to_tuple()
+
+    def __le__(self, other):
+        return self._to_tuple() <= other._to_tuple()
+
+    def __gt__(self, other):
+        return self._to_tuple() > other._to_tuple()
+
+    def __ge__(self, other):
+        return self._to_tuple() >= other._to_tuple()
+
+    def _to_tuple(self):
+        return (
+            self.name,
+            self.quantity,
+            self.extension,
+            self.number,
+            self.tags,
+        )
 
     def _get_parts(self):
         if self.quantity:

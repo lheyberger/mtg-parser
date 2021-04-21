@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from mtg_parser.grammar import parse_line
-from mtg_parser.utils import get_scryfall_url
+from mtg_parser.card import Card
 
 
 __all__ = []
@@ -27,8 +27,7 @@ def _parse_deck(deck):
     lines = filter(bool, lines)
     lines = map(lambda line: line.asDict(), lines)
     lines = _collapse_comments(lines)
-    lines = map(_cleanup_tags, lines)
-    lines = map(_add_scryfall_url, lines)
+    lines = map(_to_card, lines)
     return lines
 
 
@@ -43,16 +42,11 @@ def _collapse_comments(lines):
             yield line
 
 
-def _cleanup_tags(line):
-    if 'tags' in line:
-        line['tags'] = list(sorted(set(line['tags'])))
-    return line
-
-
-def _add_scryfall_url(line):
-    line['scryfall_url'] = get_scryfall_url(
+def _to_card(line):
+    return Card(
         line.get('card_name'),
+        line.get('quantity'),
         line.get('extension'),
         line.get('collector_number'),
+        line.get('tags'),
     )
-    return line

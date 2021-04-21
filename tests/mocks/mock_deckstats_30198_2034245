@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# deckstats: http://ogp.me/ns/fb/deckstats#">
+<script src="//deckstats.net/lng.js.1618955815.php?lng=en" charset="utf-8"></script>
+<script src="//deckstats.net/js/merged/merged.jquery.1618955831.js" charset="utf-8"></script>
+<script src="//deckstats.net/js/merged/merged.jquery.plugins.1618955831.js" charset="utf-8"></script>
+<script src="//deckstats.net/js/merged/merged.deck.1618955839.js" charset="utf-8"></script>
+<title>
+		[mtg-parser] 3 Amigos (EDH / Commander) &mdash; deckstats.net | Magic: The Gathering Decks
+</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" sizes="16x16" href="https://deckstats.net/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="https://deckstats.net/img/logo/deckstats32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="https://deckstats.net/img/logo/deckstats48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://deckstats.net/img/logo/deckstats192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="https://deckstats.net/img/logo/deckstats512.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="https://deckstats.net/img/logo/deckstats180.png">
+<meta name="description" content="Vial Smasher the Fierce, Kraum, Ludevic&#039;s Opus, Ad Nauseam, Ancient Tomb, Anger of the Gods, Arcum&#039;s Astrolabe, ..." />
+<meta name="theme-color" content="#336799" />
+<meta property="fb:admins" content="794549653" />
+<meta property="fb:app_id" content="318919094866464" />
+<meta property="og:site_name" content="deckstats" />
+<meta property="og:type" content="deckstats:deck" />
+<meta property="og:title" content="[mtg-parser] 3 Amigos (EDH / Commander)" />
+<meta property="og:description" content="Vial Smasher the Fierce, Kraum, Ludevic&#039;s Opus, Ad Nauseam, Ancient Tomb, Anger of the Gods, Arcum&#039;s Astrolabe, ..." />
+<meta property="og:url" content="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos" /><meta property="og:image" content="https://deckstats.net/img/color_stripes/200/14_square.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@deckstats" />
+<meta name="twitter:title" content="[mtg-parser] 3 Amigos (EDH / Commander)" />
+<meta name="twitter:description" content="Vial Smasher the Fierce, Kraum, Ludevic&#039;s Opus, Ad Nauseam, Ancient Tomb, Anger of the Gods, Arcum&#039;s Astrolabe, ..." />
+<meta name="twitter:image" content="https://deckstats.net/img/color_stripes/200/14_square.png" />
+<link rel="alternate" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/en" hreflang="en" />
+<link rel="alternate" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/de" hreflang="de" />
+<link rel="alternate" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/es" hreflang="es" />
+<link rel="alternate" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/pt" hreflang="pt" />
+<link rel="alternate" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/it" hreflang="it" />
+<link rel="alternate" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/fr" hreflang="fr" />
+<script async src="//deckstats.net/js/t.js"></script>
+
+<script>
+		window.cookieconsent_options = {"message":"At deckstats.net we use cookies to remember information between visits and customize our website for you.","dismiss":"Okay!","learnMore":"More info","link":"https:\/\/deckstats.net?lng=en&cookies=1","theme":"dark-bottom"};
+	</script>
+
+
+<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-68718-10']);
+		_gaq.push(['_setSiteSpeedSampleRate', 10]);
+		_gaq.push(['_gat._anonymizeIp']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+<script>
+window['nitroAds'] = window['nitroAds'] || { createAd: function () { window.nitroAds.queue.push(["createAd", arguments]) }, queue: [] }; //nitropay
+
+var PATH = "\/\/deckstats.net";
+var PATH_SSL = "https:\/\/deckstats.net";
+var LNG = "en";
+var COUNTRY = "FR";
+var user_logged_in = false;
+
+//as a function so it can be called when async loading of cardlink is done
+function nk_cardlink_init() {
+	nk_deckstats_lng = LNG;
+
+	//https://hacks.mozilla.org/2009/07/cross-site-xmlhttprequest-with-cors/
+	try {
+		if('withCredentials' in new XMLHttpRequest()) {
+			nk_cardlink_external = 'https://www.mtg-forum.de/db/get.php';
+		} else {
+			nk_cardlink_external = PATH+'/db_tunnel.php';
+		}
+	} catch(ex) {
+		//this catches IE8, which may not allow 'new XMLHttpRequest()'
+		nk_cardlink_external = PATH+'/db_tunnel.php';
+	}
+
+	nk_cardlink_lng = (nk_deckstats_lng == 'de'? 'de' : 'en');
+	nk_cardlink_svg_path = PATH + '/img/mana.svg';
+	nk_cardlink_all = true;
+};
+
+nk_cardlink_init();
+
+timestamp_now = 1619021526;
+
+	smf_user_id = 0;
+	smf_user_name = "Guest";
+	smf_session_var = "ae4de710b";
+	smf_session_id = "13a18f96c8370fcb71d119617d60bdb0";
+	
+	MTG_FORMATS = {"1":"Casual","6":"Standard","4":"Modern","10":"EDH \/ Commander","21":"Duel Commander","17":"Oathbreaker","18":"Pioneer","19":"Historic","16":"Brawl","3":"Legacy","2":"Vintage","9":"Pauper","7":"Highlander","12":"Tiny Leaders","13":"Frontier","11":"Peasant","15":"Penny Dreadful","5":"Extended","8":"Cube","14":"Limited","20":"Card List"};
+	MTG_CONDITIONS = {"1":{"code":"NM","name":"Mint\/Near-Mint"},"3":{"code":"LP","name":"Lightly Played"},"4":{"code":"MP","name":"Moderately Played"},"5":{"code":"HP","name":"Heavily Played"},"6":{"code":"DM","name":"Damaged"}};
+	MTG_LANGUAGES = {"1":{"flag":"us","name":"English","code":"en"},"2":{"flag":"cn","name":"Chinese","code":"cn"},"3":{"flag":"fr","name":"French","code":"fr"},"4":{"flag":"de","name":"German","code":"de"},"5":{"flag":"it","name":"Italian","code":"it"},"6":{"flag":"jp","name":"Japanese","code":"jp"},"7":{"flag":"kr","name":"Korean","code":"kr"},"8":{"flag":"ptbr","name":"Portuguese","code":"pt"},"9":{"flag":"ru","name":"Russian","code":"ru"},"10":{"flag":"es","name":"Spanish","code":"es"}};
+	USER_SETTINGS = {"language":"","dci_first_name":"","dci_last_name":"","dci_number":"","deck_default_tab":"auto","deck_columns":["type","mana","set","price_miracle","price_tcgplayer","price_cardhoarder","price_mkm"],"form_grouping":"type_extended","deck_default_sort_by":"name,asc","deck_default_sections":"","deckbuilder_type":"interactive","preferred_price_source":"tcgplayer","disable_ads":false,"privacy_show_friend_list":true,"privacy_events_public":true,"privacy_events_friends":true};
+
+	if(window.group_by_options) {
+		group_by_options = group_by_options.concat(["section","type","type_extended","color","cc","rarity","none"]);
+	}
+	if(window.sort_by_options) {
+		sort_by_options = sort_by_options.concat(["none","name,asc","name,desc","amount,asc","amount,desc","type,asc","type,desc","cmc,asc","cmc,desc","set,asc","set,desc","price,asc","price,desc"]);
+	}
+
+	sets_version = 1618955827;
+
+	
+	$(function(){ init_deck_page();deck_page.key = "";init_deck_data({"sections":[{"name":"","amount":99,"amount_nonbasic":99,"cards":[{"name":"Vial Smasher the Fierce","amount":1,"valid":true,"idcards":1581317,"idprintings":59124,"isCommander":true,"data":{"supertype":"Legendary Creature","supertype_group":"Creatures","supertype_group_extended":"Creatures","type":"Legendary Creature - Goblin Berserker","color_identity":48,"cost":"{1}{B}{R}","rarity":"M","collector_number":"540","converted_cost":3,"effective_cost":3,"power":"2","toughness":"3","source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":662,"price_tcgplayer":15.16,"price_tcgplayer_id":"226353","price_tcgplayer_other_foil":true,"cheapest_price_tcgplayer":15.16,"cheapest_price_tcgplayer_id":"226353","price_mkm":10.64,"price_mkm_id":"\/Commander-Legends-Extras\/Vial-Smasher-the-Fierce","price_mkm_other_foil":true,"cheapest_price_mkm":10.49,"cheapest_price_mkm_id":"\/Commander-2016\/Vial-Smasher-the-Fierce","price_cardkingdom":16.99,"price_cardkingdom_other_set":true,"cheapest_price_cardkingdom":16.99,"price_cardhoarder":3,"price_cardhoarder_id":"86182","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":7.32,"cheapest_price_cardhoarder_id":"62329","price_miracle":7.95,"price_miracle_other_set":true,"cheapest_price_miracle":7.95}},{"name":"Kraum, Ludevic's Opus","amount":1,"valid":true,"idcards":1581166,"idprintings":59474,"isCommander":true,"data":{"supertype":"Legendary Creature","supertype_group":"Creatures","supertype_group_extended":"Creatures","type":"Legendary Creature - Zombie Horror","color_identity":40,"cost":"{3}{U}{R}","rarity":"M","collector_number":"523","converted_cost":5,"effective_cost":5,"power":"4","toughness":"4","source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":662,"price_tcgplayer":3.9,"price_tcgplayer_id":"227109","price_tcgplayer_other_foil":true,"cheapest_price_tcgplayer":3.9,"cheapest_price_tcgplayer_id":"227109","price_mkm":2.67,"price_mkm_id":"\/Commander-Legends-Extras\/Kraum-Ludevics-Opus","cheapest_price_mkm":2.67,"cheapest_price_mkm_id":"\/Commander-Legends-Extras\/Kraum-Ludevics-Opus","price_cardkingdom":2.99,"price_cardkingdom_other_set":true,"cheapest_price_cardkingdom":3.49,"price_cardhoarder":0.4,"price_cardhoarder_id":"86162","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":0.44,"cheapest_price_cardhoarder_id":"62309","price_miracle":2.45,"price_miracle_other_set":true,"cheapest_price_miracle":2.45}},{"name":"Ad Nauseam","amount":1,"valid":true,"idcards":89,"idprintings":57150,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":16,"cost":"{3}{B}{B}","rarity":"R","collector_number":"76","converted_cost":5,"effective_cost":5,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":644,"price_tcgplayer":7.11,"price_tcgplayer_id":"218939","cheapest_price_tcgplayer":7.07,"cheapest_price_tcgplayer_id":"27601","price_mkm":3.22,"price_mkm_id":"\/Double-Masters\/Ad-Nauseam","cheapest_price_mkm":3.16,"cheapest_price_mkm_id":"\/Shards-of-Alara\/Ad-Nauseam","price_cardkingdom":6.49,"cheapest_price_cardkingdom":7.49,"price_cardhoarder":0.02,"price_cardhoarder_id":"82186","cheapest_price_cardhoarder":0.02,"cheapest_price_cardhoarder_id":"31356","price_miracle":4.45,"price_miracle_other_set":true,"cheapest_price_miracle":4.45}},{"name":"Ancient Tomb","amount":1,"valid":true,"idcards":1464464,"idprintings":57955,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land","color_identity":2,"rarity":"M","collector_number":"21","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":2,"any":0},"display_set_id":665,"price_tcgplayer":53.82,"price_tcgplayer_id":"222003","cheapest_price_tcgplayer":55.58,"cheapest_price_tcgplayer_id":"179473","price_mkm":37.87,"price_mkm_id":"\/Zendikar-Rising-Expeditions\/Ancient-Tomb","cheapest_price_mkm":29.07,"cheapest_price_mkm_id":"\/From-the-Vault-Realms\/Ancient-Tomb","price_cardkingdom":79.99,"cheapest_price_cardkingdom":59.99,"price_cardhoarder":31.86,"price_cardhoarder_id":"83609","cheapest_price_cardhoarder":2,"cheapest_price_cardhoarder_id":"46234","price_miracle":29.95,"price_miracle_other_set":true,"cheapest_price_miracle":29.95}},{"name":"Anger of the Gods","amount":1,"valid":true,"idcards":667596,"idprintings":63054,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":32,"cost":"{1}{R}{R}","rarity":"S","collector_number":"339","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":667,"price_tcgplayer":1.62,"price_tcgplayer_id":"233944","cheapest_price_tcgplayer":1.07,"cheapest_price_tcgplayer_id":"145342","price_mkm":1.36,"price_mkm_id":"\/Time-Spiral-Remastered-Extras\/Anger-of-the-Gods","cheapest_price_mkm":0.95,"cheapest_price_mkm_id":"\/Theros\/Anger-of-the-Gods","price_cardkingdom":1.99,"cheapest_price_cardkingdom":1.99,"price_cardhoarder":1.24,"price_cardhoarder_id":"87055","cheapest_price_cardhoarder":0.9,"cheapest_price_cardhoarder_id":"50578","price_miracle":1.85,"price_miracle_other_set":true,"cheapest_price_miracle":1.85}},{"name":"Arcum's Astrolabe","amount":1,"valid":true,"idcards":1681011,"idprintings":34466,"data":{"supertype":"Snow Artifact","supertype_group":"Spells","supertype_group_extended":"Artifacts","type":"Snow Artifact","color_identity":2,"cost":"{S}","rarity":"C","collector_number":"220","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":235,"price_tcgplayer":0.14,"price_tcgplayer_id":"191281","cheapest_price_tcgplayer":0.14,"cheapest_price_tcgplayer_id":"191281","price_mkm":0.24,"price_mkm_id":"\/Modern-Horizons\/Arcums-Astrolabe","cheapest_price_mkm":0.24,"cheapest_price_mkm_id":"\/Modern-Horizons\/Arcums-Astrolabe","price_cardkingdom":0.25,"cheapest_price_cardkingdom":0.25,"price_cardhoarder":0.02,"price_cardhoarder_id":"72812","cheapest_price_cardhoarder":0.02,"cheapest_price_cardhoarder_id":"72812","price_miracle":0.49,"price_miracle_other_set":true,"cheapest_price_miracle":0.49}},{"name":"Arid Mesa","amount":1,"valid":true,"idcards":481713,"idprintings":57879,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land","color_identity":2,"rarity":"M","collector_number":"9","converted_cost":0,"effective_cost":0,"source":{"w":1,"u":0,"b":0,"r":1,"g":0,"colorless":0,"any":0},"display_set_id":665,"price_tcgplayer":43.81,"price_tcgplayer_id":"221814","cheapest_price_tcgplayer":40.48,"cheapest_price_tcgplayer_id":"128275","price_mkm":29.27,"price_mkm_id":"\/Zendikar-Rising-Expeditions\/Arid-Mesa","cheapest_price_mkm":24.05,"cheapest_price_mkm_id":"\/Zendikar\/Arid-Mesa","price_cardkingdom":64.99,"cheapest_price_cardkingdom":54.99,"price_cardhoarder":16.31,"price_cardhoarder_id":"83585","cheapest_price_cardhoarder":9.16,"cheapest_price_cardhoarder_id":"34414","price_miracle":32.95,"price_miracle_other_set":true,"cheapest_price_miracle":32.95}},{"name":"Back to Basics","amount":1,"valid":true,"idcards":913,"idprintings":33457,"data":{"supertype":"Enchantment","supertype_group":"Spells","supertype_group_extended":"Enchantments","type":"Enchantment","color_identity":8,"cost":"{2}{U}","rarity":"R","collector_number":"46","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":223,"price_tcgplayer":10.75,"price_tcgplayer_id":"180794","cheapest_price_tcgplayer":10.75,"cheapest_price_tcgplayer_id":"180794","price_mkm":5.97,"price_mkm_id":"\/Ultimate-Masters\/Back-to-Basics","cheapest_price_mkm":5.97,"cheapest_price_mkm_id":"\/Ultimate-Masters\/Back-to-Basics","price_cardkingdom":13.99,"cheapest_price_cardkingdom":13.99,"price_cardhoarder":7.54,"price_cardhoarder_id":"70165","cheapest_price_cardhoarder":4.98,"cheapest_price_cardhoarder_id":"12287","price_miracle":9.95,"price_miracle_other_set":true,"cheapest_price_miracle":9.95}},{"name":"Badlands","amount":1,"valid":true,"idcards":741390,"idprintings":1016,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land - Swamp Mountain","color_identity":48,"rarity":"R","collector_number":"282","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":0,"b":1,"r":1,"g":0,"colorless":0,"any":0},"display_set_id":5,"price_tcgplayer":398.91,"price_tcgplayer_id":"1339","cheapest_price_tcgplayer":398.91,"cheapest_price_tcgplayer_id":"1339","price_mkm":249.52,"price_mkm_id":"\/Revised\/Badlands","cheapest_price_mkm":249.52,"cheapest_price_mkm_id":"\/Revised\/Badlands","price_cardkingdom":519.99,"cheapest_price_cardkingdom":519.99,"price_cardhoarder":2.67,"price_cardhoarder_id":"53077","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":2.67,"cheapest_price_cardhoarder_id":"53077","price_miracle":169,"price_miracle_other_set":true,"cheapest_price_miracle":169}},{"name":"Blasphemous Act","amount":1,"valid":true,"idcards":1581027,"idprintings":59340,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":32,"cost":"{8}{R}","rarity":"R","collector_number":"162","converted_cost":9,"effective_cost":9,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":662,"price_tcgplayer":2.59,"price_tcgplayer_id":"226866","cheapest_price_tcgplayer":2.59,"cheapest_price_tcgplayer_id":"226866","price_mkm":1.47,"price_mkm_id":"\/Commander-Legends\/Blasphemous-Act","cheapest_price_mkm":1.47,"cheapest_price_mkm_id":"\/Commander-Legends\/Blasphemous-Act","price_cardkingdom":3.49,"cheapest_price_cardkingdom":3.49,"price_cardhoarder":0.08,"price_cardhoarder_id":"85106","cheapest_price_cardhoarder":0.02,"cheapest_price_cardhoarder_id":"42410","price_miracle":1.75,"price_miracle_other_set":true,"cheapest_price_miracle":1.75}},{"name":"Blood Moon","amount":1,"valid":true,"idcards":745419,"idprintings":57131,"data":{"supertype":"Enchantment","supertype_group":"Spells","supertype_group_extended":"Enchantments","type":"Enchantment","color_identity":32,"cost":"{2}{R}","rarity":"R","collector_number":"118","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":644,"price_tcgplayer":10.18,"price_tcgplayer_id":"218848","cheapest_price_tcgplayer":9.28,"cheapest_price_tcgplayer_id":"12588","price_mkm":9.36,"price_mkm_id":"\/Double-Masters\/Blood-Moon","cheapest_price_mkm":7.73,"cheapest_price_mkm_id":"\/Ninth-Edition\/Blood-Moon","price_cardkingdom":11.99,"cheapest_price_cardkingdom":11.99,"price_cardhoarder":6.41,"price_cardhoarder_id":"82270","cheapest_price_cardhoarder":6.02,"cheapest_price_cardhoarder_id":"19587","price_miracle":9.95,"price_miracle_other_set":true,"cheapest_price_miracle":9.95}},{"name":"Bloodstained Mire","amount":1,"valid":true,"idcards":1432,"idprintings":57924,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land","color_identity":2,"rarity":"M","collector_number":"3","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":0,"b":1,"r":1,"g":0,"colorless":0,"any":0},"display_set_id":665,"price_tcgplayer":54.94,"price_tcgplayer_id":"221808","cheapest_price_tcgplayer":33.43,"cheapest_price_tcgplayer_id":"92830","price_mkm":32.44,"price_mkm_id":"\/Zendikar-Rising-Expeditions\/Bloodstained-Mire","cheapest_price_mkm":20.74,"cheapest_price_mkm_id":"\/Khans-of-Tarkir\/Bloodstained-Mire","price_cardkingdom":69.99,"cheapest_price_cardkingdom":44.99,"price_cardhoarder":24.44,"price_cardhoarder_id":"83573","cheapest_price_cardhoarder":8.79,"cheapest_price_cardhoarder_id":"54198","price_miracle":24.99,"price_miracle_other_set":true,"cheapest_price_miracle":24.99}},{"name":"Brainstorm","amount":1,"valid":true,"idcards":1334722,"idprintings":57128,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":8,"cost":"{U}","rarity":"C","collector_number":"44","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":644,"price_tcgplayer":0.83,"price_tcgplayer_id":"218844","cheapest_price_tcgplayer":0.73,"cheapest_price_tcgplayer_id":"107908","price_mkm":0.32,"price_mkm_id":"\/Double-Masters\/Brainstorm","cheapest_price_mkm":0.34,"cheapest_price_mkm_id":"\/Conspiracy\/Brainstorm","price_cardkingdom":0.79,"cheapest_price_cardkingdom":0.79,"price_cardhoarder":0.08,"price_cardhoarder_id":"82122","cheapest_price_cardhoarder":0.06,"cheapest_price_cardhoarder_id":"53117","price_miracle":0.95,"price_miracle_other_set":true,"cheapest_price_miracle":0.95}},{"name":"Buried Alive","amount":1,"valid":true,"idcards":1145561,"idprintings":33470,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":16,"cost":"{2}{B}","rarity":"U","collector_number":"88","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":223,"price_tcgplayer":4.3,"price_tcgplayer_id":"180895","cheapest_price_tcgplayer":4.03,"cheapest_price_tcgplayer_id":"166751","price_mkm":1.61,"price_mkm_id":"\/Ultimate-Masters\/Buried-Alive","cheapest_price_mkm":1.53,"cheapest_price_mkm_id":"\/Odyssey\/Buried-Alive","price_cardkingdom":4.49,"cheapest_price_cardkingdom":4.49,"price_cardhoarder":2.31,"price_cardhoarder_id":"70249","cheapest_price_cardhoarder":2.01,"cheapest_price_cardhoarder_id":"16771","price_miracle":1.85,"price_miracle_other_set":true,"cheapest_price_miracle":1.85}},{"name":"Cackling Counterpart","amount":1,"valid":true,"idcards":481735,"idprintings":28467,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":8,"cost":"{1}{U}{U}","rarity":"R","collector_number":"32","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":185,"price_tcgplayer":1.24,"price_tcgplayer_id":"128846","cheapest_price_tcgplayer":0.89,"cheapest_price_tcgplayer_id":"94259","price_mkm":0.43,"price_mkm_id":"\/Modern-Masters-2017\/Cackling-Counterpart","cheapest_price_mkm":0.38,"cheapest_price_mkm_id":"\/Innistrad\/Cackling-Counterpart","price_cardkingdom":1.79,"cheapest_price_cardkingdom":1.79,"price_cardhoarder":0.02,"price_cardhoarder_id":"63297","cheapest_price_cardhoarder":0.01,"cheapest_price_cardhoarder_id":"42708","price_miracle":0.45,"price_miracle_other_set":true,"cheapest_price_miracle":0.45}},{"name":"Cephalid Coliseum","amount":1,"valid":true,"idcards":742902,"idprintings":6396,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land","color_identity":8,"rarity":"U","collector_number":"317","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":1,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":25,"price_tcgplayer":8.03,"price_tcgplayer_id":"9592","cheapest_price_tcgplayer":8.03,"cheapest_price_tcgplayer_id":"9592","price_mkm":3.84,"price_mkm_id":"\/Odyssey\/Cephalid-Coliseum","cheapest_price_mkm":3.84,"cheapest_price_mkm_id":"\/Odyssey\/Cephalid-Coliseum","price_cardkingdom":7.49,"cheapest_price_cardkingdom":7.49,"price_cardhoarder":2.58,"price_cardhoarder_id":"16455","cheapest_price_cardhoarder":2.58,"cheapest_price_cardhoarder_id":"16455","price_miracle":2.25,"price_miracle_other_set":true,"cheapest_price_miracle":2.25}},{"name":"Chain of Vapor","amount":1,"valid":true,"idcards":1581048,"idprintings":26195,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":8,"cost":"{U}","rarity":"U","collector_number":"84","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":157,"price_tcgplayer":8.68,"price_tcgplayer_id":"124193","cheapest_price_tcgplayer":8.21,"cheapest_price_tcgplayer_id":"10327","price_mkm":5.03,"price_mkm_id":"\/Commander-2016\/Chain-of-Vapor","cheapest_price_mkm":3.32,"cheapest_price_mkm_id":"\/Onslaught\/Chain-of-Vapor","price_cardkingdom":12.99,"cheapest_price_cardkingdom":11.99,"price_cardhoarder":0.04,"price_cardhoarder_id":"62513","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":0.06,"cheapest_price_cardhoarder_id":"17847","price_miracle":1.65,"price_miracle_other_set":true,"cheapest_price_miracle":1.65}},{"name":"Coastal Breach","amount":1,"valid":true,"idcards":1581057,"idprintings":26204,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":8,"cost":"{6}{U}","rarity":"R","collector_number":"6","converted_cost":7,"effective_cost":7,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":157,"price_tcgplayer":6.25,"price_tcgplayer_id":"123989","cheapest_price_tcgplayer":6.25,"cheapest_price_tcgplayer_id":"123989","price_mkm":4.56,"price_mkm_id":"\/Commander-2016\/Coastal-Breach","cheapest_price_mkm":4.56,"cheapest_price_mkm_id":"\/Commander-2016\/Coastal-Breach","price_cardkingdom":9.49,"cheapest_price_cardkingdom":9.49,"price_miracle":4.95,"price_miracle_other_set":true,"cheapest_price_miracle":4.95}},{"name":"Counterflux","amount":1,"valid":true,"idcards":2717,"idprintings":24311,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":40,"cost":"{U}{U}{R}","rarity":"R","collector_number":"214","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":142,"price_tcgplayer":1.08,"price_tcgplayer_id":"107797","cheapest_price_tcgplayer":1.04,"cheapest_price_tcgplayer_id":"66496","price_mkm":0.66,"price_mkm_id":"\/Commander-2015\/Counterflux","cheapest_price_mkm":0.48,"cheapest_price_mkm_id":"\/Return-to-Ravnica\/Counterflux","price_cardkingdom":1.49,"cheapest_price_cardkingdom":0.79,"price_cardhoarder":0.01,"price_cardhoarder_id":"46487","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":0.01,"cheapest_price_cardhoarder_id":"46487","price_miracle":0.95,"price_miracle_other_set":true,"cheapest_price_miracle":0.95}},{"name":"Curiosity","amount":1,"valid":true,"idcards":742561,"idprintings":56460,"data":{"supertype":"Enchantment","supertype_group":"Spells","supertype_group_extended":"Enchantments","type":"Enchantment - Aura","color_identity":8,"cost":"{U}","rarity":"U","collector_number":"147","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":654,"price_tcgplayer":0.39,"price_tcgplayer_id":"216243","cheapest_price_tcgplayer":0.39,"cheapest_price_tcgplayer_id":"216243","price_mkm":0.22,"price_mkm_id":"\/Jumpstart\/Curiosity","cheapest_price_mkm":0.22,"cheapest_price_mkm_id":"\/Jumpstart\/Curiosity","price_cardkingdom":0.35,"cheapest_price_cardkingdom":0.25,"price_cardhoarder":0.02,"price_cardhoarder_id":"42538","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":0.02,"cheapest_price_cardhoarder_id":"42538","price_miracle":0.69,"price_miracle_other_set":true,"cheapest_price_miracle":0.69}},{"name":"Dark Ritual","amount":1,"valid":true,"idcards":1580733,"idprintings":31178,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":16,"cost":"{B}","rarity":"C","collector_number":"82","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":200,"price_tcgplayer":0.95,"price_tcgplayer_id":"161421","cheapest_price_tcgplayer":0.57,"cheapest_price_tcgplayer_id":"2099","price_mkm":0.51,"price_mkm_id":"\/Masters-25\/Dark-Ritual","cheapest_price_mkm":0.31,"cheapest_price_mkm_id":"\/Mirage\/Dark-Ritual","price_cardkingdom":1.29,"cheapest_price_cardkingdom":0.99,"price_cardhoarder":0.06,"price_cardhoarder_id":"67078","cheapest_price_cardhoarder":0.03,"cheapest_price_cardhoarder_id":"52637","price_miracle":1.45,"price_miracle_other_set":true,"cheapest_price_miracle":1.45}},{"name":"Dead of Winter","amount":1,"valid":true,"idcards":1681007,"idprintings":34495,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":16,"cost":"{2}{B}","rarity":"R","collector_number":"85","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":235,"price_tcgplayer":3.13,"price_tcgplayer_id":"191139","cheapest_price_tcgplayer":3.13,"cheapest_price_tcgplayer_id":"191139","price_mkm":1.35,"price_mkm_id":"\/Modern-Horizons\/Dead-of-Winter","cheapest_price_mkm":1.35,"cheapest_price_mkm_id":"\/Modern-Horizons\/Dead-of-Winter","price_cardkingdom":2.49,"cheapest_price_cardkingdom":2.49,"price_cardhoarder":0.37,"price_cardhoarder_id":"72542","cheapest_price_cardhoarder":0.37,"cheapest_price_cardhoarder_id":"72542","price_miracle":0.95,"price_miracle_other_set":true,"cheapest_price_miracle":0.95}},{"name":"Deflecting Swat","amount":1,"valid":true,"idcards":1972740,"idprintings":54649,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":32,"cost":"{2}{R}","rarity":"R","collector_number":"50","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":636,"price_tcgplayer":29.84,"price_tcgplayer_id":"212191","cheapest_price_tcgplayer":29.84,"cheapest_price_tcgplayer_id":"212191","price_mkm":25.72,"price_mkm_id":"\/Commander-Ikoria\/Deflecting-Swat","cheapest_price_mkm":25.72,"cheapest_price_mkm_id":"\/Commander-Ikoria\/Deflecting-Swat","price_cardkingdom":32.99,"cheapest_price_cardkingdom":32.99,"price_cardhoarder":4.21,"price_cardhoarder_id":"80681","cheapest_price_cardhoarder":4.21,"cheapest_price_cardhoarder_id":"80681","price_miracle":22.99,"price_miracle_other_set":true,"cheapest_price_miracle":22.99}},{"name":"Demonic Consultation","amount":1,"valid":true,"idcards":744481,"idprintings":2889,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":16,"cost":"{B}","rarity":"U","collector_number":"121","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":11,"price_tcgplayer":23.09,"price_tcgplayer_id":"4644","cheapest_price_tcgplayer":23.09,"cheapest_price_tcgplayer_id":"4644","price_mkm":10.94,"price_mkm_id":"\/Ice-Age\/Demonic-Consultation","cheapest_price_mkm":10.94,"cheapest_price_mkm_id":"\/Ice-Age\/Demonic-Consultation","price_cardkingdom":27.99,"cheapest_price_cardkingdom":27.99,"price_cardhoarder":0.17,"price_cardhoarder_id":"30410","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":0.17,"cheapest_price_cardhoarder_id":"30410","price_miracle":9.75,"price_miracle_other_set":true,"cheapest_price_miracle":9.75}},{"name":"Devastation Tide","amount":1,"valid":true,"idcards":1581082,"idprintings":32681,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":8,"cost":"{3}{U}{U}","rarity":"R","collector_number":"85","converted_cost":5,"effective_cost":5,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":210,"price_tcgplayer":2.26,"price_tcgplayer_id":"171453","cheapest_price_tcgplayer":2.26,"cheapest_price_tcgplayer_id":"171453","price_mkm":0.77,"price_mkm_id":"\/Commander-2018\/Devastation-Tide","cheapest_price_mkm":0.77,"cheapest_price_mkm_id":"\/Commander-2018\/Devastation-Tide","price_cardkingdom":1.79,"cheapest_price_cardkingdom":1.79,"price_cardhoarder":0.01,"price_cardhoarder_id":"44223","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":0.01,"cheapest_price_cardhoarder_id":"44223","price_miracle":0.99,"price_miracle_other_set":true,"cheapest_price_miracle":0.99}},{"name":"Dispel","amount":1,"valid":true,"idcards":3594,"idprintings":23568,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":8,"cost":"{U}","rarity":"C","collector_number":"76","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":139,"price_tcgplayer":0.18,"price_tcgplayer_id":"105594","cheapest_price_tcgplayer":0.18,"cheapest_price_tcgplayer_id":"105594","price_mkm":0.15,"price_mkm_id":"\/Battle-for-Zendikar\/Dispel","cheapest_price_mkm":0.1,"cheapest_price_mkm_id":"\/Return-to-Ravnica\/Dispel","price_cardkingdom":0.25,"cheapest_price_cardkingdom":0.25,"price_cardhoarder":0.02,"price_cardhoarder_id":"58363","cheapest_price_cardhoarder":0.02,"cheapest_price_cardhoarder_id":"58363","price_miracle":0.2,"price_miracle_other_set":true,"cheapest_price_miracle":0.2}},{"name":"Dualcaster Mage","amount":1,"valid":true,"idcards":1145601,"idprintings":60228,"data":{"supertype":"Creature","supertype_group":"Creatures","supertype_group_extended":"Creatures","type":"Creature - Human Wizard","color_identity":32,"cost":"{1}{R}{R}","rarity":"R","collector_number":"412","converted_cost":3,"effective_cost":3,"power":"2","toughness":"2","source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":662,"price_tcgplayer":0.18,"price_tcgplayer_id":"227313","cheapest_price_tcgplayer":0.18,"cheapest_price_tcgplayer_id":"227313","price_mkm":0.22,"price_mkm_id":"\/Commander-Legends-Extras\/Dualcaster-Mage","cheapest_price_mkm":0.19,"cheapest_price_mkm_id":"\/Jumpstart\/Dualcaster-Mage","price_cardkingdom":0.29,"cheapest_price_cardkingdom":0.25,"price_cardhoarder":0.91,"price_cardhoarder_id":"85636","cheapest_price_cardhoarder":0.65,"cheapest_price_cardhoarder_id":"55101","price_miracle":0.49,"price_miracle_other_set":true,"cheapest_price_miracle":0.49}},{"name":"Fierce Guardianship","amount":1,"valid":true,"idcards":1972812,"idprintings":54757,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":8,"cost":"{2}{U}","rarity":"R","collector_number":"35","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":636,"price_tcgplayer":37.18,"price_tcgplayer_id":"212218","cheapest_price_tcgplayer":37.18,"cheapest_price_tcgplayer_id":"212218","price_mkm":30.87,"price_mkm_id":"\/Commander-Ikoria\/Fierce-Guardianship","cheapest_price_mkm":30.87,"cheapest_price_mkm_id":"\/Commander-Ikoria\/Fierce-Guardianship","price_cardkingdom":39.99,"cheapest_price_cardkingdom":39.99,"price_cardhoarder":11.46,"price_cardhoarder_id":"80651","cheapest_price_cardhoarder":11.46,"cheapest_price_cardhoarder_id":"80651","price_miracle":32.95,"price_miracle_other_set":true,"cheapest_price_miracle":32.95}},{"name":"Flooded Strand","amount":1,"valid":true,"idcards":5022,"idprintings":57914,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land","color_identity":2,"rarity":"M","collector_number":"1","converted_cost":0,"effective_cost":0,"source":{"w":1,"u":1,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":665,"price_tcgplayer":45.28,"price_tcgplayer_id":"221806","cheapest_price_tcgplayer":29.24,"cheapest_price_tcgplayer_id":"92828","price_mkm":31.24,"price_mkm_id":"\/Zendikar-Rising-Expeditions\/Flooded-Strand","cheapest_price_mkm":15.49,"cheapest_price_mkm_id":"\/Khans-of-Tarkir\/Flooded-Strand","price_cardkingdom":59.99,"cheapest_price_cardkingdom":34.99,"price_cardhoarder":19.73,"price_cardhoarder_id":"83569","cheapest_price_cardhoarder":7.57,"cheapest_price_cardhoarder_id":"54194","price_miracle":19.99,"price_miracle_other_set":true,"cheapest_price_miracle":19.99}},{"name":"Flusterstorm","amount":1,"valid":true,"idcards":667675,"idprintings":30637,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":8,"cost":"{U}","rarity":"R","collector_number":"55","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":196,"price_tcgplayer":14.06,"price_tcgplayer_id":"145340","cheapest_price_tcgplayer":13.45,"cheapest_price_tcgplayer_id":"47522","price_mkm":5.45,"price_mkm_id":"\/Iconic-Masters\/Flusterstorm","cheapest_price_mkm":5.45,"cheapest_price_mkm_id":"\/Iconic-Masters\/Flusterstorm","price_cardkingdom":11.99,"cheapest_price_cardkingdom":11.99,"price_cardhoarder":8.38,"price_cardhoarder_id":"65989","cheapest_price_cardhoarder":6.59,"cheapest_price_cardhoarder_id":"59039","price_miracle":5.95,"price_miracle_other_set":true,"cheapest_price_miracle":5.95}},{"name":"Force of Despair","amount":1,"valid":true,"idcards":1681061,"idprintings":34524,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":16,"cost":"{1}{B}{B}","rarity":"R","collector_number":"92","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":235,"price_tcgplayer":1.95,"price_tcgplayer_id":"190880","cheapest_price_tcgplayer":1.95,"cheapest_price_tcgplayer_id":"190880","price_mkm":0.59,"price_mkm_id":"\/Modern-Horizons\/Force-of-Despair","cheapest_price_mkm":0.59,"cheapest_price_mkm_id":"\/Modern-Horizons\/Force-of-Despair","price_cardkingdom":1.79,"cheapest_price_cardkingdom":1.79,"price_cardhoarder":0.06,"price_cardhoarder_id":"72556","cheapest_price_cardhoarder":0.06,"cheapest_price_cardhoarder_id":"72556","price_miracle":1.95,"price_miracle_other_set":true,"cheapest_price_miracle":1.95}},{"name":"Force of Negation","amount":1,"valid":true,"idcards":1681006,"idprintings":34525,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":8,"cost":"{1}{U}{U}","rarity":"R","collector_number":"52","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":235,"price_tcgplayer":74.66,"price_tcgplayer_id":"190647","cheapest_price_tcgplayer":74.66,"cheapest_price_tcgplayer_id":"190647","price_mkm":51.1,"price_mkm_id":"\/Modern-Horizons\/Force-of-Negation","cheapest_price_mkm":51.1,"cheapest_price_mkm_id":"\/Modern-Horizons\/Force-of-Negation","price_cardkingdom":79.99,"cheapest_price_cardkingdom":79.99,"price_cardhoarder":75.97,"price_cardhoarder_id":"72476","cheapest_price_cardhoarder":75.97,"cheapest_price_cardhoarder_id":"72476","price_miracle":64.95,"price_miracle_other_set":true,"cheapest_price_miracle":64.95}},{"name":"Force of Will","amount":1,"valid":true,"idcards":739168,"idprintings":57066,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":8,"cost":"{3}{U}{U}","rarity":"M","collector_number":"51","converted_cost":5,"effective_cost":5,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":644,"price_tcgplayer":116.81,"price_tcgplayer_id":"218698","cheapest_price_tcgplayer":107.73,"cheapest_price_tcgplayer_id":"117736","price_mkm":73.35,"price_mkm_id":"\/Double-Masters\/Force-of-Will","cheapest_price_mkm":67.37,"cheapest_price_mkm_id":"\/Alliances\/Force-of-Will","price_cardkingdom":149.99,"cheapest_price_cardkingdom":149.99,"price_cardhoarder":52.44,"price_cardhoarder_id":"82136","cheapest_price_cardhoarder":47.4,"cheapest_price_cardhoarder_id":"60887","price_miracle":79.95,"price_miracle_other_set":true,"cheapest_price_miracle":79.95}},{"name":"Ghostly Flicker","amount":1,"valid":true,"idcards":666408,"idprintings":62416,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":8,"cost":"{2}{U}","rarity":"C","collector_number":"39","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":719,"price_tcgplayer":0.53,"price_tcgplayer_id":"231230","cheapest_price_tcgplayer":0.53,"cheapest_price_tcgplayer_id":"231230","price_mkm":0.35,"price_mkm_id":"\/Commander-Kaldheim\/Ghostly-Flicker","cheapest_price_mkm":0.35,"cheapest_price_mkm_id":"\/Commander-Kaldheim\/Ghostly-Flicker","price_cardkingdom":0.35,"cheapest_price_cardkingdom":0.35,"price_cardhoarder":0.05,"price_cardhoarder_id":"87983","cheapest_price_cardhoarder":0.03,"cheapest_price_cardhoarder_id":"44015","price_miracle":0.85,"price_miracle_other_set":true,"cheapest_price_miracle":0.85}},{"name":"Gitaxian Probe","amount":1,"valid":true,"idcards":5581,"idprintings":17989,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":8,"cost":"{U\/P}","rarity":"C","collector_number":"35","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":107,"price_tcgplayer":2.22,"price_tcgplayer_id":"39521","cheapest_price_tcgplayer":2.22,"cheapest_price_tcgplayer_id":"39521","price_mkm":0.9,"price_mkm_id":"\/New-Phyrexia\/Gitaxian-Probe","cheapest_price_mkm":0.9,"cheapest_price_mkm_id":"\/New-Phyrexia\/Gitaxian-Probe","price_cardkingdom":1.49,"cheapest_price_cardkingdom":1.49,"price_cardhoarder":0.02,"price_cardhoarder_id":"39976","cheapest_price_cardhoarder":0.02,"cheapest_price_cardhoarder_id":"39976","price_miracle":1.95,"price_miracle_other_set":true,"cheapest_price_miracle":1.95}},{"name":"Grafdigger's Cage","amount":1,"valid":true,"idcards":481796,"idprintings":34968,"data":{"supertype":"Artifact","supertype_group":"Spells","supertype_group_extended":"Artifacts","type":"Artifact","color_identity":2,"cost":"{1}","rarity":"R","collector_number":"227","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":258,"price_tcgplayer":1.79,"price_tcgplayer_id":"192909","cheapest_price_tcgplayer":1.79,"cheapest_price_tcgplayer_id":"192909","price_mkm":2.02,"price_mkm_id":"\/Core-2020-Extras\/Grafdiggers-Cage","cheapest_price_mkm":1.67,"cheapest_price_mkm_id":"\/Dark-Ascension\/Grafdigger-s-Cage","price_cardkingdom":2.49,"cheapest_price_cardkingdom":2.49,"price_cardhoarder":3.25,"price_cardhoarder_id":"73353","cheapest_price_cardhoarder":2.89,"cheapest_price_cardhoarder_id":"43491","price_miracle":2.25,"price_miracle_other_set":true,"cheapest_price_miracle":2.25}},{"name":"Heartless Hidetsugu","amount":1,"valid":true,"idcards":739242,"idprintings":21821,"data":{"supertype":"Legendary Creature","supertype_group":"Creatures","supertype_group_extended":"Creatures","type":"Legendary Creature - Ogre Shaman","color_identity":32,"cost":"{3}{R}{R}","rarity":"R","collector_number":"144","converted_cost":5,"effective_cost":5,"power":"4","toughness":"3","source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":132,"price_tcgplayer":4.88,"price_tcgplayer_id":"83221","cheapest_price_tcgplayer":3.78,"cheapest_price_tcgplayer_id":"12274","price_mkm":0.98,"price_mkm_id":"\/Conspiracy\/Heartless-Hidetsugu","cheapest_price_mkm":0.87,"cheapest_price_mkm_id":"\/Betrayers-of-Kamigawa\/Heartless-Hidetsugu","price_cardkingdom":4.49,"cheapest_price_cardkingdom":4.49,"price_cardhoarder":0.01,"price_cardhoarder_id":"21809","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":0.01,"cheapest_price_cardhoarder_id":"21809","price_miracle":0.45,"price_miracle_other_set":true,"cheapest_price_miracle":0.45}},{"name":"Imperial Seal","amount":1,"valid":true,"idcards":744938,"idprintings":12819,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":16,"cost":"{B}","rarity":"R","collector_number":"78","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":59,"price_tcgplayer":799.99,"price_tcgplayer_id":"477","cheapest_price_tcgplayer":799.99,"cheapest_price_tcgplayer_id":"477","price_mkm":451.18,"price_mkm_id":"\/Portal-Three-Kingdoms\/Imperial-Seal","cheapest_price_mkm":451.18,"cheapest_price_mkm_id":"\/Portal-Three-Kingdoms\/Imperial-Seal","price_cardkingdom":1499.99,"cheapest_price_cardkingdom":1499.99,"price_cardhoarder":3.87,"price_cardhoarder_id":"30780","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":3.87,"cheapest_price_cardhoarder_id":"30780"}},{"name":"Kiki-Jiki, Mirror Breaker","amount":1,"valid":true,"idcards":667720,"idprintings":63056,"data":{"supertype":"Legendary Creature","supertype_group":"Creatures","supertype_group_extended":"Creatures","type":"Legendary Creature - Goblin Shaman","color_identity":32,"cost":"{2}{R}{R}{R}","rarity":"S","collector_number":"346","converted_cost":5,"effective_cost":5,"power":"2","toughness":"2","source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":667,"price_tcgplayer":13.31,"price_tcgplayer_id":"233910","cheapest_price_tcgplayer":13.31,"cheapest_price_tcgplayer_id":"233910","price_mkm":6.15,"price_mkm_id":"\/Time-Spiral-Remastered-Extras\/Kiki-Jiki-Mirror-Breaker","cheapest_price_mkm":6.15,"cheapest_price_mkm_id":"\/Time-Spiral-Remastered-Extras\/Kiki-Jiki-Mirror-Breaker","price_cardkingdom":15.99,"cheapest_price_cardkingdom":15.99,"price_cardhoarder":0.61,"price_cardhoarder_id":"87069","cheapest_price_cardhoarder":0.61,"cheapest_price_cardhoarder_id":"87069","price_miracle":8.49,"price_miracle_other_set":true,"cheapest_price_miracle":8.49}},{"name":"Laboratory Maniac","amount":1,"valid":true,"idcards":7820,"idprintings":62812,"data":{"supertype":"Creature","supertype_group":"Creatures","supertype_group_extended":"Creatures","type":"Creature - Human Wizard","color_identity":8,"cost":"{2}{U}","rarity":"S","collector_number":"309","converted_cost":3,"effective_cost":3,"power":"2","toughness":"2","source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":667,"price_tcgplayer":3.32,"price_tcgplayer_id":"233794","cheapest_price_tcgplayer":3.32,"cheapest_price_tcgplayer_id":"233794","price_mkm":1.21,"price_mkm_id":"\/Time-Spiral-Remastered-Extras\/Laboratory-Maniac","cheapest_price_mkm":1.21,"cheapest_price_mkm_id":"\/Time-Spiral-Remastered-Extras\/Laboratory-Maniac","price_cardkingdom":4.49,"cheapest_price_cardkingdom":4.49,"price_cardhoarder":0.1,"price_cardhoarder_id":"86995","cheapest_price_cardhoarder":0.01,"cheapest_price_cardhoarder_id":"42560","price_miracle":1.45,"price_miracle_other_set":true,"cheapest_price_miracle":1.45}},{"name":"Mana Vault","amount":1,"valid":true,"idcards":1464488,"idprintings":33575,"data":{"supertype":"Artifact","supertype_group":"Spells","supertype_group_extended":"Artifacts","type":"Artifact","color_identity":2,"cost":"{1}","rarity":"M","collector_number":"229","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":223,"price_tcgplayer":115.65,"price_tcgplayer_id":"179517","cheapest_price_tcgplayer":60.58,"cheapest_price_tcgplayer_id":"2267","price_mkm":58.85,"price_mkm_id":"\/Ultimate-Masters\/Mana-Vault","cheapest_price_mkm":33.15,"cheapest_price_mkm_id":"\/Fourth-Edition\/Mana-Vault","price_cardkingdom":129.99,"cheapest_price_cardkingdom":99.99,"price_cardhoarder":8.41,"price_cardhoarder_id":"70051","cheapest_price_cardhoarder":2.7,"cheapest_price_cardhoarder_id":"53161","price_miracle":19.99,"price_miracle_other_set":true,"cheapest_price_miracle":19.99}},{"name":"Marsh Flats","amount":1,"valid":true,"idcards":481825,"idprintings":57912,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land","color_identity":2,"rarity":"M","collector_number":"6","converted_cost":0,"effective_cost":0,"source":{"w":1,"u":0,"b":1,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":665,"price_tcgplayer":50.22,"price_tcgplayer_id":"221811","cheapest_price_tcgplayer":44.43,"cheapest_price_tcgplayer_id":"128221","price_mkm":29.86,"price_mkm_id":"\/Zendikar-Rising-Expeditions\/Marsh-Flats","cheapest_price_mkm":23.52,"cheapest_price_mkm_id":"\/Zendikar\/Marsh-Flats","price_cardkingdom":59.99,"cheapest_price_cardkingdom":59.99,"price_cardhoarder":11.29,"price_cardhoarder_id":"83579","cheapest_price_cardhoarder":3.64,"cheapest_price_cardhoarder_id":"34646","price_miracle":31.95,"price_miracle_other_set":true,"cheapest_price_miracle":31.95}},{"name":"Mental Misstep","amount":1,"valid":true,"idcards":8712,"idprintings":18020,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":8,"cost":"{U\/P}","rarity":"U","collector_number":"38","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":107,"price_tcgplayer":6.46,"price_tcgplayer_id":"39543","cheapest_price_tcgplayer":6.46,"cheapest_price_tcgplayer_id":"39543","price_mkm":1.67,"price_mkm_id":"\/New-Phyrexia\/Mental-Misstep","cheapest_price_mkm":1.67,"cheapest_price_mkm_id":"\/New-Phyrexia\/Mental-Misstep","price_cardkingdom":5.49,"cheapest_price_cardkingdom":5.49,"price_cardhoarder":0.2,"price_cardhoarder_id":"39920","cheapest_price_cardhoarder":0.2,"cheapest_price_cardhoarder_id":"39920","price_miracle":1.25,"price_miracle_other_set":true,"cheapest_price_miracle":1.25}},{"name":"Misty Rainforest","amount":1,"valid":true,"idcards":481831,"idprintings":57900,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land","color_identity":2,"rarity":"M","collector_number":"10","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":1,"b":0,"r":0,"g":1,"colorless":0,"any":0},"display_set_id":665,"price_tcgplayer":90.63,"price_tcgplayer_id":"221815","cheapest_price_tcgplayer":71.37,"cheapest_price_tcgplayer_id":"128281","price_mkm":57.73,"price_mkm_id":"\/Zendikar-Rising-Expeditions\/Misty-Rainforest","cheapest_price_mkm":43.23,"cheapest_price_mkm_id":"\/Zendikar\/Misty-Rainforest","price_cardkingdom":104.99,"cheapest_price_cardkingdom":84.99,"price_cardhoarder":30.44,"price_cardhoarder_id":"83587","cheapest_price_cardhoarder":18.95,"cheapest_price_cardhoarder_id":"34622","price_miracle":57.95,"price_miracle_other_set":true,"cheapest_price_miracle":57.95}},{"name":"Mystic Confluence","amount":1,"valid":true,"idcards":1145410,"idprintings":62767,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":8,"cost":"{3}{U}{U}","rarity":"S","collector_number":"312","converted_cost":5,"effective_cost":5,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":667,"price_tcgplayer":2.72,"price_tcgplayer_id":"233510","cheapest_price_tcgplayer":2.72,"cheapest_price_tcgplayer_id":"233510","price_mkm":1.76,"price_mkm_id":"\/Time-Spiral-Remastered-Extras\/Mystic-Confluence","cheapest_price_mkm":1.76,"cheapest_price_mkm_id":"\/Time-Spiral-Remastered-Extras\/Mystic-Confluence","price_cardkingdom":4.99,"cheapest_price_cardkingdom":4.99,"price_cardhoarder":0.42,"price_cardhoarder_id":"87001","cheapest_price_cardhoarder":0.42,"cheapest_price_cardhoarder_id":"87001","price_miracle":2.75,"price_miracle_other_set":true,"cheapest_price_miracle":2.75}},{"name":"Mystic Remora","amount":1,"valid":true,"idcards":744646,"idprintings":3054,"data":{"supertype":"Enchantment","supertype_group":"Spells","supertype_group_extended":"Enchantments","type":"Enchantment","color_identity":8,"cost":"{U}","rarity":"C","collector_number":"87","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":11,"price_tcgplayer":12.41,"price_tcgplayer_id":"4815","cheapest_price_tcgplayer":12.41,"cheapest_price_tcgplayer_id":"4815","price_mkm":6.15,"price_mkm_id":"\/Ice-Age\/Mystic-Remora","cheapest_price_mkm":6.15,"cheapest_price_mkm_id":"\/Ice-Age\/Mystic-Remora","price_cardkingdom":16.99,"cheapest_price_cardkingdom":16.99,"price_cardhoarder":14.97,"price_cardhoarder_id":"28055","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":14.97,"cheapest_price_cardhoarder_id":"28055","price_miracle":5.99,"price_miracle_other_set":true,"cheapest_price_miracle":5.99}},{"name":"Mystical Tutor","amount":1,"valid":true,"idcards":1145850,"idprintings":25497,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":8,"cost":"{U}","rarity":"R","collector_number":"62","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":148,"price_tcgplayer":25.03,"price_tcgplayer_id":"118447","cheapest_price_tcgplayer":19.8,"cheapest_price_tcgplayer_id":"2663","price_mkm":14.14,"price_mkm_id":"\/Eternal-Masters\/Mystical-Tutor","cheapest_price_mkm":9.74,"cheapest_price_mkm_id":"\/Mirage\/Mystical-Tutor","price_cardkingdom":32.99,"cheapest_price_cardkingdom":24.99,"price_cardhoarder":2.44,"price_cardhoarder_id":"60891","cheapest_price_cardhoarder":2.44,"cheapest_price_cardhoarder_id":"60891","price_miracle":4.45,"price_miracle_other_set":true,"cheapest_price_miracle":4.45}},{"name":"Narset, Parter of Veils","amount":1,"valid":true,"idcards":1579947,"idprintings":34177,"data":{"supertype":"Legendary Planeswalker","supertype_group":"Spells","supertype_group_extended":"Planeswalkers","type":"Legendary Planeswalker - Narset","color_identity":8,"cost":"{1}{U}{U}","rarity":"U","collector_number":"61","converted_cost":3,"effective_cost":3,"loyalty":"5","source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":227,"price_tcgplayer":1.39,"price_tcgplayer_id":"188705","cheapest_price_tcgplayer":1.39,"cheapest_price_tcgplayer_id":"188705","price_mkm":0.63,"price_mkm_id":"\/War-of-the-Spark\/Narset-Parter-of-Veils","cheapest_price_mkm":0.63,"cheapest_price_mkm_id":"\/War-of-the-Spark\/Narset-Parter-of-Veils","price_cardkingdom":16.99,"cheapest_price_cardkingdom":16.99,"price_cardhoarder":0.05,"price_cardhoarder_id":"71728","cheapest_price_cardhoarder":0.05,"cheapest_price_cardhoarder_id":"71728","price_miracle":1.85,"price_miracle_other_set":true,"cheapest_price_miracle":1.85}},{"name":"Necropotence","amount":1,"valid":true,"idcards":744650,"idprintings":30708,"data":{"supertype":"Enchantment","supertype_group":"Spells","supertype_group_extended":"Enchantments","type":"Enchantment","color_identity":16,"cost":"{B}{B}{B}","rarity":"M","collector_number":"98","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":196,"price_tcgplayer":49.99,"price_tcgplayer_id":"145298","cheapest_price_tcgplayer":40.37,"cheapest_price_tcgplayer_id":"2290","price_mkm":23.02,"price_mkm_id":"\/Iconic-Masters\/Necropotence","cheapest_price_mkm":20.37,"cheapest_price_mkm_id":"\/Fifth-Edition\/Necropotence","price_cardkingdom":54.99,"cheapest_price_cardkingdom":49.99,"price_cardhoarder":1.37,"price_cardhoarder_id":"66075","cheapest_price_cardhoarder":0.42,"cheapest_price_cardhoarder_id":"52861","price_miracle":10.75,"price_miracle_other_set":true,"cheapest_price_miracle":10.75}},{"name":"Ophidian Eye","amount":1,"valid":true,"idcards":9899,"idprintings":9052,"data":{"supertype":"Enchantment","supertype_group":"Spells","supertype_group_extended":"Enchantments","type":"Enchantment - Aura","color_identity":8,"cost":"{2}{U}","rarity":"C","collector_number":"70","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":37,"price_tcgplayer":2.57,"price_tcgplayer_id":"14311","cheapest_price_tcgplayer":2.57,"cheapest_price_tcgplayer_id":"14311","price_mkm":0.3,"price_mkm_id":"\/Time-Spiral\/Ophidian-Eye","cheapest_price_mkm":0.3,"cheapest_price_mkm_id":"\/Time-Spiral\/Ophidian-Eye","price_cardkingdom":1.79,"cheapest_price_cardkingdom":1.79,"price_cardhoarder":0.03,"price_cardhoarder_id":"25395","cheapest_price_cardhoarder":0.03,"cheapest_price_cardhoarder_id":"25395","price_miracle":0.29,"price_miracle_other_set":true,"cheapest_price_miracle":0.29}},{"name":"Painful Truths","amount":1,"valid":true,"idcards":574523,"idprintings":54949,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":16,"cost":"{2}{B}","rarity":"R","collector_number":"134","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":636,"price_tcgplayer":0.37,"price_tcgplayer_id":"212492","cheapest_price_tcgplayer":0.34,"cheapest_price_tcgplayer_id":"140007","price_mkm":0.19,"price_mkm_id":"\/Commander-Ikoria\/Painful-Truths","cheapest_price_mkm":0.19,"cheapest_price_mkm_id":"\/Commander-Ikoria\/Painful-Truths","price_cardkingdom":0.35,"cheapest_price_cardkingdom":0.35,"price_cardhoarder":0.01,"price_cardhoarder_id":"58545","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":0.01,"cheapest_price_cardhoarder_id":"58545","price_miracle":0.45,"price_miracle_other_set":true,"cheapest_price_miracle":0.45}},{"name":"Phyrexian Arena","amount":1,"valid":true,"idcards":1580809,"idprintings":26027,"data":{"supertype":"Enchantment","supertype_group":"Spells","supertype_group_extended":"Enchantments","type":"Enchantment","color_identity":16,"cost":"{1}{B}{B}","rarity":"R","collector_number":"144","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":155,"price_tcgplayer":26.81,"price_tcgplayer_id":"121534","cheapest_price_tcgplayer":13.88,"cheapest_price_tcgplayer_id":"12765","price_mkm":9.11,"price_mkm_id":"\/Conspiracy-Take-the-Crown\/Phyrexian-Arena","cheapest_price_mkm":7.25,"cheapest_price_mkm_id":"\/Eighth-Edition\/Phyrexian-Arena","price_cardkingdom":25.99,"cheapest_price_cardkingdom":25.99,"price_cardhoarder":0.59,"price_cardhoarder_id":"19577","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":0.59,"cheapest_price_cardhoarder_id":"19577","price_miracle":8.95,"price_miracle_other_set":true,"cheapest_price_miracle":8.95}},{"name":"Phyrexian Delver","amount":1,"valid":true,"idcards":1581541,"idprintings":32803,"data":{"supertype":"Creature","supertype_group":"Creatures","supertype_group_extended":"Creatures","type":"Creature - Zombie","color_identity":16,"cost":"{3}{B}{B}","rarity":"R","collector_number":"115","converted_cost":5,"effective_cost":5,"power":"3","toughness":"2","source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":210,"price_tcgplayer":1.87,"price_tcgplayer_id":"171125","cheapest_price_tcgplayer":1.87,"cheapest_price_tcgplayer_id":"171125","price_mkm":0.64,"price_mkm_id":"\/Commander-2018\/Phyrexian-Delver","cheapest_price_mkm":0.58,"cheapest_price_mkm_id":"\/Invasion\/Phyrexian-Delver","price_cardkingdom":2.29,"cheapest_price_cardkingdom":2.29,"price_cardhoarder":2.09,"price_cardhoarder_id":"14515","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":2.09,"cheapest_price_cardhoarder_id":"14515","price_miracle":0.45,"price_miracle_other_set":true,"cheapest_price_miracle":0.45}},{"name":"Pithing Needle","amount":1,"valid":true,"idcards":677752,"idprintings":19967,"data":{"supertype":"Artifact","supertype_group":"Spells","supertype_group_extended":"Artifacts","type":"Artifact","color_identity":2,"cost":"{1}","rarity":"R","collector_number":"231","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":120,"price_tcgplayer":3.02,"price_tcgplayer_id":"66505","cheapest_price_tcgplayer":2.8,"cheapest_price_tcgplayer_id":"32692","price_mkm":2.22,"price_mkm_id":"\/Return-to-Ravnica\/Pithing-Needle","cheapest_price_mkm":2.19,"cheapest_price_mkm_id":"\/Magic-2010\/Pithing-Needle","price_cardkingdom":4.99,"cheapest_price_cardkingdom":4.99,"price_cardhoarder":0.26,"price_cardhoarder_id":"46499","cheapest_price_cardhoarder":0.26,"cheapest_price_cardhoarder_id":"46499","price_miracle":2.75,"price_miracle_other_set":true,"cheapest_price_miracle":2.75}},{"name":"Polluted Delta","amount":1,"valid":true,"idcards":10522,"idprintings":57919,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land","color_identity":2,"rarity":"M","collector_number":"2","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":1,"b":1,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":665,"price_tcgplayer":72.73,"price_tcgplayer_id":"221807","cheapest_price_tcgplayer":40.92,"cheapest_price_tcgplayer_id":"92829","price_mkm":34.58,"price_mkm_id":"\/Zendikar-Rising-Expeditions\/Polluted-Delta","cheapest_price_mkm":19.87,"cheapest_price_mkm_id":"\/Khans-of-Tarkir\/Polluted-Delta","price_cardkingdom":79.99,"cheapest_price_cardkingdom":49.99,"price_cardhoarder":28.87,"price_cardhoarder_id":"83571","cheapest_price_cardhoarder":10.13,"cheapest_price_cardhoarder_id":"54196","price_miracle":22.99,"price_miracle_other_set":true,"cheapest_price_miracle":22.99}},{"name":"Ponder","amount":1,"valid":true,"idcards":1334876,"idprintings":62823,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":8,"cost":"{U}","rarity":"S","collector_number":"315","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":667,"price_tcgplayer":13.18,"price_tcgplayer_id":"233776","cheapest_price_tcgplayer":2.9,"cheapest_price_tcgplayer_id":"32697","price_mkm":12.39,"price_mkm_id":"\/Time-Spiral-Remastered-Extras\/Ponder","cheapest_price_mkm":1.35,"cheapest_price_mkm_id":"\/Lorwyn\/Ponder","price_cardkingdom":19.99,"cheapest_price_cardkingdom":3.49,"price_cardhoarder":4.52,"price_cardhoarder_id":"87007","cheapest_price_cardhoarder":0.02,"cheapest_price_cardhoarder_id":"28339","price_miracle":2.55,"price_miracle_other_set":true,"cheapest_price_miracle":2.55}},{"name":"Pongify","amount":1,"valid":true,"idcards":1580351,"idprintings":62833,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":8,"cost":"{U}","rarity":"U","collector_number":"79","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":667,"price_tcgplayer":1.19,"price_tcgplayer_id":"233899","cheapest_price_tcgplayer":1.19,"cheapest_price_tcgplayer_id":"233899","price_mkm":0.33,"price_mkm_id":"\/Time-Spiral-Remastered\/Pongify","cheapest_price_mkm":0.33,"cheapest_price_mkm_id":"\/Time-Spiral-Remastered\/Pongify","price_cardkingdom":1.49,"cheapest_price_cardkingdom":1.49,"price_cardhoarder":0.03,"price_cardhoarder_id":"86521","cheapest_price_cardhoarder":0.03,"cheapest_price_cardhoarder_id":"86521","price_miracle":0.99,"price_miracle_other_set":true,"cheapest_price_miracle":0.99}},{"name":"Preordain","amount":1,"valid":true,"idcards":10598,"idprintings":59234,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":8,"cost":"{U}","rarity":"C","collector_number":"84","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":662,"price_tcgplayer":0.68,"price_tcgplayer_id":"226646","cheapest_price_tcgplayer":0.68,"cheapest_price_tcgplayer_id":"226646","price_mkm":0.37,"price_mkm_id":"\/Commander-Legends\/Preordain","cheapest_price_mkm":0.37,"cheapest_price_mkm_id":"\/Commander-Legends\/Preordain","price_cardkingdom":1.29,"cheapest_price_cardkingdom":1.29,"price_cardhoarder":0.35,"price_cardhoarder_id":"84950","cheapest_price_cardhoarder":0.32,"cheapest_price_cardhoarder_id":"37388","price_miracle":1.99,"price_miracle_other_set":true,"cheapest_price_miracle":1.99}},{"name":"Prismatic Vista","amount":1,"valid":true,"idcards":1681202,"idprintings":57872,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land","color_identity":2,"rarity":"M","collector_number":"27","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":1},"display_set_id":665,"price_tcgplayer":45.47,"price_tcgplayer_id":"221818","cheapest_price_tcgplayer":31.15,"cheapest_price_tcgplayer_id":"190748","price_mkm":31.23,"price_mkm_id":"\/Zendikar-Rising-Expeditions\/Prismatic-Vista","cheapest_price_mkm":23.47,"cheapest_price_mkm_id":"\/Modern-Horizons\/Prismatic-Vista","price_cardkingdom":54.99,"cheapest_price_cardkingdom":32.99,"price_cardhoarder":21.5,"price_cardhoarder_id":"83621","cheapest_price_cardhoarder":14.68,"cheapest_price_cardhoarder_id":"72860","price_miracle":24.99,"price_miracle_other_set":true,"cheapest_price_miracle":24.99}},{"name":"Pyroblast","amount":1,"valid":true,"idcards":744677,"idprintings":55581,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":32,"cost":"{R}","rarity":"R","collector_number":"5","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":634,"price_tcgplayer":4.16,"price_tcgplayer_id":"215320","cheapest_price_tcgplayer":3.04,"cheapest_price_tcgplayer_id":"2332","price_mkm":1.95,"price_mkm_id":"\/Signature-Spellbook-Chandra\/Pyroblast","cheapest_price_mkm":1.63,"cheapest_price_mkm_id":"\/Fifth-Edition\/Pyroblast","price_cardkingdom":5.99,"cheapest_price_cardkingdom":4.99,"price_cardhoarder":6.22,"price_cardhoarder_id":"28063","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":7.37,"cheapest_price_cardhoarder_id":"60943","price_miracle":2.95,"price_miracle_other_set":true,"cheapest_price_miracle":2.95}},{"name":"Rapid Hybridization","amount":1,"valid":true,"idcards":1464453,"idprintings":34401,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":8,"cost":"{U}","rarity":"U","collector_number":"109","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":331,"price_tcgplayer":3.7,"price_tcgplayer_id":"184858","cheapest_price_tcgplayer":3.15,"cheapest_price_tcgplayer_id":"67390","price_mkm":1.61,"price_mkm_id":"\/Gatecrash\/Rapid-Hybridization","price_mkm_other_set":true,"cheapest_price_mkm":1.61,"cheapest_price_mkm_id":"\/Gatecrash\/Rapid-Hybridization","price_cardkingdom":2.99,"cheapest_price_cardkingdom":2.49,"price_cardhoarder":0.02,"price_cardhoarder_id":"47809","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":0.02,"cheapest_price_cardhoarder_id":"47809","price_miracle":3.25,"price_miracle_other_set":true,"cheapest_price_miracle":3.25}},{"name":"Read the Bones","amount":1,"valid":true,"idcards":574544,"idprintings":63021,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":16,"cost":"{2}{B}","rarity":"S","collector_number":"328","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":667,"price_tcgplayer":0.96,"price_tcgplayer_id":"233885","cheapest_price_tcgplayer":0.36,"cheapest_price_tcgplayer_id":"100375","price_mkm":0.4,"price_mkm_id":"\/Time-Spiral-Remastered-Extras\/Read-the-Bones","cheapest_price_mkm":0.12,"cheapest_price_mkm_id":"\/Commander-2014\/Read-the-Bones","price_cardkingdom":1.49,"cheapest_price_cardkingdom":0.69,"price_cardhoarder":0.11,"price_cardhoarder_id":"87033","cheapest_price_cardhoarder":0.02,"cheapest_price_cardhoarder_id":"57752","price_miracle":0.15,"price_miracle_other_set":true,"cheapest_price_miracle":0.15}},{"name":"Reanimate","amount":1,"valid":true,"idcards":1581807,"idprintings":56056,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":16,"cost":"{B}","rarity":"R","collector_number":"270","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":654,"price_tcgplayer":9.58,"price_tcgplayer_id":"215960","cheapest_price_tcgplayer":9.58,"cheapest_price_tcgplayer_id":"215960","price_mkm":7.74,"price_mkm_id":"\/Jumpstart\/Reanimate","cheapest_price_mkm":7.74,"cheapest_price_mkm_id":"\/Jumpstart\/Reanimate","price_cardkingdom":15.99,"cheapest_price_cardkingdom":15.99,"price_cardhoarder":0.03,"price_cardhoarder_id":"52695","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":0.03,"cheapest_price_cardhoarder_id":"52695","price_miracle":9.95,"price_miracle_other_set":true,"cheapest_price_miracle":9.95}},{"name":"Red Elemental Blast","amount":1,"valid":true,"idcards":741580,"idprintings":31305,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":32,"cost":"{R}","rarity":"U","collector_number":"147","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":200,"price_tcgplayer":4.54,"price_tcgplayer_id":"161430","cheapest_price_tcgplayer":2.04,"cheapest_price_tcgplayer_id":"1537","price_mkm":2.8,"price_mkm_id":"\/Masters-25\/Red-Elemental-Blast","cheapest_price_mkm":0.61,"cheapest_price_mkm_id":"\/Fourth-Edition\/Red-Elemental-Blast","price_cardkingdom":5.99,"cheapest_price_cardkingdom":1.79,"price_cardhoarder":3.87,"price_cardhoarder_id":"67208","cheapest_price_cardhoarder":3.87,"cheapest_price_cardhoarder_id":"67208","price_miracle":0.29,"price_miracle_other_set":true,"cheapest_price_miracle":0.29}},{"name":"Rhystic Study","amount":1,"valid":true,"idcards":744195,"idprintings":56468,"data":{"supertype":"Enchantment","supertype_group":"Spells","supertype_group_extended":"Enchantments","type":"Enchantment","color_identity":8,"cost":"{2}{U}","rarity":"R","collector_number":"169","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":654,"price_tcgplayer":42.89,"price_tcgplayer_id":"216235","cheapest_price_tcgplayer":42.89,"cheapest_price_tcgplayer_id":"216235","price_mkm":20.54,"price_mkm_id":"\/Jumpstart\/Rhystic-Study","cheapest_price_mkm":16.65,"cheapest_price_mkm_id":"\/Prophecy\/Rhystic-Study","price_cardkingdom":54.99,"cheapest_price_cardkingdom":44.99,"price_cardhoarder":4.5,"price_cardhoarder_id":"47975","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":7.92,"cheapest_price_cardhoarder_id":"14171","price_miracle":22.95,"price_miracle_other_set":true,"cheapest_price_miracle":22.95}},{"name":"Rolling Earthquake","amount":1,"valid":true,"idcards":744976,"idprintings":57035,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":32,"cost":"{X}{R}","rarity":"R","collector_number":"142","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":644,"price_tcgplayer":2.22,"price_tcgplayer_id":"218596","cheapest_price_tcgplayer":2.96,"cheapest_price_tcgplayer_id":"91640","price_mkm":0.64,"price_mkm_id":"\/Double-Masters\/Rolling-Earthquake","cheapest_price_mkm":2.76,"cheapest_price_mkm_id":"\/From-the-Vault-Annihilation\/Rolling-Earthquake","price_cardkingdom":2.29,"cheapest_price_cardkingdom":3.49,"price_cardhoarder":0.11,"price_cardhoarder_id":"82318","cheapest_price_cardhoarder":0.43,"cheapest_price_cardhoarder_id":"33864","price_miracle":0.95,"price_miracle_other_set":true,"cheapest_price_miracle":0.95}},{"name":"Scalding Tarn","amount":1,"valid":true,"idcards":481872,"idprintings":57891,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land","color_identity":2,"rarity":"M","collector_number":"7","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":1,"b":0,"r":1,"g":0,"colorless":0,"any":0},"display_set_id":665,"price_tcgplayer":91.99,"price_tcgplayer_id":"221812","cheapest_price_tcgplayer":69.38,"cheapest_price_tcgplayer_id":"128282","price_mkm":55.33,"price_mkm_id":"\/Zendikar-Rising-Expeditions\/Scalding-Tarn","cheapest_price_mkm":41.08,"cheapest_price_mkm_id":"\/Zendikar\/Scalding-Tarn","price_cardkingdom":89.99,"cheapest_price_cardkingdom":74.99,"price_cardhoarder":35.65,"price_cardhoarder_id":"83581","cheapest_price_cardhoarder":17.55,"cheapest_price_cardhoarder_id":"34590","price_miracle":59.95,"price_miracle_other_set":true,"cheapest_price_miracle":59.95}},{"name":"Sigil of Sleep","amount":1,"valid":true,"idcards":12708,"idprintings":8859,"data":{"supertype":"Enchantment","supertype_group":"Spells","supertype_group_extended":"Enchantments","type":"Enchantment - Aura","color_identity":8,"cost":"{U}","rarity":"C","collector_number":"46","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":36,"price_tcgplayer":0.27,"price_tcgplayer_id":"6245","cheapest_price_tcgplayer":0.27,"cheapest_price_tcgplayer_id":"6245","price_mkm":0.3,"price_mkm_id":"\/Urzas-Destiny\/Sigil-of-Sleep","cheapest_price_mkm":0.3,"cheapest_price_mkm_id":"\/Urzas-Destiny\/Sigil-of-Sleep","price_cardkingdom":0.59,"cheapest_price_cardkingdom":0.59,"price_cardhoarder":0.03,"price_cardhoarder_id":"13025","cheapest_price_cardhoarder":0.03,"cheapest_price_cardhoarder_id":"13025","price_miracle":0.25,"price_miracle_other_set":true,"cheapest_price_miracle":0.25}},{"name":"Skred","amount":1,"valid":true,"idcards":743634,"idprintings":10037,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":32,"cost":"{R}","rarity":"C","collector_number":"97","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":43,"price_tcgplayer":1.15,"price_tcgplayer_id":"14113","cheapest_price_tcgplayer":1.15,"cheapest_price_tcgplayer_id":"14113","price_mkm":1.16,"price_mkm_id":"\/Coldsnap\/Skred","cheapest_price_mkm":1.16,"cheapest_price_mkm_id":"\/Coldsnap\/Skred","price_cardkingdom":1.49,"cheapest_price_cardkingdom":1.49,"price_cardhoarder":3.03,"price_cardhoarder_id":"24817","cheapest_price_cardhoarder":3.03,"cheapest_price_cardhoarder_id":"24817","price_miracle":1.15,"price_miracle_other_set":true,"cheapest_price_miracle":1.15}},{"name":"Snow-Covered Island","amount":5,"valid":true,"idcards":744711,"idprintings":60951,"data":{"supertype":"Basic Snow Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Basic Snow Land - Island","color_identity":8,"rarity":"C","collector_number":"278","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":1,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":718,"price_tcgplayer":1,"price_tcgplayer_id":"230148","cheapest_price_tcgplayer":0.98,"cheapest_price_tcgplayer_id":"230100","price_mkm":0.35,"price_mkm_id":"\/Kaldheim\/Snow-Covered-Island-V1","cheapest_price_mkm":0.29,"cheapest_price_mkm_id":"\/Kaldheim\/Snow-Covered-Island-V2","price_cardkingdom":2.29,"cheapest_price_cardkingdom":2.29,"price_cardhoarder":0.02,"price_cardhoarder_id":"87907","cheapest_price_cardhoarder":0.02,"cheapest_price_cardhoarder_id":"87907","price_miracle":0.69,"price_miracle_other_set":true,"cheapest_price_miracle":0.69}},{"name":"Snow-Covered Mountain","amount":3,"valid":true,"idcards":744712,"idprintings":61008,"data":{"supertype":"Basic Snow Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Basic Snow Land - Mountain","color_identity":32,"rarity":"C","collector_number":"282","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":0,"b":0,"r":1,"g":0,"colorless":0,"any":0},"display_set_id":718,"price_tcgplayer":0.63,"price_tcgplayer_id":"230150","cheapest_price_tcgplayer":0.56,"cheapest_price_tcgplayer_id":"230103","price_mkm":0.27,"price_mkm_id":"\/Kaldheim\/Snow-Covered-Mountain-V1","cheapest_price_mkm":0.22,"cheapest_price_mkm_id":"\/Kaldheim\/Snow-Covered-Mountain-V2","price_cardkingdom":1.99,"cheapest_price_cardkingdom":1.99,"price_cardhoarder":0.01,"price_cardhoarder_id":"87915","cheapest_price_cardhoarder":0.01,"cheapest_price_cardhoarder_id":"87915","price_miracle":0.65,"price_miracle_other_set":true,"cheapest_price_miracle":0.65}},{"name":"Snow-Covered Swamp","amount":2,"valid":true,"idcards":744714,"idprintings":61011,"data":{"supertype":"Basic Snow Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Basic Snow Land - Swamp","color_identity":16,"rarity":"C","collector_number":"280","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":0,"b":1,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":718,"price_tcgplayer":0.8,"price_tcgplayer_id":"230149","cheapest_price_tcgplayer":0.8,"cheapest_price_tcgplayer_id":"230149","price_mkm":0.28,"price_mkm_id":"\/Kaldheim\/Snow-Covered-Swamp-V1","cheapest_price_mkm":0.24,"cheapest_price_mkm_id":"\/Kaldheim\/Snow-Covered-Swamp-V2","price_cardkingdom":2.29,"cheapest_price_cardkingdom":1.99,"price_cardhoarder":0.02,"price_cardhoarder_id":"87911","cheapest_price_cardhoarder":0.01,"cheapest_price_cardhoarder_id":"87913","price_miracle":0.59,"price_miracle_other_set":true,"cheapest_price_miracle":0.59}},{"name":"Sol Ring","amount":1,"valid":true,"idcards":1581599,"idprintings":62391,"data":{"supertype":"Artifact","supertype_group":"Spells","supertype_group_extended":"Artifacts","type":"Artifact","color_identity":2,"cost":"{1}","rarity":"U","collector_number":"104","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":719,"price_tcgplayer":2.39,"price_tcgplayer_id":"231261","cheapest_price_tcgplayer":2.25,"cheapest_price_tcgplayer_id":"139799","price_mkm":1.53,"price_mkm_id":"\/Commander-Kaldheim\/Sol-Ring","cheapest_price_mkm":1.43,"cheapest_price_mkm_id":"\/Commander-2017\/Sol-Ring","price_cardkingdom":2.49,"cheapest_price_cardkingdom":2.49,"price_cardhoarder":4.32,"price_cardhoarder_id":"88113","cheapest_price_cardhoarder":4,"cheapest_price_cardhoarder_id":"77564","price_miracle":2.75,"price_miracle_other_set":true,"cheapest_price_miracle":2.75}},{"name":"Spell Pierce","amount":1,"valid":true,"idcards":739183,"idprintings":30280,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":8,"cost":"{U}","rarity":"C","collector_number":"81","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":194,"price_tcgplayer":0.26,"price_tcgplayer_id":"145258","cheapest_price_tcgplayer":0.26,"cheapest_price_tcgplayer_id":"145258","price_mkm":0.14,"price_mkm_id":"\/Ixalan\/Spell-Pierce","cheapest_price_mkm":0.14,"cheapest_price_mkm_id":"\/Ixalan\/Spell-Pierce","price_cardkingdom":0.25,"cheapest_price_cardkingdom":0.25,"price_cardhoarder":0.03,"price_cardhoarder_id":"65176","cheapest_price_cardhoarder":0.02,"cheapest_price_cardhoarder_id":"34442","price_miracle":0.39,"price_miracle_other_set":true,"cheapest_price_miracle":0.39}},{"name":"Spellseeker","amount":1,"valid":true,"idcards":1145481,"idprintings":31945,"data":{"supertype":"Creature","supertype_group":"Creatures","supertype_group_extended":"Creatures","type":"Creature - Human Wizard","color_identity":8,"cost":"{2}{U}","rarity":"R","collector_number":"41","converted_cost":3,"effective_cost":3,"power":"1","toughness":"1","source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":204,"price_tcgplayer":34.78,"price_tcgplayer_id":"167811","cheapest_price_tcgplayer":34.78,"cheapest_price_tcgplayer_id":"167811","price_mkm":28.51,"price_mkm_id":"\/Battlebond\/Spellseeker","cheapest_price_mkm":28.51,"cheapest_price_mkm_id":"\/Battlebond\/Spellseeker","price_cardkingdom":49.99,"cheapest_price_cardkingdom":49.99,"price_cardhoarder":8.34,"price_cardhoarder_id":"68810","cheapest_price_cardhoarder":8.34,"cheapest_price_cardhoarder_id":"68810","price_miracle":12.25,"price_miracle_other_set":true,"cheapest_price_miracle":12.25}},{"name":"Steam Vents","amount":1,"valid":true,"idcards":1401338,"idprintings":33175,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land - Island Mountain","color_identity":40,"rarity":"R","collector_number":"257","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":1,"b":0,"r":1,"g":0,"colorless":0,"any":0},"display_set_id":212,"price_tcgplayer":12.07,"price_tcgplayer_id":"175202","cheapest_price_tcgplayer":11.65,"cheapest_price_tcgplayer_id":"66420","price_mkm":7.23,"price_mkm_id":"\/Guilds-of-Ravnica\/Steam-Vents","cheapest_price_mkm":6.77,"cheapest_price_mkm_id":"\/Return-to-Ravnica\/Steam-Vents","price_cardkingdom":15.99,"cheapest_price_cardkingdom":15.99,"price_cardhoarder":2.16,"price_cardhoarder_id":"69927","cheapest_price_cardhoarder":1.97,"cheapest_price_cardhoarder_id":"46805","price_miracle":9.75,"price_miracle_other_set":true,"cheapest_price_miracle":9.75}},{"name":"Swan Song","amount":1,"valid":true,"idcards":1581283,"idprintings":26431,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":8,"cost":"{U}","rarity":"R","collector_number":"98","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":157,"price_tcgplayer":15.51,"price_tcgplayer_id":"124645","cheapest_price_tcgplayer":15.01,"cheapest_price_tcgplayer_id":"71202","price_mkm":8.57,"price_mkm_id":"\/Commander-2016\/Swan-Song","cheapest_price_mkm":6.49,"cheapest_price_mkm_id":"\/Theros\/Swan-Song","price_cardkingdom":17.99,"cheapest_price_cardkingdom":14.99,"price_cardhoarder":0.01,"price_cardhoarder_id":"50440","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":0.01,"cheapest_price_cardhoarder_id":"50440","price_miracle":5.95,"price_miracle_other_set":true,"cheapest_price_miracle":5.95}},{"name":"Timetwister","amount":1,"valid":true,"idcards":549157,"idprintings":1550,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":8,"cost":"{2}{U}","rarity":"R","collector_number":"85","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":6,"price_tcgplayer":7203.99,"price_tcgplayer_id":"9232","cheapest_price_tcgplayer":7203.99,"cheapest_price_tcgplayer_id":"9232","price_mkm":5719.77,"price_mkm_id":"\/Unlimited\/Timetwister","cheapest_price_mkm":5719.77,"cheapest_price_mkm_id":"\/Unlimited\/Timetwister","price_cardkingdom":9999.99,"cheapest_price_cardkingdom":9999.99,"price_cardhoarder":3.26,"price_cardhoarder_id":"53119","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":3.26,"cheapest_price_cardhoarder_id":"53119"}},{"name":"Toxic Deluge","amount":1,"valid":true,"idcards":1581647,"idprintings":57291,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":16,"cost":"{2}{B}","rarity":"R","collector_number":"110","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":644,"price_tcgplayer":19.53,"price_tcgplayer_id":"219532","cheapest_price_tcgplayer":19.69,"cheapest_price_tcgplayer_id":"71880","price_mkm":11.21,"price_mkm_id":"\/Double-Masters\/Toxic-Deluge","cheapest_price_mkm":10.76,"cheapest_price_mkm_id":"\/Eternal-Masters\/Toxic-Deluge","price_cardkingdom":24.99,"cheapest_price_cardkingdom":25.99,"price_cardhoarder":1.87,"price_cardhoarder_id":"82254","cheapest_price_cardhoarder":1.61,"cheapest_price_cardhoarder_id":"60829","price_miracle":13.49,"price_miracle_other_set":true,"cheapest_price_miracle":13.49}},{"name":"Trinisphere","amount":1,"valid":true,"idcards":742488,"idprintings":57029,"data":{"supertype":"Artifact","supertype_group":"Spells","supertype_group_extended":"Artifacts","type":"Artifact","color_identity":2,"cost":"{3}","rarity":"M","collector_number":"303","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":644,"price_tcgplayer":16.65,"price_tcgplayer_id":"218573","cheapest_price_tcgplayer":18.03,"cheapest_price_tcgplayer_id":"11660","price_mkm":9.1,"price_mkm_id":"\/Double-Masters\/Trinisphere","cheapest_price_mkm":7.37,"cheapest_price_mkm_id":"\/Darksteel\/Trinisphere","price_cardkingdom":17.99,"cheapest_price_cardkingdom":18.99,"price_cardhoarder":6.08,"price_cardhoarder_id":"82640","cheapest_price_cardhoarder":5.43,"cheapest_price_cardhoarder_id":"20491","price_miracle":11.95,"price_miracle_other_set":true,"cheapest_price_miracle":11.95}},{"name":"Underground Sea","amount":1,"valid":true,"idcards":741640,"idprintings":1266,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land - Island Swamp","color_identity":24,"rarity":"R","collector_number":"290","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":1,"b":1,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":5,"price_tcgplayer":782.99,"price_tcgplayer_id":"1599","cheapest_price_tcgplayer":782.99,"cheapest_price_tcgplayer_id":"1599","price_mkm":543.5,"price_mkm_id":"\/Revised\/Underground-Sea","cheapest_price_mkm":543.5,"cheapest_price_mkm_id":"\/Revised\/Underground-Sea","price_cardkingdom":999.99,"cheapest_price_cardkingdom":999.99,"price_cardhoarder":17.18,"price_cardhoarder_id":"53097","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":17.18,"cheapest_price_cardhoarder_id":"53097","price_miracle":399,"price_miracle_other_set":true,"cheapest_price_miracle":399}},{"name":"Vampiric Tutor","amount":1,"valid":true,"idcards":744398,"idprintings":59100,"data":{"supertype":"Instant","supertype_group":"Spells","supertype_group_extended":"Instants","type":"Instant","color_identity":16,"cost":"{B}","rarity":"M","collector_number":"156","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":662,"price_tcgplayer":49.11,"price_tcgplayer_id":"226134","cheapest_price_tcgplayer":49.11,"cheapest_price_tcgplayer_id":"226134","price_mkm":32.31,"price_mkm_id":"\/Commander-Legends\/Vampiric-Tutor","cheapest_price_mkm":32.31,"cheapest_price_mkm_id":"\/Commander-Legends\/Vampiric-Tutor","price_cardkingdom":69.99,"cheapest_price_cardkingdom":69.99,"price_cardhoarder":0.88,"price_cardhoarder_id":"85094","cheapest_price_cardhoarder":0.07,"cheapest_price_cardhoarder_id":"52631","price_miracle":40.95,"price_miracle_other_set":true,"cheapest_price_miracle":40.95}},{"name":"Vandalblast","amount":1,"valid":true,"idcards":15350,"idprintings":63077,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":32,"cost":"{R}","rarity":"S","collector_number":"352","converted_cost":1,"effective_cost":1,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":667,"price_tcgplayer":4.57,"price_tcgplayer_id":"233939","cheapest_price_tcgplayer":4.57,"cheapest_price_tcgplayer_id":"233939","price_mkm":2.16,"price_mkm_id":"\/Time-Spiral-Remastered-Extras\/Vandalblast","cheapest_price_mkm":2.16,"cheapest_price_mkm_id":"\/Time-Spiral-Remastered-Extras\/Vandalblast","price_cardkingdom":6.49,"cheapest_price_cardkingdom":6.49,"price_cardhoarder":0.07,"price_cardhoarder_id":"87081","cheapest_price_cardhoarder":0.02,"cheapest_price_cardhoarder_id":"46405","price_miracle":2.95,"price_miracle_other_set":true,"cheapest_price_miracle":2.95}},{"name":"Verdant Catacombs","amount":1,"valid":true,"idcards":481936,"idprintings":57925,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land","color_identity":2,"rarity":"M","collector_number":"8","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":0,"b":1,"r":0,"g":1,"colorless":0,"any":0},"display_set_id":665,"price_tcgplayer":95.05,"price_tcgplayer_id":"221813","cheapest_price_tcgplayer":60.32,"cheapest_price_tcgplayer_id":"210711","price_mkm":49.38,"price_mkm_id":"\/Zendikar-Rising-Expeditions\/Verdant-Catacombs","cheapest_price_mkm":34.65,"cheapest_price_mkm_id":"\/Zendikar\/Verdant-Catacombs","price_cardkingdom":79.99,"cheapest_price_cardkingdom":59.99,"price_cardhoarder":48.89,"price_cardhoarder_id":"83583","cheapest_price_cardhoarder":24.36,"cheapest_price_cardhoarder_id":"34704","price_miracle":54.95,"price_miracle_other_set":true,"cheapest_price_miracle":54.95}},{"name":"Victimize","amount":1,"valid":true,"idcards":612889,"idprintings":59403,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":16,"cost":"{2}{B}","rarity":"U","collector_number":"157","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":662,"price_tcgplayer":0.41,"price_tcgplayer_id":"226880","cheapest_price_tcgplayer":0.41,"cheapest_price_tcgplayer_id":"226880","price_mkm":0.21,"price_mkm_id":"\/Commander-Legends\/Victimize","cheapest_price_mkm":0.21,"cheapest_price_mkm_id":"\/Commander-Legends\/Victimize","price_cardkingdom":0.79,"cheapest_price_cardkingdom":0.79,"price_cardhoarder":0.05,"price_cardhoarder_id":"85096","cheapest_price_cardhoarder":0.04,"cheapest_price_cardhoarder_id":"60841","price_miracle":0.85,"price_miracle_other_set":true,"cheapest_price_miracle":0.85}},{"name":"Volcanic Island","amount":1,"valid":true,"idcards":741649,"idprintings":1275,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land - Island Mountain","color_identity":40,"rarity":"R","collector_number":"291","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":1,"b":0,"r":1,"g":0,"colorless":0,"any":0},"display_set_id":5,"price_tcgplayer":708.5,"price_tcgplayer_id":"1608","cheapest_price_tcgplayer":708.5,"cheapest_price_tcgplayer_id":"1608","price_mkm":584.95,"price_mkm_id":"\/Revised\/Volcanic-Island","cheapest_price_mkm":584.95,"cheapest_price_mkm_id":"\/Revised\/Volcanic-Island","price_cardkingdom":849.99,"cheapest_price_cardkingdom":849.99,"price_cardhoarder":9.14,"price_cardhoarder_id":"53099","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":9.14,"cheapest_price_cardhoarder_id":"53099","price_miracle":499,"price_miracle_other_set":true,"cheapest_price_miracle":499}},{"name":"Watery Grave","amount":1,"valid":true,"idcards":1401363,"idprintings":33216,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land - Island Swamp","color_identity":24,"rarity":"R","collector_number":"259","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":1,"b":1,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":212,"price_tcgplayer":12.07,"price_tcgplayer_id":"175205","cheapest_price_tcgplayer":11.53,"cheapest_price_tcgplayer_id":"67323","price_mkm":8.28,"price_mkm_id":"\/Guilds-of-Ravnica\/Watery-Grave","cheapest_price_mkm":8.28,"cheapest_price_mkm_id":"\/Guilds-of-Ravnica\/Watery-Grave","price_cardkingdom":15.99,"cheapest_price_cardkingdom":15.99,"price_cardhoarder":0.93,"price_cardhoarder_id":"69931","cheapest_price_cardhoarder":0.88,"cheapest_price_cardhoarder_id":"23586","price_miracle":12.95,"price_miracle_other_set":true,"cheapest_price_miracle":12.95}},{"name":"Wheel of Fortune","amount":1,"valid":true,"idcards":741665,"idprintings":1291,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":32,"cost":"{2}{R}","rarity":"R","collector_number":"185","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":5,"price_tcgplayer":406.85,"price_tcgplayer_id":"1624","cheapest_price_tcgplayer":406.85,"cheapest_price_tcgplayer_id":"1624","price_mkm":317.45,"price_mkm_id":"\/Revised\/Wheel-of-Fortune","cheapest_price_mkm":317.45,"cheapest_price_mkm_id":"\/Revised\/Wheel-of-Fortune","price_cardkingdom":479.99,"cheapest_price_cardkingdom":479.99,"price_cardhoarder":1.5,"price_cardhoarder_id":"39210","price_cardhoarder_other_set":true,"cheapest_price_cardhoarder":7.88,"cheapest_price_cardhoarder_id":"53245","price_miracle":99.95,"price_miracle_other_set":true,"cheapest_price_miracle":99.95}},{"name":"Windfall","amount":1,"valid":true,"idcards":1581334,"idprintings":62385,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":8,"cost":"{2}{U}","rarity":"U","collector_number":"46","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":719,"price_tcgplayer":1.95,"price_tcgplayer_id":"231287","cheapest_price_tcgplayer":1.83,"cheapest_price_tcgplayer_id":"212411","price_mkm":1,"price_mkm_id":"\/Commander-Kaldheim\/Windfall","cheapest_price_mkm":0.89,"cheapest_price_mkm_id":"\/Iconic-Masters\/Windfall","price_cardkingdom":1.49,"cheapest_price_cardkingdom":1.49,"price_cardhoarder":2.66,"price_cardhoarder_id":"87997","cheapest_price_cardhoarder":2.66,"cheapest_price_cardhoarder_id":"87997","price_miracle":0.45,"price_miracle_other_set":true,"cheapest_price_miracle":0.45}},{"name":"Wooded Foothills","amount":1,"valid":true,"idcards":16283,"idprintings":57864,"data":{"supertype":"Land","supertype_group":"Lands","supertype_group_extended":"Lands","type":"Land","color_identity":2,"rarity":"M","collector_number":"4","converted_cost":0,"effective_cost":0,"source":{"w":0,"u":0,"b":0,"r":1,"g":1,"colorless":0,"any":0},"display_set_id":665,"price_tcgplayer":44.82,"price_tcgplayer_id":"221809","cheapest_price_tcgplayer":37.67,"cheapest_price_tcgplayer_id":"92831","price_mkm":30.68,"price_mkm_id":"\/Zendikar-Rising-Expeditions\/Wooded-Foothills","cheapest_price_mkm":18.91,"cheapest_price_mkm_id":"\/Khans-of-Tarkir\/Wooded-Foothills","price_cardkingdom":59.99,"cheapest_price_cardkingdom":34.99,"price_cardhoarder":35.38,"price_cardhoarder_id":"83575","cheapest_price_cardhoarder":10.6,"cheapest_price_cardhoarder_id":"54200","price_miracle":20.99,"price_miracle_other_set":true,"cheapest_price_miracle":20.99}},{"name":"Yawgmoth's Will","amount":1,"valid":true,"idcards":549183,"idprintings":6192,"data":{"supertype":"Sorcery","supertype_group":"Spells","supertype_group_extended":"Sorceries","type":"Sorcery","color_identity":16,"cost":"{2}{B}","rarity":"R","collector_number":"171","converted_cost":3,"effective_cost":3,"source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":23,"price_tcgplayer":308.72,"price_tcgplayer_id":"7118","cheapest_price_tcgplayer":308.72,"cheapest_price_tcgplayer_id":"7118","price_mkm":175.11,"price_mkm_id":"\/Urzas-Saga\/Yawgmoth-s-Will","cheapest_price_mkm":175.11,"cheapest_price_mkm_id":"\/Urzas-Saga\/Yawgmoth-s-Will","price_cardkingdom":349.99,"cheapest_price_cardkingdom":349.99,"price_cardhoarder":2.7,"price_cardhoarder_id":"12349","cheapest_price_cardhoarder":1.37,"cheapest_price_cardhoarder_id":"52781","price_miracle":149.95,"price_miracle_other_set":true,"cheapest_price_miracle":149.95}},{"name":"Zealous Conscripts","amount":1,"valid":true,"idcards":666550,"idprintings":62999,"data":{"supertype":"Creature","supertype_group":"Creatures","supertype_group_extended":"Creatures","type":"Creature - Human Warrior","color_identity":32,"cost":"{4}{R}","rarity":"S","collector_number":"354","converted_cost":5,"effective_cost":5,"power":"3","toughness":"3","source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":667,"price_tcgplayer":1.27,"price_tcgplayer_id":"233954","cheapest_price_tcgplayer":1.27,"cheapest_price_tcgplayer_id":"233954","price_mkm":0.44,"price_mkm_id":"\/Time-Spiral-Remastered-Extras\/Zealous-Conscripts","cheapest_price_mkm":0.44,"cheapest_price_mkm_id":"\/Time-Spiral-Remastered-Extras\/Zealous-Conscripts","price_cardkingdom":1.49,"cheapest_price_cardkingdom":1.49,"price_cardhoarder":0.03,"price_cardhoarder_id":"87085","cheapest_price_cardhoarder":0.01,"cheapest_price_cardhoarder_id":"44033","price_miracle":0.95,"price_miracle_other_set":true,"cheapest_price_miracle":0.95}}]}],"sideboard":[{"name":"Obosh, the Preypiercer","amount":1,"valid":true,"idcards":1972681,"idprintings":54567,"isCompanion":true,"data":{"supertype":"Legendary Creature","supertype_group":"Creatures","supertype_group_extended":"Creatures","type":"Legendary Creature - Hellion Horror","color_identity":48,"cost":"{3}{B\/R}{B\/R}","rarity":"R","collector_number":"228","converted_cost":5,"effective_cost":5,"power":"3","toughness":"5","source":{"w":0,"u":0,"b":0,"r":0,"g":0,"colorless":0,"any":0},"display_set_id":637,"price_tcgplayer":0.46,"price_tcgplayer_id":"212637","cheapest_price_tcgplayer":0.46,"cheapest_price_tcgplayer_id":"212637","price_mkm":0.35,"price_mkm_id":"\/Ikoria-Lair-of-Behemoths\/Obosh-the-Preypiercer","cheapest_price_mkm":0.35,"cheapest_price_mkm_id":"\/Ikoria-Lair-of-Behemoths\/Obosh-the-Preypiercer","price_cardkingdom":0.39,"cheapest_price_cardkingdom":0.39,"price_cardhoarder":0.02,"price_cardhoarder_id":"80465","cheapest_price_cardhoarder":0.02,"cheapest_price_cardhoarder_id":"80465","price_miracle":0.75,"price_miracle_other_set":true,"cheapest_price_miracle":0.75}}],"url_neutral":"https:\/\/deckstats.net\/decks\/30198\/2034245--mtg-parser-3-amigos","group_by":"section","name":"[mtg-parser] 3 Amigos","saved_id":2034245,"idshort":"6XXf0sHz","owner_id":30198,"format_id":10,"folder_id":47433,"added":1618996319,"updated":1618996507,"sort_by":"name,asc","is_public":true,"is_work_in_progress":true,"colorflag":14,"colors":[0,40,24,22,0,94],"highlight_cards":["Vial Smasher the Fierce","Kraum, Ludevic's Opus"],"views":13,"url_short":"https:\/\/deck.tk\/6XXf0sHz","number_main":99,"number_main_nonbasic":99,"number_sideboard":1,"number_sideboard_nonbasic":1});deck_display(); });
+$(function() { if(!window.footer_hidden) { $("#footer_container").show(); } });
+</script> <meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" href="//deckstats.net/css/merged/merged.base.1618955831.css">
+<link rel="stylesheet" href="//deckstats.net/css/print.1618955815.css" media="print">
+</head>
+<body class="">
+<div id="header_container" class="">
+<div id="header_left">
+<a href="https://deckstats.net?lng=en">
+<img src="https://deckstats.net/img/header_deckstats.png" srcset="https://deckstats.net/img/header_deckstats.png 375w,https://deckstats.net/img/header_deckstats_2x.png 750w" alt="deckstats.net" style="max-height: 90px;" />
+</a>
+</div>
+<div id="header_right" class="XX_FR_XX">
+<div class="header_small_hide" id="header_right_big">
+<a href="https://bm.hbtronix.de/c/9dd697/https://www.cardmarket.com/fr/Magic/%3Futm_source=deckstats&amp;utm_medium=homepage&amp;utm_campaign=banner_header" target="_blank" rel="noopener nofollow" class="xbnr xbnr_img xbnr_9dd697"><img src="https://deckstats.net/9dd697_8416aacc16e3ee66accdc5cf23c664dd.jpg" style="width: 728px; height: 90px;" /></a> </div>
+<div class="header_small_show">
+<a href="https://bm.hbtronix.de/c/3972fb/https://www.cardmarket.com/fr/Magic/%3Futm_source=deckstats&amp;utm_medium=homepage&amp;utm_campaign=banner_header" target="_blank" rel="noopener nofollow" class="xbnr xbnr_img xbnr_3972fb"><img src="https://deckstats.net/3972fb_0be3b79da1dedf076992ee8b1842ce33.jpg" style="width: 320px; height: 50px;" /></a> </div>
+</div>
+</div>
+<div id="submenu_container">
+<div class="small_screen_logo">
+<a href='https://deckstats.net?lng=en'>
+<img src="https://deckstats.net/apple-touch-icon.png" alt="deckstats.net" style="width: 30px; height: 30px;" />
+</a>
+</div>
+<div id="submenu">
+<div class="small_screen_toggle_button">
+<i class="fa fa-bars" aria-hidden="true"></i>
+Menu </div>
+<p class="home small_screen_toggle_content">
+<a href="https://deckstats.net?lng=en">
+<i class="fa fa-home" aria-hidden="true"></i>
+Home </a>
+<a href='https://deckstats.net/deckbuilder/en/'>
+<svg class="svg svg-deck_wrench "><use xlink:href="https://deckstats.net/img/icons.svg#svg-deck_wrench" "></use></svg> Deckbuilder </a>
+<a href="https://deckstats.net/forum/?language=english-utf8">
+<i class="fa fa-comments-o" aria-hidden="true"></i>
+Forum </a>
+<a class="submenu_page_active" href="https://deckstats.net/decks/?lng=en">
+<svg class="svg svg-deck_multiple "><use xlink:href="https://deckstats.net/img/icons.svg#svg-deck_multiple" "></use></svg> Decks </a>
+<a href="https://deckstats.net/collection/?lng=en">
+<svg class="svg svg-collection "><use xlink:href="https://deckstats.net/img/icons.svg#svg-collection" "></use></svg> Collection </a>
+<a href="https://deckstats.net/sets/?lng=en">
+<i class="fa fa-list" aria-hidden="true"></i>
+Sets </a>
+<a class="small_screen_show login_menu_segment" href="#">
+<i class="fa fa-sign-in" aria-hidden="true"></i>
+Log In </a>
+</p>
+<div id="user_in_header" class="login_in_header">
+<a href="#" class="small_screen_show login_menu_segment segment rightmost_segment"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+<div id="login_register_segments">
+<form action="https://deckstats.net/forum/index.php?language=english-utf8&amp;action=login2" method="post" accept-charset="UTF-8" id="login_form_in_header">
+<input type="hidden" name="ae4de710b" value="13a18f96c8370fcb71d119617d60bdb0" />
+<div class="segment_container">
+<div class="login_register_dialog_row">
+<input type="text" name="user" size="10" class="text" placeholder="Username" />
+</div>
+<div class="login_register_dialog_row">
+<input type="password" name="passwrd" size="10" class="text" placeholder="Password" />
+<input type="hidden" name="cookielength" value="-1" />
+</div>
+<div class="login_register_dialog_row">
+<a href="#" id="user_login_segment">
+Login </a>
+</div>
+</div>
+</form>
+<div class="login_register_dialog_row">
+<a href="https://deckstats.net/forum/index.php?language=english-utf8&amp;action=register" id="user_register_segment" class="rightmost_segment">
+Register </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="login_dialog" class="any_dialog" title="Login">
+<div class="new_content login_dialog_show_if_error">
+You need to be logged in to do this. </div>
+<div class="new_content">
+<div class="login_form_container">
+<div class="login_form_register_container">
+<a href="https://deckstats.net/forum/index.php?language=english-utf8&amp;action=register" class="button login_form_register_button">
+<i class="fa fa-user-plus" aria-hidden="true"></i>
+Register </a>
+</div>
+<div class="login_form_or">
+— or —
+</div>
+<form action="https://deckstats.net/forum/index.php?language=english-utf8&amp;action=login2" method="post" accept-charset="UTF-8" class="login_form_form">
+<input type="hidden" name="ae4de710b" value="13a18f96c8370fcb71d119617d60bdb0" />
+<input type="hidden" name="cookielength" value="-1" />
+<div class="login_form_login_row">
+<input type="text" name="user" size="10" class="text" placeholder="Username" />
+</div>
+<div class="login_form_login_row">
+<input type="password" name="passwrd" size="10" class="text" placeholder="Password" />
+</div>
+<div class="login_form_login_row">
+<button class="button">
+<i class="fa fa-sign-in" aria-hidden="true"></i>
+Login </a>
+</div>
+</form>
+</div>
+</div>
+<div class="new_content login_dialog_show_if_error">
+When you have logged in, click the <b>Refresh Session</b> button and then try again. </div>
+</div>
+<div id="eventbar_toggle">
+<i class="fa fa-chevron-left eventbar_toggle_on"></i>
+<i class="fa fa-chevron-right eventbar_toggle_off"></i>
+</div>
+<div id="eventbar_container">
+<div id="eventbar"></div>
+<div id="eventbar_footer">
+<div class="eventbar_footer_row">
+<a href="https://discord.gg/hUAHUrv" target="_blank" rel="noopener">
+<img src="//deckstats.net/img/Discord-Logo-Black.png" alt="">
+deckstats Discord
+</a>
+</div>
+<div class="eventbar_footer_row">
+<a href="https://twitter.com/deckstats" target="_blank" rel="noopener">
+<i class="fa fa-twitter" aria-hidden="true"></i>
+@deckstats
+</a>
+</div>
+<div class="eventbar_footer_row">
+<a href="https://www.facebook.com/deckstats/" target="_blank" rel="noopener">
+<i class="fa fa-facebook-official" aria-hidden="true"></i>
+deckstats.net
+</a>
+</div>
+</div>
+</div>
+<div id="deckstats_main_container">
+<div id="deckstats_main_header_container"></div>
+<div id="page_title_container">
+<h2 id="subtitle"><svg class="svg svg-under_construction deck_wip_icon simple_tooltip" data-tooltip-location="bottom" data-tooltip-arrow-align="left" style="height: 22px; width: 22px; vertical-align: middle;" title="This deck is Work in Progress (not finished)"><use xlink:href="https://deckstats.net/img/icons.svg#svg-under_construction" "></use></svg>[mtg-parser] 3 Amigos<span class="deck_subtitle_format"> (<a href="https://deckstats.net/formats/edh-commander/?lng=en">EDH / Commander</a>)</span></h2><div id="post_subtitle"><div id="deck_folder_subtitle">in <a href="https://deckstats.net/decks/30198/?lng=en"><i class="fa fa-user" aria-hidden="true"></i> gorila's Decks</a> <i class="fa fa-caret-right" aria-hidden="true"></i> <a href="https://deckstats.net/decks/30198/f47433/?lng=en"><i class="fa fa-folder-open-o" aria-hidden="true"></i> EDH - Other</a></div></div> </div>
+<div id="page_container">
+<div id="page"><div id="deck_dialog_properties" title="Deck Properties" class="any_dialog dialog_form">
+<p id="deck_dialog_properties_message" class="dialog_message"></p>
+<div id="deck_dialog_properties_main">
+<div id="deck_dialog_properties_name_box">
+<label for="deck_dialog_properties_name">Name</label>
+<div class="input_row">
+<input type="text" id="deck_dialog_properties_name" class="text" placeholder="My Deck" />
+</div>
+</div>
+<label for="deck_dialog_properties_format">Format</label>
+<select id="deck_dialog_properties_format" class="text">
+<option value="0"></option>
+<option value="1">
+Casual </option>
+<option value="6">
+Standard </option>
+<option value="4">
+Modern </option>
+<option value="10">
+EDH / Commander </option>
+<option value="21">
+Duel Commander </option>
+<option value="17">
+Oathbreaker </option>
+<option value="18">
+Pioneer </option>
+<option value="19">
+Historic </option>
+<option value="16">
+Brawl </option>
+<option value="3">
+Legacy </option>
+<option value="2">
+Vintage </option>
+<option value="9">
+Pauper </option>
+<option value="7">
+Highlander </option>
+<option value="12">
+Tiny Leaders </option>
+<option value="13">
+Frontier </option>
+<option value="11">
+Peasant </option>
+<option value="15">
+Penny Dreadful </option>
+<option value="5">
+Extended </option>
+<option value="8">
+Cube </option>
+<option value="14">
+Limited </option>
+<option value="20">
+Card List </option>
+</select>
+<div id="deck_dialog_properties_season_box">
+<label for="deck_dialog_properties_season">Season</label>
+<select id="deck_dialog_properties_season" class="text">
+<option value="0" class="deck_season_fixed">
+(not specified)
+</option>
+</select>
+</div>
+<div id="deck_dialog_properties_tags_box">
+<div class="content_with_help">
+<label for="deck_dialog_properties_tags" class="content_with_help_text">Tags</label>
+<a class="help_icon help_icon_left simple_tooltip" href="#" data-tooltip-html="Tags can be 3-30 characters long. Press comma after every tag to add it." data-tooltip-location="left">
+<i class="fa fa-question-circle" aria-hidden="true"></i>
+</a>
+</div>
+<div class="input_row">
+<input id="deck_dialog_properties_tags" class="tag field" value="" />
+</div>
+</div>
+<div id="deck_dialog_properties_description_box">
+<div class="content_with_help">
+<label for="deck_dialog_properties_description" class="content_with_help_text">Description</label>
+<a class="help_icon help_icon_left simple_tooltip" href="#" data-tooltip-html="What is the strategy of your deck? Why are you playing certain cards?" data-tooltip-location="left">
+<i class="fa fa-question-circle" aria-hidden="true"></i>
+</a>
+</div>
+<div class="input_row">
+<textarea id="deck_dialog_properties_description" class="text textarea_sans_serif" cols="30" rows="4"></textarea>
+</div>
+</div>
+<div id="deck_dialog_properties_group_by_box">
+<div class="content_with_help">
+<label for="deck_dialog_properties_group_by" class="content_with_help_text">Default card grouping</label>
+<a class="help_icon help_icon_left simple_tooltip" href="#" data-tooltip-html="This will be your deck&#039;s default card grouping. You can always regroup the cards from the View menu later." data-tooltip-location="left">
+<i class="fa fa-question-circle" aria-hidden="true"></i>
+</a>
+</div>
+<div class="input_row">
+<select id="deck_dialog_properties_group_by" class="text">
+<option value="section">
+Custom sections </option>
+<option value="type">
+Type </option>
+<option value="type_extended">
+Type (extended) </option>
+<option value="color">
+Color </option>
+<option value="cc">
+Converted Cost (CMC) </option>
+<option value="rarity">
+Rarity </option>
+<option value="none">
+Do not group </option>
+</select>
+<select id="deck_dialog_properties_sort_by" class="text">
+<option value="none">
+Original order </option>
+<option value="name,asc">
+Sort by: Name (A-Z) </option>
+<option value="name,desc">
+Sort by: Name (Z-A) </option>
+<option value="amount,asc">
+Sort by: Amount (low-high) </option>
+<option value="amount,desc">
+Sort by: Amount (high-low) </option>
+<option value="type,asc">
+Sort by: Type (A-Z) </option>
+<option value="type,desc">
+Sort by: Type (Z-A) </option>
+<option value="cmc,asc">
+Sort by: Converted Cost (low-high) </option>
+<option value="cmc,desc">
+Sort by: Converted Cost (high-low) </option>
+<option value="set,asc">
+Sort by: Set (new-old) </option>
+<option value="set,desc">
+Sort by: Set (old-new) </option>
+<option value="price,asc">
+Sort by: Price (low-high) </option>
+<option value="price,desc">
+Sort by: Price (high-low) </option>
+</select>
+</div>
+</div>
+<div id="deck_dialog_properties_folder_id_box">
+<label for="deck_dialog_properties_folder_id">Folder</label>
+<select id="deck_dialog_properties_folder_id" class="text">
+<option value="0" selected="selected"></option> </select>
+</div>
+<div class="input_row input_checkrow">
+<div class="content_with_help">
+<label class="content_with_help_text">
+<input type="checkbox" id="deck_dialog_properties_is_work_in_progress" value="1" />
+<svg class="svg svg-under_construction "><use xlink:href="https://deckstats.net/img/icons.svg#svg-under_construction" "></use></svg> Work in Progress </label>
+<a class="help_icon help_icon_left simple_tooltip" href="#" data-tooltip-html="This deck is Work in Progress (not finished)" data-tooltip-location="left">
+<i class="fa fa-question-circle" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+<div class="input_row input_checkrow" id="deck_dialog_properties_is_active_box">
+<div class="content_with_help">
+<label class="content_with_help_text">
+<input type="checkbox" id="deck_dialog_properties_is_active" value="1" />
+<i class="fa fa-play-circle"></i>
+Active </label>
+<a class="help_icon help_icon_left simple_tooltip" href="#" data-tooltip-html="Include this deck when calculating how many copies of a card you are using in the deckbuilder." data-tooltip-location="left">
+<i class="fa fa-question-circle" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+<div class="input_row input_checkrow">
+<div class="content_with_help">
+<label class="content_with_help_text">
+<input type="checkbox" id="deck_dialog_properties_is_public" value="1" checked="checked" />
+Public deck </label>
+<a class="help_icon help_icon_left simple_tooltip" href="#" data-tooltip-html="Make this deck public so others can see and comment on it" data-tooltip-location="left">
+<i class="fa fa-question-circle" aria-hidden="true"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+	deck_page.edit_deck_id = 0;
+	deck_page.edit_deck_revision1 = 0;
+	deck_page.likes.members = [];
+	</script>
+<div class="deck_buttonbar full_container_nopad">
+<div class="deck_buttonbar_left">
+<div class="deck_buttonbar_left_inner">
+<div id="like_deck_buttons">
+<button class="button button-with-icon" type="button" id="deck_like_counter">
+<span id="deck_like_text">&hellip;</span>
+</button>
+</div>
+<script>
+						$(function() {
+							deck_like_init(
+								0,
+								0,
+								0							);
+						});
+					</script>
+</div>
+</div>
+<div class="deck_buttonbar_right">
+<button type="button" id="deck_tools" class="button-with-icon deck_buttonbar_button_wide">
+<i class="fa fa-cogs" aria-hidden="true"></i>
+<span class="medium_screen_hide">Tools</span>
+</button>
+<ul id="deck_tools_menu" class="deck_menu">
+<li><a id="view_decklist_link" href="#">
+<i class="fa fa-list" aria-hidden="true"></i>
+Decklist </a></li>
+<li><a id="download_deck_link" href="#">
+<i class="fa fa-download" aria-hidden="true"></i>
+Download </a></li>
+<li><a id="print_proxies_link" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/en?proxies=1">
+<i class="fa fa-print" aria-hidden="true"></i>
+Proxies </a></li>
+<li><a id="download_regsheet_link" href="#">
+<i class="fa fa-print" aria-hidden="true"></i>
+Print Deck Sheet </a></li>
+<li><a href="https://deckstats.net/decks/compare/2034245-1/0-0/en">
+<i class="fa fa-exchange" aria-hidden="true"></i>
+Compare </a></li>
+</ul>
+<button type="button" id="deck_view_button" class="button-with-icon deck_buttonbar_button_wide">
+<i class="fa fa-desktop" aria-hidden="true"></i>
+<span class="medium_screen_hide">Display</span>
+</button>
+<ul id="deck_view_menu" class="deck_menu">
+<li class="deck_view_menu_item"><a href="#" class="deck_view_menu_columns">
+<i class="fa fa-columns" aria-hidden="true"></i>
+Select columns </a></li>
+<li class="deck_view_menu_item">
+<div>
+<i class="fa fa-th-large" aria-hidden="true"></i>
+Group cards by:
+</div>
+<ul>
+<li class="deck_view_menu_item deck_view_menu_regroup_option" data-value="collection" style="display: none;">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Collection status</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_regroup_option" data-value="section">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Custom sections</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_regroup_option" data-value="type">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Type</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_regroup_option" data-value="type_extended">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Type (extended)</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_regroup_option" data-value="color">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Color</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_regroup_option" data-value="cc">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Converted Cost (CMC)</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_regroup_option" data-value="rarity">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Rarity</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_regroup_option" data-value="none">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Do not group</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="deck_view_menu_item">
+<div>
+<i class="fa fa-sort" aria-hidden="true"></i>
+Sort cards by:
+</div>
+<ul>
+<li class="deck_view_menu_item deck_view_menu_resort_option" data-value="name,asc">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Name (A-Z)</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_resort_option" data-value="name,desc">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Name (Z-A)</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_resort_option" data-value="amount,asc">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Amount (low-high)</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_resort_option" data-value="amount,desc">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Amount (high-low)</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_resort_option" data-value="type,asc">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Type (A-Z)</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_resort_option" data-value="type,desc">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Type (Z-A)</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_resort_option" data-value="cmc,asc">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Converted Cost (low-high)</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_resort_option" data-value="cmc,desc">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Converted Cost (high-low)</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_resort_option" data-value="set,asc">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Set (new-old)</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_resort_option" data-value="set,desc">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Set (old-new)</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_resort_option" data-value="price,asc">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Price (low-high)</div>
+</a>
+</li>
+<li class="deck_view_menu_item deck_view_menu_resort_option" data-value="price,desc">
+<a href="#" class="deck_view_menu_item_flex">
+<div class="deck_view_menu_item_flex_icon"><i class="fa fa-caret-right" aria-hidden="true"></i></div>
+<div class="deck_view_menu_item_flex_text">Price (high-low)</div>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<button type="button" id="deck_save_button" class="button" style="display: none">
+<i class="fa fa-floppy-o" aria-hidden="true"></i>
+<span class="medium_screen_hide">
+Save </span>
+</button>
+</div>
+</div>
+<div class="any_dialog" id="deck_like_members_dialog" title="People who like this deck">
+<ul id="deck_like_members_list"></ul>
+<div id="deck_like_none">This deck does not have any likes yet.</div>
+</div>
+<div class="any_dialog" id="deck_dialog_view_decklist" title="View Decklist">
+<textarea id="view_decklist" readonly="readonly" rows="10" cols="40" class="text"></textarea>
+<div class="input_row">
+<label>
+Card grouping: <select id="deck_dialog_view_decklist_group_by">
+<option value="section">
+Custom sections </option>
+<option value="type">
+Type </option>
+<option value="type_extended">
+Type (extended) </option>
+<option value="color">
+Color </option>
+<option value="cc">
+Converted Cost (CMC) </option>
+<option value="rarity">
+Rarity </option>
+<option value="none">
+Do not group </option>
+</select>
+</label>
+</div>
+</div>
+<div class="any_dialog" id="deck_dialog_download" title="Download Deck">
+<p>For most Magic software, including Magic Workstation and Cockatrice:</p>
+<button data-format="dec" class="small_screen_full_button">
+<i class="fa fa-download" aria-hidden="true"></i>
+Download as .dec
+</button>
+<p>For MTG Arena:</p>
+<button data-format="mtgarena" class="small_screen_full_button">
+<i class="fa fa-download" aria-hidden="true"></i>
+Download as MTG Arena .txt
+</button>
+<p>For Magic Online (MTGO):</p>
+<button data-format="mtgo" class="small_screen_full_button">
+<i class="fa fa-download" aria-hidden="true"></i>
+Download as MTGO .txt
+</button>
+<p>For others:</p>
+<button data-format="txt" class="small_screen_full_button">
+<i class="fa fa-download" aria-hidden="true"></i>
+Download as .txt
+</button>
+<p>
+<label>
+<input id="download_deck_include_comments" checked="checked" type="checkbox">
+Include card comments (.dec)
+</label>
+</p>
+</div>
+<div class="any_dialog" id="deck_dialog_regsheet" title="Download Deck Sheet">
+<p>
+To play your deck at an official ("DCI-sanctioned") tournament you need a deck registration sheet. Here you can download such a sheet pre-filled with the cards in this deck!	</p>
+<div style="margin-top: .5em">
+<label for="download_regsheet_sort">Sort cards by:</label>
+<select id="download_regsheet_sort">
+<option value="name">Card Name</option>
+<option value="amount">Amount</option>
+<option value="type">Type</option>
+<option value="none">Original order</option>
+</select>
+</div>
+<div style="margin-top: .5em">
+<label>
+<input type="checkbox" checked="checked" id="download_regsheet_add_deck_name">
+Include deck name </label>
+</div>
+<div style="margin-top: .5em">
+<label>
+<input type="checkbox" checked="checked" id="download_regsheet_dci_details">
+Include my DCI number and name </label>
+(-&gt;
+<a href="https://deckstats.net/settings/?lng=en" target="_blank">
+Your Settings</a>)
+</div>
+<p>
+<i>
+Please note: This is not an official DCI service. So please always make extra sure that the sheet contains all the cards in your deck and fulfils all DCI requirements. If you notice anything wrong, please let us know. DCI is a trademark of of Wizards of the Coast LLC.
+</i>
+</p>
+</div>
+<div class="any_dialog" id="deck_columns_dialog" title="Select columns">
+<div class="inhalt2">
+Please select the columns you would like to see:	</div>
+<div class="inhalt2">
+<label style="display: block; margin: 4px 0;">
+<input type="checkbox" class="deck_columns_dialog_toggle" id="deck_columns_dialog_toggle_type" value="type" checked="checked">
+Type </label>
+<label style="display: block; margin: 4px 0;">
+<input type="checkbox" class="deck_columns_dialog_toggle" id="deck_columns_dialog_toggle_mana" value="mana" checked="checked">
+Mana </label>
+<label style="display: block; margin: 4px 0;">
+<input type="checkbox" class="deck_columns_dialog_toggle" id="deck_columns_dialog_toggle_color_identity" value="color_identity" checked="checked">
+Color identity </label>
+<label style="display: block; margin: 4px 0;">
+<input type="checkbox" class="deck_columns_dialog_toggle" id="deck_columns_dialog_toggle_set" value="set" checked="checked">
+Set </label>
+<label style="display: block; margin: 4px 0;">
+<input type="checkbox" class="deck_columns_dialog_toggle" id="deck_columns_dialog_toggle_price_miracle" value="price_miracle" checked="checked">
+Price (Germany - miraclegames.de) </label>
+<label style="display: block; margin: 4px 0;">
+<input type="checkbox" class="deck_columns_dialog_toggle" id="deck_columns_dialog_toggle_price_mkm" value="price_mkm" checked="checked">
+Price (Europe - cardmarket.com) </label>
+<label style="display: block; margin: 4px 0;">
+<input type="checkbox" class="deck_columns_dialog_toggle" id="deck_columns_dialog_toggle_price_tcgplayer" value="price_tcgplayer" checked="checked">
+Price (USA - tcgplayer.com) </label>
+<label style="display: block; margin: 4px 0;">
+<input type="checkbox" class="deck_columns_dialog_toggle" id="deck_columns_dialog_toggle_price_cardkingdom" value="price_cardkingdom" checked="checked">
+Price (USA - cardkingdom.com) </label>
+<label style="display: block; margin: 4px 0;">
+<input type="checkbox" class="deck_columns_dialog_toggle" id="deck_columns_dialog_toggle_price_cardhoarder" value="price_cardhoarder" checked="checked">
+Price (Online - cardhoarder.com) </label>
+</div>
+<div class="inhalt2">
+<label>
+<input type="checkbox" id="deck_columns_dialog_remember" checked="checked">
+Remember these settings (requires an account)
+</label>
+</div>
+</div>
+<div class="content-box full-width">
+<div id="deck_tabs" class="first_load element_loading content-box-inner">
+<div id="deck_tabs_bar_container">
+<ul id="deck_tabs_bar">
+<li><a href="#deck_tabs-overview"><svg class="svg svg-deck "><use xlink:href="https://deckstats.net/img/icons.svg#svg-deck" "></use></svg> Overview</a></li>
+<li><a href="#deck_tabs-stats"><span class="fa fa-table"></span> Details</a></li>
+<li id="deck_tabs_plots_link"><a href="#deck_tabs-plots"><span class="fa fa-bar-chart"></span> Charts</a></li>
+<li><a href="#deck_tabs-spoiler"><svg class="svg svg-card_2x2 "><use xlink:href="https://deckstats.net/img/icons.svg#svg-card_2x2" "></use></svg> Visual Spoiler</a></li>
+<li><a href="#deck_tabs-hand"><svg class="svg svg-card_fan "><use xlink:href="https://deckstats.net/img/icons.svg#svg-card_fan" "></use></svg> Starting Hand</a></li>
+<li><a href="#deck_tabs-probcalc"><span class="fa fa-calculator"></span> Probabilities</a></li>
+<li style="font-weight: bold;"><a href="#deck_tabs-edh"><span class="fa fa-magic"></span> EDH Suggestions</a></li>
+<li><a href="#deck_tabs-tools"><span class="fa fa-share"></span> Share</a></li>
+<li><a href="#deck_tabs-comments"><span class="fa fa-comments"></span> Discuss<span id="comment_count"></span></a></li> </ul>
+<div id="deck_tab_scroll_left"><span class="fa fa-caret-left"></span></div>
+<div id="deck_tab_scroll_right"><span class="fa fa-caret-right"></span></div>
+</div>
+<div id="deck_tabs-overview" class="deck_tab">
+<div class="inhalt">
+<div id="deck_overview" class="element_loading">
+<div id="deck_overview_main">
+<div id="deck_overview_cards"></div>
+<div id="deck_overview_info">
+</div>
+</div>
+<div id="deck_overview_links" class="small_screen_full_button_container">
+<div>
+<div class="deck_commander"></div>
+<div class="deck_footer_row deck_footer_row_big">
+<div class="deck_info_attribute deck_info_mana"></div>
+<div class="deck_info_attribute">
+<span class="deck_info_attribute_name">Cards:</span>
+99 Main
+&middot;
+1 Sideboard </div>
+<div class="deck_info_attribute" title="We cannot guarantee the accuracy of this check. Please confirm with the official banned/restricted lists on the MTG website before buying your deck." id="deck_overview_legality">
+<div id="deck_overview_legality_illegal">
+<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+<b>Not legal</b> in EDH / Commander. </div>
+</div>
+</div>
+<div class="deck_footer_row">
+<div style="height: 250px; width: 315px; background: #fff; position: relative; margin-bottom: 24px;">
+<div style="height: 250px; width: 300px;"><div id="np-deckoverview"></div></div>
+<div class="deck_overview_labelad">Advertisement</div>
+</div>
+<script>
+							$(function() {
+								try {
+									window['nitroAds'].createAd('np-deckoverview', {
+										"floor": 0.05,
+										"refreshLimit": 10,
+										"refreshTime": 60,
+										"sizes": [
+											[ 300, 250 ]
+										],
+										"report": {
+											"enabled": true,
+											"wording": "Report Ad",
+											"position": "bottom-right"
+										}
+									});
+
+									window.setTimeout(function() {
+										$('#np-deckoverview').parent().css('background', '#fff url("'+PATH+'/img/bl_square.png") center no-repeat');
+									}, 1000);
+								} catch(e) {
+									//ignore
+								}
+							});
+							</script>
+</div>
+<div id="deck_overview_prices"></div>
+<div class="deck_footer_row">
+<div class="deck_info_attribute">
+<span class="deck_info_attribute_name">
+Views:</span>
+13 </div>
+<div class="deck_info_attribute">
+<span class="deck_info_attribute_name">Added:</span>
+<strong>Today</strong> at 11:11:59 am,
+<span class="deck_info_attribute_name">Last updated:</span>
+<strong>Today</strong> at 11:15:07 am </div>
+</div>
+<div class="deck_share_rows deck_footer_row">
+<div class="share_buttons">
+<div class="shariff" data-url="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos" data-title="[mtg-parser] 3 Amigos" data-lang="en" data-theme="grey" data-orientation="horizontal" data-twitter-via="deckstats" data-services="[&quot;facebook&quot;,&quot;twitter&quot;,&quot;reddit&quot;,&quot;vk&quot;]"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="deck_tabs-stats" class="deck_tab">
+
+<script type="text/javascript">
+var types_labels = ["Artifact", "Creature", "Enchantment", "Instant", "Land", "Planeswalker", "Sorcery"];
+var types_data = [6,9,9,26,27,1,21];
+
+var color_data = [["u", 40],["b", 24],["r", 22],["colorless", 94]];
+var source_data = [["w", 3],["u", 14],["b", 9],["r", 10],["g", 3],["colorless", 2],["any", 1]];
+</script>
+<div class="inhalt">
+<div class="deck_plot_container" id="deck_plot_container">
+<div class="deck_plot_inner" id="deck_plot_cc">
+<div id="jqplot_chart_cc" class="deck_plot"></div>
+
+</div>
+<div class="deck_plot_inner" id="deck_plot_types">
+<div id="jqplot_chart_types" class="deck_plot"></div>
+<div class="deck_plot_action_container">
+<span class="deck_plot_action_menu_button">
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+</span>
+</div>
+<ul class="deck_plot_action_menu deck_menu">
+<li id="plot_types_detail_button">
+<a href="#" />
+More Details </a>
+</li>
+</ul>
+</div>
+<div class="deck_plot_inner" id="deck_plot_colors">
+<div id="jqplot_chart_colors" class="deck_plot"></div>
+<div class="deck_plot_action_container">
+<span class="deck_plot_action_menu_button">
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+</span>
+</div>
+<ul class="deck_plot_action_menu deck_menu">
+<li id="plot_colors_colorless_button">
+<a href="#" />
+Show Colorless Mana </a>
+</li>
+</ul>
+</div>
+<div class="deck_plot_inner" id="deck_plot_sources">
+<div id="jqplot_chart_sources" class="deck_plot"></div>
+<div class="deck_plot_action_container">
+<span class="deck_plot_action_menu_button">
+<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+</span>
+</div>
+<ul class="deck_plot_action_menu deck_menu">
+<li id="plot_sources_colorless_button">
+<a href="#" />
+Show Colorless Mana </a>
+</li>
+</ul>
+</div>
+</div>
+<div id="deck_container">
+<div id="deck_main">
+<div class="deck_table_container">
+<div id="cards_table_container">
+</div>
+</div>
+<div class="deck_table_container">
+<div class="deck_section_sideboard">
+<h3>
+Sideboard </h3>
+</div>
+<div id="sideboard_table_container" class="deck_table_container_sync">
+</div>
+</div>
+<button type="button" class="details_button">Toggle details</button>
+</div>
+</div>
+<div class="ui-widget deck_legality_box" title="We cannot guarantee the accuracy of this check. Please confirm with the official banned/restricted lists on the MTG website before buying your deck." id="deck_details_legality_box">
+<div class="ui-state-highlight" style="padding: 0 .7em; border-color: #c66 !important; background: #fed;">
+<p>
+This deck <b>does not appear to be legal</b> in <b><a href="https://deckstats.net/formats/edh-commander/?lng=en">EDH / Commander</a></b>.</p><p><b>Problems:</b> A commander deck should contain exactly 100 cards, including the commander. </p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="deck_tabs-plots" class="deck_tab"><div id="deck_tabs-plots_content" class="deck_plot_container"></div></div>
+<div id="deck_tabs-spoiler" class="deck_tab">
+<div class="inhalt">
+<div id="visual_spoiler_container" class="render_card_container">
+</div>
+</div> </div>
+<div id="deck_tabs-hand" class="deck_tab">
+<div class="inhalt2">
+<div style="text-align: center;">
+<input type="button" value="New Hand" onclick="deck_hand_generate()" />
+<input type="button" value="Add Another Card" onclick="deck_hand_add_random_card(true)" />
+<input type="button" value="Mulligan" onclick="deck_hand_mulligan()" />
+</div>
+<div id="starthand_karten"></div>
+</div> </div>
+<div id="deck_tabs-playtest" class="deck_tab">
+<div class="inhalt2">
+<div style="text-align: center;" id="playtest_buttons">
+<button id="playtest_next_turn_button">Next Turn</button>
+<button id="playtest_draw_button">Draw Card</button>
+<button id="playtest_create_button">Create Card</button>
+<button id="playtest_dice_button">Roll Dice</button>
+<button id="playtest_shuffle_button">Shuffle</button>
+<button id="playtest_restart_button">Restart</button>
+<button id="playtest_mulligan_button">Mulligan</button>
+<button id="playtest_options_button">Options</button>
+</div>
+</div>
+<div id="playtest_stats">
+Turn:
+<input class="playtest_counter" data-counter-name="turn" type="number" value="0" min="1">
+Your life:
+<input class="playtest_counter" data-counter-name="life1" type="number" value="0" min="0">
+Opponent's life:
+<input class="playtest_counter" data-counter-name="life2" type="number" value="0" min="0">
+Poison counters:
+<input class="playtest_counter" data-counter-name="poison" type="number" value="0" min="0">
+</div>
+<div id="playtest_container">
+<div id="playtest_top_container">
+<div class="playtest_section" id="playtest_section_hand" data-section-name="hand">
+<div class="playtest_header">Hand (<span class="playtest_amount">0</span>)</div>
+<div class="playtest_cards playtest_drop">
+</div>
+</div>
+<div class="playtest_section" id="playtest_section_library" data-section-name="library">
+<div class="playtest_header">Library (<span class="playtest_amount">0</span>)</div>
+<div class="playtest_stack playtest_drop"></div>
+</div>
+<div class="playtest_section" id="playtest_section_graveyard" data-section-name="graveyard">
+<div class="playtest_header">Graveyard (<span class="playtest_amount">0</span>)</div>
+<div class="playtest_stack playtest_drop"></div>
+</div>
+<div class="playtest_section" id="playtest_section_exile" data-section-name="exile">
+<div class="playtest_header">Exile (<span class="playtest_amount">0</span>)</div>
+<div class="playtest_stack playtest_drop"></div>
+</div>
+</div>
+<div class="playtest_section" id="playtest_section_board" data-section-name="board">
+<div class="playtest_header">Board (<span class="playtest_amount">0</span>)</div>
+<div class="playtest_cards playtest_drop playtest_drop_free">
+</div>
+</div>
+</div>
+<div id="playtest_dialog_create" title="Create Card">
+<h3>Name</h3>
+<input id="playtest_dialog_create_name">
+<h3>Type</h3>
+<input id="playtest_dialog_create_type">
+<h3>Notes</h3>
+<textarea id="playtest_dialog_create_notes" rows="2"></textarea>
+<div id="playtest_dialog_create_pt_container">
+<div class="playtest_dialog_create_pt_inner">
+<h3>Power</h3>
+<div><input id="playtest_dialog_create_power" type="number" min="0" value="0"></div>
+</div>
+<div class="playtest_dialog_create_pt_inner">
+<h3>Toughness</h3>
+<div><input id="playtest_dialog_create_toughness" type="number" min="0" value="0"></div>
+</div>
+</div>
+</div>
+<div id="playtest_dialog_card">
+<div id="playtest_dialog_card_image_container">
+<img id="playtest_dialog_card_image" alt="card" src="">
+</div>
+<div id="playtest_dialog_card_info">
+<h3>Type</h3>
+<span id="playtest_dialog_card_type"></span>
+<h3>Notes</h3>
+<textarea id="playtest_dialog_card_notes" rows="2"></textarea>
+<div id="playtest_dialog_card_pt_container">
+<div class="playtest_dialog_card_pt_inner">
+<h3>Power</h3>
+<div><input id="playtest_dialog_card_power" type="number" min="0" value="0"></div>
+</div>
+<div class="playtest_dialog_card_pt_inner">
+<h3>Toughness</h3>
+<div><input id="playtest_dialog_card_toughness" type="number" min="0" value="0"></div>
+</div>
+<div class="playtest_dialog_card_pt_inner">
+<h3>&nbsp;</h3>
+<button class="playtest_dialog_card_pt_change" data-pt-change="1">+1/+1</button>
+<button class="playtest_dialog_card_pt_change" data-pt-change="-1">-1/-1</button>
+</div>
+</div>
+<h3>Counters</h3>
+<div>
+<input id="playtest_dialog_card_counters" type="number" value="0" min="0">
+</div>
+<h3>Move this card to:</h3>
+<div class="playtest_dialog_card_move_buttons">
+<button data-section-name="hand">Hand</button>
+<button data-section-name="board">Board</button>
+<button data-section-name="library">Library</button>
+<button data-section-name="graveyard">Graveyard</button>
+<button data-section-name="exile">Exile</button>
+</div>
+<h3>Actions</h3>
+<div>
+<button id="playtest_dialog_card_duplicate">Duplicate</button>
+<button id="playtest_dialog_card_clear">Clear Counters</button>
+</div>
+</div>
+</div>
+<div id="playtest_dialog_dice" title="Roll Dice">
+<table>
+<tr>
+<th>2-sided (coin flip)</th>
+<td class="playtest_dialog_dice_result" data-sides="2"></td>
+</tr>
+<tr>
+<th>6-sided (d6)</th>
+<td class="playtest_dialog_dice_result" data-sides="6"></td>
+</tr>
+<tr>
+<th>20-sided (d20)</th>
+<td class="playtest_dialog_dice_result" data-sides="20"></td>
+</tr>
+<tr>
+<th>
+Sides: <input id="playtest_dialog_dice_custom_number" type="number" min="2" value="10">
+</th>
+<td class="playtest_dialog_dice_result" data-sides="custom"></td>
+</tr>
+</table>
+</div>
+<div id="playtest_dialog_options" title="Playtest Options">
+<h3>Auto-draw</h3>
+<label>
+<input id="playtest_dialog_options_auto_draw" type="checkbox">
+Draw a new card each turn	</label>
+<h3>Auto-untap</h3>
+<label>
+<input id="playtest_dialog_options_auto_untap" type="checkbox">
+Untap all cards each turn	</label>
+</div>
+<div class="playtest_dialog_stack" id="playtest_dialog_stack">
+<div class="playtest_dialog_stack_container">
+<select class="playtest_dialog_stack_cards" multiple="multiple"></select>
+<div class="playtest_dialog_stack_right">
+<p>Double-click to open card details.</p>
+<h3>Move selected to:</h3>
+<div class="playtest_dialog_stack_move_buttons">
+<button data-section-name="hand">Hand</button>
+<button data-section-name="board">Board</button>
+<button data-section-name="library">Library</button>
+<button data-section-name="graveyard">Graveyard</button>
+<button data-section-name="exile">Exile</button>
+</div>
+</div>
+</div>
+</div> </div>
+<div id="deck_tabs-probcalc" class="deck_tab">
+<div id="probcalc">
+<button id="probcalc_input_reset">Reset</button>
+<div id="probcalc_input">
+<div class="vertical-margin">
+<h4>Combined probability</h4>
+<div id="probcalc_input_head">
+<div id="probcalc_input_head_amount">Min. amount:</div>
+<div id="probcalc_input_head_card">Card:</div>
+</div>
+<div id="probcalc_input_cards"></div>
+<div class="probcalc_input_buttons">
+<button id="probcalc_input_calc">Calculate</button>
+</div>
+</div>
+<div class="vertical-margin">
+<h4>Custom calculation</h4>
+<div id="probcalc_input_manual">
+If I play a card <input id="probcalc_input_manual_available" type="number" min="1" value="4"> times in my 99 card deck, how likely am I to draw it <select id="probcalc_input_manual_type"><option value="minimum">at least</option><option value="exact">exactly</option></select> <input id="probcalc_input_manual_wanted" type="number" min="1" value="2"> times? </div>
+<div class="probcalc_input_buttons">
+<button id="probcalc_input_calc_manual">Calculate</button>
+</div>
+</div>
+</div>
+<div id="probcalc_plot"></div>
+</div>
+<div id="probcalc_table">
+<table class="anytable cardtable cardtable_probs" id="probcalc_table_table">
+<thead>
+<tr>
+<th class="card_amount">&nbsp;</th>
+<th class="card">Name</th>
+<th class="card_amount">Hand</th>
+<th class="card_amount">Turn 1</th>
+<th class="card_amount">Turn 2</th>
+<th class="card_amount">Turn 3</th>
+<th class="card_amount">Turn 4</th>
+<th class="card_amount">Turn 5</th>
+<th class="card_amount">Turn 6</th>
+<th class="card_amount">Turn 7</th>
+<th class="card_amount">Turn 8</th>
+<th class="card_amount">Turn 9</th>
+<th class="card_amount">Turn 10</th>
+</tr>
+</thead>
+<tbody class="tablesorter-no-sort" id="probcalc_table_tbody_additional_head">
+<tr class="deck_section">
+<td colspan="13" class="tablesorter-no-sort"><h3>Additional Probabilities</h3></td>
+</tr>
+</tbody>
+<tbody id="probcalc_table_tbody_additional"></tbody>
+
+</table>
+</div> </div>
+<div id="deck_tabs-matchups" class="deck_tab">
+</div>
+<div id="deck_tabs-tools" class="deck_tab">
+<div class="vertical-margin">
+<h4 id="deck_code_header">Embed Into Forums or Website</h4>
+<div style="margin-bottom: 5px;">
+For forums and blogs please select one of the BB-Code options. For websites and forums that support HTML (e.g. Wizards Community Forums) you can use the HTML options.	</div>
+<div style="margin-top: 1em;">
+<div>
+<select name="code_type" id="code_type">
+<option value="bb_deck">BB-Code with DECK tags (for MTG-Forum.de)</option>
+<option value="bb_url">BB-Code with URL tags (recommended for most forums)</option>
+<option value="markdown">Markdown List (for reddit)</option>
+<option value="markdown_table">Markdown Table (for reddit)</option>
+<option value="html_wide">HTML code for high table</option>
+<option value="html_normal">HTML for wide table (recommended for Wizards Community)</option>
+</select>
+<select name="code_extended" id="code_extended">
+<option value="0">Normal View</option>
+<option value="1">Extended View (with mana symbols)</option>
+</select>
+<input class="button" type="submit" name="get_code" id="get_code" value="Generate Embed Code" />
+</div>
+<div>
+<label id="code_html_nl_label">
+<input name="code_html_nl" id="code_html_nl" type="checkbox" style="border: 0" />
+Use linebreaks in HTML code (disable for Wizards Community) </label>
+</div>
+<script type="text/javascript">
+			function generate_code_action(e) {
+				e.preventDefault();
+
+				document.location.href = "https:\/\/deckstats.net\/decks\/30198\/2034245--mtg-parser-3-amigos\/en?get_code=1" +
+					'&code_type=' + $('#code_type').val() +
+					'&code_extended=' + $('#code_extended').val() +
+					'&code_html_nl=' + ($('#code_html_nl').is(':checked')? 'on' : 'off');
+			}
+
+			$(function(){
+				$('#get_code').click(generate_code_action);
+
+				$('#code_type,#code_extended,#code_html_nl').change(function(e) {
+					$('#code_result').hide();
+				});
+				$('#code_type').change(function(e) {
+					if($(this).val().substr(0, 4) == 'html') {
+						$('#code_html_nl_label').show();
+					} else {
+						$('#code_html_nl_label').hide();
+					}
+				});
+				updateCodeType($('#code_type')[0]);
+			});
+		</script>
+</div>
+</div>
+<div class="vertical-margin">
+<h4>Link to this deck</h4>
+<div style="overflow: hidden;">
+<div class="deck_url_long_container">
+<input type="text" readonly="readonly" value="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos" class="deck_url_input" id="deckstats_deck_url" />
+<div class="deck_share_buttons">
+<div class="share_buttons">
+<div class="shariff" data-url="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos" data-title="[mtg-parser] 3 Amigos" data-lang="en" data-theme="standard" data-orientation="horizontal" data-twitter-via="deckstats" data-services="[&quot;facebook&quot;,&quot;twitter&quot;,&quot;reddit&quot;,&quot;vk&quot;]"></div>
+</div>
+</div>
+</div>
+<div class="deck_url_short_container">
+<div id="deck_url_short_or">
+or:
+</div>
+<input type="text" readonly="readonly" value="https://deck.tk/6XXf0sHz" size="30" class="deck_url_input" id="deckstats_deck_url_short" />
+</div>
+</div>
+</div>
+</div>
+<div id="deck_tabs-edh" class="deck_tab">
+<div class="vertical-margin">
+Here are some suggestions for cards you could add to your deck, based on decks that other players have built with this Commander.
+<p id="edh_deck_too_small" class="ui-state-error">
+Please add some cards to the deck to see card suggestions.	</p>
+</div>
+<div id="edh_specify_commander">
+<div class="vertical-margin">
+<div>
+Unfortunately, we could not detect a Commander in this deck. Please choose it here to view card suggestions. To make sure this deck is analyzed properly in the future, please <b>flag your Commander in the deckbuilder</b> or put it in a separate section called "Commander". </div>
+<div style="margin-top: 4px;">
+<select id="edh_specify_commander_select"></select>
+<button type="button" id="edh_specify_commander_button">Go</button>
+</div>
+</div>
+</div>
+<div class="vertical-margin">
+<div id="edh_recommendations" class="element_loading">
+<div id="card_suggestion_table_container">
+<div class="cardtable_filter_small_screen_toggle">
+<button>
+<i class="fa fa-filter"></i>
+Filters </button>
+</div>
+<div class="cardtable_filter_table_row">
+<div class="cardtable_filter_container">
+<div class="cardtable_filter_header_item">
+<select class="cardtable_filter_rarity popup_input_auto popup_input_empty_normal" data-empty-label="any">
+<option value="" selected="selected">Rarity</option>
+<option value="M">Mythic Rare</option>
+<option value="R">Rare</option>
+<option value="U">Uncommon</option>
+<option value="C">Common</option>
+
+</select>
+</div>
+<div class="cardtable_filter_header_item">
+<input class="cardtable_filter_type popup_input_auto popup_input_narrow" type="text" placeholder="Type" value="" data-suggestions="Spell;Land;Creature;Artifact;Enchantment;Instant;Sorcery;Planeswalker">
+</div>
+<div class="cardtable_filter_header_item">
+<input class="cardtable_filter_cmc popup_input_auto popup_input_number_with_operator popup_input_no_middle" placeholder="CMC" title="Converted Cost" value="" type="text" />
+</div>
+<div class="cardtable_filter_header_item">
+<input class="cardtable_filter_price popup_input_auto popup_input_number_with_operator popup_input_no_middle" data-default-operator="&lt;=" placeholder="Price" value="" type="text" />
+</div>
+</div>
+</div>
+<table class="anytable" id="card_suggestions_table">
+<thead>
+<tr>
+<th>Score</th>
+<th>Card Name</th>
+<th class="sets_cards_type">Type</th>
+<th class="sets_cards_mana">Mana</th>
+<th>Rarity</th>
+<th></th>
+<th></th>
+<th id="price_column_tcgplayer"></th><th id="price_column_mkm"></th><th id="price_column_cardkingdom"></th><th id="price_column_cardhoarder"></th><th id="price_column_miracle"></th> <th title="Your Collection">
+<svg class="svg svg-collection "><use xlink:href="https://deckstats.net/img/icons.svg#svg-collection" "></use></svg> </th>
+<th></th>
+</tr>
+</thead>
+</table>
+</div>
+</div>
+</div>
+<div class="vertical-margin">
+<div style="text-align: right;">
+Powered by <a href="https://edhrec.com/" class="open_in_new_window" rel="nofollow">edhrec.com</a> </div>
+</div>
+</div>
+<div id="deck_tabs-comments" class="deck_tab"> <div>
+<div id="buttons_top">
+<button type="button" class="new_comment_button">
+Write a comment </button>
+<button type="button" class="all_comments_button">
+Read all comments </button>
+</div>
+<div id="comments">
+</div>
+<div id="more_comments_message" class="comment content-box">
+<button type="button" id="load_older_comments_button">
+Load older comments </button>
+</div>
+<div id="no_comments_message" class="comment content-box">
+There are no comments about this deck yet. </div>
+<div id="write_comment_new" class="vertical-margin">
+<div id="write_comment_error_message"></div>
+<textarea id="write_comment_text" cols="50" rows="6" class="textarea_sans_serif"></textarea>
+<div style="overflow: hidden;">
+<div style="float: right; vertical-align: middle;" class="vertical-margin">
+<div>English <b>card names</b> will be <b>linked automatically</b>.</div>
+<div>In addition, you can use <b>BBCode</b> (like [b][/b], [url=...][/url] and so on) here.</div>
+</div>
+<div style="vertical-align: middle;" id="write_comment_buttons">
+<button type="button" id="submit_comment_button" class="small_screen_full_button">
+Submit Comment </button>
+<button type="button" id="close_form_button" class="small_screen_full_button">
+Close Form </button>
+</div>
+</div>
+</div>
+<div id="buttons_bottom">
+<button type="button" class="new_comment_button">
+Write a comment </button>
+<button type="button" class="all_comments_button">
+Read all comments </button>
+</div>
+</div>
+<script>
+	deck_page.comments.api = "https:\/\/deckstats.net\/api_comments.php?deck_saved_id=2034245&lng=en&subaction=";
+	</script>
+</div> </div>
+</div>
+</div>
+<div id="page_loading"></div>
+</div>
+<div id="footer_container" class="full_container">
+<div id="footer_full">
+<div class="footer_links">
+<a href="https://deckstats.net/members/?lng=en">Members</a>
+| <a href="https://deckstats.net/donate/?lng=en">Donate</a>
+| <a href="https://deckstats.net/about/?lng=en">About Us</a>
+| <a href="https://deckstats.net/forum/index.php?action=agreement" target="_blank">Terms</a>
+| <a href="https://koelling.co.uk/privacy?deckstats" target="_blank">Privacy Policy</a>
+<span id="nitropay-cookie-consent" style="display:none">
+| <a href="#" onclick="window.__cmp('showModal'); return false;">Cookie Preferences</a>
+</span>
+<script>
+				</script>
+<span data-ccpa-link="1"></span>
+</div>
+<div id="language_bar">
+<div id="language_button" title="Select Language">
+<span id="language_bar_title">Language</span>
+<i class="fa fa-caret-up" aria-hidden="true"></i>
+</div>
+<div id="language_flags">
+<a data-code="en" class="language_link language_link_en" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/en"><img src="https://i.hbtronix.de/flags/usgb.png" alt="en" width="16" height="11" /></a>
+<a data-code="de" class="language_link language_link_de" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/de"><img src="https://i.hbtronix.de/flags/de.png" alt="de" width="16" height="11" /></a>
+<a data-code="es" class="language_link language_link_es" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/es"><img src="https://i.hbtronix.de/flags/es.png" alt="es" width="16" height="11" /></a>
+<a data-code="pt" class="language_link language_link_pt" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/pt"><img src="https://i.hbtronix.de/flags/ptbr.png" alt="pt" width="16" height="11" /></a>
+<a data-code="it" class="language_link language_link_it" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/it"><img src="https://i.hbtronix.de/flags/it.png" alt="it" width="16" height="11" /></a>
+<a data-code="fr" class="language_link language_link_fr" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/fr"><img src="https://i.hbtronix.de/flags/fr.png" alt="fr" width="16" height="11" /></a>
+</div>
+</div>
+<div id="copyright_notice" lang="en">
+deckstats.net &copy; 2021. All rights reserved.
+Wizards of the Coast, Magic: The Gathering, and their logos are trademarks of Wizards of the Coast LLC in the United States and other countries. &copy; 2009 Wizards. All Rights Reserved.
+<span onclick="jQuery('#copyright_details').show(); jQuery(this).hide();" style="cursor: pointer; text-decoration: underline;">more...</span>
+<div id="copyright_details" style="display: none">
+This web site is not affiliated with, endorsed, sponsored, or specifically approved by Wizards of the Coast LLC.
+This web site may use the trademarks and other intellectual property of Wizards of the Coast LLC, which is permitted under Wizards' Fan Site Policy. For example, MAGIC: THE GATHERING(r) is a trademark of Wizards of the Coast.
+For more information about Wizards of the Coast or any of Wizards' trademarks or other intellectual property, please visit their website at (www.wizards.com).
+All information is subject to change without prior notice. Although we try to present current and accurate information, we cannot make any guarantees of any kind.
+Responsibility for comments, forum posts, messages and any other user-generated content lies with their respective authors.
+We do not monitor or necessarily agree with any personal opinions or other expressions published in any such content.
+(0.06 sec)
+</div>
+</div>
+</div>
+</div>
+<ul id="language_menu" class="deck_menu">
+<li><a data-code="en" class="language_link language_link_en" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/en"><img src="https://i.hbtronix.de/flags/usgb.png" alt="en" width="16" height="11" /> English</a>
+<li><a data-code="de" class="language_link language_link_de" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/de"><img src="https://i.hbtronix.de/flags/de.png" alt="de" width="16" height="11" /> Deutsch</a>
+<li><a data-code="es" class="language_link language_link_es" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/es"><img src="https://i.hbtronix.de/flags/es.png" alt="es" width="16" height="11" /> Espa&ntilde;ol</a>
+<li><a data-code="pt" class="language_link language_link_pt" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/pt"><img src="https://i.hbtronix.de/flags/ptbr.png" alt="pt" width="16" height="11" /> Portugu&ecirc;s</a>
+<li><a data-code="it" class="language_link language_link_it" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/it"><img src="https://i.hbtronix.de/flags/it.png" alt="it" width="16" height="11" /> Italiano</a>
+<li><a data-code="fr" class="language_link language_link_fr" href="https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos/fr"><img src="https://i.hbtronix.de/flags/fr.png" alt="fr" width="16" height="11" /> Fran&ccedil;ais</a>
+</ul>
+<script>has_nitro=true;</script><script async src="https://s.nitropay.com/ads-196.js"></script></div>
+<div id="wait_dialog" class="any_dialog" title="Please Wait">
+<p style="text-align: center;"><img src="https://i.hbtronix.de/common/loading_bar.gif" alt="loading" /></p>
+</div>
+<div id="session_error_dialog" class="any_dialog" title="Session error">
+<div class="new_content">
+An error with your login session occured: </div>
+<div class="new_content">
+<span id="session_error_text">unknown</span>
+</div>
+<div class="new_content">
+You can do this in a different tab to avoid losing the data you entered here. Once you are done, click the <b>Refresh Session</b> button and then try again.	</div>
+<div class="new_content">
+If the problem persists, please contact us.	</div>
+</div>
+<script src="//deckstats.net/js/shariff.min.js"></script>
+</body>
+</html>

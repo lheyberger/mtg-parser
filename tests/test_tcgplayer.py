@@ -24,7 +24,7 @@ def test_parse_deck(requests_mock, src, pattern, response):
 
 @pytest.mark.slow
 @pytest.mark.parametrize('src', [
-	'https://decks.tcgplayer.com/magic/commander/playing-with-power-mtg/s08e08---kraum---tevesh/1383584',
+    'https://decks.tcgplayer.com/magic/commander/playing-with-power-mtg/s08e08---kraum---tevesh/1383584',
 ])
 def test_parse_deck_no_mock(src):
     result = mtg_parser.tcgplayer.parse_deck(src)

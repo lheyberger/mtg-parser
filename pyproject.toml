@@ -29,6 +29,7 @@ check-wheel-contents = "^0.2.0"
 pylint = "^2.7.4"
 flake8 = "^3.9.0"
 requests-mock = "^1.8.0"
+tabulate = "^0.8.9"
 
 
 [tool.pylint."MESSAGES CONTROL"]
