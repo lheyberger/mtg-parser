@@ -30,13 +30,12 @@ def get_scryfall_url(name=None, extension=None, collector_number=None):
             _format_collector_number(collector_number),
         )
     elif name and extension:
-        scryfall_url += '/named?set={}&fuzzy={}'.format(
+        scryfall_url += '/named?set={}&exact={}'.format(
             _format_extension(extension),
             _format_name(name),
         )
     elif name:
-        scryfall_url += '/named?fuzzy={}'.format(
+        scryfall_url += '/named?exact={}'.format(
             _format_name(name),
         )
-
     return scryfall_url

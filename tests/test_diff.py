@@ -33,8 +33,8 @@ def test_diff(deck1, deck2):
     [
         'https://www.archidekt.com/api/decks/1300410/small/',
         'mock_archidekt_1300410_small',
-        'https://deckstats.net/decks/30198/1297260-feather-the-redeemed',
-        'mock_deckstats_30198_1297260-feather-the-redeemed',
+        'https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos',
+        'mock_deckstats_30198_2034245',
     ],
 ])
 def test_diff_decks(requests_mock, src1, response1, src2, response2):

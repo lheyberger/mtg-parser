@@ -26,24 +26,24 @@ from .utils import mock_response
         }],
     ],
     [
-        'https://deckstats.net/decks/30198/1297260-feather-the-redeemed',
+        'https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos',
         [{
             'pattern': r'https://deckstats.net/',
-            'response': 'mock_deckstats_30198_1297260-feather-the-redeemed',
+            'response': 'mock_deckstats_30198_2034245',
         }],
     ],
     [
-        'https://www.moxfield.com/decks/7CBqQtCVKES6e49vKXfIBQ',
+        'https://www.moxfield.com/decks/Agzx8zsi5UezWBUX5hMJPQ',
         [{
             'pattern': r'https://.*?moxfield.com',
-            'response': 'mock_moxfield_7CBqQtCVKES6e49vKXfIBQ',
+            'response': 'mock_moxfield_Agzx8zsi5UezWBUX5hMJPQ',
         }],
     ],
     [
-        'https://tappedout.net/mtg-decks/food-chain-sliver/',
+        'https://tappedout.net/mtg-decks/mtg-parser-3-amigos/',
         [{
             'pattern': r'https://tappedout.net/',
-            'response': 'mock_tappedout_food-chain-sliver',
+            'response': 'mock_tappedout_3-amigos',
         }],
     ],
     [

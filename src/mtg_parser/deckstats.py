@@ -35,16 +35,15 @@ def _download_deck(src):
 def _parse_deck(deck):
     for section in deck.get('sections', []):
         for card in section.get('cards', {}):
-            yield _get_card_data(card)
+            yield Card(
+                card['name'],
+                card['amount'],
+                tags=_get_tags(card),
+            )
 
 
-def _get_card_data(card):
-    tags = []
+def _get_tags(card):
     if card.get('isCommander', False):
-        tags.append('commander')
-    tags.append(card['data']['supertype_group_extended'])
-    return Card(
-        card['name'],
-        card['amount'],
-        tags=tags,
-    )
+        yield 'commander'
+    if card.get('isCompanion', False):
+        yield 'companion'
