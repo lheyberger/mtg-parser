@@ -9,20 +9,20 @@ from .utils import mock_response
 
 @pytest.mark.parametrize('src, mocked_responses', [
     [
-        'https://aetherhub.com/Deck/thrasios-and-tymna---efficient',
+        'https://aetherhub.com/Deck/mtg-parser-3-amigos',
         [{
             'pattern': r'https://aetherhub.com/Deck/(?!FetchMtgaDeckJson)',
-            'response': 'mock_aetherhub_489549',
+            'response': 'mock_aetherhub_3-amigos',
         }, {
             'pattern': r'https://aetherhub.com/Deck/FetchMtgaDeckJson',
-            'response': 'mock_aetherhub_489549_json',
-        }],
+            'response': 'mock_aetherhub_3-amigos_json',
+        }]
     ],
     [
-        'https://www.archidekt.com/decks/1300410/',
+        'https://www.archidekt.com/decks/1365846/',
         [{
             'pattern': r'https://www.archidekt.com/',
-            'response': 'mock_archidekt_1300410_small',
+            'response': 'mock_archidekt_1365846_small',
         }],
     ],
     [

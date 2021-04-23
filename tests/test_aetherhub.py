@@ -4,18 +4,18 @@
 import requests_mock
 import pytest
 import mtg_parser
-from .utils import mock_response
+from .utils import mock_response, print_deck
 
 
 @pytest.mark.parametrize('src, mocked_responses', [
     [
-        'https://aetherhub.com/Deck/thrasios-and-tymna---efficient',
+        'https://aetherhub.com/Deck/mtg-parser-3-amigos',
         [{
             'pattern': r'https://aetherhub.com/Deck/(?!FetchMtgaDeckJson)',
-            'response': 'mock_aetherhub_489549',
+            'response': 'mock_aetherhub_3-amigos',
         }, {
             'pattern': r'https://aetherhub.com/Deck/FetchMtgaDeckJson',
-            'response': 'mock_aetherhub_489549_json',
+            'response': 'mock_aetherhub_3-amigos_json',
         }]
     ],
 ])
@@ -28,15 +28,17 @@ def test_parse_deck(requests_mock, src, mocked_responses):
         )
 
     result = mtg_parser.aetherhub.parse_deck(src)
+    result = list(result)
 
     assert result and all(result)
 
 
 @pytest.mark.slow
 @pytest.mark.parametrize('src', [
-    'https://aetherhub.com/Deck/thrasios-and-tymna---efficient',
+    'https://aetherhub.com/Deck/mtg-parser-3-amigos',
 ])
 def test_parse_deck_no_mock(src):
     result = mtg_parser.aetherhub.parse_deck(src)
+    result = list(result)
 
     assert result and all(result)

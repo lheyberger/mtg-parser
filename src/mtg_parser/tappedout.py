@@ -47,16 +47,13 @@ def _parse_deck(deck):
 
 
 def _find_cards(soup, pattern):
+    cards = []
+
     header = soup.find('h3', string=re.compile(pattern))
-    if not header:
-        return []
+    if header:
+        ulist = header.find_next_sibling('ul', class_='boardlist')
+        if ulist:
+            links = ulist.find_all('a', class_='card-hover')
+            cards = [link['data-name'] for link in links]
 
-    cardlist = header.find_next_sibling('ul', class_='boardlist')
-    if not cardlist:
-        return []
-
-    cards = cardlist.find_all('a', class_='card-hover')
-    if not cards:
-        return []
-
-    return [card['data-name'] for card in cards]
+    return cards
