@@ -54,10 +54,10 @@ from .utils import mock_response
         }],
     ],
     [
-        'https://decks.tcgplayer.com/magic/commander/playing-with-power-mtg/s08e08---kraum---tevesh/1383584',
+        'https://decks.tcgplayer.com/magic/commander/gorila/mtg-parser--3-amigos/1384198',
         [{
             'pattern': r'https://.*?tcgplayer.com',
-            'response': 'mock_tcgplayer_s08e08_kraum_tevesh',
+            'response': 'mock_tcgplayer_3-amigos',
         }],
     ],
     [
