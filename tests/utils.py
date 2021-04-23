@@ -32,3 +32,5 @@ def print_deck(deck):
         'Scryfall Url': c.scryfall_url,
     } for c in deck)
     print(tabulate(dataset, headers='keys'))
+    print('Unique Cards  -', len(deck))
+    print('Total # Cards -', sum(c.quantity for c in deck))

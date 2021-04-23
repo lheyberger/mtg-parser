@@ -47,10 +47,10 @@ from .utils import mock_response
         }],
     ],
     [
-        'https://www.mtggoldfish.com/deck/3862693',
+        'https://www.mtggoldfish.com/deck/3935836',
         [{
             'pattern': r'https://www.mtggoldfish.com',
-            'response': 'mock_mtggoldfish_3862693',
+            'response': 'mock_mtggoldfish_3-amigos',
         }],
     ],
     [
