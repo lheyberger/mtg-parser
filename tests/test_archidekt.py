@@ -4,49 +4,31 @@
 import requests_mock
 import pytest
 import mtg_parser
-from .utils import mock_response
+from .utils import mock_response, print_deck
 
 
 @pytest.mark.parametrize('src, pattern, response', [
     [
-        'https://www.archidekt.com/decks/1300410/',
+        'https://www.archidekt.com/decks/1365846',
         r'https://www.archidekt.com/',
-        'mock_archidekt_1300410_small',
+        'mock_archidekt_1365846_small',
     ],
 ])
 def test_parse_deck(requests_mock, src, pattern, response):
     mock_response(requests_mock, pattern, response)
 
     result = mtg_parser.archidekt.parse_deck(src)
-
-    assert result and all(result)
-
-
-@pytest.mark.parametrize('deck', [{
-    'categories': [
-        {'includedInDeck': True, 'name': 'Commander'},
-    ],
-    'cards': [{
-        'quantity': 1,
-        'card': {
-            'oracleCard': {'name': 'Urza, Lord High Artificer'},
-            'edition': {'editioncode': 'mh1'},
-            'collectorNumber': '75',
-        },
-        'categories': ['Commander'],
-    }],
-}])
-def test_internal_parse_deck(deck):
-    result = mtg_parser.archidekt._parse_deck(deck)
+    result = list(result)
 
     assert result and all(result)
 
 
 @pytest.mark.slow
 @pytest.mark.parametrize('src', [
-    'https://www.archidekt.com/decks/1300410/',
+    'https://www.archidekt.com/decks/1365846',
 ])
 def test_parse_deck_no_mock(src):
     result = mtg_parser.archidekt.parse_deck(src)
+    result = list(result)
 
     assert result and all(result)
