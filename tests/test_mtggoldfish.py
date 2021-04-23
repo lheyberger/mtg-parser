@@ -32,4 +32,3 @@ def test_parse_deck_no_mock(src):
     result = list(result)
 
     assert result and all(result)
-    print_deck(result)
