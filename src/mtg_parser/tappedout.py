@@ -10,19 +10,19 @@ from mtg_parser.decklist import parse_deck as decklist_parse_deck
 __all__ = []
 
 
-def parse_deck(src):
-    deck = None
-    if _can_handle(src):
-        deck = _parse_deck(_download_deck(src))
-    return deck
-
-
-def _can_handle(src):
+def can_handle(src):
     return (
         isinstance(src, str)
         and
         src.strip().startswith('https://tappedout.net/mtg-decks/')
     )
+
+
+def parse_deck(src):
+    deck = None
+    if can_handle(src):
+        deck = _parse_deck(_download_deck(src))
+    return deck
 
 
 def _download_deck(src):

@@ -9,19 +9,19 @@ from mtg_parser.card import Card
 __all__ = []
 
 
-def parse_deck(src):
-    deck = None
-    if _can_handle(src):
-        deck = _parse_deck(_download_deck(src))
-    return deck
-
-
-def _can_handle(src):
+def can_handle(src):
     return (
         isinstance(src, str)
         and
         re.match(r'https://.*?moxfield.com', src)
     )
+
+
+def parse_deck(src):
+    deck = None
+    if can_handle(src):
+        deck = _parse_deck(_download_deck(src))
+    return deck
 
 
 def _download_deck(src):

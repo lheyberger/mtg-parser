@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from mtg_parser.aetherhub import parse_deck as aetherhub_parse_deck
-from mtg_parser.archidekt import parse_deck as archidekt_parse_deck
-from mtg_parser.deckstats import parse_deck as deckstats_parse_deck
-from mtg_parser.moxfield import parse_deck as moxfield_parse_deck
-from mtg_parser.mtggoldfish import parse_deck as mtggoldfish_parse_deck
-from mtg_parser.tappedout import parse_deck as tappedout_parse_deck
-from mtg_parser.tcgplayer import parse_deck as tcgplayer_parse_deck
-from mtg_parser.decklist import parse_deck as decklist_parse_deck
+import mtg_parser.aetherhub
+import mtg_parser.archidekt
+import mtg_parser.deckstats
+import mtg_parser.moxfield
+import mtg_parser.mtggoldfish
+import mtg_parser.tappedout
+import mtg_parser.tcgplayer
+import mtg_parser.decklist
 
 
 __all__ = [
@@ -18,17 +18,18 @@ __all__ = [
 
 def parse_deck(src):
     parsers = [
-        aetherhub_parse_deck,
-        archidekt_parse_deck,
-        deckstats_parse_deck,
-        moxfield_parse_deck,
-        mtggoldfish_parse_deck,
-        tappedout_parse_deck,
-        tcgplayer_parse_deck,
-        decklist_parse_deck,
+        mtg_parser.aetherhub,
+        mtg_parser.archidekt,
+        mtg_parser.deckstats,
+        mtg_parser.moxfield,
+        mtg_parser.mtggoldfish,
+        mtg_parser.tappedout,
+        mtg_parser.tcgplayer,
+        mtg_parser.decklist,
     ]
-    for _parse_deck in parsers:
-        deck = _parse_deck(src)
-        if deck:
-            return deck
+    for parser in parsers:
+        if parser.can_handle(src):
+            deck = parser.parse_deck(src)
+            if deck:
+                return deck
     return None

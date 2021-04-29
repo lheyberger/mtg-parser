@@ -8,15 +8,15 @@ from mtg_parser.card import Card
 __all__ = []
 
 
+def can_handle(src):
+    return isinstance(src, str)
+
+
 def parse_deck(src):
     deck = None
-    if _can_handle(src):
+    if can_handle(src):
         deck = _parse_deck(src)
     return deck
-
-
-def _can_handle(src):
-    return isinstance(src, str)
 
 
 def _parse_deck(deck):
