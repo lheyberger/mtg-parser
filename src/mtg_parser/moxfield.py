@@ -26,7 +26,7 @@ def parse_deck(src):
 
 def _download_deck(src):
     url = 'https://api.moxfield.com/v2/decks/all/{}'.format(
-        re.search(r'https://.*?moxfield.com/.*/([a-zA-Z0-9]+)', src).group(1)
+        re.search(r'https://.*?moxfield.com/.*/([a-zA-Z0-9-]+)', src).group(1)
     )
     return requests.get(url).json()
 
