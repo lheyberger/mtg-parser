@@ -26,10 +26,26 @@ def parse_deck(src):
 
 
 def _download_deck(src):
+    start_token = 'init_deck_data('
+    end_token = ');'
+
     result = requests.get(src).text.splitlines()
-    result = next(line for line in result if 'init_deck_data' in line)
-    result = re.match(r'.*init_deck_data\((.*?)\);', result)
-    return json.loads(result.group(1))
+    result = next(line for line in result if start_token in line)
+
+    result = result[result.find(start_token) + len(start_token):]
+    result = result[:result.find(end_token)]
+
+    i = 0
+    opened = 0
+    for i, char in enumerate(result):
+        if char == '{':
+            opened = opened + 1
+        if char == '}':
+            opened = opened - 1
+        if opened <= 0:
+            break
+    result = result[:i+1]
+    return json.loads(result)
 
 
 def _parse_deck(deck):
