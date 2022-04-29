@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import requests_mock
 import pytest
 import mtg_parser
 from mtg_parser.card import Card

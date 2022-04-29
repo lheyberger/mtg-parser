@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import requests_mock
 import pytest
 import mtg_parser
-from .utils import mock_response, print_deck
+from .utils import mock_response
 
 
 @pytest.mark.parametrize('src, pattern, response', [
