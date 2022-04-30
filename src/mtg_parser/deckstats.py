@@ -14,7 +14,7 @@ def can_handle(src):
     return (
         isinstance(src, str)
         and
-        bool(re.match(r'https://deckstats.net/decks/\d+/\d+-.*', src))
+        re.match(r'https?://deckstats\.net/decks/\d+/\d+-.*', src)
     )
 
 
