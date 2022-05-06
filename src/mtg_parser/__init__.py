@@ -10,6 +10,7 @@ from mtg_parser.grammar import * # noqa
 from mtg_parser.moxfield import * # noqa
 from mtg_parser.mtggoldfish import * # noqa
 from mtg_parser.parser import * # noqa
+from mtg_parser.scryfall import * # noqa
 from mtg_parser.tappedout import * # noqa
 from mtg_parser.tcgplayer import * # noqa
 from mtg_parser.utils import * # noqa

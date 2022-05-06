@@ -9,7 +9,11 @@ __all__ = []
 
 
 def can_handle(src):
-    return isinstance(src, str)
+    return (
+        isinstance(src, str)
+        and
+        next(_parse_deck(src), None)
+    )
 
 
 def parse_deck(src):

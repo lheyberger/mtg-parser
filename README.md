@@ -14,6 +14,7 @@
 * deckstats.net
 * moxfield.com
 * mtggoldfish.com
+* scryfall.com
 * tappedout.net
 * tcgplayer.com
 
@@ -94,6 +95,18 @@
 	
 	url = 'https://www.mtggoldfish.com/deck/<deckid>'
 	cards = mtg_parser.mtggoldfish.parse_deck(url)
+	for card in cards:
+		print(card)
+
+
+### From scryfall.com
+
+`mtg_parser` can parse public decks from scryfall.com
+
+	import mtg_parser
+	
+	url = 'https://scryfall.com/<userid>/decks/<deckid>/'
+	cards = mtg_parser.scryfall.parse_deck(url)
 	for card in cards:
 		print(card)
 

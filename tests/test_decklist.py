@@ -73,4 +73,4 @@ def test_decklist_sections(string, expected):
 def test_parse_decklist_fails(decklist):
     result = mtg_parser.decklist.parse_deck(decklist)
 
-    assert result and not any(result)
+    assert not result or not any(result)

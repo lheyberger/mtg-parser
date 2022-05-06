@@ -36,13 +36,13 @@ def mock_response(requests_mock, pattern, response, basedir='tests/mocks'):
 
 
 def print_deck(deck):
+    deck = list(deck)
     dataset = ({
         'Quantity': c.quantity,
         'Name': c.name,
         'Ext': c.extension,
         '#': c.number,
         'Tags': ', '.join(c.tags),
-        'Scryfall Url': c.scryfall_url,
     } for c in deck)
     print(tabulate(dataset, headers='keys'))
     print('Unique Cards  -', len(deck))
