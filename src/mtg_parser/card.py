@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from mtg_parser.utils import get_scryfall_url
-
 
 def _format_extension(extension):
     if not extension:
@@ -40,11 +38,6 @@ class Card:
         self.extension = _format_extension(extension)
         self.number = _format_number(number)
         self.tags = _filter_tags(tags)
-        self.scryfall_url = get_scryfall_url(
-            name,
-            extension,
-            number
-        )
 
     def __repr__(self):
         return '<Card: {}>'.format(' '.join(self._get_parts()))
@@ -94,6 +87,3 @@ class Card:
 
         if self.tags:
             yield '[{}]'.format(', '.join(self.tags))
-
-        if self.scryfall_url:
-            yield '{}'.format(self.scryfall_url)
