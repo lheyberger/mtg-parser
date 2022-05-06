@@ -13,7 +13,7 @@ def can_handle(src):
     return (
         isinstance(src, str)
         and
-        src.startswith('https://www.archidekt.com')
+        re.match(r'(https?://)?(www\.)?archidekt\.com', src)
     )
 
 
@@ -37,7 +37,7 @@ def _parse_deck(deck):
     categories = map(lambda c: c['name'], categories)
     categories = set(categories)
     for card in deck['cards']:
-        if categories.intersection(card['categories']):
+        if not card['categories'] or categories & set(card['categories']):
             yield Card(
                 card['card']['oracleCard']['name'],
                 card['quantity'],

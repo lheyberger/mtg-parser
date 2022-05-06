@@ -11,8 +11,21 @@ def _to_json(obj):
     return json.dumps(obj, sort_keys=True, separators=(',', ':'))
 
 
+def _yield_all_cards(cards):
+    for card in cards:
+        for _ in range(card.quantity):
+            yield card
+
+
 def assert_objects_are_equal(result, expected):
     assert _to_json(result) == _to_json(expected)
+
+
+def assert_deck_is_valid(cards):
+    cards = _yield_all_cards(cards)
+    cards = list(cards)
+
+    assert len(cards) == 100, f'There should be exactly 100 cards in an EDH deck (parsed {len(cards)})'
 
 
 def mock_response(requests_mock, pattern, response, basedir='tests/mocks'):

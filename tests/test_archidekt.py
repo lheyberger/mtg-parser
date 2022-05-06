@@ -3,7 +3,7 @@
 
 import pytest
 import mtg_parser
-from .utils import mock_response
+from .utils import mock_response, assert_deck_is_valid
 
 
 @pytest.mark.parametrize('src, pattern, response', [
@@ -17,9 +17,8 @@ def test_parse_deck(requests_mock, src, pattern, response):
     mock_response(requests_mock, pattern, response)
 
     result = mtg_parser.archidekt.parse_deck(src)
-    result = list(result)
 
-    assert result and all(result)
+    assert_deck_is_valid(result)
 
 
 @pytest.mark.slow
@@ -28,6 +27,5 @@ def test_parse_deck(requests_mock, src, pattern, response):
 ])
 def test_parse_deck_no_mock(src):
     result = mtg_parser.archidekt.parse_deck(src)
-    result = list(result)
 
-    assert result and all(result)
+    assert_deck_is_valid(result)
