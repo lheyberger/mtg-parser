@@ -39,17 +39,24 @@ from .utils import mock_response
         }],
     ],
     [
-        'https://tappedout.net/mtg-decks/mtg-parser-3-amigos/',
-        [{
-            'pattern': r'https://tappedout.net/',
-            'response': 'mock_tappedout_3-amigos',
-        }],
-    ],
-    [
         'https://www.mtggoldfish.com/deck/3935836',
         [{
             'pattern': r'https://www.mtggoldfish.com',
             'response': 'mock_mtggoldfish_3-amigos',
+        }],
+    ],
+    [
+        'https://scryfall.com/@gorila/decks/e7aceb4c-29d5-49f5-9a49-c24f64da264b',
+        [{
+            'pattern': r'(https?://)?(www\.)?scryfall\.com',
+            'response': 'mock_scryfall_e7aceb4c-29d5-49f5-9a49-c24f64da264b',
+        }],
+    ],
+    [
+        'https://tappedout.net/mtg-decks/mtg-parser-3-amigos/',
+        [{
+            'pattern': r'https://tappedout.net/',
+            'response': 'mock_tappedout_3-amigos',
         }],
     ],
     [
