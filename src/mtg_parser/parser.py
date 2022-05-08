@@ -6,6 +6,7 @@ import mtg_parser.archidekt
 import mtg_parser.deckstats
 import mtg_parser.moxfield
 import mtg_parser.mtggoldfish
+import mtg_parser.mtgjson
 import mtg_parser.scryfall
 import mtg_parser.tappedout
 import mtg_parser.tcgplayer
@@ -24,6 +25,7 @@ def parse_deck(src):
         mtg_parser.deckstats,
         mtg_parser.moxfield,
         mtg_parser.mtggoldfish,
+        mtg_parser.mtgjson,
         mtg_parser.scryfall,
         mtg_parser.tappedout,
         mtg_parser.tcgplayer,
