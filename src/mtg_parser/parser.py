@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from operator import methodcaller
 import mtg_parser.aetherhub
 import mtg_parser.archidekt
 import mtg_parser.deckstats
@@ -14,24 +15,31 @@ import mtg_parser.decklist
 
 
 __all__ = [
+    'can_handle',
     'parse_deck',
 ]
 
 
+_PARSERS = [
+    mtg_parser.aetherhub,
+    mtg_parser.archidekt,
+    mtg_parser.deckstats,
+    mtg_parser.moxfield,
+    mtg_parser.mtggoldfish,
+    mtg_parser.mtgjson,
+    mtg_parser.scryfall,
+    mtg_parser.tappedout,
+    mtg_parser.tcgplayer,
+    mtg_parser.decklist,
+]
+
+
+def can_handle(src):
+    return any(map(methodcaller('can_handle', src), _PARSERS))
+
+
 def parse_deck(src):
-    parsers = [
-        mtg_parser.aetherhub,
-        mtg_parser.archidekt,
-        mtg_parser.deckstats,
-        mtg_parser.moxfield,
-        mtg_parser.mtggoldfish,
-        mtg_parser.mtgjson,
-        mtg_parser.scryfall,
-        mtg_parser.tappedout,
-        mtg_parser.tcgplayer,
-        mtg_parser.decklist,
-    ]
-    for parser in parsers:
+    for parser in _PARSERS:
         if parser.can_handle(src):
             deck = parser.parse_deck(src)
             if deck:
