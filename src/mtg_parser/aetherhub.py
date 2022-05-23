@@ -14,7 +14,7 @@ def can_handle(src):
     return (
         isinstance(src, str)
         and
-        re.match(r'https?://aetherhub\.com/', src)
+        re.match(r'(?:https?://)?(?:www\.)?aetherhub\.com', src)
     )
 
 

@@ -14,7 +14,7 @@ def can_handle(src):
     return (
         isinstance(src, str)
         and
-        re.match(r'https?://tappedout\.net/mtg-decks/', src)
+        re.match(r'(?:https?://)?(?:www\.)?tappedout\.net/mtg-decks/', src)
     )
 
 

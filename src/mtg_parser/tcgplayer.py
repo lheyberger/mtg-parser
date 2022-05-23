@@ -14,7 +14,7 @@ def can_handle(src):
     return (
         isinstance(src, str)
         and
-        re.match(r'https?://.*?tcgplayer\.com', src)
+        re.match(r'(?:https?://)?.*?tcgplayer\.com', src)
     )
 
 

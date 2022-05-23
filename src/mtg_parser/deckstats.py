@@ -10,11 +10,16 @@ from mtg_parser.card import Card
 __all__ = []
 
 
+_DOMAIN_PATTERN = r'(?:https?://)?(?:www\.)?deckstats\.net'
+_PATH_PATTERN = r'/decks/'
+_ID_PATTERN = r'\d+/\d+-.*'
+
+
 def can_handle(src):
     return (
         isinstance(src, str)
         and
-        re.match(r'https?://deckstats\.net/decks/\d+/\d+-.*', src)
+        re.match(_DOMAIN_PATTERN + _PATH_PATTERN + _ID_PATTERN, src)
     )
 
 

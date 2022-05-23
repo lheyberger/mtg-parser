@@ -14,7 +14,7 @@ def can_handle(src):
     return (
         isinstance(src, str)
         and
-        src.strip().startswith('https://www.mtggoldfish.com/deck/')
+        re.match(r'(?:https?://)?(?:www\.)?mtggoldfish\.com/deck/', src)
     )
 
 

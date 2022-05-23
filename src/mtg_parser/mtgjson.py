@@ -13,7 +13,7 @@ def can_handle(src):
     return (
         isinstance(src, str)
         and
-        re.match(r'(https?://)?(www\.)?mtgjson\.com', src)
+        re.match(r'(?:https?://)?(?:www\.)?mtgjson\.com', src)
     )
 
 

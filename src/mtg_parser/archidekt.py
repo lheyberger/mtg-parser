@@ -9,11 +9,16 @@ from mtg_parser.card import Card
 __all__ = []
 
 
+_DOMAIN_PATTERN = r'(?:https?://)?(?:www\.)?archidekt\.com'
+_PATH_PATTERN = r'/decks/'
+_ID_PATTERN = r'(\d+)'
+
+
 def can_handle(src):
     return (
         isinstance(src, str)
         and
-        re.match(r'(https?://)?(www\.)?archidekt\.com', src)
+        re.match(_DOMAIN_PATTERN, src)
     )
 
 
@@ -25,8 +30,9 @@ def parse_deck(src):
 
 
 def _download_deck(src):
+    pattern = _DOMAIN_PATTERN + _PATH_PATTERN + _ID_PATTERN
     url = 'https://www.archidekt.com/api/decks/{}/small/'.format(
-        re.search(r'decks/(\d+)', src).group(1)
+        re.search(pattern, src).group(1)
     )
     return requests.get(url).json()
 
