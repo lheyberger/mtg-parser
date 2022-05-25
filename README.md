@@ -1,5 +1,7 @@
 # mtg-parser
 
+![PyPI](https://img.shields.io/pypi/v/mtg-parser)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mtg-parser)
 
 ## How to install
 
