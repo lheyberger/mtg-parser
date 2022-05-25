@@ -2,6 +2,7 @@
 
 ![PyPI](https://img.shields.io/pypi/v/mtg-parser)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mtg-parser)
+![GitHub](https://img.shields.io/github/license/lheyberger/mtg-parser)
 
 ## How to install
 
