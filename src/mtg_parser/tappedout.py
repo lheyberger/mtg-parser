@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from collections import defaultdict
 import re
 import requests
 from bs4 import BeautifulSoup
@@ -26,34 +27,49 @@ def parse_deck(src):
 
 
 def _download_deck(src):
-    result = requests.get(src)
+    result = requests.get(src, params={'cat': 'custom'})
     return result.text
 
 
 def _parse_deck(deck):
     soup = BeautifulSoup(deck, features='html.parser')
-    commanders = _find_cards(soup, r'^Commander')
-    companions = _find_cards(soup, r'^Companion')
+
+    tags = _find_tags(soup)
 
     cardlist = soup.find('textarea', id='mtga-textarea')
     cards = decklist_parse_deck(cardlist.get_text(strip=True))
 
     for card in cards:
-        if card.name in commanders:
-            card.tags.add('commander')
-        if card.name in companions:
-            card.tags.add('companion')
+        card.tags.update(tags.get(card.name, {}))
         yield card
 
 
-def _find_cards(soup, pattern):
-    cards = []
+def _find_tags(soup):
+    tags = defaultdict(set)
+    skipped_list = ['sideboard', 'other', ]
 
-    header = soup.find('h3', string=re.compile(pattern))
-    if header:
-        ulist = header.find_next_sibling('ul', class_='boardlist')
-        if ulist:
-            links = ulist.find_all('a', class_='card-hover')
-            cards = [link['data-name'] for link in links]
+    boardlists = soup.find_all('ul', class_='boardlist')
+    for boardlist in boardlists:
+        tag = boardlist.find_previous_sibling('h3')
+        tag = _format_tag(tag.text)
+        if any(tag.startswith(skipped_tag) for skipped_tag in skipped_list):
+            continue
+        if tag == 'commanders':
+            tag = 'commander'
+        links = boardlist.find_all('a', class_='card-hover')
+        card_names = [link['data-name'] for link in links]
+        for card_name in card_names:
+            tags[card_name].add(tag)
 
-    return cards
+    return tags
+
+
+def _format_tag(tag):
+    tag = re.fullmatch(r'(.*?)\s\(\d+\)', tag).group(1)
+    tag = re.sub(r'[^\w\s]', '', tag)
+    tag = tag.lower()
+    tag = tag.split()
+    tag = map(str.strip, tag)
+    tag = filter(len, tag)
+    tag = '_'.join(tag)
+    return tag
