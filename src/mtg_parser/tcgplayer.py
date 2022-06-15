@@ -18,15 +18,15 @@ def can_handle(src):
     )
 
 
-def parse_deck(src):
+def parse_deck(src, session=requests):
     deck = None
     if can_handle(src):
-        deck = _parse_deck(_download_deck(src))
+        deck = _parse_deck(_download_deck(src, session))
     return deck
 
 
-def _download_deck(src):
-    return requests.get(src).text
+def _download_deck(src, session):
+    return session.get(src).text
 
 
 def _parse_deck(deck):

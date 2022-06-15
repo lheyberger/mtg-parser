@@ -22,19 +22,19 @@ def can_handle(src):
     )
 
 
-def parse_deck(src):
+def parse_deck(src, session=requests):
     deck = None
     if can_handle(src):
-        deck = _parse_deck(_download_deck(src))
+        deck = _parse_deck(_download_deck(src, session))
     return deck
 
 
-def _download_deck(src):
+def _download_deck(src, session):
     pattern = _DOMAIN_PATTERN + _PATH_PATTERN + _ID_PATTERN
     url = 'https://www.archidekt.com/api/decks/{}/small/'.format(
         re.search(pattern, src).group(1)
     )
-    return requests.get(url).json()
+    return session.get(url).json()
 
 
 def _parse_deck(deck):

@@ -16,7 +16,8 @@ def can_handle(src):
     )
 
 
-def parse_deck(src):
+def parse_deck(src, *args, **kwargs):
+    del args, kwargs
     deck = None
     if can_handle(src):
         deck = _parse_deck(src)

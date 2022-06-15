@@ -22,19 +22,19 @@ def can_handle(src):
     )
 
 
-def parse_deck(src):
+def parse_deck(src, session=requests):
     deck = None
     if can_handle(src):
-        deck = _parse_deck(_download_deck(src))
+        deck = _parse_deck(_download_deck(src, session))
     return deck
 
 
-def _download_deck(src):
+def _download_deck(src, session):
     pattern = _DOMAIN_PATTERN + _PATH_PATTERN + _GUID_PATTERN
     url = 'https://api.scryfall.com/decks/{}/export/text'.format(
         re.search(pattern, src).group(1)
     )
-    return requests.get(url).text
+    return session.get(url).text
 
 
 def _parse_deck(deck):

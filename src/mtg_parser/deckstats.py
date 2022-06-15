@@ -23,18 +23,18 @@ def can_handle(src):
     )
 
 
-def parse_deck(src):
+def parse_deck(src, session=requests):
     deck = None
     if can_handle(src):
-        deck = _parse_deck(_download_deck(src))
+        deck = _parse_deck(_download_deck(src, session))
     return deck
 
 
-def _download_deck(src):
+def _download_deck(src, session):
     start_token = 'init_deck_data('
     end_token = ');'
 
-    result = requests.get(src).text.splitlines()
+    result = session.get(src).text.splitlines()
     result = next(line for line in result if start_token in line)
 
     result = result[result.find(start_token) + len(start_token):]

@@ -18,20 +18,20 @@ def can_handle(src):
     )
 
 
-def parse_deck(src):
+def parse_deck(src, session=requests):
     deck = None
     if can_handle(src):
-        deck = _parse_deck(_download_deck(src))
+        deck = _parse_deck(_download_deck(src, session))
     return deck
 
 
-def _download_deck(src):
-    result = requests.get(src).text
+def _download_deck(src, session):
+    result = session.get(src).text
     soup = BeautifulSoup(result, features='html.parser')
     element = soup.find(attrs={'data-deckid': True})
     deck_id = element['data-deckid']
 
-    return requests.get(
+    return session.get(
         'https://aetherhub.com/Deck/FetchMtgaDeckJson',
         params={
             'deckId': deck_id,

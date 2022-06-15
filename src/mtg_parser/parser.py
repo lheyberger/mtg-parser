@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from operator import methodcaller
+import requests
 import mtg_parser.aetherhub
 import mtg_parser.archidekt
 import mtg_parser.deckstats
@@ -38,10 +39,10 @@ def can_handle(src):
     return any(map(methodcaller('can_handle', src), _PARSERS))
 
 
-def parse_deck(src):
+def parse_deck(src, session=requests):
     for parser in _PARSERS:
         if parser.can_handle(src):
-            deck = parser.parse_deck(src)
+            deck = parser.parse_deck(src, session)
             if deck:
                 return deck
     return None
