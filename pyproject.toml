@@ -30,6 +30,7 @@ pylint = "^2.7.4"
 flake8 = "^3.9.0"
 requests-mock = "^1.8.0"
 tabulate = "^0.8.9"
+more-itertools = "^8.14.0"
 
 
 [tool.pylint."MESSAGES CONTROL"]

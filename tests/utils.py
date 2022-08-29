@@ -5,6 +5,7 @@ import os
 import re
 import json
 from tabulate import tabulate
+from more_itertools import ilen
 
 
 def _to_json(obj):
@@ -24,8 +25,13 @@ def assert_objects_are_equal(result, expected):
 def assert_deck_is_valid(cards):
     cards = _yield_all_cards(cards)
     cards = list(cards)
-
     assert len(cards) == 100, f'There should be exactly 100 cards in an EDH deck (parsed {len(cards)})'
+
+    tags = set(['commander', 'companion'])
+    command_zone = filter(lambda card: tags & card.tags, cards)
+    nb_command_zone = ilen(command_zone)
+    assert nb_command_zone >= 1, f'There should be at least 1 card in the command zone (parsed {nb_command_zone})'
+    assert nb_command_zone <= 3, f'There should be no more than 3 cards in the command zone (parsed {nb_command_zone})'
 
 
 def mock_response(requests_mock, pattern, response, basedir='tests/mocks'):
