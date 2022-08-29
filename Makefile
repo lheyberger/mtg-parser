@@ -5,11 +5,20 @@ SRC_DIR = src
 TESTS_DIR = tests
 DIST_DIR = dist
 TMP_DIR = tmp
+COVERAGE_DIR = htmlcov
 
 ##
 # ALL
 ##
 all: install test build clean
+
+.PHONY: all
+
+
+##
+# RELEASE
+##
+release: update test-all lint-all distclean build clean
 
 .PHONY: all
 
@@ -45,14 +54,18 @@ test-all:
 	poetry run coverage run -m pytest -rP
 	poetry run coverage report --fail-under=100
 
-.PHONY: lint lint-all test test-all
+coverage:
+	poetry run coverage html -d ${COVERAGE_DIR}
+	open ${COVERAGE_DIR}/index.html
+
+.PHONY: lint lint-all test test-all coverage
 
 
 ##
 # BUILD
 #
 sync-version:
-	sed -i '' "s/__version__.*/__version__ = \'`poetry version -s`\'/" `find ${SRC_DIR} -type f -print | xargs grep -l "__version__"` || true
+	sed -i '' "s/^__version__.*/__version__ = \'`poetry version -s`\'/" `find ${SRC_DIR} -type f -print | xargs grep -l "__version__"` || true
 
 build: sync-version
 	poetry check
@@ -71,8 +84,9 @@ test-publish:
 
 publish:
 	poetry publish
+	gh release create -p --generate-notes "v`poetry version -s`" ./${DIST_DIR}/mtg_parser-*
 
-.PHONY: test-publish
+.PHONY: test-publish publish
 
 
 ##

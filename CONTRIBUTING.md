@@ -16,7 +16,7 @@ For fast iteration, run:
 
 	$ make test
 
-For a full checkup:
+For a full checkup (including slow tests):
 
 	$ make test-all
 
@@ -36,20 +36,12 @@ For a full checkup:
 
 ### Test version
 
-	$ make test-all
-	$ make lint-all
-	$ make distclean
 	$ poetry version (premajor|preminor|prepatch|prerelease)
-	$ make build
-	$ make clean
+	$ make release
 	$ make test-publish
 
 ### Release version
 
-	$ make test-all
-	$ make lint-all
-	$ make distclean
 	$ poetry version (major|minor|patch)
-	$ make build
-	$ make clean
+	$ make release
 	$ make publish
