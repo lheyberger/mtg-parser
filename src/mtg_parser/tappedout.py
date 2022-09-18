@@ -26,7 +26,10 @@ def parse_deck(src, session=requests):
 
 
 def _download_deck(src, session):
-    return session.get(src, params={'cat': 'custom'}).text
+    response = session.head(src, allow_redirects=True)
+    src = response.url
+    response = session.get(src, params={'cat': 'custom'})
+    return response.text
 
 
 def _parse_deck(deck):
@@ -46,7 +49,11 @@ def _parse_deck(deck):
             elem['data-name']: elem['data-qty']
             for elem in quantities
         }
-        cards = boardlist.find_all('a', class_='card-hover')
+        cards = boardlist.find_all(
+            'a',
+            class_='card-hover',
+            attrs={'data-url': True}
+        )
         for card in cards:
             yield Card(
                 card['data-name'],
