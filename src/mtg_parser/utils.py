@@ -25,17 +25,13 @@ def get_scryfall_url(name=None, extension=None, collector_number=None):
     scryfall_url = 'https://api.scryfall.com/cards'
 
     if extension and collector_number:
-        scryfall_url += '/{}/{}'.format(
-            _format_extension(extension),
-            _format_collector_number(collector_number),
-        )
+        scryfall_url += f"/{_format_extension(extension)}"
+        scryfall_url += f"/{_format_collector_number(collector_number)}"
     elif name and extension:
-        scryfall_url += '/named?set={}&exact={}'.format(
-            _format_extension(extension),
-            _format_name(name),
-        )
+        scryfall_url += '/named'
+        scryfall_url += f"?set={_format_extension(extension)}"
+        scryfall_url += f"&exact={_format_name(name)}"
     elif name:
-        scryfall_url += '/named?exact={}'.format(
-            _format_name(name),
-        )
+        scryfall_url += '/named'
+        scryfall_url += f"?exact={_format_name(name)}"
     return scryfall_url

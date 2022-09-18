@@ -40,7 +40,7 @@ class Card:
         self.tags = _filter_tags(tags)
 
     def __repr__(self):
-        return '<Card: {}>'.format(' '.join(self._get_parts()))
+        return f"<Card: {' '.join(self._get_parts())}>"
 
     def __str__(self):
         return ' '.join(self._get_parts())
@@ -74,16 +74,16 @@ class Card:
 
     def _get_parts(self):
         if self.quantity:
-            yield '{}'.format(self.quantity)
+            yield f"{self.quantity}"
 
         if self.name:
-            yield '{}'.format(self.name)
+            yield f"{self.name}"
 
         if self.extension:
-            yield '({})'.format(self.extension)
+            yield f"({self.extension})"
 
         if self.number:
-            yield '{}'.format(self.number)
+            yield f"{self.number}"
 
         if self.tags:
-            yield '[{}]'.format(', '.join(self.tags))
+            yield f"[{', '.join(self.tags)}]"

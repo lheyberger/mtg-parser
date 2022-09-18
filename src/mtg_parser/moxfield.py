@@ -31,9 +31,8 @@ def parse_deck(src, session=requests):
 
 def _download_deck(src, session):
     pattern = _DOMAIN_PATTERN + _PATH_PATTERN + _ID_PATTERN
-    url = 'https://api.moxfield.com/v2/decks/all/{}'.format(
-        re.search(pattern, src).group(1)
-    )
+    deck_id = re.search(pattern, src).group(1)
+    url = f"https://api.moxfield.com/v2/decks/all/{deck_id}"
     return session.get(url).json()
 
 

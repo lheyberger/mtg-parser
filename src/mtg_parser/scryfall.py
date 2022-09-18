@@ -31,9 +31,8 @@ def parse_deck(src, session=requests):
 
 def _download_deck(src, session):
     pattern = _DOMAIN_PATTERN + _PATH_PATTERN + _GUID_PATTERN
-    url = 'https://api.scryfall.com/decks/{}/export/text'.format(
-        re.search(pattern, src).group(1)
-    )
+    deck_id = re.search(pattern, src).group(1)
+    url = f"https://api.scryfall.com/decks/{deck_id}/export/text"
     return session.get(url).text
 
 
