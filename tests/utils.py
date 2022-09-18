@@ -39,6 +39,7 @@ def mock_response(requests_mock, pattern, response, basedir='tests/mocks'):
         matcher = re.compile(pattern)
         with open(os.path.join(basedir, response), 'r') as file:
             requests_mock.get(matcher, text=file.read())
+        requests_mock.head(matcher, status_code=200)
 
 
 def print_deck(deck):
