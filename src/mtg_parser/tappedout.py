@@ -51,8 +51,10 @@ def _parse_deck(deck):
         }
         cards = boardlist.find_all(
             'a',
-            class_='card-hover',
-            attrs={'data-url': True}
+            attrs={
+                'data-url': True,
+                'data-name': True,
+            }
         )
         for card in cards:
             yield Card(
