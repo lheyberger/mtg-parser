@@ -27,7 +27,7 @@ release: update test-all lint-all distclean build clean
 # INSTALL
 ##
 install:
-	poetry install --remove-untracked
+	poetry install --sync
 
 update:
 	poetry update
