@@ -1,9 +1,12 @@
 name: Nightly
 
-on: [push]
+on:
+  schedule:
+    - cron: '0 7 * * 1' # https://crontab.guru/#0_7_*_*_1
+  workflow_dispatch:
 
 jobs:
-  build:
+  nightly:
     strategy:
       fail-fast: false
       matrix:
