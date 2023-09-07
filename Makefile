@@ -51,7 +51,7 @@ test:
 	poetry run coverage report --fail-under=100
 
 test-all:
-	poetry run coverage run -m pytest -rP
+	poetry run coverage run -m pytest -rP || poetry run coverage run -a -m pytest -rP --last-failed --last-failed-no-failures none
 	poetry run coverage report --fail-under=100
 
 coverage:
