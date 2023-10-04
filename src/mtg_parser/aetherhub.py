@@ -51,7 +51,6 @@ def _parse_deck(deck):
         if not quantity:
             last_category = name
         elif name and quantity:
-            if last_category:
-                tags = [last_category]
+            tags = [last_category] if last_category else None
             card = Card(name, quantity, extension, number, tags)
             yield card
