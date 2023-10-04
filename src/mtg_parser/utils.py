@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from urllib.parse import quote_plus
+
 
 __all__ = []
 
@@ -9,7 +11,8 @@ def _format_name(card_name):
     card_name = card_name.split()
     card_name = map(str.strip, card_name)
     card_name = filter(len, card_name)
-    card_name = '+'.join(card_name)
+    card_name = ' '.join(card_name)
+    card_name = quote_plus(card_name)
     return card_name
 
 

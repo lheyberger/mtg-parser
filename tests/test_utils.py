@@ -31,16 +31,20 @@ def test_get_scryfall_url_no_parameters(parameters, expected):
 
 @pytest.mark.parametrize('parameters, expected', [
     [
+        ['Minsc & Boo, Timeless Heroes'],
+        'https://api.scryfall.com/cards/named?exact=Minsc+%26+Boo%2C+Timeless+Heroes',
+    ],
+    [
         ['Najeela, the Blade-Blossom'],
-        'https://api.scryfall.com/cards/named?exact=Najeela,+the+Blade-Blossom',
+        'https://api.scryfall.com/cards/named?exact=Najeela%2C+the+Blade-Blossom',
     ],
     [
         ['Najeela, the Blade-Blossom', None],
-        'https://api.scryfall.com/cards/named?exact=Najeela,+the+Blade-Blossom',
+        'https://api.scryfall.com/cards/named?exact=Najeela%2C+the+Blade-Blossom',
     ],
     [
         ['Najeela, the Blade-Blossom', None, None],
-        'https://api.scryfall.com/cards/named?exact=Najeela,+the+Blade-Blossom',
+        'https://api.scryfall.com/cards/named?exact=Najeela%2C+the+Blade-Blossom',
     ],
 ])
 def test_get_scryfall_url_name(parameters, expected):
@@ -52,15 +56,15 @@ def test_get_scryfall_url_name(parameters, expected):
 @pytest.mark.parametrize('parameters, expected', [
     [
         ['Najeela, the Blade-Blossom', 'bbd'],
-        'https://api.scryfall.com/cards/named?set=bbd&exact=Najeela,+the+Blade-Blossom',
+        'https://api.scryfall.com/cards/named?set=bbd&exact=Najeela%2C+the+Blade-Blossom',
     ],
     [
         ['Najeela, the Blade-Blossom', 'BBD'],
-        'https://api.scryfall.com/cards/named?set=bbd&exact=Najeela,+the+Blade-Blossom',
+        'https://api.scryfall.com/cards/named?set=bbd&exact=Najeela%2C+the+Blade-Blossom',
     ],
     [
         ['Najeela, the Blade-Blossom', 'BBD', None],
-        'https://api.scryfall.com/cards/named?set=bbd&exact=Najeela,+the+Blade-Blossom',
+        'https://api.scryfall.com/cards/named?set=bbd&exact=Najeela%2C+the+Blade-Blossom',
     ],
 ])
 def test_get_scryfall_url_name_set(parameters, expected):
