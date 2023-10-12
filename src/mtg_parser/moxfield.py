@@ -38,10 +38,18 @@ def _download_deck(src, session):
 
 def _parse_deck(deck):
     for key, value in deck['commanders'].items():
-        yield Card(key, value['quantity'], tags=['commander'])
+        yield Card(key, **_extract_information(value), tags=['commander'])
 
     for key, value in deck['companions'].items():
-        yield Card(key, value['quantity'], tags=['companion'])
+        yield Card(key, **_extract_information(value), tags=['companion'])
 
     for key, value in deck['mainboard'].items():
-        yield Card(key, value['quantity'])
+        yield Card(key, **_extract_information(value))
+
+
+def _extract_information(card):
+    return {
+        'quantity': card.get('quantity', 1),
+        'extension': card.get('card', {}).get('set'),
+        'number': card.get('card', {}).get('cn'),
+    }

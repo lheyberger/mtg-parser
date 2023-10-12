@@ -5,20 +5,22 @@
 def _format_extension(extension):
     if not extension:
         return extension
-    return str(extension).strip().upper()
+    return str(extension).strip()
 
 
 def _format_number(number):
     if not number:
         return number
-    return str(number).strip().lower()
+    return str(number).strip()
 
 
-def _filter_tags(tags):
+def _format_tags(tags):
     if not tags:
         return set()
     tags = filter(bool, tags)
     tags = map(str, tags)
+    tags = map(str.strip, tags)
+    tags = filter(len, tags)
     tags = map(str.lower, tags)
     return set(tags)
 
@@ -37,7 +39,7 @@ class Card:
         self.quantity = int(quantity)
         self.extension = _format_extension(extension)
         self.number = _format_number(number)
-        self.tags = _filter_tags(tags)
+        self.tags = _format_tags(tags)
 
     def __repr__(self):
         return f"<Card: {' '.join(self._get_parts())}>"

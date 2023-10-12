@@ -76,14 +76,6 @@ def test_card_strictly_equals(left, right):
         Card('Sol Ring', quantity='1'),
     ],
     [
-        Card('Sol Ring', extension='MPS'),
-        Card('Sol Ring', extension='mps'),
-    ],
-    [
-        Card('Sol Ring', number='24a'),
-        Card('Sol Ring', number='24A'),
-    ],
-    [
         Card('Sol Ring', number=24),
         Card('Sol Ring', number='24'),
     ],
@@ -120,6 +112,14 @@ def test_card_equals(left, right):
         Card('Sol Ring', extension='mps'),
     ],
     [
+        Card('Sol Ring', extension='MPS'),
+        Card('Sol Ring', extension='mps'),
+    ],
+    [
+        Card('Sol Ring', number='24a'),
+        Card('Sol Ring', number='24A'),
+    ],
+    [
         Card('Sol Ring', number='1'),
         Card('Sol Ring', number='2'),
     ],
@@ -153,6 +153,14 @@ def test_card_not_equals(left, right):
     [
         Card('Sol Ring', number='10'),
         Card('Sol Ring', number='20'),
+    ],
+    [
+        Card('Sol Ring', extension='MPS'),
+        Card('Sol Ring', extension='mps'),
+    ],
+    [
+        Card('Sol Ring', number='24A'),
+        Card('Sol Ring', number='24a'),
     ],
     # [
     #     Card('Sol Ring', tags=['Artifact']),
