@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "mtg_parser"
-version = "0.0.1a30"
+version = "0.0.1a31"
 license = "MIT"
 description = "Magic: the Gathering decklist parser"
 readme = "README.md"
