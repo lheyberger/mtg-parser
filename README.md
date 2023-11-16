@@ -7,6 +7,8 @@
 
 **mtg-parser** is a Python library to download and parse Magic The Gathering decklists. It supports the most popular decklists hosting websites.
 
+The following section covers the installation of **mtg-parser**.
+
 
 ## Table of contents
 
