@@ -14,7 +14,7 @@ The following section covers the installation of **mtg-parser**.
 ### Prerequisites
 
 Before using **mtg-parser**, you will need:
-- python >= 3.7.2
+- python >= 3.8.1
 
 ### Installation
 
