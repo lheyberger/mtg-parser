@@ -33,10 +33,7 @@ def _download_deck(src, session):
     pattern = _DOMAIN_PATTERN + _PATH_PATTERN + _ID_PATTERN
     deck_id = re.search(pattern, src).group(1)
     url = f"https://api.moxfield.com/v2/decks/all/{deck_id}"
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/119.0',
-    }
-    return session.get(url, headers=headers).json()
+    return session.get(url).json()
 
 
 def _parse_deck(deck):

@@ -12,15 +12,15 @@ jobs:
       max-parallel: 2
       matrix:
         python-version: [
-          3.7.17,
+          3.8.1,
           3.8.18,
           3.9.18,
           3.10.13,
-          3.11.5,
-          3.12.0-rc.1
+          3.11.6,
+          3.12.0
         ]
         poetry-version: [
-          1.4.2
+          1.7.0
         ]
 
     runs-on: ubuntu-latest

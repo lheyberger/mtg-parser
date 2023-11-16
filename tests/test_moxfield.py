@@ -4,7 +4,7 @@
 import pytest
 import requests
 import mtg_parser
-from .utils import mock_response, assert_deck_is_valid
+from .utils import mock_response, assert_deck_is_valid, requests_session
 
 
 @pytest.mark.parametrize('src, pattern, response', [
@@ -26,8 +26,8 @@ def test_parse_deck(requests_mock, src, pattern, response):
 @pytest.mark.parametrize('src', [
     'https://www.moxfield.com/decks/Agzx8zsi5UezWBUX5hMJPQ',
 ])
-def test_parse_deck_no_mock(src):
-    result = mtg_parser.moxfield.parse_deck(src)
+def test_parse_deck_no_mock(requests_session, src):
+    result = mtg_parser.moxfield.parse_deck(src, requests_session)
 
     assert_deck_is_valid(result)
 
@@ -36,8 +36,8 @@ def test_parse_deck_no_mock(src):
 @pytest.mark.parametrize('src', [
     'https://www.moxfield.com/decks/KJGxdJIxAkqDnowdAjimdg',
 ])
-def test_parse_deck_corner_cases_no_mock(src):
-    result = mtg_parser.moxfield.parse_deck(src)
+def test_parse_deck_corner_cases_no_mock(requests_session, src):
+    result = mtg_parser.moxfield.parse_deck(src, requests_session)
 
     for card in result:
         url = mtg_parser.utils.get_scryfall_url(card.name, card.extension, card.number)
