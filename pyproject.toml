@@ -40,6 +40,7 @@ disable = [
     "missing-function-docstring",
     "duplicate-code",
     "too-many-arguments",
+    "too-many-function-args",
     "stop-iteration-return",
 ]
 

@@ -41,4 +41,4 @@ def test_parse_deck_corner_cases_no_mock(requests_session, src):
 
     for card in result:
         url = mtg_parser.utils.get_scryfall_url(card.name, card.extension, card.number)
-        requests.get(url).raise_for_status()
+        requests.get(url, timeout=10).raise_for_status()

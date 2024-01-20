@@ -4,8 +4,8 @@
 import os
 import re
 import json
-import pytest
 import random
+import pytest
 from requests import Session
 from requests.adapters import HTTPAdapter, Retry
 from tabulate import tabulate

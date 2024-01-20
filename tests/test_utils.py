@@ -115,4 +115,4 @@ def test_get_scryfall_url_name_set_code(parameters, expected):
 def test_request_urls(parameters):
     url = mtg_parser.utils.get_scryfall_url(*parameters)
 
-    requests.get(url).raise_for_status()
+    requests.get(url, timeout=10).raise_for_status()
