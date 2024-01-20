@@ -7,16 +7,21 @@
 
 **mtg-parser** is a Python library to download and parse Magic The Gathering decklists. It supports the most popular decklists hosting websites.
 
-## Getting Started
+
+## Table of contents
+
+- [Installation](#installation)
+- [Supported Formats](#supported-formats)
+- [Known issues](#known-issues)
+- [Usage](#usage)
+
+
+## Installation
 
 The following section covers the installation of **mtg-parser**.
 
-### Prerequisites
-
 Before using **mtg-parser**, you will need:
 - python >= 3.8.1
-
-### Installation
 
 To install **mtg-parser**, simply run one of the following commands in the terminal of your choice:
 
@@ -30,7 +35,8 @@ or
 $ poetry add mtg-parser
 ```
 
-## Supported Decklist Websites
+
+## Supported Formats
 
 In addition to [MTGO](mtgo.com) and [MTGA](magic.wizards.com/mtgarena) formats, **mtg-parser** supports the following websites:
 - [aetherhub.com](aetherhub.com)
@@ -42,9 +48,14 @@ In addition to [MTGO](mtgo.com) and [MTGA](magic.wizards.com/mtgarena) formats, 
 - [tappedout.net](tappedout.net)
 - [tcgplayer.com](tcgplayer.com)
 
-### ⚠️ Known issues
 
-- [moxfield.com](moxfield.com) prevents the scraping of their website (it's against their Terms of Service). Please contact support@moxfield.com if you want to proceed anyway.
+## Known issues
+
+### Moxfield
+
+[moxfield.com](moxfield.com) prevents the scraping of their website (it's against their Terms of Service).
+Please contact support@moxfield.com if you want to proceed anyway.
+
 
 ## Usage
 
@@ -67,6 +78,7 @@ Provided that `url` is a valid Moxfield url, the following lines are equivalent:
 
 ```python
 cards = mtg_parser.parse_deck(url)
+# is the same as:
 cards = mtg_parser.moxfield.parse_deck(url)
 ```
 
@@ -75,15 +87,16 @@ If for any reason, you need to configure how **mtg-parser** is fetching remote d
 ```python
 from requests import Session
 
-session = Session()
-cards = mtg_parser.parse_deck(<url>, session)
+s = Session()
+# Configure your session here
+cards = mtg_parser.parse_deck(<url>, session=s)
 for card in cards:
 	print(card)
 ```
 
 ### Parsing textual decklist
 
-`mtg_parser` can parse textual decklists with either MTGO or MTGA format
+`mtg_parser` can parse textual decklists in either MTGO or MTGA format
 
 ```python
 import mtg_parser

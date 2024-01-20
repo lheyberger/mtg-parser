@@ -6,7 +6,8 @@ import re
 import json
 import pytest
 import random
-import requests
+from requests import Session
+from requests.adapters import HTTPAdapter, Retry
 from tabulate import tabulate
 from more_itertools import ilen
 
@@ -61,7 +62,15 @@ def print_deck(deck):
 
 @pytest.fixture
 def requests_session():
-    session = requests.session()
+    retry = Retry(
+        total=3,
+        backoff_factor=1,
+        status_forcelist=[429, 500, 502, 503, 504],
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session = Session()
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
     session.headers = {
         'User-Agent': random.choice([
             'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36',
