@@ -44,6 +44,9 @@ For a full checkup:
 
 	$ poetry version (major|minor|patch)
 	$ make release
+	$ git add pyproject.toml src/mtg_parser/__init__.py
+	$ git commit -m "New version mtg-parser v`poetry version -s`"
+	$ git push
 	$ make publish
 
 
