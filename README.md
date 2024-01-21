@@ -23,7 +23,7 @@ The following section covers the installation of **mtg-parser**.
 The following section covers the installation of **mtg-parser**.
 
 Before using **mtg-parser**, you will need:
-- python >= 3.8.1
+- `python >= 3.8.1`
 
 To install **mtg-parser**, simply run one of the following commands in the terminal of your choice:
 
@@ -61,16 +61,16 @@ Please contact support@moxfield.com if you want to proceed anyway.
 
 ## Usage
 
-Start by importing the Requests module:
+Start by importing the `mtg_parser` module:
 
 ```python
-import requests
+import mtg_parser
 ```
 
 Now let's parse a decklist (in any of the supported formats) and display the cards:
 
 ```python
-cards = mtg_parser.parse_deck(<url>)
+cards = mtg_parser.parse_deck(url)
 for card in cards:
 	print(card)
 ```
@@ -86,14 +86,14 @@ cards = mtg_parser.moxfield.parse_deck(url)
 
 In general, it's advised to use `mtg_parser.parse_deck()` as the overhead is insignificant.
 
-If for any reason, you need to configure how **mtg-parser** is fetching remote decklists, you can provide an optional **session** object.
+If for any reason, you need to configure how `mtg_parser` is fetching remote decklists, you can provide an optional `requests.Session` object.
 
 ```python
 from requests import Session
 
 s = Session()
 # Configure your session here
-cards = mtg_parser.parse_deck(<url>, session=s)
+cards = mtg_parser.parse_deck(url, session=s)
 for card in cards:
 	print(card)
 ```
@@ -119,9 +119,9 @@ for card in cards:
 	print(card)
 ```
 
-### Parsing aetherhub.com decklists
+### Parsing decklists from aetherhub.com
 
-`mtg_parser` can parse public decks from aetherhub.com
+`mtg_parser` can parse public decks from [aetherhub.com](aetherhub.com)
 
 ```python
 import mtg_parser
@@ -134,9 +134,9 @@ for card in cards:
 ```
 
 
-### Parsing archidekt.com decklists
+### Parsing decklists from archidekt.com
 
-`mtg_parser` can parse public decks from archidekt.com
+`mtg_parser` can parse public decks from [archidekt.com](archidekt.com)
 
 ```python
 import mtg_parser
@@ -149,9 +149,9 @@ for card in cards:
 ```
 
 
-### Parsing deckstats.net decklists
+### Parsing decklists from deckstats.net
 
-`mtg_parser` can parse public decks from deckstats.net
+`mtg_parser` can parse public decks from [deckstats.net](deckstats.net)
 
 ```python
 import mtg_parser
@@ -164,9 +164,9 @@ for card in cards:
 ```
 
 
-### Parsing moxfield.com decklists
+### Parsing decklists from moxfield.com
 
-`mtg_parser` can parse public decks from moxfield.com
+`mtg_parser` can parse public decks from [moxfield.com](moxfield.com)
 
 ```python
 import mtg_parser
@@ -179,9 +179,9 @@ for card in cards:
 ```
 
 
-### Parsing mtggoldfish.com decklists
+### Parsing decklists from mtggoldfish.com
 
-`mtg_parser` can parse public decks from mtggoldfish.com
+`mtg_parser` can parse public decks from [mtggoldfish.com](mtggoldfish.com)
 
 ```python
 import mtg_parser
@@ -194,9 +194,9 @@ for card in cards:
 ```
 
 
-### Parsing scryfall.com decklists
+### Parsing decklists from scryfall.com
 
-`mtg_parser` can parse public decks from scryfall.com
+`mtg_parser` can parse public decks from [scryfall.com](scryfall.com)
 
 ```python
 import mtg_parser
@@ -209,9 +209,9 @@ for card in cards:
 ```
 
 
-### Parsing tappedout.net decklists
+### Parsing decklists from tappedout.net
 
-`mtg_parser` can parse public decks from tappedout.net
+`mtg_parser` can parse public decks from [tappedout.net](tappedout.net)
 
 ```python
 import mtg_parser
@@ -224,9 +224,9 @@ for card in cards:
 ```
 
 
-### Parsing tcgplayer.com decklists
+### Parsing decklists from tcgplayer.com
 
-`mtg_parser` can parse public decks from tcgplayer.com
+`mtg_parser` can parse public decks from [tcgplayer.com](tcgplayer.com)
 
 ```python
 import mtg_parser
