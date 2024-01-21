@@ -5,9 +5,9 @@
 ![Github - Nightly Check](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/nightly.yaml?label=Nightly%20check)
 ![GitHub](https://img.shields.io/github/license/lheyberger/mtg-parser)
 
-**mtg-parser** is a Python library to download and parse Magic The Gathering decklists. It supports the most popular decklists hosting websites.
+`mtg_parser` is a Python library to download and parse Magic The Gathering decklists. It supports the most popular decklists hosting websites.
 
-The following section covers the installation of **mtg-parser**.
+The following section covers the installation of `mtg_parser`.
 
 
 ## Table of contents
@@ -20,12 +20,12 @@ The following section covers the installation of **mtg-parser**.
 
 ## Installation
 
-The following section covers the installation of **mtg-parser**.
+The following section covers the installation of `mtg_parser`.
 
-Before using **mtg-parser**, you will need:
+Before using `mtg_parser`, you will need:
 - `python >= 3.8.1`
 
-To install **mtg-parser**, simply run one of the following commands in the terminal of your choice:
+To install `mtg_parser`, simply run one of the following commands in the terminal of your choice:
 
 ```shell
 $ pip install mtg-parser
@@ -40,7 +40,7 @@ $ poetry add mtg-parser
 
 ## Supported Formats
 
-In addition to [MTGO](mtgo.com) and [MTGA](magic.wizards.com/mtgarena) formats, **mtg-parser** supports the following websites:
+In addition to [MTGO](mtgo.com) and [MTGA](magic.wizards.com/mtgarena) formats, `mtg_parser` supports the following websites:
 - [aetherhub.com](aetherhub.com)
 - [archidekt.com](archidekt.com)
 - [deckstats.net](deckstats.net)
