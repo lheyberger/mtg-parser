@@ -82,6 +82,8 @@ cards = mtg_parser.parse_deck(url)
 cards = mtg_parser.moxfield.parse_deck(url)
 ```
 
+In general, it's advised to use `mtg_parser.parse_deck()` as the overhead is insignificant.
+
 If for any reason, you need to configure how **mtg-parser** is fetching remote decklists, you can provide an optional **session** object.
 
 ```python
