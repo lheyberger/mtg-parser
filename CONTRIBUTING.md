@@ -7,47 +7,56 @@ This project uses `poetry`, please refer to [their website](https://python-poetr
 
 Then, clone the repository and run:
 
-	$ make install
-
+```shell
+$ make install
+```
 
 ## Run tests
 
 For fast iteration, run:
-
-	$ make test
+```shell
+$ make test
+```
 
 For a full checkup (including slow tests):
-
-	$ make test-all
+```shell
+$ make test-all
+```
 
 
 ## Run linters
 
 For fast iteration, run:
-
-	$ make lint
+```shell
+$ make lint
+```
 
 For a full checkup:
-
-	$ make lint-all
+```shell
+$ make lint-all
+```
 
 
 ## How to publish a new version
 
-### Test version
+Start by updating the version number:
+```shell
+$ poetry version (premajor|preminor|prepatch|prerelease|major|minor|patch)
+```
 
-	$ poetry version (premajor|preminor|prepatch|prerelease)
-	$ make release
-	$ make test-publish
+Build the release and publish it on test.pypi.org:
+```shell
+$ make release
+$ make test-publish
+```
 
-### Release version
-
-	$ poetry version (major|minor|patch)
-	$ make release
-	$ git add pyproject.toml src/mtg_parser/__init__.py
-	$ git commit -m "New version mtg-parser v`poetry version -s`"
-	$ git push
-	$ make publish
+Push the latest files on github and publish the release on pypi.org:
+```shell
+$ git ls-files | xargs grep -l `poetry version -s` | xargs git add
+$ git commit -m "New version mtg-deckstats v`poetry version -s`"
+$ git push
+$ make publish
+```
 
 
 ## Setting up Poetry + PyPI
@@ -55,14 +64,16 @@ For a full checkup:
 ### PyPI Test
 
 Get token from https://test.pypi.org/manage/account/token/ and store it in a token file.
-
-	$ poetry config repositories.testpypi https://test.pypi.org/legacy/
-	$ poetry config pypi-token.testpypi `cat token`
-	$ poetry publish -r testpypi
+```shell
+$ poetry config repositories.testpypi https://test.pypi.org/legacy/
+$ poetry config pypi-token.testpypi `cat token`
+$ poetry publish -r testpypi
+```
 
 ### PyPI Production
 
 Get token from https://pypi.org/manage/account/token/ and store it in a token file.
-
-	$ poetry config pypi-token.pypi `cat token`
-	$ poetry publish
+```shell
+$ poetry config pypi-token.pypi `cat token`
+$ poetry publish
+```

@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import re
+from collections import defaultdict
+
 import requests
 from bs4 import BeautifulSoup
 from mtg_parser.card import Card
@@ -33,6 +35,9 @@ def _download_deck(src, session):
 
 
 def _parse_deck(deck):
+    quantities = {}
+    tags = defaultdict(set)
+
     soup = BeautifulSoup(deck, features='html.parser')
     skipped_list = ['sideboard', ]
     board_container = soup.find('div', class_='board-container')
@@ -44,28 +49,21 @@ def _parse_deck(deck):
             continue
         if tag in ('commander', 'commanders'):
             tag = 'commander'
-        quantities = boardlist.find_all('a', class_="qty board")
-        quantities = {
-            elem['data-name']: elem['data-qty']
-            for elem in quantities
-        }
-        cards = boardlist.find_all(
-            'a',
-            attrs={
-                'data-url': True,
-                'data-name': True,
-            }
+        for card in boardlist.find_all('a', class_="qty board"):
+            quantities[card['data-name']] = card['data-qty']
+        for card in boardlist.find_all('a', attrs={'data-name': True}):
+            tags[card['data-name']].add(tag)
+    for card_name in sorted(set(quantities.keys()) | set(tags.keys())):
+        yield Card(
+            card_name,
+            quantity=quantities.get(card_name, 1),
+            tags=tags.get(card_name, [])
         )
-        for card in cards:
-            yield Card(
-                card['data-name'],
-                quantity=quantities.get(card['data-name'], 1),
-                tags=[tag],
-            )
 
 
 def _format_tag(tag):
-    tag = re.fullmatch(r'(.*?)\s\(\d+\)', tag).group(1)
+    match = re.fullmatch(r'(.*?)(?:\s+\(\d+\))?', tag)
+    tag = match.group(1)
     tag = re.sub(r'[^\w\s]', '', tag)
     tag = tag.lower()
     tag = tag.split()

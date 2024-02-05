@@ -22,18 +22,24 @@ requests = "^2.31"
 beautifulsoup4 = "^4.12"
 
 
-[tool.poetry.dev-dependencies]
-coverage = {extras = ["toml"], version = "^7.3"}
-pytest = "^7.4"
+[tool.poetry.group.dev.dependencies]
 check-wheel-contents = "^0.6"
+coverage = {extras = ["toml"], version = "^7.3"}
+flake8 = "^7.0.0"
+flake8-pyproject = "^1.2.3"
+more-itertools = "^10.1"
 pylint = "^3.0"
-flake8 = "^6.1"
+pytest = "^7.4"
 requests-mock = "^1.11"
 tabulate = "^0.9"
-more-itertools = "^10.1"
+
+
+[tool.flake8]
+max-line-length=120
 
 
 [tool.pylint."MESSAGES CONTROL"]
+max-line-length=120
 disable = [
     "missing-module-docstring",
     "missing-class-docstring",
