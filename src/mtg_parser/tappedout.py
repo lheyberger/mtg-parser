@@ -35,24 +35,30 @@ def _download_deck(src, session):
 
 
 def _parse_deck(deck):
-    quantities = {}
-    tags = defaultdict(set)
-
     soup = BeautifulSoup(deck, features='html.parser')
-    skipped_list = ['sideboard', ]
     board_container = soup.find('div', class_='board-container')
-    boardlists = board_container.find_all('ul', class_='boardlist')
-    for boardlist in boardlists:
-        tag = boardlist.find_previous_sibling('h3')
+
+    quantities = {}
+    for card in board_container.find_all('a', class_="qty board", attrs={
+        'data-name': True,
+        'data-qty': True,
+    }):
+        quantities[card['data-name']] = card['data-qty']
+
+    tags = defaultdict(set)
+    for card in board_container.find_all('a', class_='card-hover', attrs={
+        'data-name': True,
+    }):
+        tag = card.find_previous('h3')
         tag = _format_tag(tag.text)
-        if any(tag.startswith(skipped_tag) for skipped_tag in skipped_list):
-            continue
         if tag in ('commander', 'commanders'):
             tag = 'commander'
-        for card in boardlist.find_all('a', class_="qty board"):
-            quantities[card['data-name']] = card['data-qty']
-        for card in boardlist.find_all('a', attrs={'data-name': True}):
-            tags[card['data-name']].add(tag)
+        elif tag in ('companion', 'companions'):
+            tag = 'companion'
+        else:
+            tag = None
+        tags[card['data-name']].add(tag)
+
     for card_name in sorted(set(quantities.keys()) | set(tags.keys())):
         yield Card(
             card_name,
