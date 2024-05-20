@@ -32,7 +32,7 @@ def parse_deck(src, session=requests):
 def _download_deck(src, session):
     pattern = _DOMAIN_PATTERN + _PATH_PATTERN + _ID_PATTERN
     deck_id = re.search(pattern, src).group(1)
-    url = f"https://www.archidekt.com/api/decks/{deck_id}/small/"
+    url = f"https://www.archidekt.com/api/decks/{deck_id}/"
     return session.get(url).json()
 
 
