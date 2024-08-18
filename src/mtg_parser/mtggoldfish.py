@@ -37,7 +37,7 @@ def _parse_deck(deck):
     last_category = None
     for row in soup:
         if 'deck-category-header' in row.attrs.get('class', []):
-            last_category = row.th.string.strip().splitlines()[0].lower()
+            last_category = row.th.get_text(strip=True).strip().splitlines()[0].lower()
         else:
             yield Card(
                 row.a.string.strip(),

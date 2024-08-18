@@ -48,6 +48,7 @@ def _parse_deck(deck):
     tags = defaultdict(set)
     for card in board_container.find_all('a', class_='card-hover', attrs={
         'data-name': True,
+        'data-url': True,
     }):
         tag = card.find_previous('h3')
         tag = _format_tag(tag.text)

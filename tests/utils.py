@@ -41,7 +41,7 @@ def assert_deck_is_valid(cards):
 def mock_response(requests_mock, pattern, response, basedir='tests/mocks'):
     if response:
         matcher = re.compile(pattern)
-        with open(os.path.join(basedir, response), 'r') as file:
+        with open(os.path.join(basedir, response), 'r', encoding="utf-8") as file:
             requests_mock.get(matcher, text=file.read())
         requests_mock.head(matcher, status_code=200)
 
@@ -62,6 +62,10 @@ def print_deck(deck):
 
 @pytest.fixture
 def requests_session():
+    return create_requests_session()
+
+
+def create_requests_session():
     retry = Retry(
         total=3,
         backoff_factor=1,

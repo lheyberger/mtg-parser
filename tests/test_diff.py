@@ -3,8 +3,18 @@
 
 import pytest
 import mtg_parser
+from itertools import chain
 from mtg_parser.card import Card
 from .utils import mock_response
+from .test_aetherhub import DECK_INFO as aetherhub_deck_info
+from .test_archidekt import DECK_INFO as archidekt_deck_info
+from .test_deckstats import DECK_INFO as deckstats_deck_info
+from .test_moxfield import DECK_INFO as moxfield_deck_info
+from .test_mtggoldfish import DECK_INFO as mtggoldfish_deck_info
+from .test_mtgjson import DECK_INFO as mtgjson_deck_info
+from .test_scryfall import DECK_INFO as scryfall_deck_info
+from .test_tappedout import DECK_INFO as tappedout_deck_info
+from .test_tcgplayer import DECK_INFO as tcgplayer_deck_info
 
 
 @pytest.mark.parametrize('deck1,deck2', [
@@ -28,26 +38,26 @@ def test_diff(deck1, deck2):
         assert value and all(value)
 
 
-@pytest.mark.parametrize('src1, response1, src2, response2', [
-    [
-        'https://www.archidekt.com/decks/1365846/',
-        [{
-            'pattern': r'https://www.archidekt.com/',
-            'response': 'mock_archidekt_1365846_small',
-        }],
-        'https://deckstats.net/decks/30198/2034245--mtg-parser-3-amigos',
-        [{
-            'pattern': r'https://deckstats.net/',
-            'response': 'mock_deckstats_30198_2034245',
-        }],
-    ],
+@pytest.mark.parametrize('deck_info', [
+    aetherhub_deck_info,
+    archidekt_deck_info,
+    deckstats_deck_info,
+    mtggoldfish_deck_info,
+    # mtgjson_deck_info, ## not equal to others, by design
+    scryfall_deck_info,
+    tappedout_deck_info,
+    # tcgplayer_deck_info, ## not equal to others yet
 ])
-def test_diff_decks(requests_mock, src1, response1, src2, response2):
-    for mocked_queries in [response1, response2]:
-        for query in mocked_queries:
-            mock_response(requests_mock, query['pattern'], query['response'])
-    deck1 = mtg_parser.parse_deck(src1)
-    deck2 = mtg_parser.parse_deck(src2)
+def test_diff_decks(requests_mock, deck_info):
+    for mocked_response in chain(moxfield_deck_info['mocked_responses'], deck_info['mocked_responses']):
+        mock_response(
+            requests_mock,
+            mocked_response['pattern'],
+            mocked_response['response'],
+        )
+
+    deck1 = mtg_parser.parse_deck(moxfield_deck_info['url'])
+    deck2 = mtg_parser.parse_deck(deck_info['url'])
 
     result = mtg_parser.diff(deck1, deck2)
 

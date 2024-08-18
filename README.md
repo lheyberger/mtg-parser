@@ -46,6 +46,7 @@ In addition to [MTGO](mtgo.com) and [MTGA](magic.wizards.com/mtgarena) formats, 
 - [deckstats.net](deckstats.net)
 - [moxfield.com](moxfield.com)
 - [mtggoldfish.com](mtggoldfish.com)
+- [mtgjson.com](mtgjson.com)
 - [scryfall.com](scryfall.com)
 - [tappedout.net](tappedout.net)
 - [tcgplayer.com](tcgplayer.com)
@@ -189,6 +190,21 @@ import mtg_parser
 url = 'https://www.mtggoldfish.com/deck/<deck_id>'
 
 cards = mtg_parser.mtggoldfish.parse_deck(url)
+for card in cards:
+	print(card)
+```
+
+
+### Parsing decklists from mtgjson.com
+
+`mtg_parser` can parse decks from [mtgjson.com](mtgjson.com)
+
+```python
+import mtg_parser
+
+url = 'https://mtgjson.com/api/v5/decks/<deck_name>.json'
+
+cards = mtg_parser.mtgjson.parse_deck(url)
 for card in cards:
 	print(card)
 ```
