@@ -12,10 +12,15 @@ from .test_archidekt import DECK_INFO as archidekt_deck_info
 from .test_deckstats import DECK_INFO as deckstats_deck_info
 from .test_moxfield import DECK_INFO as moxfield_deck_info
 from .test_mtggoldfish import DECK_INFO as mtggoldfish_deck_info
-from .test_mtgjson import DECK_INFO as mtgjson_deck_info
 from .test_scryfall import DECK_INFO as scryfall_deck_info
 from .test_tappedout import DECK_INFO as tappedout_deck_info
 from .test_tcgplayer import DECK_INFO as tcgplayer_deck_info
+
+# Different from the others, by design.
+# from .test_mtgjson import DECK_INFO as mtgjson_deck_info
+
+# Can't post a decklist on this website yet.
+# from .test_tcgplayer_ininite import DECK_INFO as tcgplayer_infinite_deck_info
 
 
 @pytest.mark.parametrize('deck1,deck2', [
@@ -44,10 +49,9 @@ def test_diff(deck1, deck2):
     archidekt_deck_info,
     deckstats_deck_info,
     mtggoldfish_deck_info,
-    # mtgjson_deck_info, ## not equal to others, by design
     scryfall_deck_info,
     tappedout_deck_info,
-    # tcgplayer_deck_info, ## not equal to others yet
+    tcgplayer_deck_info,
 ])
 def test_diff_decks(requests_mock, deck_info):
     for mocked_response in chain(moxfield_deck_info['mocked_responses'], deck_info['mocked_responses']):
