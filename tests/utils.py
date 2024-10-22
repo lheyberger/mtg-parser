@@ -29,7 +29,9 @@ def assert_objects_are_equal(result, expected):
 def assert_deck_is_valid(cards):
     cards = _yield_all_cards(cards)
     cards = list(cards)
-    assert len(cards) == 100, f'There should be exactly 100 cards in an EDH deck (parsed {len(cards)})'
+
+    nb_cards = ilen(filter(lambda card: 'companion' not in card.tags, cards))
+    assert nb_cards == 100, f'There should be exactly 100 cards in an EDH deck (parsed {len(cards)})'
 
     tags = set(['commander', 'companion'])
     command_zone = filter(lambda card: tags & card.tags, cards)

@@ -13,6 +13,7 @@ from mtg_parser.mtgjson import * # noqa
 from mtg_parser.parser import * # noqa
 from mtg_parser.scryfall import * # noqa
 from mtg_parser.tappedout import * # noqa
+from mtg_parser.tcgplayer_infinite import * # noqa
 from mtg_parser.tcgplayer import * # noqa
 from mtg_parser.utils import * # noqa
 from mtg_parser.card import * # noqa

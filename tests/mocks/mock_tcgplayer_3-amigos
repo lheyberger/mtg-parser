@@ -80,7 +80,7 @@
 
 <script type="text/javascript">
     var _user_id = '';
-    var _session_id = 'b23f4a88-0e4a-4b8c-8e8e-8e01286b581f';
+    var _session_id = '4ee8955f-868a-4e79-9593-8e42bf2e646e';
     var _snippet_key = 'aa44fd22f8';
 
     var _sift = window._sift = window._sift || [];
@@ -278,9 +278,9 @@
 
         <p id="welcome">
             Welcome, Guest! -
-            [<a href="https://store.tcgplayer.com/login?returnurl=decks.tcgplayer.com%2fmagic%2fcommander%2fgorila%2fmtg-parser--3-amigos%2f1384198" data-aid="headerLogin">Login</a>]
+            [<a href="https://store.tcgplayer.com/login?returnurl=decks.tcgplayer.com%2fmagic%2fcommander%2fgorila%2fmtg-parser--3-amigos%2f1432015" data-aid="headerLogin">Login</a>]
             <text>
-                [<a href="https://store.tcgplayer.com/login?returnurl=decks.tcgplayer.com%2fmagic%2fcommander%2fgorila%2fmtg-parser--3-amigos%2f1384198&amp;createAccount=true" data-aid="headerSignUp">Sign Up</a>]
+                [<a href="https://store.tcgplayer.com/login?returnurl=decks.tcgplayer.com%2fmagic%2fcommander%2fgorila%2fmtg-parser--3-amigos%2f1432015&amp;createAccount=true" data-aid="headerSignUp">Sign Up</a>]
             </text>
         </p>
         <ul id="utilityNav">
@@ -371,7 +371,7 @@
 <div class="view-content-box">
     <div class="viewDeckHeader">
         <h1>
-            <a href="/magic/commander/gorila/mtg-parser--3-amigos/1384198">[mtg-parser] 3 Amigos</a>
+            <a href="/magic/commander/gorila/mtg-parser--3-amigos/1432015">[mtg-parser] 3 Amigos</a>
         </h1>
         <h3>
             by <a href="/magic/deck/search?player=gorila">gorila</a>
@@ -396,11 +396,11 @@
         <div>
             Latest Set:
             <span>
-                <a href="/magic/deck/search?format=commander&amp;latestset=strixhaven-school-of-mages">Strixhaven School of Mages</a>
+                <a href="/magic/deck/search?format=commander&amp;latestset=duskmourn-house-of-horror">Duskmourn House of Horror</a>
             </span>
         </div>
         <div>
-            Last Modified On: 4/23/2021
+            Last Modified On: 10/22/2024
         </div>
     </div>
 
@@ -423,7 +423,7 @@
             </script>
         </div>
         <div class="col2of2 center">
-            <div class="fb-share-button" data-href="https://decks.tcgplayer.com/magic/commander/gorila/mtg-parser--3-amigos/1384198" data-layout="button_count"></div>
+            <div class="fb-share-button" data-href="https://decks.tcgplayer.com/magic/commander/gorila/mtg-parser--3-amigos/1432015" data-layout="button_count"></div>
         </div>
     </div>
 </div>
@@ -432,7 +432,7 @@
                 "event": "trackEvent",
                 "event_category": "Buy This Deck",
                 "event_action": "Magic",
-                "event_label": "6463.9800",
+                "event_label": "5026.0250",
                 "player": "gorila",
                 "deck_name": "mtg parser 3 amigos",
                 "tags_deck": "",
@@ -456,14 +456,14 @@
                 &mdash;
             </td>
             <td class="median-price">
-                $6,463.98
+                $5,026.03
             </td>
             <td class="lowest-price">
-                $4,228.10
+                $3,182.77
             </td>
         </tr>
     </table>
-    <button class="green-button-lg fullWidth price-buffer" onclick="trackBuyDeck(); window.open('https://store.tcgplayer.com/MassEntry?productLine=Magic&amp;deckId=1384198')">Buy This Deck!</button>
+    <button class="green-button-lg fullWidth price-buffer" onclick="trackBuyDeck(); window.open('https://store.tcgplayer.com/MassEntry?productLine=Magic&amp;deckId=1432015')">Buy This Deck!</button>
 </div>
 
     <div style="clear:both;"></div>
@@ -488,7 +488,7 @@
             <input id="Product0MarketPrice" name="Product0MarketPrice" type="hidden" value="" />
 
 
-            <h3 class="subdeck__name">Command Zone <span class="subdeck__total-qty">3</span></h3>
+            <h3 class="subdeck__name">Command Zone <span class="subdeck__total-qty">2</span></h3>
                 <div class="subdeck-group">
 
                         <a id="Product123979Container"
@@ -500,39 +500,24 @@
 
                             <input id="Product123979ImageUrl" name="Product123979ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/123979_200w.jpg" />
                             <input id="Product123979SearchUrl" name="Product123979SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/123979/magic-kraum-ludevics-opus" />
-                            <input id="Product123979LowestPrice" name="Product123979LowestPrice" type="hidden" value="11.6000" />
-                            <input id="Product123979MedianPrice" name="Product123979MedianPrice" type="hidden" value="" />
-                            <input id="Product123979MarketPrice" name="Product123979MarketPrice" type="hidden" value="19.5300" />
+                            <input id="Product123979LowestPrice" name="Product123979LowestPrice" type="hidden" value="8.0000" />
+                            <input id="Product123979MedianPrice" name="Product123979MedianPrice" type="hidden" value="13.3200" />
+                            <input id="Product123979MarketPrice" name="Product123979MarketPrice" type="hidden" value="13.3200" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Kraum, Ludevic&#39;s Opus</span>
                         </a>
-                        <a id="Product491404Container"
+                        <a id="Product578922Container"
                            class="subdeck-group__card"
-                           href="https://www.tcgplayer.com/product/491404/magic-obosh-the-preypiercer"
+                           href="https://www.tcgplayer.com/product/578922/magic-vial-smasher-the-fierce"
                            target="_blank"
                            onmouseover="UpdateCardSummary(this)"
-                           data-product-id="491404">
+                           data-product-id="578922">
 
-                            <input id="Product491404ImageUrl" name="Product491404ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/491404_200w.jpg" />
-                            <input id="Product491404SearchUrl" name="Product491404SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/491404/magic-obosh-the-preypiercer" />
-                            <input id="Product491404LowestPrice" name="Product491404LowestPrice" type="hidden" value="0.0500" />
-                            <input id="Product491404MedianPrice" name="Product491404MedianPrice" type="hidden" value="0.3000" />
-                            <input id="Product491404MarketPrice" name="Product491404MarketPrice" type="hidden" value="0.1200" />
-
-                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Obosh, the Preypiercer</span>
-                        </a>
-                        <a id="Product514506Container"
-                           class="subdeck-group__card"
-                           href="https://www.tcgplayer.com/product/514506/magic-vial-smasher-the-fierce"
-                           target="_blank"
-                           onmouseover="UpdateCardSummary(this)"
-                           data-product-id="514506">
-
-                            <input id="Product514506ImageUrl" name="Product514506ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/514506_200w.jpg" />
-                            <input id="Product514506SearchUrl" name="Product514506SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/514506/magic-vial-smasher-the-fierce" />
-                            <input id="Product514506LowestPrice" name="Product514506LowestPrice" type="hidden" value="16.6800" />
-                            <input id="Product514506MedianPrice" name="Product514506MedianPrice" type="hidden" value="18.2000" />
-                            <input id="Product514506MarketPrice" name="Product514506MarketPrice" type="hidden" value="18.0900" />
+                            <input id="Product578922ImageUrl" name="Product578922ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/578922_200w.jpg" />
+                            <input id="Product578922SearchUrl" name="Product578922SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/578922/magic-vial-smasher-the-fierce" />
+                            <input id="Product578922LowestPrice" name="Product578922LowestPrice" type="hidden" value="0.6700" />
+                            <input id="Product578922MedianPrice" name="Product578922MedianPrice" type="hidden" value="1.4800" />
+                            <input id="Product578922MarketPrice" name="Product578922MarketPrice" type="hidden" value="1.0200" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Vial Smasher the Fierce</span>
                         </a>
@@ -548,7 +533,7 @@
             <input id="Product0MarketPrice" name="Product0MarketPrice" type="hidden" value="" />
 
 
-            <h3 class="subdeck__name">Maindeck <span class="subdeck__total-qty">97</span></h3>
+            <h3 class="subdeck__name">Maindeck <span class="subdeck__total-qty">98</span></h3>
                 <div class="subdeck-group">
                         <h4 class="subdeck-group__name">Creature <span class="subdeck-group__qty">7</span></h4>
 
@@ -561,9 +546,9 @@
 
                             <input id="Product236179ImageUrl" name="Product236179ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/236179_200w.jpg" />
                             <input id="Product236179SearchUrl" name="Product236179SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/236179/magic-dualcaster-mage" />
-                            <input id="Product236179LowestPrice" name="Product236179LowestPrice" type="hidden" value="0.6500" />
-                            <input id="Product236179MedianPrice" name="Product236179MedianPrice" type="hidden" value="1.5500" />
-                            <input id="Product236179MarketPrice" name="Product236179MarketPrice" type="hidden" value="1.5100" />
+                            <input id="Product236179LowestPrice" name="Product236179LowestPrice" type="hidden" value="0.5500" />
+                            <input id="Product236179MedianPrice" name="Product236179MedianPrice" type="hidden" value="2.6350" />
+                            <input id="Product236179MarketPrice" name="Product236179MarketPrice" type="hidden" value="2.9400" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Dualcaster Mage</span>
                         </a>
@@ -577,8 +562,8 @@
                             <input id="Product503473ImageUrl" name="Product503473ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/503473_200w.jpg" />
                             <input id="Product503473SearchUrl" name="Product503473SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/503473/magic-heartless-hidetsugu" />
                             <input id="Product503473LowestPrice" name="Product503473LowestPrice" type="hidden" value="0.5000" />
-                            <input id="Product503473MedianPrice" name="Product503473MedianPrice" type="hidden" value="0.9900" />
-                            <input id="Product503473MarketPrice" name="Product503473MarketPrice" type="hidden" value="0.9100" />
+                            <input id="Product503473MedianPrice" name="Product503473MedianPrice" type="hidden" value="1.0400" />
+                            <input id="Product503473MarketPrice" name="Product503473MarketPrice" type="hidden" value="0.9600" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Heartless Hidetsugu</span>
                         </a>
@@ -591,9 +576,9 @@
 
                             <input id="Product450942ImageUrl" name="Product450942ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/450942_200w.jpg" />
                             <input id="Product450942SearchUrl" name="Product450942SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/450942/magic-kiki-jiki-mirror-breaker" />
-                            <input id="Product450942LowestPrice" name="Product450942LowestPrice" type="hidden" value="7.9500" />
-                            <input id="Product450942MedianPrice" name="Product450942MedianPrice" type="hidden" value="9.7400" />
-                            <input id="Product450942MarketPrice" name="Product450942MarketPrice" type="hidden" value="9.5400" />
+                            <input id="Product450942LowestPrice" name="Product450942LowestPrice" type="hidden" value="7.9000" />
+                            <input id="Product450942MedianPrice" name="Product450942MedianPrice" type="hidden" value="10.0000" />
+                            <input id="Product450942MarketPrice" name="Product450942MarketPrice" type="hidden" value="10.0000" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Kiki-Jiki, Mirror Breaker</span>
                         </a>
@@ -607,8 +592,8 @@
                             <input id="Product233794ImageUrl" name="Product233794ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/233794_200w.jpg" />
                             <input id="Product233794SearchUrl" name="Product233794SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/233794/magic-laboratory-maniac" />
                             <input id="Product233794LowestPrice" name="Product233794LowestPrice" type="hidden" value="3.7500" />
-                            <input id="Product233794MedianPrice" name="Product233794MedianPrice" type="hidden" value="6.3900" />
-                            <input id="Product233794MarketPrice" name="Product233794MarketPrice" type="hidden" value="6.3900" />
+                            <input id="Product233794MedianPrice" name="Product233794MedianPrice" type="hidden" value="6.6000" />
+                            <input id="Product233794MarketPrice" name="Product233794MarketPrice" type="hidden" value="6.7300" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Laboratory Maniac</span>
                         </a>
@@ -621,9 +606,9 @@
 
                             <input id="Product491315ImageUrl" name="Product491315ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/491315_200w.jpg" />
                             <input id="Product491315SearchUrl" name="Product491315SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/491315/magic-phyrexian-delver" />
-                            <input id="Product491315LowestPrice" name="Product491315LowestPrice" type="hidden" value="0.1500" />
-                            <input id="Product491315MedianPrice" name="Product491315MedianPrice" type="hidden" value="0.4000" />
-                            <input id="Product491315MarketPrice" name="Product491315MarketPrice" type="hidden" value="0.1700" />
+                            <input id="Product491315LowestPrice" name="Product491315LowestPrice" type="hidden" value="0.2000" />
+                            <input id="Product491315MedianPrice" name="Product491315MedianPrice" type="hidden" value="0.4200" />
+                            <input id="Product491315MarketPrice" name="Product491315MarketPrice" type="hidden" value="0.3700" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Phyrexian Delver</span>
                         </a>
@@ -637,8 +622,8 @@
                             <input id="Product503390ImageUrl" name="Product503390ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/503390_200w.jpg" />
                             <input id="Product503390SearchUrl" name="Product503390SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/503390/magic-spellseeker" />
                             <input id="Product503390LowestPrice" name="Product503390LowestPrice" type="hidden" value="7.0000" />
-                            <input id="Product503390MedianPrice" name="Product503390MedianPrice" type="hidden" value="11.0000" />
-                            <input id="Product503390MarketPrice" name="Product503390MarketPrice" type="hidden" value="10.8300" />
+                            <input id="Product503390MedianPrice" name="Product503390MedianPrice" type="hidden" value="10.5000" />
+                            <input id="Product503390MarketPrice" name="Product503390MarketPrice" type="hidden" value="9.1300" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Spellseeker</span>
                         </a>
@@ -651,9 +636,9 @@
 
                             <input id="Product499819ImageUrl" name="Product499819ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/499819_200w.jpg" />
                             <input id="Product499819SearchUrl" name="Product499819SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/499819/magic-zealous-conscripts" />
-                            <input id="Product499819LowestPrice" name="Product499819LowestPrice" type="hidden" value="0.1500" />
-                            <input id="Product499819MedianPrice" name="Product499819MedianPrice" type="hidden" value="0.3000" />
-                            <input id="Product499819MarketPrice" name="Product499819MarketPrice" type="hidden" value="0.2600" />
+                            <input id="Product499819LowestPrice" name="Product499819LowestPrice" type="hidden" value="0.1200" />
+                            <input id="Product499819MedianPrice" name="Product499819MedianPrice" type="hidden" value="0.4600" />
+                            <input id="Product499819MarketPrice" name="Product499819MarketPrice" type="hidden" value="0.3800" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Zealous Conscripts</span>
                         </a>
@@ -670,15 +655,15 @@
 
                             <input id="Product505781ImageUrl" name="Product505781ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/505781_200w.jpg" />
                             <input id="Product505781SearchUrl" name="Product505781SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/505781/magic-narset-parter-of-veils" />
-                            <input id="Product505781LowestPrice" name="Product505781LowestPrice" type="hidden" value="0.8000" />
-                            <input id="Product505781MedianPrice" name="Product505781MedianPrice" type="hidden" value="1.2700" />
-                            <input id="Product505781MarketPrice" name="Product505781MarketPrice" type="hidden" value="0.9800" />
+                            <input id="Product505781LowestPrice" name="Product505781LowestPrice" type="hidden" value="0.5000" />
+                            <input id="Product505781MedianPrice" name="Product505781MedianPrice" type="hidden" value="1.0100" />
+                            <input id="Product505781MarketPrice" name="Product505781MarketPrice" type="hidden" value="0.9000" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Narset, Parter of Veils</span>
                         </a>
                 </div>
                 <div class="subdeck-group">
-                        <h4 class="subdeck-group__name">Spell <span class="subdeck-group__qty">62</span></h4>
+                        <h4 class="subdeck-group__name">Spell <span class="subdeck-group__qty">61</span></h4>
 
                         <a id="Product218939Container"
                            class="subdeck-group__card"
@@ -689,9 +674,9 @@
 
                             <input id="Product218939ImageUrl" name="Product218939ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/218939_200w.jpg" />
                             <input id="Product218939SearchUrl" name="Product218939SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/218939/magic-ad-nauseam" />
-                            <input id="Product218939LowestPrice" name="Product218939LowestPrice" type="hidden" value="13.7000" />
-                            <input id="Product218939MedianPrice" name="Product218939MedianPrice" type="hidden" value="18.0500" />
-                            <input id="Product218939MarketPrice" name="Product218939MarketPrice" type="hidden" value="16.5800" />
+                            <input id="Product218939LowestPrice" name="Product218939LowestPrice" type="hidden" value="12.6800" />
+                            <input id="Product218939MedianPrice" name="Product218939MedianPrice" type="hidden" value="18.5700" />
+                            <input id="Product218939MarketPrice" name="Product218939MarketPrice" type="hidden" value="18.5600" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Ad Nauseam</span>
                         </a>
@@ -704,9 +689,9 @@
 
                             <input id="Product276497ImageUrl" name="Product276497ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/276497_200w.jpg" />
                             <input id="Product276497SearchUrl" name="Product276497SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/276497/magic-anger-of-the-gods" />
-                            <input id="Product276497LowestPrice" name="Product276497LowestPrice" type="hidden" value="0.2400" />
-                            <input id="Product276497MedianPrice" name="Product276497MedianPrice" type="hidden" value="0.6600" />
-                            <input id="Product276497MarketPrice" name="Product276497MarketPrice" type="hidden" value="0.6000" />
+                            <input id="Product276497LowestPrice" name="Product276497LowestPrice" type="hidden" value="0.2000" />
+                            <input id="Product276497MedianPrice" name="Product276497MedianPrice" type="hidden" value="0.6200" />
+                            <input id="Product276497MarketPrice" name="Product276497MarketPrice" type="hidden" value="0.5600" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Anger of the Gods</span>
                         </a>
@@ -719,9 +704,9 @@
 
                             <input id="Product222425ImageUrl" name="Product222425ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/222425_200w.jpg" />
                             <input id="Product222425SearchUrl" name="Product222425SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/222425/magic-arcums-astrolabe" />
-                            <input id="Product222425LowestPrice" name="Product222425LowestPrice" type="hidden" value="0.1500" />
-                            <input id="Product222425MedianPrice" name="Product222425MedianPrice" type="hidden" value="0.2500" />
-                            <input id="Product222425MarketPrice" name="Product222425MarketPrice" type="hidden" value="0.2200" />
+                            <input id="Product222425LowestPrice" name="Product222425LowestPrice" type="hidden" value="0.1000" />
+                            <input id="Product222425MedianPrice" name="Product222425MedianPrice" type="hidden" value="0.2600" />
+                            <input id="Product222425MarketPrice" name="Product222425MarketPrice" type="hidden" value="0.2600" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Arcum&#39;s Astrolabe</span>
                         </a>
@@ -734,24 +719,24 @@
 
                             <input id="Product6791ImageUrl" name="Product6791ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/6791_200w.jpg" />
                             <input id="Product6791SearchUrl" name="Product6791SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/6791/magic-back-to-basics" />
-                            <input id="Product6791LowestPrice" name="Product6791LowestPrice" type="hidden" value="8.0000" />
-                            <input id="Product6791MedianPrice" name="Product6791MedianPrice" type="hidden" value="14.9900" />
-                            <input id="Product6791MarketPrice" name="Product6791MarketPrice" type="hidden" value="13.3500" />
+                            <input id="Product6791LowestPrice" name="Product6791LowestPrice" type="hidden" value="8.6000" />
+                            <input id="Product6791MedianPrice" name="Product6791MedianPrice" type="hidden" value="15.6400" />
+                            <input id="Product6791MarketPrice" name="Product6791MarketPrice" type="hidden" value="14.0600" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Back to Basics</span>
                         </a>
-                        <a id="Product560011Container"
+                        <a id="Product578952Container"
                            class="subdeck-group__card"
-                           href="https://www.tcgplayer.com/product/560011/magic-blasphemous-act"
+                           href="https://www.tcgplayer.com/product/578952/magic-blasphemous-act"
                            target="_blank"
                            onmouseover="UpdateCardSummary(this)"
-                           data-product-id="560011">
+                           data-product-id="578952">
 
-                            <input id="Product560011ImageUrl" name="Product560011ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/560011_200w.jpg" />
-                            <input id="Product560011SearchUrl" name="Product560011SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/560011/magic-blasphemous-act" />
-                            <input id="Product560011LowestPrice" name="Product560011LowestPrice" type="hidden" value="2.0500" />
-                            <input id="Product560011MedianPrice" name="Product560011MedianPrice" type="hidden" value="3.5500" />
-                            <input id="Product560011MarketPrice" name="Product560011MarketPrice" type="hidden" value="3.1300" />
+                            <input id="Product578952ImageUrl" name="Product578952ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/578952_200w.jpg" />
+                            <input id="Product578952SearchUrl" name="Product578952SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/578952/magic-blasphemous-act" />
+                            <input id="Product578952LowestPrice" name="Product578952LowestPrice" type="hidden" value="2.0000" />
+                            <input id="Product578952MedianPrice" name="Product578952MedianPrice" type="hidden" value="2.9650" />
+                            <input id="Product578952MarketPrice" name="Product578952MarketPrice" type="hidden" value="2.7000" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Blasphemous Act</span>
                         </a>
@@ -764,24 +749,24 @@
 
                             <input id="Product512369ImageUrl" name="Product512369ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/512369_200w.jpg" />
                             <input id="Product512369SearchUrl" name="Product512369SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/512369/magic-blood-moon" />
-                            <input id="Product512369LowestPrice" name="Product512369LowestPrice" type="hidden" value="5.4000" />
-                            <input id="Product512369MedianPrice" name="Product512369MedianPrice" type="hidden" value="7.7500" />
-                            <input id="Product512369MarketPrice" name="Product512369MarketPrice" type="hidden" value="7.2600" />
+                            <input id="Product512369LowestPrice" name="Product512369LowestPrice" type="hidden" value="5.4700" />
+                            <input id="Product512369MedianPrice" name="Product512369MedianPrice" type="hidden" value="7.6100" />
+                            <input id="Product512369MarketPrice" name="Product512369MarketPrice" type="hidden" value="7.6100" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Blood Moon</span>
                         </a>
-                        <a id="Product535761Container"
+                        <a id="Product578953Container"
                            class="subdeck-group__card"
-                           href="https://www.tcgplayer.com/product/535761/magic-brainstorm"
+                           href="https://www.tcgplayer.com/product/578953/magic-brainstorm"
                            target="_blank"
                            onmouseover="UpdateCardSummary(this)"
-                           data-product-id="535761">
+                           data-product-id="578953">
 
-                            <input id="Product535761ImageUrl" name="Product535761ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/535761_200w.jpg" />
-                            <input id="Product535761SearchUrl" name="Product535761SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/535761/magic-brainstorm" />
-                            <input id="Product535761LowestPrice" name="Product535761LowestPrice" type="hidden" value="1.2200" />
-                            <input id="Product535761MedianPrice" name="Product535761MedianPrice" type="hidden" value="1.7300" />
-                            <input id="Product535761MarketPrice" name="Product535761MarketPrice" type="hidden" value="1.7100" />
+                            <input id="Product578953ImageUrl" name="Product578953ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/578953_200w.jpg" />
+                            <input id="Product578953SearchUrl" name="Product578953SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/578953/magic-brainstorm" />
+                            <input id="Product578953LowestPrice" name="Product578953LowestPrice" type="hidden" value="0.9600" />
+                            <input id="Product578953MedianPrice" name="Product578953MedianPrice" type="hidden" value="1.1200" />
+                            <input id="Product578953MarketPrice" name="Product578953MarketPrice" type="hidden" value="1.0100" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Brainstorm</span>
                         </a>
@@ -794,24 +779,24 @@
 
                             <input id="Product552813ImageUrl" name="Product552813ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/552813_200w.jpg" />
                             <input id="Product552813SearchUrl" name="Product552813SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/552813/magic-buried-alive" />
-                            <input id="Product552813LowestPrice" name="Product552813LowestPrice" type="hidden" value="0.2000" />
-                            <input id="Product552813MedianPrice" name="Product552813MedianPrice" type="hidden" value="0.5000" />
-                            <input id="Product552813MarketPrice" name="Product552813MarketPrice" type="hidden" value="0.3500" />
+                            <input id="Product552813LowestPrice" name="Product552813LowestPrice" type="hidden" value="0.2500" />
+                            <input id="Product552813MedianPrice" name="Product552813MedianPrice" type="hidden" value="0.8000" />
+                            <input id="Product552813MarketPrice" name="Product552813MarketPrice" type="hidden" value="0.8100" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Buried Alive</span>
                         </a>
-                        <a id="Product55912Container"
+                        <a id="Product577793Container"
                            class="subdeck-group__card"
-                           href="https://www.tcgplayer.com/product/55912/magic-cackling-counterpart"
+                           href="https://www.tcgplayer.com/product/577793/magic-cackling-counterpart"
                            target="_blank"
                            onmouseover="UpdateCardSummary(this)"
-                           data-product-id="55912">
+                           data-product-id="577793">
 
-                            <input id="Product55912ImageUrl" name="Product55912ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/55912_200w.jpg" />
-                            <input id="Product55912SearchUrl" name="Product55912SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/55912/magic-cackling-counterpart" />
-                            <input id="Product55912LowestPrice" name="Product55912LowestPrice" type="hidden" value="0.5500" />
-                            <input id="Product55912MedianPrice" name="Product55912MedianPrice" type="hidden" value="1.0100" />
-                            <input id="Product55912MarketPrice" name="Product55912MarketPrice" type="hidden" value="0.9200" />
+                            <input id="Product577793ImageUrl" name="Product577793ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/577793_200w.jpg" />
+                            <input id="Product577793SearchUrl" name="Product577793SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/577793/magic-cackling-counterpart" />
+                            <input id="Product577793LowestPrice" name="Product577793LowestPrice" type="hidden" value="0.0600" />
+                            <input id="Product577793MedianPrice" name="Product577793MedianPrice" type="hidden" value="0.2800" />
+                            <input id="Product577793MarketPrice" name="Product577793MarketPrice" type="hidden" value="0.2100" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Cackling Counterpart</span>
                         </a>
@@ -824,9 +809,9 @@
 
                             <input id="Product10327ImageUrl" name="Product10327ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/10327_200w.jpg" />
                             <input id="Product10327SearchUrl" name="Product10327SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/10327/magic-chain-of-vapor" />
-                            <input id="Product10327LowestPrice" name="Product10327LowestPrice" type="hidden" value="9.0000" />
-                            <input id="Product10327MedianPrice" name="Product10327MedianPrice" type="hidden" value="14.0000" />
-                            <input id="Product10327MarketPrice" name="Product10327MarketPrice" type="hidden" value="12.7600" />
+                            <input id="Product10327LowestPrice" name="Product10327LowestPrice" type="hidden" value="2.5500" />
+                            <input id="Product10327MedianPrice" name="Product10327MedianPrice" type="hidden" value="10.8750" />
+                            <input id="Product10327MarketPrice" name="Product10327MarketPrice" type="hidden" value="9.6100" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Chain of Vapor</span>
                         </a>
@@ -839,9 +824,9 @@
 
                             <input id="Product123989ImageUrl" name="Product123989ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/123989_200w.jpg" />
                             <input id="Product123989SearchUrl" name="Product123989SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/123989/magic-coastal-breach" />
-                            <input id="Product123989LowestPrice" name="Product123989LowestPrice" type="hidden" value="1.0600" />
-                            <input id="Product123989MedianPrice" name="Product123989MedianPrice" type="hidden" value="3.7300" />
-                            <input id="Product123989MarketPrice" name="Product123989MarketPrice" type="hidden" value="2.6500" />
+                            <input id="Product123989LowestPrice" name="Product123989LowestPrice" type="hidden" value="1.1000" />
+                            <input id="Product123989MedianPrice" name="Product123989MedianPrice" type="hidden" value="3.6600" />
+                            <input id="Product123989MarketPrice" name="Product123989MarketPrice" type="hidden" value="2.8000" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Coastal Breach</span>
                         </a>
@@ -855,8 +840,8 @@
                             <input id="Product66496ImageUrl" name="Product66496ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/66496_200w.jpg" />
                             <input id="Product66496SearchUrl" name="Product66496SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/66496/magic-counterflux" />
                             <input id="Product66496LowestPrice" name="Product66496LowestPrice" type="hidden" value="0.2500" />
-                            <input id="Product66496MedianPrice" name="Product66496MedianPrice" type="hidden" value="0.5200" />
-                            <input id="Product66496MarketPrice" name="Product66496MarketPrice" type="hidden" value="0.4300" />
+                            <input id="Product66496MedianPrice" name="Product66496MedianPrice" type="hidden" value="0.5000" />
+                            <input id="Product66496MarketPrice" name="Product66496MarketPrice" type="hidden" value="0.4700" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Counterflux</span>
                         </a>
@@ -869,9 +854,9 @@
 
                             <input id="Product509516ImageUrl" name="Product509516ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/509516_200w.jpg" />
                             <input id="Product509516SearchUrl" name="Product509516SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/509516/magic-curiosity" />
-                            <input id="Product509516LowestPrice" name="Product509516LowestPrice" type="hidden" value="0.0300" />
+                            <input id="Product509516LowestPrice" name="Product509516LowestPrice" type="hidden" value="0.0100" />
                             <input id="Product509516MedianPrice" name="Product509516MedianPrice" type="hidden" value="0.2500" />
-                            <input id="Product509516MarketPrice" name="Product509516MarketPrice" type="hidden" value="0.1500" />
+                            <input id="Product509516MarketPrice" name="Product509516MarketPrice" type="hidden" value="0.1200" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Curiosity</span>
                         </a>
@@ -899,9 +884,9 @@
 
                             <input id="Product191139ImageUrl" name="Product191139ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/191139_200w.jpg" />
                             <input id="Product191139SearchUrl" name="Product191139SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/191139/magic-dead-of-winter" />
-                            <input id="Product191139LowestPrice" name="Product191139LowestPrice" type="hidden" value="0.1200" />
-                            <input id="Product191139MedianPrice" name="Product191139MedianPrice" type="hidden" value="0.5000" />
-                            <input id="Product191139MarketPrice" name="Product191139MarketPrice" type="hidden" value="0.2700" />
+                            <input id="Product191139LowestPrice" name="Product191139LowestPrice" type="hidden" value="0.1700" />
+                            <input id="Product191139MedianPrice" name="Product191139MedianPrice" type="hidden" value="0.4900" />
+                            <input id="Product191139MarketPrice" name="Product191139MarketPrice" type="hidden" value="0.2600" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Dead of Winter</span>
                         </a>
@@ -914,9 +899,9 @@
 
                             <input id="Product504494ImageUrl" name="Product504494ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/504494_200w.jpg" />
                             <input id="Product504494SearchUrl" name="Product504494SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/504494/magic-deflecting-swat" />
-                            <input id="Product504494LowestPrice" name="Product504494LowestPrice" type="hidden" value="31.7400" />
-                            <input id="Product504494MedianPrice" name="Product504494MedianPrice" type="hidden" value="35.8000" />
-                            <input id="Product504494MarketPrice" name="Product504494MarketPrice" type="hidden" value="34.1000" />
+                            <input id="Product504494LowestPrice" name="Product504494LowestPrice" type="hidden" value="32.5000" />
+                            <input id="Product504494MedianPrice" name="Product504494MedianPrice" type="hidden" value="37.0000" />
+                            <input id="Product504494MarketPrice" name="Product504494MarketPrice" type="hidden" value="36.4400" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Deflecting Swat</span>
                         </a>
@@ -929,9 +914,9 @@
 
                             <input id="Product4644ImageUrl" name="Product4644ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/4644_200w.jpg" />
                             <input id="Product4644SearchUrl" name="Product4644SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/4644/magic-demonic-consultation" />
-                            <input id="Product4644LowestPrice" name="Product4644LowestPrice" type="hidden" value="7.1100" />
-                            <input id="Product4644MedianPrice" name="Product4644MedianPrice" type="hidden" value="14.5800" />
-                            <input id="Product4644MarketPrice" name="Product4644MarketPrice" type="hidden" value="13.9300" />
+                            <input id="Product4644LowestPrice" name="Product4644LowestPrice" type="hidden" value="7.6900" />
+                            <input id="Product4644MedianPrice" name="Product4644MedianPrice" type="hidden" value="14.5550" />
+                            <input id="Product4644MarketPrice" name="Product4644MarketPrice" type="hidden" value="14.4800" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Demonic Consultation</span>
                         </a>
@@ -944,9 +929,9 @@
 
                             <input id="Product499740ImageUrl" name="Product499740ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/499740_200w.jpg" />
                             <input id="Product499740SearchUrl" name="Product499740SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/499740/magic-devastation-tide" />
-                            <input id="Product499740LowestPrice" name="Product499740LowestPrice" type="hidden" value="0.1000" />
-                            <input id="Product499740MedianPrice" name="Product499740MedianPrice" type="hidden" value="0.3950" />
-                            <input id="Product499740MarketPrice" name="Product499740MarketPrice" type="hidden" value="0.3100" />
+                            <input id="Product499740LowestPrice" name="Product499740LowestPrice" type="hidden" value="0.1200" />
+                            <input id="Product499740MedianPrice" name="Product499740MedianPrice" type="hidden" value="0.3500" />
+                            <input id="Product499740MarketPrice" name="Product499740MarketPrice" type="hidden" value="0.2800" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Devastation Tide</span>
                         </a>
@@ -959,9 +944,9 @@
 
                             <input id="Product105594ImageUrl" name="Product105594ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/105594_200w.jpg" />
                             <input id="Product105594SearchUrl" name="Product105594SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/105594/magic-dispel" />
-                            <input id="Product105594LowestPrice" name="Product105594LowestPrice" type="hidden" value="0.0800" />
-                            <input id="Product105594MedianPrice" name="Product105594MedianPrice" type="hidden" value="0.2800" />
-                            <input id="Product105594MarketPrice" name="Product105594MarketPrice" type="hidden" value="0.2500" />
+                            <input id="Product105594LowestPrice" name="Product105594LowestPrice" type="hidden" value="0.0900" />
+                            <input id="Product105594MedianPrice" name="Product105594MedianPrice" type="hidden" value="0.2600" />
+                            <input id="Product105594MarketPrice" name="Product105594MarketPrice" type="hidden" value="0.1800" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Dispel</span>
                         </a>
@@ -974,9 +959,9 @@
 
                             <input id="Product504561ImageUrl" name="Product504561ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/504561_200w.jpg" />
                             <input id="Product504561SearchUrl" name="Product504561SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/504561/magic-fierce-guardianship" />
-                            <input id="Product504561LowestPrice" name="Product504561LowestPrice" type="hidden" value="34.7900" />
-                            <input id="Product504561MedianPrice" name="Product504561MedianPrice" type="hidden" value="40.5550" />
-                            <input id="Product504561MarketPrice" name="Product504561MarketPrice" type="hidden" value="38.8500" />
+                            <input id="Product504561LowestPrice" name="Product504561LowestPrice" type="hidden" value="30.0000" />
+                            <input id="Product504561MedianPrice" name="Product504561MedianPrice" type="hidden" value="38.4700" />
+                            <input id="Product504561MarketPrice" name="Product504561MarketPrice" type="hidden" value="34.6700" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Fierce Guardianship</span>
                         </a>
@@ -989,9 +974,9 @@
 
                             <input id="Product507552ImageUrl" name="Product507552ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/507552_200w.jpg" />
                             <input id="Product507552SearchUrl" name="Product507552SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/507552/magic-flusterstorm" />
-                            <input id="Product507552LowestPrice" name="Product507552LowestPrice" type="hidden" value="25.0000" />
-                            <input id="Product507552MedianPrice" name="Product507552MedianPrice" type="hidden" value="31.4950" />
-                            <input id="Product507552MarketPrice" name="Product507552MarketPrice" type="hidden" value="32.8200" />
+                            <input id="Product507552LowestPrice" name="Product507552LowestPrice" type="hidden" value="15.5000" />
+                            <input id="Product507552MedianPrice" name="Product507552MedianPrice" type="hidden" value="29.1400" />
+                            <input id="Product507552MarketPrice" name="Product507552MarketPrice" type="hidden" value="28.3200" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Flusterstorm</span>
                         </a>
@@ -1004,9 +989,9 @@
 
                             <input id="Product190880ImageUrl" name="Product190880ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/190880_200w.jpg" />
                             <input id="Product190880SearchUrl" name="Product190880SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/190880/magic-force-of-despair" />
-                            <input id="Product190880LowestPrice" name="Product190880LowestPrice" type="hidden" value="7.7500" />
-                            <input id="Product190880MedianPrice" name="Product190880MedianPrice" type="hidden" value="9.8700" />
-                            <input id="Product190880MarketPrice" name="Product190880MarketPrice" type="hidden" value="8.9300" />
+                            <input id="Product190880LowestPrice" name="Product190880LowestPrice" type="hidden" value="4.2500" />
+                            <input id="Product190880MedianPrice" name="Product190880MedianPrice" type="hidden" value="7.4350" />
+                            <input id="Product190880MarketPrice" name="Product190880MarketPrice" type="hidden" value="6.1500" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Force of Despair</span>
                         </a>
@@ -1019,9 +1004,9 @@
 
                             <input id="Product276686ImageUrl" name="Product276686ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/276686_200w.jpg" />
                             <input id="Product276686SearchUrl" name="Product276686SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/276686/magic-force-of-negation" />
-                            <input id="Product276686LowestPrice" name="Product276686LowestPrice" type="hidden" value="43.5000" />
-                            <input id="Product276686MedianPrice" name="Product276686MedianPrice" type="hidden" value="50.7500" />
-                            <input id="Product276686MarketPrice" name="Product276686MarketPrice" type="hidden" value="48.5100" />
+                            <input id="Product276686LowestPrice" name="Product276686LowestPrice" type="hidden" value="47.0000" />
+                            <input id="Product276686MedianPrice" name="Product276686MedianPrice" type="hidden" value="54.2300" />
+                            <input id="Product276686MarketPrice" name="Product276686MarketPrice" type="hidden" value="49.3000" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Force of Negation</span>
                         </a>
@@ -1034,9 +1019,9 @@
 
                             <input id="Product449583ImageUrl" name="Product449583ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/449583_200w.jpg" />
                             <input id="Product449583SearchUrl" name="Product449583SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/449583/magic-force-of-will" />
-                            <input id="Product449583LowestPrice" name="Product449583LowestPrice" type="hidden" value="49.0000" />
-                            <input id="Product449583MedianPrice" name="Product449583MedianPrice" type="hidden" value="60.9300" />
-                            <input id="Product449583MarketPrice" name="Product449583MarketPrice" type="hidden" value="60.3700" />
+                            <input id="Product449583LowestPrice" name="Product449583LowestPrice" type="hidden" value="41.0000" />
+                            <input id="Product449583MedianPrice" name="Product449583MedianPrice" type="hidden" value="54.9800" />
+                            <input id="Product449583MarketPrice" name="Product449583MarketPrice" type="hidden" value="47.1800" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Force of Will</span>
                         </a>
@@ -1049,9 +1034,9 @@
 
                             <input id="Product507400ImageUrl" name="Product507400ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/507400_200w.jpg" />
                             <input id="Product507400SearchUrl" name="Product507400SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/507400/magic-ghostly-flicker" />
-                            <input id="Product507400LowestPrice" name="Product507400LowestPrice" type="hidden" value="0.3900" />
-                            <input id="Product507400MedianPrice" name="Product507400MedianPrice" type="hidden" value="0.5200" />
-                            <input id="Product507400MarketPrice" name="Product507400MarketPrice" type="hidden" value="0.4400" />
+                            <input id="Product507400LowestPrice" name="Product507400LowestPrice" type="hidden" value="0.3000" />
+                            <input id="Product507400MedianPrice" name="Product507400MedianPrice" type="hidden" value="1.0000" />
+                            <input id="Product507400MarketPrice" name="Product507400MarketPrice" type="hidden" value="1.1400" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Ghostly Flicker</span>
                         </a>
@@ -1064,9 +1049,9 @@
 
                             <input id="Product39521ImageUrl" name="Product39521ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/39521_200w.jpg" />
                             <input id="Product39521SearchUrl" name="Product39521SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/39521/magic-gitaxian-probe" />
-                            <input id="Product39521LowestPrice" name="Product39521LowestPrice" type="hidden" value="1.0000" />
-                            <input id="Product39521MedianPrice" name="Product39521MedianPrice" type="hidden" value="4.1400" />
-                            <input id="Product39521MarketPrice" name="Product39521MarketPrice" type="hidden" value="4.4300" />
+                            <input id="Product39521LowestPrice" name="Product39521LowestPrice" type="hidden" value="1.7100" />
+                            <input id="Product39521MedianPrice" name="Product39521MedianPrice" type="hidden" value="3.2100" />
+                            <input id="Product39521MarketPrice" name="Product39521MarketPrice" type="hidden" value="2.6800" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Gitaxian Probe</span>
                         </a>
@@ -1080,8 +1065,8 @@
                             <input id="Product192909ImageUrl" name="Product192909ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/192909_200w.jpg" />
                             <input id="Product192909SearchUrl" name="Product192909SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/192909/magic-grafdiggers-cage" />
                             <input id="Product192909LowestPrice" name="Product192909LowestPrice" type="hidden" value="1.5000" />
-                            <input id="Product192909MedianPrice" name="Product192909MedianPrice" type="hidden" value="2.7800" />
-                            <input id="Product192909MarketPrice" name="Product192909MarketPrice" type="hidden" value="2.8300" />
+                            <input id="Product192909MedianPrice" name="Product192909MedianPrice" type="hidden" value="3.2950" />
+                            <input id="Product192909MarketPrice" name="Product192909MarketPrice" type="hidden" value="3.3600" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Grafdigger&#39;s Cage</span>
                         </a>
@@ -1094,9 +1079,9 @@
 
                             <input id="Product276288ImageUrl" name="Product276288ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/276288_200w.jpg" />
                             <input id="Product276288SearchUrl" name="Product276288SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/276288/magic-imperial-seal" />
-                            <input id="Product276288LowestPrice" name="Product276288LowestPrice" type="hidden" value="81.4400" />
-                            <input id="Product276288MedianPrice" name="Product276288MedianPrice" type="hidden" value="90.0000" />
-                            <input id="Product276288MarketPrice" name="Product276288MarketPrice" type="hidden" value="83.0200" />
+                            <input id="Product276288LowestPrice" name="Product276288LowestPrice" type="hidden" value="74.9900" />
+                            <input id="Product276288MedianPrice" name="Product276288MedianPrice" type="hidden" value="92.7950" />
+                            <input id="Product276288MarketPrice" name="Product276288MarketPrice" type="hidden" value="88.4200" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Imperial Seal</span>
                         </a>
@@ -1109,9 +1094,9 @@
 
                             <input id="Product449145ImageUrl" name="Product449145ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/449145_200w.jpg" />
                             <input id="Product449145SearchUrl" name="Product449145SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/449145/magic-mana-vault" />
-                            <input id="Product449145LowestPrice" name="Product449145LowestPrice" type="hidden" value="84.5000" />
-                            <input id="Product449145MedianPrice" name="Product449145MedianPrice" type="hidden" value="84.9900" />
-                            <input id="Product449145MarketPrice" name="Product449145MarketPrice" type="hidden" value="77.4000" />
+                            <input id="Product449145LowestPrice" name="Product449145LowestPrice" type="hidden" value="114.9900" />
+                            <input id="Product449145MedianPrice" name="Product449145MedianPrice" type="hidden" value="117.9900" />
+                            <input id="Product449145MarketPrice" name="Product449145MarketPrice" type="hidden" value="85.9400" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Mana Vault</span>
                         </a>
@@ -1124,9 +1109,9 @@
 
                             <input id="Product39543ImageUrl" name="Product39543ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/39543_200w.jpg" />
                             <input id="Product39543SearchUrl" name="Product39543SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/39543/magic-mental-misstep" />
-                            <input id="Product39543LowestPrice" name="Product39543LowestPrice" type="hidden" value="6.5000" />
-                            <input id="Product39543MedianPrice" name="Product39543MedianPrice" type="hidden" value="9.8700" />
-                            <input id="Product39543MarketPrice" name="Product39543MarketPrice" type="hidden" value="10.4800" />
+                            <input id="Product39543LowestPrice" name="Product39543LowestPrice" type="hidden" value="5.8100" />
+                            <input id="Product39543MedianPrice" name="Product39543MedianPrice" type="hidden" value="9.1500" />
+                            <input id="Product39543MarketPrice" name="Product39543MarketPrice" type="hidden" value="9.0500" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Mental Misstep</span>
                         </a>
@@ -1140,8 +1125,8 @@
                             <input id="Product503575ImageUrl" name="Product503575ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/503575_200w.jpg" />
                             <input id="Product503575SearchUrl" name="Product503575SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/503575/magic-mystic-confluence" />
                             <input id="Product503575LowestPrice" name="Product503575LowestPrice" type="hidden" value="0.1500" />
-                            <input id="Product503575MedianPrice" name="Product503575MedianPrice" type="hidden" value="0.4900" />
-                            <input id="Product503575MarketPrice" name="Product503575MarketPrice" type="hidden" value="0.2800" />
+                            <input id="Product503575MedianPrice" name="Product503575MedianPrice" type="hidden" value="0.5400" />
+                            <input id="Product503575MarketPrice" name="Product503575MarketPrice" type="hidden" value="0.5400" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Mystic Confluence</span>
                         </a>
@@ -1154,9 +1139,9 @@
 
                             <input id="Product458047ImageUrl" name="Product458047ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/458047_200w.jpg" />
                             <input id="Product458047SearchUrl" name="Product458047SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/458047/magic-mystic-remora" />
-                            <input id="Product458047LowestPrice" name="Product458047LowestPrice" type="hidden" value="5.0000" />
-                            <input id="Product458047MedianPrice" name="Product458047MedianPrice" type="hidden" value="7.8000" />
-                            <input id="Product458047MarketPrice" name="Product458047MarketPrice" type="hidden" value="7.6900" />
+                            <input id="Product458047LowestPrice" name="Product458047LowestPrice" type="hidden" value="6.0000" />
+                            <input id="Product458047MedianPrice" name="Product458047MedianPrice" type="hidden" value="8.9900" />
+                            <input id="Product458047MarketPrice" name="Product458047MarketPrice" type="hidden" value="9.0600" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Mystic Remora</span>
                         </a>
@@ -1169,9 +1154,9 @@
 
                             <input id="Product457199ImageUrl" name="Product457199ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/457199_200w.jpg" />
                             <input id="Product457199SearchUrl" name="Product457199SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/457199/magic-mystical-tutor" />
-                            <input id="Product457199LowestPrice" name="Product457199LowestPrice" type="hidden" value="7.9600" />
-                            <input id="Product457199MedianPrice" name="Product457199MedianPrice" type="hidden" value="11.1100" />
-                            <input id="Product457199MarketPrice" name="Product457199MarketPrice" type="hidden" value="11.2100" />
+                            <input id="Product457199LowestPrice" name="Product457199LowestPrice" type="hidden" value="7.2900" />
+                            <input id="Product457199MedianPrice" name="Product457199MedianPrice" type="hidden" value="10.7500" />
+                            <input id="Product457199MarketPrice" name="Product457199MarketPrice" type="hidden" value="10.8900" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Mystical Tutor</span>
                         </a>
@@ -1184,9 +1169,9 @@
 
                             <input id="Product509515ImageUrl" name="Product509515ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/509515_200w.jpg" />
                             <input id="Product509515SearchUrl" name="Product509515SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/509515/magic-necropotence" />
-                            <input id="Product509515LowestPrice" name="Product509515LowestPrice" type="hidden" value="8.3800" />
-                            <input id="Product509515MedianPrice" name="Product509515MedianPrice" type="hidden" value="10.2400" />
-                            <input id="Product509515MarketPrice" name="Product509515MarketPrice" type="hidden" value="9.3800" />
+                            <input id="Product509515LowestPrice" name="Product509515LowestPrice" type="hidden" value="7.5000" />
+                            <input id="Product509515MedianPrice" name="Product509515MedianPrice" type="hidden" value="10.0050" />
+                            <input id="Product509515MarketPrice" name="Product509515MarketPrice" type="hidden" value="9.8700" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Necropotence</span>
                         </a>
@@ -1199,9 +1184,9 @@
 
                             <input id="Product14311ImageUrl" name="Product14311ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/14311_200w.jpg" />
                             <input id="Product14311SearchUrl" name="Product14311SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/14311/magic-ophidian-eye" />
-                            <input id="Product14311LowestPrice" name="Product14311LowestPrice" type="hidden" value="2.9000" />
-                            <input id="Product14311MedianPrice" name="Product14311MedianPrice" type="hidden" value="4.5400" />
-                            <input id="Product14311MarketPrice" name="Product14311MarketPrice" type="hidden" value="4.2800" />
+                            <input id="Product14311LowestPrice" name="Product14311LowestPrice" type="hidden" value="1.9400" />
+                            <input id="Product14311MedianPrice" name="Product14311MedianPrice" type="hidden" value="3.9050" />
+                            <input id="Product14311MarketPrice" name="Product14311MarketPrice" type="hidden" value="3.3500" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Ophidian Eye</span>
                         </a>
@@ -1216,7 +1201,7 @@
                             <input id="Product545282SearchUrl" name="Product545282SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/545282/magic-painful-truths" />
                             <input id="Product545282LowestPrice" name="Product545282LowestPrice" type="hidden" value="0.0900" />
                             <input id="Product545282MedianPrice" name="Product545282MedianPrice" type="hidden" value="0.2500" />
-                            <input id="Product545282MarketPrice" name="Product545282MarketPrice" type="hidden" value="0.1100" />
+                            <input id="Product545282MarketPrice" name="Product545282MarketPrice" type="hidden" value="0.1700" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Painful Truths</span>
                         </a>
@@ -1229,9 +1214,9 @@
 
                             <input id="Product535779ImageUrl" name="Product535779ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/535779_200w.jpg" />
                             <input id="Product535779SearchUrl" name="Product535779SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/535779/magic-phyrexian-arena" />
-                            <input id="Product535779LowestPrice" name="Product535779LowestPrice" type="hidden" value="2.9700" />
-                            <input id="Product535779MedianPrice" name="Product535779MedianPrice" type="hidden" value="4.6400" />
-                            <input id="Product535779MarketPrice" name="Product535779MarketPrice" type="hidden" value="4.4600" />
+                            <input id="Product535779LowestPrice" name="Product535779LowestPrice" type="hidden" value="2.0200" />
+                            <input id="Product535779MedianPrice" name="Product535779MedianPrice" type="hidden" value="3.8600" />
+                            <input id="Product535779MarketPrice" name="Product535779MarketPrice" type="hidden" value="3.8600" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Phyrexian Arena</span>
                         </a>
@@ -1244,24 +1229,24 @@
 
                             <input id="Product276343ImageUrl" name="Product276343ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/276343_200w.jpg" />
                             <input id="Product276343SearchUrl" name="Product276343SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/276343/magic-pithing-needle" />
-                            <input id="Product276343LowestPrice" name="Product276343LowestPrice" type="hidden" value="0.2100" />
-                            <input id="Product276343MedianPrice" name="Product276343MedianPrice" type="hidden" value="0.7500" />
-                            <input id="Product276343MarketPrice" name="Product276343MarketPrice" type="hidden" value="0.5700" />
+                            <input id="Product276343LowestPrice" name="Product276343LowestPrice" type="hidden" value="0.2500" />
+                            <input id="Product276343MedianPrice" name="Product276343MedianPrice" type="hidden" value="0.6200" />
+                            <input id="Product276343MarketPrice" name="Product276343MarketPrice" type="hidden" value="0.5300" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Pithing Needle</span>
                         </a>
-                        <a id="Product545273Container"
+                        <a id="Product578974Container"
                            class="subdeck-group__card"
-                           href="https://www.tcgplayer.com/product/545273/magic-ponder"
+                           href="https://www.tcgplayer.com/product/578974/magic-ponder"
                            target="_blank"
                            onmouseover="UpdateCardSummary(this)"
-                           data-product-id="545273">
+                           data-product-id="578974">
 
-                            <input id="Product545273ImageUrl" name="Product545273ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/545273_200w.jpg" />
-                            <input id="Product545273SearchUrl" name="Product545273SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/545273/magic-ponder" />
-                            <input id="Product545273LowestPrice" name="Product545273LowestPrice" type="hidden" value="1.9900" />
-                            <input id="Product545273MedianPrice" name="Product545273MedianPrice" type="hidden" value="2.2800" />
-                            <input id="Product545273MarketPrice" name="Product545273MarketPrice" type="hidden" value="2.0800" />
+                            <input id="Product578974ImageUrl" name="Product578974ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/578974_200w.jpg" />
+                            <input id="Product578974SearchUrl" name="Product578974SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/578974/magic-ponder" />
+                            <input id="Product578974LowestPrice" name="Product578974LowestPrice" type="hidden" value="1.1200" />
+                            <input id="Product578974MedianPrice" name="Product578974MedianPrice" type="hidden" value="1.3950" />
+                            <input id="Product578974MarketPrice" name="Product578974MarketPrice" type="hidden" value="1.3100" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Ponder</span>
                         </a>
@@ -1274,9 +1259,9 @@
 
                             <input id="Product553267ImageUrl" name="Product553267ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/553267_200w.jpg" />
                             <input id="Product553267SearchUrl" name="Product553267SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/553267/magic-pongify" />
-                            <input id="Product553267LowestPrice" name="Product553267LowestPrice" type="hidden" value="1.5100" />
-                            <input id="Product553267MedianPrice" name="Product553267MedianPrice" type="hidden" value="3.1800" />
-                            <input id="Product553267MarketPrice" name="Product553267MarketPrice" type="hidden" value="3.2400" />
+                            <input id="Product553267LowestPrice" name="Product553267LowestPrice" type="hidden" value="1.9600" />
+                            <input id="Product553267MedianPrice" name="Product553267MedianPrice" type="hidden" value="3.1900" />
+                            <input id="Product553267MarketPrice" name="Product553267MarketPrice" type="hidden" value="2.9700" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Pongify</span>
                         </a>
@@ -1290,7 +1275,7 @@
                             <input id="Product545271ImageUrl" name="Product545271ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/545271_200w.jpg" />
                             <input id="Product545271SearchUrl" name="Product545271SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/545271/magic-preordain" />
                             <input id="Product545271LowestPrice" name="Product545271LowestPrice" type="hidden" value="0.2500" />
-                            <input id="Product545271MedianPrice" name="Product545271MedianPrice" type="hidden" value="1.1100" />
+                            <input id="Product545271MedianPrice" name="Product545271MedianPrice" type="hidden" value="1.1900" />
                             <input id="Product545271MarketPrice" name="Product545271MarketPrice" type="hidden" value="1.0800" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Preordain</span>
@@ -1304,9 +1289,9 @@
 
                             <input id="Product2332ImageUrl" name="Product2332ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/2332_200w.jpg" />
                             <input id="Product2332SearchUrl" name="Product2332SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/2332/magic-pyroblast" />
-                            <input id="Product2332LowestPrice" name="Product2332LowestPrice" type="hidden" value="2.2700" />
-                            <input id="Product2332MedianPrice" name="Product2332MedianPrice" type="hidden" value="4.9950" />
-                            <input id="Product2332MarketPrice" name="Product2332MarketPrice" type="hidden" value="4.5000" />
+                            <input id="Product2332LowestPrice" name="Product2332LowestPrice" type="hidden" value="2.4900" />
+                            <input id="Product2332MedianPrice" name="Product2332MedianPrice" type="hidden" value="4.8900" />
+                            <input id="Product2332MarketPrice" name="Product2332MarketPrice" type="hidden" value="4.5900" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Pyroblast</span>
                         </a>
@@ -1319,39 +1304,39 @@
 
                             <input id="Product559735ImageUrl" name="Product559735ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/559735_200w.jpg" />
                             <input id="Product559735SearchUrl" name="Product559735SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/559735/magic-rapid-hybridization" />
-                            <input id="Product559735LowestPrice" name="Product559735LowestPrice" type="hidden" value="1.3200" />
-                            <input id="Product559735MedianPrice" name="Product559735MedianPrice" type="hidden" value="1.7150" />
-                            <input id="Product559735MarketPrice" name="Product559735MarketPrice" type="hidden" value="1.6600" />
+                            <input id="Product559735LowestPrice" name="Product559735LowestPrice" type="hidden" value="1.2400" />
+                            <input id="Product559735MedianPrice" name="Product559735MedianPrice" type="hidden" value="2.0700" />
+                            <input id="Product559735MarketPrice" name="Product559735MarketPrice" type="hidden" value="1.8700" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Rapid Hybridization</span>
                         </a>
-                        <a id="Product507457Container"
+                        <a id="Product579065Container"
                            class="subdeck-group__card"
-                           href="https://www.tcgplayer.com/product/507457/magic-read-the-bones"
+                           href="https://www.tcgplayer.com/product/579065/magic-read-the-bones"
                            target="_blank"
                            onmouseover="UpdateCardSummary(this)"
-                           data-product-id="507457">
+                           data-product-id="579065">
 
-                            <input id="Product507457ImageUrl" name="Product507457ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/507457_200w.jpg" />
-                            <input id="Product507457SearchUrl" name="Product507457SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/507457/magic-read-the-bones" />
-                            <input id="Product507457LowestPrice" name="Product507457LowestPrice" type="hidden" value="0.1500" />
-                            <input id="Product507457MedianPrice" name="Product507457MedianPrice" type="hidden" value="0.2500" />
-                            <input id="Product507457MarketPrice" name="Product507457MarketPrice" type="hidden" value="0.2100" />
+                            <input id="Product579065ImageUrl" name="Product579065ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/579065_200w.jpg" />
+                            <input id="Product579065SearchUrl" name="Product579065SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/579065/magic-read-the-bones" />
+                            <input id="Product579065LowestPrice" name="Product579065LowestPrice" type="hidden" value="0.1000" />
+                            <input id="Product579065MedianPrice" name="Product579065MedianPrice" type="hidden" value="0.2200" />
+                            <input id="Product579065MarketPrice" name="Product579065MarketPrice" type="hidden" value="0.1700" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Read the Bones</span>
                         </a>
-                        <a id="Product535771Container"
+                        <a id="Product579066Container"
                            class="subdeck-group__card"
-                           href="https://www.tcgplayer.com/product/535771/magic-reanimate"
+                           href="https://www.tcgplayer.com/product/579066/magic-reanimate"
                            target="_blank"
                            onmouseover="UpdateCardSummary(this)"
-                           data-product-id="535771">
+                           data-product-id="579066">
 
-                            <input id="Product535771ImageUrl" name="Product535771ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/535771_200w.jpg" />
-                            <input id="Product535771SearchUrl" name="Product535771SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/535771/magic-reanimate" />
-                            <input id="Product535771LowestPrice" name="Product535771LowestPrice" type="hidden" value="5.9000" />
-                            <input id="Product535771MedianPrice" name="Product535771MedianPrice" type="hidden" value="7.7250" />
-                            <input id="Product535771MarketPrice" name="Product535771MarketPrice" type="hidden" value="7.5500" />
+                            <input id="Product579066ImageUrl" name="Product579066ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/579066_200w.jpg" />
+                            <input id="Product579066SearchUrl" name="Product579066SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/579066/magic-reanimate" />
+                            <input id="Product579066LowestPrice" name="Product579066LowestPrice" type="hidden" value="3.7500" />
+                            <input id="Product579066MedianPrice" name="Product579066MedianPrice" type="hidden" value="5.0200" />
+                            <input id="Product579066MarketPrice" name="Product579066MarketPrice" type="hidden" value="4.7800" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Reanimate</span>
                         </a>
@@ -1365,8 +1350,8 @@
                             <input id="Product449049ImageUrl" name="Product449049ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/449049_200w.jpg" />
                             <input id="Product449049SearchUrl" name="Product449049SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/449049/magic-red-elemental-blast" />
                             <input id="Product449049LowestPrice" name="Product449049LowestPrice" type="hidden" value="2.0000" />
-                            <input id="Product449049MedianPrice" name="Product449049MedianPrice" type="hidden" value="8.2000" />
-                            <input id="Product449049MarketPrice" name="Product449049MarketPrice" type="hidden" value="4.7800" />
+                            <input id="Product449049MedianPrice" name="Product449049MedianPrice" type="hidden" value="8.8400" />
+                            <input id="Product449049MarketPrice" name="Product449049MarketPrice" type="hidden" value="5.2200" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Red Elemental Blast</span>
                         </a>
@@ -1379,9 +1364,9 @@
 
                             <input id="Product509518ImageUrl" name="Product509518ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/509518_200w.jpg" />
                             <input id="Product509518SearchUrl" name="Product509518SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/509518/magic-rhystic-study" />
-                            <input id="Product509518LowestPrice" name="Product509518LowestPrice" type="hidden" value="44.9900" />
-                            <input id="Product509518MedianPrice" name="Product509518MedianPrice" type="hidden" value="53.0500" />
-                            <input id="Product509518MarketPrice" name="Product509518MarketPrice" type="hidden" value="52.0300" />
+                            <input id="Product509518LowestPrice" name="Product509518LowestPrice" type="hidden" value="39.9900" />
+                            <input id="Product509518MedianPrice" name="Product509518MedianPrice" type="hidden" value="48.3200" />
+                            <input id="Product509518MarketPrice" name="Product509518MarketPrice" type="hidden" value="48.3800" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Rhystic Study</span>
                         </a>
@@ -1394,9 +1379,9 @@
 
                             <input id="Product218596ImageUrl" name="Product218596ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/218596_200w.jpg" />
                             <input id="Product218596SearchUrl" name="Product218596SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/218596/magic-rolling-earthquake" />
-                            <input id="Product218596LowestPrice" name="Product218596LowestPrice" type="hidden" value="2.5000" />
-                            <input id="Product218596MedianPrice" name="Product218596MedianPrice" type="hidden" value="3.7800" />
-                            <input id="Product218596MarketPrice" name="Product218596MarketPrice" type="hidden" value="3.3600" />
+                            <input id="Product218596LowestPrice" name="Product218596LowestPrice" type="hidden" value="1.9800" />
+                            <input id="Product218596MedianPrice" name="Product218596MedianPrice" type="hidden" value="3.2700" />
+                            <input id="Product218596MarketPrice" name="Product218596MarketPrice" type="hidden" value="3.0200" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Rolling Earthquake</span>
                         </a>
@@ -1409,39 +1394,24 @@
 
                             <input id="Product6245ImageUrl" name="Product6245ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/6245_200w.jpg" />
                             <input id="Product6245SearchUrl" name="Product6245SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/6245/magic-sigil-of-sleep" />
-                            <input id="Product6245LowestPrice" name="Product6245LowestPrice" type="hidden" value="0.2000" />
-                            <input id="Product6245MedianPrice" name="Product6245MedianPrice" type="hidden" value="1.5400" />
-                            <input id="Product6245MarketPrice" name="Product6245MarketPrice" type="hidden" value="1.7900" />
+                            <input id="Product6245LowestPrice" name="Product6245LowestPrice" type="hidden" value="0.2300" />
+                            <input id="Product6245MedianPrice" name="Product6245MedianPrice" type="hidden" value="1.1000" />
+                            <input id="Product6245MarketPrice" name="Product6245MarketPrice" type="hidden" value="1.0100" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Sigil of Sleep</span>
                         </a>
-                        <a id="Product14113Container"
+                        <a id="Product577866Container"
                            class="subdeck-group__card"
-                           href="https://www.tcgplayer.com/product/14113/magic-skred"
+                           href="https://www.tcgplayer.com/product/577866/magic-sol-ring"
                            target="_blank"
                            onmouseover="UpdateCardSummary(this)"
-                           data-product-id="14113">
+                           data-product-id="577866">
 
-                            <input id="Product14113ImageUrl" name="Product14113ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/14113_200w.jpg" />
-                            <input id="Product14113SearchUrl" name="Product14113SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/14113/magic-skred" />
-                            <input id="Product14113LowestPrice" name="Product14113LowestPrice" type="hidden" value="1.3100" />
-                            <input id="Product14113MedianPrice" name="Product14113MedianPrice" type="hidden" value="3.7900" />
-                            <input id="Product14113MarketPrice" name="Product14113MarketPrice" type="hidden" value="3.4800" />
-
-                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Skred</span>
-                        </a>
-                        <a id="Product559736Container"
-                           class="subdeck-group__card"
-                           href="https://www.tcgplayer.com/product/559736/magic-sol-ring"
-                           target="_blank"
-                           onmouseover="UpdateCardSummary(this)"
-                           data-product-id="559736">
-
-                            <input id="Product559736ImageUrl" name="Product559736ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/559736_200w.jpg" />
-                            <input id="Product559736SearchUrl" name="Product559736SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/559736/magic-sol-ring" />
-                            <input id="Product559736LowestPrice" name="Product559736LowestPrice" type="hidden" value="0.9900" />
-                            <input id="Product559736MedianPrice" name="Product559736MedianPrice" type="hidden" value="1.2450" />
-                            <input id="Product559736MarketPrice" name="Product559736MarketPrice" type="hidden" value="1.2300" />
+                            <input id="Product577866ImageUrl" name="Product577866ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/577866_200w.jpg" />
+                            <input id="Product577866SearchUrl" name="Product577866SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/577866/magic-sol-ring" />
+                            <input id="Product577866LowestPrice" name="Product577866LowestPrice" type="hidden" value="1.0900" />
+                            <input id="Product577866MedianPrice" name="Product577866MedianPrice" type="hidden" value="1.3100" />
+                            <input id="Product577866MarketPrice" name="Product577866MarketPrice" type="hidden" value="1.1800" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Sol Ring</span>
                         </a>
@@ -1454,9 +1424,9 @@
 
                             <input id="Product528387ImageUrl" name="Product528387ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/528387_200w.jpg" />
                             <input id="Product528387SearchUrl" name="Product528387SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/528387/magic-spell-pierce" />
-                            <input id="Product528387LowestPrice" name="Product528387LowestPrice" type="hidden" value="51.8500" />
-                            <input id="Product528387MedianPrice" name="Product528387MedianPrice" type="hidden" value="" />
-                            <input id="Product528387MarketPrice" name="Product528387MarketPrice" type="hidden" value="65.4900" />
+                            <input id="Product528387LowestPrice" name="Product528387LowestPrice" type="hidden" value="36.8700" />
+                            <input id="Product528387MedianPrice" name="Product528387MedianPrice" type="hidden" value="49.0900" />
+                            <input id="Product528387MarketPrice" name="Product528387MarketPrice" type="hidden" value="63.2000" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Spell Pierce</span>
                         </a>
@@ -1469,9 +1439,9 @@
 
                             <input id="Product499750ImageUrl" name="Product499750ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/499750_200w.jpg" />
                             <input id="Product499750SearchUrl" name="Product499750SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/499750/magic-swan-song" />
-                            <input id="Product499750LowestPrice" name="Product499750LowestPrice" type="hidden" value="11.5700" />
-                            <input id="Product499750MedianPrice" name="Product499750MedianPrice" type="hidden" value="15.0200" />
-                            <input id="Product499750MarketPrice" name="Product499750MarketPrice" type="hidden" value="15.0000" />
+                            <input id="Product499750LowestPrice" name="Product499750LowestPrice" type="hidden" value="8.0000" />
+                            <input id="Product499750MedianPrice" name="Product499750MedianPrice" type="hidden" value="10.0350" />
+                            <input id="Product499750MarketPrice" name="Product499750MarketPrice" type="hidden" value="9.3900" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Swan Song</span>
                         </a>
@@ -1484,9 +1454,9 @@
 
                             <input id="Product448965ImageUrl" name="Product448965ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/448965_200w.jpg" />
                             <input id="Product448965SearchUrl" name="Product448965SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/448965/magic-timetwister" />
-                            <input id="Product448965LowestPrice" name="Product448965LowestPrice" type="hidden" value="1799.9900" />
-                            <input id="Product448965MedianPrice" name="Product448965MedianPrice" type="hidden" value="1985.4900" />
-                            <input id="Product448965MarketPrice" name="Product448965MarketPrice" type="hidden" value="999.8900" />
+                            <input id="Product448965LowestPrice" name="Product448965LowestPrice" type="hidden" value="975.0000" />
+                            <input id="Product448965MedianPrice" name="Product448965MedianPrice" type="hidden" value="1399.9900" />
+                            <input id="Product448965MarketPrice" name="Product448965MarketPrice" type="hidden" value="1199.7700" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Timetwister</span>
                         </a>
@@ -1499,9 +1469,9 @@
 
                             <input id="Product552728ImageUrl" name="Product552728ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/552728_200w.jpg" />
                             <input id="Product552728SearchUrl" name="Product552728SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/552728/magic-toxic-deluge" />
-                            <input id="Product552728LowestPrice" name="Product552728LowestPrice" type="hidden" value="3.5600" />
-                            <input id="Product552728MedianPrice" name="Product552728MedianPrice" type="hidden" value="5.3200" />
-                            <input id="Product552728MarketPrice" name="Product552728MarketPrice" type="hidden" value="5.1900" />
+                            <input id="Product552728LowestPrice" name="Product552728LowestPrice" type="hidden" value="3.0000" />
+                            <input id="Product552728MedianPrice" name="Product552728MedianPrice" type="hidden" value="5.4300" />
+                            <input id="Product552728MarketPrice" name="Product552728MarketPrice" type="hidden" value="4.9800" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Toxic Deluge</span>
                         </a>
@@ -1514,9 +1484,9 @@
 
                             <input id="Product218573ImageUrl" name="Product218573ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/218573_200w.jpg" />
                             <input id="Product218573SearchUrl" name="Product218573SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/218573/magic-trinisphere" />
-                            <input id="Product218573LowestPrice" name="Product218573LowestPrice" type="hidden" value="30.0000" />
-                            <input id="Product218573MedianPrice" name="Product218573MedianPrice" type="hidden" value="35.6400" />
-                            <input id="Product218573MarketPrice" name="Product218573MarketPrice" type="hidden" value="35.8900" />
+                            <input id="Product218573LowestPrice" name="Product218573LowestPrice" type="hidden" value="25.0000" />
+                            <input id="Product218573MedianPrice" name="Product218573MedianPrice" type="hidden" value="34.5700" />
+                            <input id="Product218573MarketPrice" name="Product218573MarketPrice" type="hidden" value="32.8600" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Trinisphere</span>
                         </a>
@@ -1530,8 +1500,8 @@
                             <input id="Product457178ImageUrl" name="Product457178ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/457178_200w.jpg" />
                             <input id="Product457178SearchUrl" name="Product457178SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/457178/magic-vampiric-tutor" />
                             <input id="Product457178LowestPrice" name="Product457178LowestPrice" type="hidden" value="36.0000" />
-                            <input id="Product457178MedianPrice" name="Product457178MedianPrice" type="hidden" value="41.3100" />
-                            <input id="Product457178MarketPrice" name="Product457178MarketPrice" type="hidden" value="41.3100" />
+                            <input id="Product457178MedianPrice" name="Product457178MedianPrice" type="hidden" value="42.7400" />
+                            <input id="Product457178MarketPrice" name="Product457178MarketPrice" type="hidden" value="41.0800" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Vampiric Tutor</span>
                         </a>
@@ -1544,9 +1514,9 @@
 
                             <input id="Product545277ImageUrl" name="Product545277ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/545277_200w.jpg" />
                             <input id="Product545277SearchUrl" name="Product545277SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/545277/magic-vandalblast" />
-                            <input id="Product545277LowestPrice" name="Product545277LowestPrice" type="hidden" value="2.1400" />
-                            <input id="Product545277MedianPrice" name="Product545277MedianPrice" type="hidden" value="3.4900" />
-                            <input id="Product545277MarketPrice" name="Product545277MarketPrice" type="hidden" value="3.3900" />
+                            <input id="Product545277LowestPrice" name="Product545277LowestPrice" type="hidden" value="2.3800" />
+                            <input id="Product545277MedianPrice" name="Product545277MedianPrice" type="hidden" value="2.6750" />
+                            <input id="Product545277MarketPrice" name="Product545277MarketPrice" type="hidden" value="2.5800" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Vandalblast</span>
                         </a>
@@ -1559,9 +1529,9 @@
 
                             <input id="Product552740ImageUrl" name="Product552740ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/552740_200w.jpg" />
                             <input id="Product552740SearchUrl" name="Product552740SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/552740/magic-victimize" />
-                            <input id="Product552740LowestPrice" name="Product552740LowestPrice" type="hidden" value="0.0500" />
+                            <input id="Product552740LowestPrice" name="Product552740LowestPrice" type="hidden" value="0.1000" />
                             <input id="Product552740MedianPrice" name="Product552740MedianPrice" type="hidden" value="0.2500" />
-                            <input id="Product552740MarketPrice" name="Product552740MarketPrice" type="hidden" value="0.1600" />
+                            <input id="Product552740MarketPrice" name="Product552740MarketPrice" type="hidden" value="0.2200" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Victimize</span>
                         </a>
@@ -1574,9 +1544,9 @@
 
                             <input id="Product449065ImageUrl" name="Product449065ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/449065_200w.jpg" />
                             <input id="Product449065SearchUrl" name="Product449065SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/449065/magic-wheel-of-fortune" />
-                            <input id="Product449065LowestPrice" name="Product449065LowestPrice" type="hidden" value="239.9900" />
-                            <input id="Product449065MedianPrice" name="Product449065MedianPrice" type="hidden" value="239.9900" />
-                            <input id="Product449065MarketPrice" name="Product449065MarketPrice" type="hidden" value="242.8900" />
+                            <input id="Product449065LowestPrice" name="Product449065LowestPrice" type="hidden" value="369.9900" />
+                            <input id="Product449065MedianPrice" name="Product449065MedianPrice" type="hidden" value="370.1250" />
+                            <input id="Product449065MarketPrice" name="Product449065MarketPrice" type="hidden" value="240.3100" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Wheel of Fortune</span>
                         </a>
@@ -1589,9 +1559,9 @@
 
                             <input id="Product545285ImageUrl" name="Product545285ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/545285_200w.jpg" />
                             <input id="Product545285SearchUrl" name="Product545285SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/545285/magic-windfall" />
-                            <input id="Product545285LowestPrice" name="Product545285LowestPrice" type="hidden" value="1.5200" />
-                            <input id="Product545285MedianPrice" name="Product545285MedianPrice" type="hidden" value="2.4100" />
-                            <input id="Product545285MarketPrice" name="Product545285MarketPrice" type="hidden" value="2.3100" />
+                            <input id="Product545285LowestPrice" name="Product545285LowestPrice" type="hidden" value="2.0000" />
+                            <input id="Product545285MedianPrice" name="Product545285MedianPrice" type="hidden" value="2.3200" />
+                            <input id="Product545285MarketPrice" name="Product545285MarketPrice" type="hidden" value="2.0800" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Windfall</span>
                         </a>
@@ -1604,15 +1574,15 @@
 
                             <input id="Product7118ImageUrl" name="Product7118ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/7118_200w.jpg" />
                             <input id="Product7118SearchUrl" name="Product7118SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/7118/magic-yawgmoths-will" />
-                            <input id="Product7118LowestPrice" name="Product7118LowestPrice" type="hidden" value="98.0000" />
-                            <input id="Product7118MedianPrice" name="Product7118MedianPrice" type="hidden" value="179.9500" />
-                            <input id="Product7118MarketPrice" name="Product7118MarketPrice" type="hidden" value="160.0300" />
+                            <input id="Product7118LowestPrice" name="Product7118LowestPrice" type="hidden" value="94.7800" />
+                            <input id="Product7118MedianPrice" name="Product7118MedianPrice" type="hidden" value="170.4900" />
+                            <input id="Product7118MarketPrice" name="Product7118MarketPrice" type="hidden" value="166.9300" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Yawgmoth&#39;s Will</span>
                         </a>
                 </div>
                 <div class="subdeck-group">
-                        <h4 class="subdeck-group__name">Land <span class="subdeck-group__qty">27</span></h4>
+                        <h4 class="subdeck-group__name">Land <span class="subdeck-group__qty">29</span></h4>
 
                         <a id="Product222003Container"
                            class="subdeck-group__card"
@@ -1623,9 +1593,9 @@
 
                             <input id="Product222003ImageUrl" name="Product222003ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/222003_200w.jpg" />
                             <input id="Product222003SearchUrl" name="Product222003SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/222003/magic-ancient-tomb" />
-                            <input id="Product222003LowestPrice" name="Product222003LowestPrice" type="hidden" value="82.0100" />
-                            <input id="Product222003MedianPrice" name="Product222003MedianPrice" type="hidden" value="101.5550" />
-                            <input id="Product222003MarketPrice" name="Product222003MarketPrice" type="hidden" value="92.3200" />
+                            <input id="Product222003LowestPrice" name="Product222003LowestPrice" type="hidden" value="85.0000" />
+                            <input id="Product222003MedianPrice" name="Product222003MedianPrice" type="hidden" value="104.9800" />
+                            <input id="Product222003MarketPrice" name="Product222003MarketPrice" type="hidden" value="96.1400" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Ancient Tomb</span>
                         </a>
@@ -1638,9 +1608,9 @@
 
                             <input id="Product238607ImageUrl" name="Product238607ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/238607_200w.jpg" />
                             <input id="Product238607SearchUrl" name="Product238607SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/238607/magic-arid-mesa" />
-                            <input id="Product238607LowestPrice" name="Product238607LowestPrice" type="hidden" value="20.9300" />
-                            <input id="Product238607MedianPrice" name="Product238607MedianPrice" type="hidden" value="28.0300" />
-                            <input id="Product238607MarketPrice" name="Product238607MarketPrice" type="hidden" value="26.7400" />
+                            <input id="Product238607LowestPrice" name="Product238607LowestPrice" type="hidden" value="19.0000" />
+                            <input id="Product238607MedianPrice" name="Product238607MedianPrice" type="hidden" value="24.3950" />
+                            <input id="Product238607MarketPrice" name="Product238607MarketPrice" type="hidden" value="23.1600" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Arid Mesa</span>
                         </a>
@@ -1653,9 +1623,9 @@
 
                             <input id="Product449163ImageUrl" name="Product449163ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/449163_200w.jpg" />
                             <input id="Product449163SearchUrl" name="Product449163SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/449163/magic-badlands" />
-                            <input id="Product449163LowestPrice" name="Product449163LowestPrice" type="hidden" value="312.8000" />
-                            <input id="Product449163MedianPrice" name="Product449163MedianPrice" type="hidden" value="2046.6000" />
-                            <input id="Product449163MarketPrice" name="Product449163MarketPrice" type="hidden" value="240.9800" />
+                            <input id="Product449163LowestPrice" name="Product449163LowestPrice" type="hidden" value="272.0000" />
+                            <input id="Product449163MedianPrice" name="Product449163MedianPrice" type="hidden" value="1189.8300" />
+                            <input id="Product449163MarketPrice" name="Product449163MarketPrice" type="hidden" value="273.0000" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Badlands</span>
                         </a>
@@ -1668,9 +1638,9 @@
 
                             <input id="Product541275ImageUrl" name="Product541275ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/541275_200w.jpg" />
                             <input id="Product541275SearchUrl" name="Product541275SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/541275/magic-bloodstained-mire" />
-                            <input id="Product541275LowestPrice" name="Product541275LowestPrice" type="hidden" value="8.0000" />
-                            <input id="Product541275MedianPrice" name="Product541275MedianPrice" type="hidden" value="12.1000" />
-                            <input id="Product541275MarketPrice" name="Product541275MarketPrice" type="hidden" value="11.5700" />
+                            <input id="Product541275LowestPrice" name="Product541275LowestPrice" type="hidden" value="8.7800" />
+                            <input id="Product541275MedianPrice" name="Product541275MedianPrice" type="hidden" value="11.8600" />
+                            <input id="Product541275MarketPrice" name="Product541275MarketPrice" type="hidden" value="10.9900" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Bloodstained Mire</span>
                         </a>
@@ -1685,7 +1655,7 @@
                             <input id="Product552626SearchUrl" name="Product552626SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/552626/magic-cephalid-coliseum" />
                             <input id="Product552626LowestPrice" name="Product552626LowestPrice" type="hidden" value="0.0100" />
                             <input id="Product552626MedianPrice" name="Product552626MedianPrice" type="hidden" value="0.2500" />
-                            <input id="Product552626MarketPrice" name="Product552626MarketPrice" type="hidden" value="0.1900" />
+                            <input id="Product552626MarketPrice" name="Product552626MarketPrice" type="hidden" value="0.1700" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Cephalid Coliseum</span>
                         </a>
@@ -1698,9 +1668,9 @@
 
                             <input id="Product541276ImageUrl" name="Product541276ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/541276_200w.jpg" />
                             <input id="Product541276SearchUrl" name="Product541276SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/541276/magic-flooded-strand" />
-                            <input id="Product541276LowestPrice" name="Product541276LowestPrice" type="hidden" value="8.0000" />
-                            <input id="Product541276MedianPrice" name="Product541276MedianPrice" type="hidden" value="11.5000" />
-                            <input id="Product541276MarketPrice" name="Product541276MarketPrice" type="hidden" value="9.9300" />
+                            <input id="Product541276LowestPrice" name="Product541276LowestPrice" type="hidden" value="8.1100" />
+                            <input id="Product541276MedianPrice" name="Product541276MedianPrice" type="hidden" value="10.9900" />
+                            <input id="Product541276MarketPrice" name="Product541276MarketPrice" type="hidden" value="10.3700" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Flooded Strand</span>
                         </a>
@@ -1713,9 +1683,9 @@
 
                             <input id="Product238608ImageUrl" name="Product238608ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/238608_200w.jpg" />
                             <input id="Product238608SearchUrl" name="Product238608SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/238608/magic-marsh-flats" />
-                            <input id="Product238608LowestPrice" name="Product238608LowestPrice" type="hidden" value="14.0000" />
-                            <input id="Product238608MedianPrice" name="Product238608MedianPrice" type="hidden" value="21.0250" />
-                            <input id="Product238608MarketPrice" name="Product238608MarketPrice" type="hidden" value="19.7600" />
+                            <input id="Product238608LowestPrice" name="Product238608LowestPrice" type="hidden" value="16.7000" />
+                            <input id="Product238608MedianPrice" name="Product238608MedianPrice" type="hidden" value="19.8900" />
+                            <input id="Product238608MarketPrice" name="Product238608MarketPrice" type="hidden" value="18.2400" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Marsh Flats</span>
                         </a>
@@ -1728,9 +1698,9 @@
 
                             <input id="Product238609ImageUrl" name="Product238609ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/238609_200w.jpg" />
                             <input id="Product238609SearchUrl" name="Product238609SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/238609/magic-misty-rainforest" />
-                            <input id="Product238609LowestPrice" name="Product238609LowestPrice" type="hidden" value="20.0000" />
-                            <input id="Product238609MedianPrice" name="Product238609MedianPrice" type="hidden" value="25.1450" />
-                            <input id="Product238609MarketPrice" name="Product238609MarketPrice" type="hidden" value="24.0200" />
+                            <input id="Product238609LowestPrice" name="Product238609LowestPrice" type="hidden" value="17.9500" />
+                            <input id="Product238609MedianPrice" name="Product238609MedianPrice" type="hidden" value="23.8100" />
+                            <input id="Product238609MarketPrice" name="Product238609MarketPrice" type="hidden" value="20.0900" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Misty Rainforest</span>
                         </a>
@@ -1743,9 +1713,9 @@
 
                             <input id="Product541274ImageUrl" name="Product541274ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/541274_200w.jpg" />
                             <input id="Product541274SearchUrl" name="Product541274SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/541274/magic-polluted-delta" />
-                            <input id="Product541274LowestPrice" name="Product541274LowestPrice" type="hidden" value="11.2500" />
-                            <input id="Product541274MedianPrice" name="Product541274MedianPrice" type="hidden" value="14.5000" />
-                            <input id="Product541274MarketPrice" name="Product541274MarketPrice" type="hidden" value="13.3500" />
+                            <input id="Product541274LowestPrice" name="Product541274LowestPrice" type="hidden" value="11.2000" />
+                            <input id="Product541274MedianPrice" name="Product541274MedianPrice" type="hidden" value="14.1100" />
+                            <input id="Product541274MarketPrice" name="Product541274MarketPrice" type="hidden" value="13.5000" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Polluted Delta</span>
                         </a>
@@ -1758,9 +1728,9 @@
 
                             <input id="Product221818ImageUrl" name="Product221818ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/221818_200w.jpg" />
                             <input id="Product221818SearchUrl" name="Product221818SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/221818/magic-prismatic-vista" />
-                            <input id="Product221818LowestPrice" name="Product221818LowestPrice" type="hidden" value="29.9900" />
-                            <input id="Product221818MedianPrice" name="Product221818MedianPrice" type="hidden" value="36.2100" />
-                            <input id="Product221818MarketPrice" name="Product221818MarketPrice" type="hidden" value="36.2100" />
+                            <input id="Product221818LowestPrice" name="Product221818LowestPrice" type="hidden" value="29.0100" />
+                            <input id="Product221818MedianPrice" name="Product221818MedianPrice" type="hidden" value="34.9950" />
+                            <input id="Product221818MarketPrice" name="Product221818MarketPrice" type="hidden" value="32.3000" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Prismatic Vista</span>
                         </a>
@@ -1773,9 +1743,9 @@
 
                             <input id="Product238610ImageUrl" name="Product238610ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/238610_200w.jpg" />
                             <input id="Product238610SearchUrl" name="Product238610SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/238610/magic-scalding-tarn" />
-                            <input id="Product238610LowestPrice" name="Product238610LowestPrice" type="hidden" value="22.2400" />
-                            <input id="Product238610MedianPrice" name="Product238610MedianPrice" type="hidden" value="26.7000" />
-                            <input id="Product238610MarketPrice" name="Product238610MarketPrice" type="hidden" value="25.1400" />
+                            <input id="Product238610LowestPrice" name="Product238610LowestPrice" type="hidden" value="18.8500" />
+                            <input id="Product238610MedianPrice" name="Product238610MedianPrice" type="hidden" value="23.9600" />
+                            <input id="Product238610MarketPrice" name="Product238610MarketPrice" type="hidden" value="20.3400" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Scalding Tarn</span>
                         </a>
@@ -1788,9 +1758,9 @@
 
                             <input id="Product455039ImageUrl" name="Product455039ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/455039_200w.jpg" />
                             <input id="Product455039SearchUrl" name="Product455039SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/455039/magic-snow-covered-island" />
-                            <input id="Product455039LowestPrice" name="Product455039LowestPrice" type="hidden" value="0.9400" />
-                            <input id="Product455039MedianPrice" name="Product455039MedianPrice" type="hidden" value="1.3700" />
-                            <input id="Product455039MarketPrice" name="Product455039MarketPrice" type="hidden" value="1.2900" />
+                            <input id="Product455039LowestPrice" name="Product455039LowestPrice" type="hidden" value="0.8500" />
+                            <input id="Product455039MedianPrice" name="Product455039MedianPrice" type="hidden" value="1.2700" />
+                            <input id="Product455039MarketPrice" name="Product455039MarketPrice" type="hidden" value="1.2100" />
 
                             <span class="subdeck-group__card-qty">5</span> <span class="subdeck-group__card-name">Snow-Covered Island</span>
                         </a>
@@ -1804,8 +1774,8 @@
                             <input id="Product14116ImageUrl" name="Product14116ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/14116_200w.jpg" />
                             <input id="Product14116SearchUrl" name="Product14116SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/14116/magic-snow-covered-mountain" />
                             <input id="Product14116LowestPrice" name="Product14116LowestPrice" type="hidden" value="0.3000" />
-                            <input id="Product14116MedianPrice" name="Product14116MedianPrice" type="hidden" value="1.0000" />
-                            <input id="Product14116MarketPrice" name="Product14116MarketPrice" type="hidden" value="0.8300" />
+                            <input id="Product14116MedianPrice" name="Product14116MedianPrice" type="hidden" value="1.0500" />
+                            <input id="Product14116MarketPrice" name="Product14116MarketPrice" type="hidden" value="0.9900" />
 
                             <span class="subdeck-group__card-qty">3</span> <span class="subdeck-group__card-name">Snow-Covered Mountain</span>
                         </a>
@@ -1819,10 +1789,25 @@
                             <input id="Product14118ImageUrl" name="Product14118ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/14118_200w.jpg" />
                             <input id="Product14118SearchUrl" name="Product14118SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/14118/magic-snow-covered-swamp" />
                             <input id="Product14118LowestPrice" name="Product14118LowestPrice" type="hidden" value="0.2000" />
-                            <input id="Product14118MedianPrice" name="Product14118MedianPrice" type="hidden" value="1.1900" />
-                            <input id="Product14118MarketPrice" name="Product14118MarketPrice" type="hidden" value="1.0100" />
+                            <input id="Product14118MedianPrice" name="Product14118MedianPrice" type="hidden" value="1.0900" />
+                            <input id="Product14118MarketPrice" name="Product14118MarketPrice" type="hidden" value="1.0000" />
 
-                            <span class="subdeck-group__card-qty">2</span> <span class="subdeck-group__card-name">Snow-Covered Swamp</span>
+                            <span class="subdeck-group__card-qty">3</span> <span class="subdeck-group__card-name">Snow-Covered Swamp</span>
+                        </a>
+                        <a id="Product221957Container"
+                           class="subdeck-group__card"
+                           href="https://www.tcgplayer.com/product/221957/magic-spikefield-hazard"
+                           target="_blank"
+                           onmouseover="UpdateCardSummary(this)"
+                           data-product-id="221957">
+
+                            <input id="Product221957ImageUrl" name="Product221957ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/221957_200w.jpg" />
+                            <input id="Product221957SearchUrl" name="Product221957SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/221957/magic-spikefield-hazard" />
+                            <input id="Product221957LowestPrice" name="Product221957LowestPrice" type="hidden" value="0.1300" />
+                            <input id="Product221957MedianPrice" name="Product221957MedianPrice" type="hidden" value="0.4700" />
+                            <input id="Product221957MarketPrice" name="Product221957MarketPrice" type="hidden" value="0.2700" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Spikefield Hazard</span>
                         </a>
                         <a id="Product517660Container"
                            class="subdeck-group__card"
@@ -1833,9 +1818,9 @@
 
                             <input id="Product517660ImageUrl" name="Product517660ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/517660_200w.jpg" />
                             <input id="Product517660SearchUrl" name="Product517660SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/517660/magic-steam-vents" />
-                            <input id="Product517660LowestPrice" name="Product517660LowestPrice" type="hidden" value="12.2500" />
-                            <input id="Product517660MedianPrice" name="Product517660MedianPrice" type="hidden" value="15.3450" />
-                            <input id="Product517660MarketPrice" name="Product517660MarketPrice" type="hidden" value="15.1900" />
+                            <input id="Product517660LowestPrice" name="Product517660LowestPrice" type="hidden" value="11.0000" />
+                            <input id="Product517660MedianPrice" name="Product517660MedianPrice" type="hidden" value="14.3050" />
+                            <input id="Product517660MarketPrice" name="Product517660MarketPrice" type="hidden" value="13.3700" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Steam Vents</span>
                         </a>
@@ -1848,9 +1833,9 @@
 
                             <input id="Product449172ImageUrl" name="Product449172ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/449172_200w.jpg" />
                             <input id="Product449172SearchUrl" name="Product449172SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/449172/magic-underground-sea" />
-                            <input id="Product449172LowestPrice" name="Product449172LowestPrice" type="hidden" value="309.9900" />
-                            <input id="Product449172MedianPrice" name="Product449172MedianPrice" type="hidden" value="366.3200" />
-                            <input id="Product449172MarketPrice" name="Product449172MarketPrice" type="hidden" value="314.1400" />
+                            <input id="Product449172LowestPrice" name="Product449172LowestPrice" type="hidden" value="290.9900" />
+                            <input id="Product449172MedianPrice" name="Product449172MedianPrice" type="hidden" value="334.6400" />
+                            <input id="Product449172MarketPrice" name="Product449172MarketPrice" type="hidden" value="316.9200" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Underground Sea</span>
                         </a>
@@ -1863,9 +1848,9 @@
 
                             <input id="Product238611ImageUrl" name="Product238611ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/238611_200w.jpg" />
                             <input id="Product238611SearchUrl" name="Product238611SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/238611/magic-verdant-catacombs" />
-                            <input id="Product238611LowestPrice" name="Product238611LowestPrice" type="hidden" value="16.2900" />
-                            <input id="Product238611MedianPrice" name="Product238611MedianPrice" type="hidden" value="23.7300" />
-                            <input id="Product238611MarketPrice" name="Product238611MarketPrice" type="hidden" value="22.5300" />
+                            <input id="Product238611LowestPrice" name="Product238611LowestPrice" type="hidden" value="16.9500" />
+                            <input id="Product238611MedianPrice" name="Product238611MedianPrice" type="hidden" value="22.0000" />
+                            <input id="Product238611MarketPrice" name="Product238611MarketPrice" type="hidden" value="20.2800" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Verdant Catacombs</span>
                         </a>
@@ -1878,9 +1863,9 @@
 
                             <input id="Product449173ImageUrl" name="Product449173ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/449173_200w.jpg" />
                             <input id="Product449173SearchUrl" name="Product449173SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/449173/magic-volcanic-island" />
-                            <input id="Product449173LowestPrice" name="Product449173LowestPrice" type="hidden" value="499.9900" />
-                            <input id="Product449173MedianPrice" name="Product449173MedianPrice" type="hidden" value="499.9900" />
-                            <input id="Product449173MarketPrice" name="Product449173MarketPrice" type="hidden" value="291.5800" />
+                            <input id="Product449173LowestPrice" name="Product449173LowestPrice" type="hidden" value="274.9900" />
+                            <input id="Product449173MedianPrice" name="Product449173MedianPrice" type="hidden" value="373.4900" />
+                            <input id="Product449173MarketPrice" name="Product449173MarketPrice" type="hidden" value="285.4200" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Volcanic Island</span>
                         </a>
@@ -1893,9 +1878,9 @@
 
                             <input id="Product517664ImageUrl" name="Product517664ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/517664_200w.jpg" />
                             <input id="Product517664SearchUrl" name="Product517664SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/517664/magic-watery-grave" />
-                            <input id="Product517664LowestPrice" name="Product517664LowestPrice" type="hidden" value="11.9900" />
-                            <input id="Product517664MedianPrice" name="Product517664MedianPrice" type="hidden" value="14.5250" />
-                            <input id="Product517664MarketPrice" name="Product517664MarketPrice" type="hidden" value="14.5700" />
+                            <input id="Product517664LowestPrice" name="Product517664LowestPrice" type="hidden" value="12.2500" />
+                            <input id="Product517664MedianPrice" name="Product517664MedianPrice" type="hidden" value="15.2700" />
+                            <input id="Product517664MarketPrice" name="Product517664MarketPrice" type="hidden" value="15.0700" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Watery Grave</span>
                         </a>
@@ -1908,9 +1893,9 @@
 
                             <input id="Product541277ImageUrl" name="Product541277ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/541277_200w.jpg" />
                             <input id="Product541277SearchUrl" name="Product541277SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/541277/magic-wooded-foothills" />
-                            <input id="Product541277LowestPrice" name="Product541277LowestPrice" type="hidden" value="9.0000" />
-                            <input id="Product541277MedianPrice" name="Product541277MedianPrice" type="hidden" value="12.0900" />
-                            <input id="Product541277MarketPrice" name="Product541277MarketPrice" type="hidden" value="11.5400" />
+                            <input id="Product541277LowestPrice" name="Product541277LowestPrice" type="hidden" value="8.4300" />
+                            <input id="Product541277MedianPrice" name="Product541277MedianPrice" type="hidden" value="11.2600" />
+                            <input id="Product541277MarketPrice" name="Product541277MarketPrice" type="hidden" value="10.0900" />
 
                             <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Wooded Foothills</span>
                         </a>
@@ -1918,6 +1903,34 @@
     </div>
 
 
+     <div class="subdeck">
+            <input id="Product0ImageUrl" name="Product0ImageUrl" type="hidden" value="/deckbuilder/Content/images/Magic_Card_Back.png" />
+            <input id="Product0SearchUrl" name="Product0SearchUrl" type="hidden" value="javascript: void(0);" />
+            <input id="Product0LowestPrice" name="Product0LowestPrice" type="hidden" value="" />
+            <input id="Product0MedianPrice" name="Product0MedianPrice" type="hidden" value="" />
+            <input id="Product0MarketPrice" name="Product0MarketPrice" type="hidden" value="" />
+
+
+            <h3 class="subdeck__name">Sideboard <span class="subdeck__total-qty">1</span></h3>
+                <div class="subdeck-group">
+
+                        <a id="Product491404Container"
+                           class="subdeck-group__card"
+                           href="https://www.tcgplayer.com/product/491404/magic-obosh-the-preypiercer"
+                           target="_blank"
+                           onmouseover="UpdateCardSummary(this)"
+                           data-product-id="491404">
+
+                            <input id="Product491404ImageUrl" name="Product491404ImageUrl" type="hidden" value="https://tcgplayer-cdn.tcgplayer.com/product/491404_200w.jpg" />
+                            <input id="Product491404SearchUrl" name="Product491404SearchUrl" type="hidden" value="https://www.tcgplayer.com/product/491404/magic-obosh-the-preypiercer" />
+                            <input id="Product491404LowestPrice" name="Product491404LowestPrice" type="hidden" value="0.0700" />
+                            <input id="Product491404MedianPrice" name="Product491404MedianPrice" type="hidden" value="0.3350" />
+                            <input id="Product491404MarketPrice" name="Product491404MarketPrice" type="hidden" value="0.1800" />
+
+                            <span class="subdeck-group__card-qty">1</span> <span class="subdeck-group__card-name">Obosh, the Preypiercer</span>
+                        </a>
+                </div>
+    </div>
 
 
     </div><script type="text/javascript">
@@ -1926,7 +1939,7 @@
                 "event": "trackEvent",
                 "event_category": "Draw Sample Hand",
                 "event_action": "Magic",
-                "event_label": "6463.9800",
+                "event_label": "5026.0250",
                 "player": "gorila",
                 "deck_name": "mtg parser 3 amigos",
                 "tags_deck": "",
@@ -1972,7 +1985,7 @@
 
 </div>
 
-                <button class="blue-button-lg bottom-align" onclick="trackSampleHand(); window.location = '/magic/deck/samplehand/1384198'">Draw A Sample Hand</button>
+                <button class="blue-button-lg bottom-align" onclick="trackSampleHand(); window.location = '/magic/deck/samplehand/1432015'">Draw A Sample Hand</button>
             </div>
         </div>
     </div>
@@ -1997,7 +2010,7 @@
 
     function DrawColorPieChart() {
         var ctx = $('#ColorPieChart').get(0).getContext("2d");
-        var colorPieChartData = [{"label":"Blue","color":"#2A5CA7","highlight":"#1D77FC","value":41},{"label":"Black","color":"#15181C","highlight":"#2A2D31","value":26},{"label":"Red","color":"#AA3939","highlight":"#D46A6A","value":24}];
+        var colorPieChartData = [{"label":"Blue","color":"#2A5CA7","highlight":"#1D77FC","value":41},{"label":"Black","color":"#15181C","highlight":"#2A2D31","value":24},{"label":"Red","color":"#AA3939","highlight":"#D46A6A","value":22}];
         var colorPieChartOptions = {
             legendTemplate: "<ul class=\"chartLegend\"><% for (var i=0; i<segments.length; i++){%><li><div class=\"chartLegendItem\" style=\"background-color:<%=segments[i].fillColor%>\"></div><%if(segments[i].label){%><%=segments[i].label%> (<%=segments[i].value%>)<%}%></li><%}%></ul>"
         };
@@ -2008,7 +2021,7 @@
 
     function DrawCardTypePieChart(){
         var ctx = $('#CardTypePieChart').get(0).getContext("2d");
-        var cardTypePieChartData = [{"label":"Creature","color":"#2A5CA7","highlight":"#1D77FC","value":10},{"label":"Planeswalker","color":"#F4F164","highlight":"#FFFC7D","value":1},{"label":"Spell","color":"#AA3939","highlight":"#D46A6A","value":62},{"label":"Land","color":"#AEA892","highlight":"#ADADA9","value":27}];
+        var cardTypePieChartData = [{"label":"Creature","color":"#2A5CA7","highlight":"#1D77FC","value":9},{"label":"Planeswalker","color":"#F4F164","highlight":"#FFFC7D","value":1},{"label":"Spell","color":"#AA3939","highlight":"#D46A6A","value":61},{"label":"Land","color":"#AEA892","highlight":"#ADADA9","value":29}];
         var cardTypePieChartOptions = {
             legendTemplate: "<ul class=\"chartLegend\"><% for (var i=0; i<segments.length; i++){%><li><div class=\"chartLegendItem\" style=\"background-color:<%=segments[i].fillColor%>\"></div><%if(segments[i].label){%><%=segments[i].label%> (<%=segments[i].value%>)<%}%></li><%}%></ul>"
         };
@@ -2027,7 +2040,7 @@
                 strokeColor: '#152B55',
                 highlightFill: '#2D4471',
                 highlightStroke: '#2D4471',
-                data: [31,0,30,0,10,0,1,0,1]
+                data: [30,0,30,0,9,0,1,0,1]
             }]
         };
         var manaCurveBarChartOptions = {};
@@ -2054,7 +2067,7 @@
     <div id="ManaCurveBarChartContainer" class="chartContainer col3of3">
         <h3 class="bottomBuffer">MANA CURVE</h3>
         <canvas id="ManaCurveBarChart" class="chart manaCurveBarChart"></canvas>
-        <div class="leftBuffer caption">Average CMC: 2.56</div>
+        <div class="leftBuffer caption">Average CMC: 2.55</div>
     </div>
 </div>
 </div>
@@ -2062,7 +2075,7 @@
 </div>
 <div id="fb-root"></div>
 <script src="https://connect.facebook.net/en_US/all.js#appId=136270296395166&xfbml=1"></script>
-<fb:comments href="https://decks.tcgplayer.com/deck/view/1384198" num_posts="20" width="925"></fb:comments>
+<fb:comments href="https://decks.tcgplayer.com/deck/view/1432015" num_posts="20" width="925"></fb:comments>
 
                 </div>
             </div>

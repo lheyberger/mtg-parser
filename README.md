@@ -5,7 +5,8 @@
 ![Github - Nightly Check](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/nightly.yaml?label=Nightly%20check)
 ![GitHub](https://img.shields.io/github/license/lheyberger/mtg-parser)
 
-`mtg_parser` is a Python library to download and parse Magic The Gathering decklists. It supports the most popular decklists hosting websites.
+`mtg_parser` is a Python library to download and parse Magic: The Gathering decklists.
+It supports the most popular decklists hosting websites.
 
 The following section covers the installation of `mtg_parser`.
 
@@ -40,6 +41,11 @@ $ poetry add mtg-parser
 
 ## Supported Formats
 
+> [!NOTE]
+> `mtg_parser` has been developed with a primary *focus on Commander*.
+> While it may function with other formats, compatibility is not guaranteed.
+
+
 In addition to [MTGO](mtgo.com) and [MTGA](magic.wizards.com/mtgarena) formats, `mtg_parser` supports the following websites:
 - [aetherhub.com](aetherhub.com)
 - [archidekt.com](archidekt.com)
@@ -49,7 +55,8 @@ In addition to [MTGO](mtgo.com) and [MTGA](magic.wizards.com/mtgarena) formats, 
 - [mtgjson.com](mtgjson.com)
 - [scryfall.com](scryfall.com)
 - [tappedout.net](tappedout.net)
-- [tcgplayer.com](tcgplayer.com)
+- [infinite.tcgplayer.com](infinite.tcgplayer.com)
+- [decks.tcgplayer.com](decks.tcgplayer.com)
 
 
 ## Known issues
@@ -169,7 +176,7 @@ for card in cards:
 ```python
 import mtg_parser
 
-url = 'https://deckstats.net/decks/<userid>/<deck_id>'
+url = 'https://deckstats.net/decks/<user_id>/<deck_id>'
 
 cards = mtg_parser.deckstats.parse_deck(url)
 for card in cards:
@@ -252,14 +259,29 @@ for card in cards:
 ```
 
 
-### Parsing decklists from tcgplayer.com
+### Parsing decklists from infinite.tcgplayer.com
 
-`mtg_parser` can parse public decks from [tcgplayer.com](tcgplayer.com)
+`mtg_parser` can parse public decks from [infinite.tcgplayer.com](infinite.tcgplayer.com)
 
 ```python
 import mtg_parser
 
-url = 'https://decks.tcgplayer.com/magic/<deck_path>'
+url = 'https://infinite.tcgplayer.com/magic-the-gathering/deck/<deck_name>/<deck_id>'
+
+cards = mtg_parser.tcgplayer_infinite.parse_deck(url)
+for card in cards:
+	print(card)
+```
+
+
+### Parsing decklists from decks.tcgplayer.com
+
+`mtg_parser` can parse public decks from [decks.tcgplayer.com](decks.tcgplayer.com)
+
+```python
+import mtg_parser
+
+url = 'https://decks.tcgplayer.com/magic/commander/<user_name>/<deck_name>/<deck_id>'
 
 cards = mtg_parser.tcgplayer.parse_deck(url)
 for card in cards:

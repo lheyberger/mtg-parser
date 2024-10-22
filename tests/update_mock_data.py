@@ -86,9 +86,18 @@ def update_tappedout_mock_data(session):
         mock_file.write(deck)
 
 
+def update_tcgplayer_infinite_mock_data(session):
+    deck = mtg_parser.tcgplayer_infinite._download_deck(
+        'https://infinite.tcgplayer.com/magic-the-gathering/deck/Cat-Base/465171',
+        session,
+    )
+    with open('tests/mocks/mock_tcgplayer_infinite.json', 'w', encoding="utf-8") as mock_file:
+        mock_file.write(_to_json(deck))
+
+
 def update_tcgplayer_mock_data(session):
     deck = mtg_parser.tcgplayer._download_deck(
-        'https://decks.tcgplayer.com/magic/commander/gorila/mtg-parser--3-amigos/1384198',
+        'https://decks.tcgplayer.com/magic/commander/gorila/mtg-parser--3-amigos/1432015',
         session,
     )
     with open('tests/mocks/mock_tcgplayer_3-amigos', 'w', encoding="utf-8") as mock_file:
@@ -106,6 +115,7 @@ def update_mock_data():
         update_mtgjson_mock_data,
         update_scryfall_mock_data,
         update_tappedout_mock_data,
+        update_tcgplayer_infinite_mock_data,
         update_tcgplayer_mock_data,
     ]
     for f in functions:

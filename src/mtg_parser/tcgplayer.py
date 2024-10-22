@@ -69,5 +69,7 @@ def _parse_deck(deck):
 def _get_tags(subdeck_name, group_name):
     if subdeck_name and subdeck_name.lower() == 'command zone':
         yield 'commander'
+    if subdeck_name and subdeck_name.lower() == 'sideboard':
+        yield 'companion'
     if group_name:
         yield group_name.lower()

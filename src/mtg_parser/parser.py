@@ -11,6 +11,7 @@ import mtg_parser.mtggoldfish
 import mtg_parser.mtgjson
 import mtg_parser.scryfall
 import mtg_parser.tappedout
+import mtg_parser.tcgplayer_infinite
 import mtg_parser.tcgplayer
 import mtg_parser.decklist
 
@@ -30,6 +31,7 @@ _PARSERS = [
     mtg_parser.mtgjson,
     mtg_parser.scryfall,
     mtg_parser.tappedout,
+    mtg_parser.tcgplayer_infinite,
     mtg_parser.tcgplayer,
     mtg_parser.decklist,
 ]
