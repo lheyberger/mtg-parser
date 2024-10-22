@@ -53,7 +53,7 @@ $ make test-publish
 Push the latest files on github and publish the release on pypi.org:
 ```shell
 $ git ls-files | xargs grep -l `poetry version -s` | xargs git add
-$ git commit -m "New version mtg-deckstats v`poetry version -s`"
+$ git commit -m "feat: new version mtg-deckstats v`poetry version -s`"
 $ git push
 $ make publish
 ```
