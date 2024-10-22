@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import re
 from urllib.parse import quote_plus
 
 
@@ -38,3 +39,21 @@ def get_scryfall_url(name=None, extension=None, number=None):
         scryfall_url += '/named'
         scryfall_url += f"?exact={_format_name(name)}"
     return scryfall_url
+
+
+def build_pattern(domain: str, path: str = '') -> str:
+    scheme = r'^(?:https?://)?'
+    subdomain = r'(?:[a-zA-Z0-9-]+\.)*'
+    domain = re.escape(domain.rstrip('/'))
+    path_sep = '' if path.startswith('/') else '/'
+    return ''.join([
+        scheme,
+        subdomain,
+        domain,
+        path_sep,
+        path,
+    ])
+
+
+def match_pattern(url: str, pattern: str) -> bool:
+    return isinstance(url, str) and isinstance(pattern, str) and re.match(pattern, url)

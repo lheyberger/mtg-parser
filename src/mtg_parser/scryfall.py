@@ -4,22 +4,20 @@
 import re
 import requests
 from mtg_parser.decklist import parse_deck as decklist_parse_deck
+from mtg_parser.utils import build_pattern, match_pattern
 
 
 __all__ = []
 
 
-_DOMAIN_PATTERN = r'(?:https?://)?(?:www\.)?scryfall\.com'
-_PATH_PATTERN = r'/.*decks/'
-_GUID_PATTERN = r'(\w{8}-\w{4}-\w{4}-\w{4}-\w{12})'
+_PATTERN = build_pattern(
+    'scryfall.com',
+    r'/(?P<user_id>@.+)/decks/(?P<deck_id>\w{8}-\w{4}-\w{4}-\w{4}-\w{12})/?',
+)
 
 
 def can_handle(src):
-    return (
-        isinstance(src, str)
-        and
-        re.match(_DOMAIN_PATTERN, src)
-    )
+    return match_pattern(src, _PATTERN)
 
 
 def parse_deck(src, session=requests):
@@ -30,8 +28,7 @@ def parse_deck(src, session=requests):
 
 
 def _download_deck(src, session):
-    pattern = _DOMAIN_PATTERN + _PATH_PATTERN + _GUID_PATTERN
-    deck_id = re.search(pattern, src).group(1)
+    deck_id = re.search(_PATTERN, src).group('deck_id')
     url = f"https://api.scryfall.com/decks/{deck_id}/export/text"
     return session.get(url).text
 

@@ -101,6 +101,7 @@ clean-packages:
 
 clean:
 	poetry run coverage erase
+	$(call remove_dir,${COVERAGE_DIR},.)
 	$(call remove_dir,${TMP_DIR},.)
 	$(call remove_dir,'__pycache__',.)
 	$(call remove_dir,'.pytest_cache',.)

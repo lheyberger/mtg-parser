@@ -99,6 +99,18 @@ for card in cards:
 	print(card)
 ```
 
+`parse_deck()` methods return a generator of `Card` objects matching the following description
+
+```python
+class Card:
+    name: str
+    quantity: int = 1
+    extension: Optional[str] = None
+    number: Optional[str] = None
+    tags: List[str] = []
+```
+
+
 ### Parsing textual decklist
 
 `mtg_parser` can parse textual decklists in either MTGO or MTGA format

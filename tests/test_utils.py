@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import re
 import pytest
 import requests
 import mtg_parser
@@ -116,3 +117,51 @@ def test_request_urls(parameters):
     url = mtg_parser.utils.get_scryfall_url(*parameters)
 
     requests.get(url, timeout=10).raise_for_status()
+
+
+@pytest.mark.parametrize('scheme', [
+    '', 'http://', 'https://',
+])
+@pytest.mark.parametrize('subdomain', [
+    '', 'www.', 'v2.api.',
+])
+@pytest.mark.parametrize('domain', [
+    'test-domain.com',
+])
+@pytest.mark.parametrize('path_prefix', [
+    '/decks/',
+])
+@pytest.mark.parametrize('deck_id', [
+    '1234567890', 'abcdef',
+])
+@pytest.mark.parametrize('path_suffix', [
+    '', '/', '/other', '?querystring', '/?querystring',
+])
+def test_build_and_match_pattern_succeeds(
+    scheme: str,
+    subdomain: str,
+    domain: str,
+    path_prefix: str,
+    deck_id: str,
+    path_suffix: str,
+    ):
+    url = ''.join([scheme, subdomain, domain, path_prefix, deck_id, path_suffix])
+    pattern = mtg_parser.utils.build_pattern(domain, r'/decks/(?P<deck_id>[a-zA-Z0-9]+)/?')
+    assert mtg_parser.utils.match_pattern(url, pattern)
+
+    parsed_deck_id = re.search(pattern, url).group('deck_id')
+    assert parsed_deck_id == deck_id
+
+
+@pytest.mark.parametrize('url', [
+    '', 42, None, 'http://', 'https://www.', 'https://www.testdomain.com',
+    'testdomain.com', 'nottest-domain.com.com', 'test-do.main.com', 'test-domain.co.uk',
+    'test-domain.com.fake.domain', 'www.not-test-domain.com',
+    'www.not-test-domain.com/test', 'ssh://test-domain.com', 'ssh://not-test-domain.com',
+])
+@pytest.mark.parametrize('domain', [
+    'test-domain.com',
+])
+def test_build_and_match_pattern_fails(url: str, domain: str):
+    pattern = mtg_parser.utils.build_pattern(domain)
+    assert not mtg_parser.utils.match_pattern(url, pattern)

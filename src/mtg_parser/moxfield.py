@@ -4,22 +4,17 @@
 import re
 import requests
 from mtg_parser.card import Card
+from mtg_parser.utils import build_pattern, match_pattern
 
 
 __all__ = []
 
 
-_DOMAIN_PATTERN = r'(?:https?://)?.*?moxfield\.com'
-_PATH_PATTERN = r'/.*/'
-_ID_PATTERN = r'([a-zA-Z0-9-_]+)'
+_PATTERN = build_pattern('moxfield.com', r'/decks/(?P<deck_id>[a-zA-Z0-9-_]+)/?')
 
 
 def can_handle(src):
-    return (
-        isinstance(src, str)
-        and
-        re.match(_DOMAIN_PATTERN, src)
-    )
+    return match_pattern(src, _PATTERN)
 
 
 def parse_deck(src, session=requests):
@@ -30,8 +25,7 @@ def parse_deck(src, session=requests):
 
 
 def _download_deck(src, session):
-    pattern = _DOMAIN_PATTERN + _PATH_PATTERN + _ID_PATTERN
-    deck_id = re.search(pattern, src).group(1)
+    deck_id = re.search(_PATTERN, src).group('deck_id')
     url = f"https://api.moxfield.com/v2/decks/all/{deck_id}"
     return session.get(url).json()
 

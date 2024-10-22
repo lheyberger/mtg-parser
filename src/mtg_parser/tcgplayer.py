@@ -1,21 +1,23 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import re
 import requests
 from bs4 import BeautifulSoup
 from mtg_parser.card import Card
+from mtg_parser.utils import build_pattern, match_pattern
 
 
 __all__ = []
 
 
+_PATTERN = build_pattern(
+    'decks.tcgplayer.com',
+    r'/magic/commander/(?P<user_id>.+)/(?P<deck_name>.+)/(?P<deck_id>\d+)/?',
+)
+
+
 def can_handle(src):
-    return (
-        isinstance(src, str)
-        and
-        re.match(r'(?:https?://)?.*?tcgplayer\.com', src)
-    )
+    return match_pattern(src, _PATTERN)
 
 
 def parse_deck(src, session=requests):

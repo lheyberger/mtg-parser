@@ -5,17 +5,17 @@ import re
 import requests
 from bs4 import BeautifulSoup
 from mtg_parser.card import Card
+from mtg_parser.utils import build_pattern, match_pattern
 
 
 __all__ = []
 
 
+_PATTERN = build_pattern('mtggoldfish.com', r'/deck/(?P<deck_id>\d+)/?')
+
+
 def can_handle(src):
-    return (
-        isinstance(src, str)
-        and
-        re.match(r'(?:https?://)?(?:www\.)?mtggoldfish\.com/deck/', src)
-    )
+    return match_pattern(src, _PATTERN)
 
 
 def parse_deck(src, session=requests):

@@ -41,13 +41,13 @@ max-line-length=120
 [tool.pylint."MESSAGES CONTROL"]
 max-line-length=120
 disable = [
-    "missing-module-docstring",
+    "duplicate-code",
     "missing-class-docstring",
     "missing-function-docstring",
-    "duplicate-code",
+    "missing-module-docstring",
+    "stop-iteration-return",
     "too-many-arguments",
     "too-many-function-args",
-    "stop-iteration-return",
 ]
 
 

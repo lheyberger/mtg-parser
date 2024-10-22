@@ -1,26 +1,20 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import re
 import json
 import requests
 from mtg_parser.card import Card
+from mtg_parser.utils import build_pattern, match_pattern
 
 
 __all__ = []
 
 
-_DOMAIN_PATTERN = r'(?:https?://)?(?:www\.)?deckstats\.net'
-_PATH_PATTERN = r'/decks/'
-_ID_PATTERN = r'\d+/\d+-.*'
+_PATTERN = build_pattern('deckstats.net', r'/decks/(?P<user_id>\d+)/(?P<deck_id>\d+-.*)/?')
 
 
 def can_handle(src):
-    return (
-        isinstance(src, str)
-        and
-        re.match(_DOMAIN_PATTERN + _PATH_PATTERN + _ID_PATTERN, src)
-    )
+    return match_pattern(src, _PATTERN)
 
 
 def parse_deck(src, session=requests):

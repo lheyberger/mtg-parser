@@ -7,17 +7,17 @@ from collections import defaultdict
 import requests
 from bs4 import BeautifulSoup
 from mtg_parser.card import Card
+from mtg_parser.utils import build_pattern, match_pattern
 
 
 __all__ = []
 
 
+_PATTERN = build_pattern('tappedout.net', r'/mtg-decks/(?P<deck_id>.+)/?')
+
+
 def can_handle(src):
-    return (
-        isinstance(src, str)
-        and
-        re.match(r'(?:https?://)?(?:www\.)?tappedout\.net/mtg-decks/', src)
-    )
+    return match_pattern(src, _PATTERN)
 
 
 def parse_deck(src, session=requests):

@@ -1,20 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import re
 import requests
 from mtg_parser.card import Card
+from mtg_parser.utils import build_pattern, match_pattern
 
 
 __all__ = []
 
 
+_PATTERN = build_pattern('mtgjson.com', r'/api/v5/decks/(?P<deck_id>.+\.json)')
+
+
 def can_handle(src):
-    return (
-        isinstance(src, str)
-        and
-        re.match(r'(?:https?://)?(?:www\.)?mtgjson\.com', src)
-    )
+    return match_pattern(src, _PATTERN)
 
 
 def parse_deck(src, session=requests):

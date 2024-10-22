@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from itertools import chain
+
 import pytest
 import mtg_parser
-from itertools import chain
 from mtg_parser.card import Card
 from .utils import mock_response
 from .test_aetherhub import DECK_INFO as aetherhub_deck_info

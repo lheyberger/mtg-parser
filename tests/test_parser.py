@@ -73,7 +73,7 @@ def test_parse_deck_decklist(decklist):
 
 
 @pytest.mark.parametrize('src', [
-    42,
+    42, None, '',
 ])
 def test_parse_deck_fails(src):
     result = mtg_parser.parse_deck(src)

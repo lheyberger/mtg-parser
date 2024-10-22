@@ -30,8 +30,8 @@ from mtg_parser import Card
 def test_card(card):
     result = Card(**card)
 
-    assert result.__repr__()
-    assert result.__str__()
+    assert repr(result)
+    assert str(result)
 
 
 @pytest.mark.parametrize('left, right', [
