@@ -80,7 +80,7 @@ Now let's parse a decklist (in any of the supported formats) and display the car
 ```python
 cards = mtg_parser.parse_deck(url)
 for card in cards:
-	print(card)
+    print(card)
 ```
 
 `mtg_parser.parse_deck()` is a shortcut method to the specialized versions.
@@ -103,7 +103,7 @@ s = Session()
 # Configure your session here
 cards = mtg_parser.parse_deck(url, session=s)
 for card in cards:
-	print(card)
+    print(card)
 ```
 
 `parse_deck()` methods return a generator of `Card` objects matching the following description
@@ -126,17 +126,17 @@ class Card:
 import mtg_parser
 
 decklist = """
-	1 Atraxa, Praetors' Voice
-	1 Imperial Seal
-	1 Lim-Dûl's Vault
-	1 Jeweled Lotus (CMR) 319
-	1 Llanowar Elves (M12) 182
-	3 Brainstorm #Card Advantage #Draw
+    1 Atraxa, Praetors' Voice
+    1 Imperial Seal
+    1 Lim-Dûl's Vault
+    1 Jeweled Lotus (CMR) 319
+    1 Llanowar Elves (M12) 182
+    3 Brainstorm #Card Advantage #Draw
 """
 
 cards = mtg_parser.decklist.parse_deck(deck_list)
 for card in cards:
-	print(card)
+    print(card)
 ```
 
 ### Parsing decklists from aetherhub.com
@@ -150,7 +150,7 @@ url = 'https://aetherhub.com/Deck/<deck_name>'
 
 cards = mtg_parser.aetherhub.parse_deck(url)
 for card in cards:
-	print(card)
+    print(card)
 ```
 
 
@@ -165,7 +165,7 @@ url = 'https://www.archidekt.com/decks/<deck_id>/'
 
 cards = mtg_parser.archidekt.parse_deck(url)
 for card in cards:
-	print(card)
+    print(card)
 ```
 
 
@@ -180,7 +180,7 @@ url = 'https://deckstats.net/decks/<user_id>/<deck_id>'
 
 cards = mtg_parser.deckstats.parse_deck(url)
 for card in cards:
-	print(card)
+    print(card)
 ```
 
 
@@ -195,7 +195,7 @@ url = 'https://www.moxfield.com/decks/<deck_id>'
 
 cards = mtg_parser.moxfield.parse_deck(url)
 for card in cards:
-	print(card)
+    print(card)
 ```
 
 
@@ -210,7 +210,7 @@ url = 'https://www.mtggoldfish.com/deck/<deck_id>'
 
 cards = mtg_parser.mtggoldfish.parse_deck(url)
 for card in cards:
-	print(card)
+    print(card)
 ```
 
 
@@ -225,7 +225,7 @@ url = 'https://mtgjson.com/api/v5/decks/<deck_name>.json'
 
 cards = mtg_parser.mtgjson.parse_deck(url)
 for card in cards:
-	print(card)
+    print(card)
 ```
 
 
@@ -240,7 +240,7 @@ url = 'https://scryfall.com/<userid>/decks/<deck_id>/'
 
 cards = mtg_parser.scryfall.parse_deck(url)
 for card in cards:
-	print(card)
+    print(card)
 ```
 
 
@@ -255,7 +255,7 @@ url = 'https://tappedout.net/mtg-decks/<deck_id>/'
 
 cards = mtg_parser.tappedout.parse_deck(url)
 for card in cards:
-	print(card)
+    print(card)
 ```
 
 
@@ -270,7 +270,7 @@ url = 'https://infinite.tcgplayer.com/magic-the-gathering/deck/<deck_name>/<deck
 
 cards = mtg_parser.tcgplayer_infinite.parse_deck(url)
 for card in cards:
-	print(card)
+    print(card)
 ```
 
 
@@ -285,5 +285,5 @@ url = 'https://decks.tcgplayer.com/magic/commander/<user_name>/<deck_name>/<deck
 
 cards = mtg_parser.tcgplayer.parse_deck(url)
 for card in cards:
-	print(card)
+    print(card)
 ```
