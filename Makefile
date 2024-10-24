@@ -96,6 +96,12 @@ define remove_dir
 	find $(2) -type d -name $(1) -print0 | xargs -0 -I {} rm -rf '{}'
 endef
 
+clean-old-runs:
+	@echo 'Cleaning runs older than 120 days'
+	@gh run list --json startedAt,databaseId --limit 100 \
+	| jq '.[] | select(now - (.startedAt | fromdateiso8601) > 10368000) | .databaseId' \
+	| xargs -I {} gh run delete {}
+
 clean-packages:
 	$(call remove_dir,${DIST_DIR},.)
 
@@ -109,4 +115,4 @@ clean:
 
 distclean: clean clean-packages
 
-.PHONY: clean clean-packages distclean
+.PHONY: clean-old-runs clean clean-packages distclean

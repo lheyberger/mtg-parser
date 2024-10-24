@@ -13,12 +13,12 @@ $ make install
 
 ## Run tests
 
-For fast iteration, run:
+For fast iteration, run (this only executes tests with mockups):
 ```shell
 $ make test
 ```
 
-For a full checkup (including slow tests):
+For a full checkup (includes slow tests that don't use mock data):
 ```shell
 $ make test-all
 ```
@@ -26,12 +26,12 @@ $ make test-all
 
 ## Run linters
 
-For fast iteration, run:
+Check syntax on the main `src` directory:
 ```shell
 $ make lint
 ```
 
-For a full checkup:
+Check syntax on `src` + `tests` directories:
 ```shell
 $ make lint-all
 ```
@@ -56,6 +56,23 @@ $ git ls-files | xargs grep -l `poetry version -s` | xargs git add
 $ git commit -m "feat: new version mtg-deckstats v`poetry version -s`"
 $ git push
 $ make publish
+```
+
+## (Optional) Cleanup
+
+Cleanup temporary files (including code coverage reports):
+```shell
+$ make clean
+```
+
+Cleanup temporary files + package files:
+```shell
+$ make distclean
+```
+
+Deletes workflow runs from Github actions that are older than 120 days:
+```shell
+$ make clean-old-runs
 ```
 
 
