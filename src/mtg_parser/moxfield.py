@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
 import re
 import requests
 from mtg_parser.card import Card
@@ -25,9 +26,14 @@ def parse_deck(src, session=requests):
 
 
 def _download_deck(src, session):
+    moxfield_user_agent = os.getenv('MOXFIELD_USER_AGENT')
+    headers = {
+        'User-Agent': moxfield_user_agent
+    } if moxfield_user_agent else {}
+
     deck_id = re.search(_PATTERN, src).group('deck_id')
     url = f"https://api.moxfield.com/v2/decks/all/{deck_id}"
-    return session.get(url).json()
+    return session.get(url, headers=headers).json()
 
 
 def _parse_deck(deck):

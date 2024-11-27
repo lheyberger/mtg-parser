@@ -32,6 +32,7 @@ pylint = "^3.0"
 pytest = "^7.4"
 requests-mock = "^1.11"
 tabulate = "^0.9"
+python-dotenv = "^1.0.1"
 
 
 [tool.flake8]

@@ -47,11 +47,12 @@ lint-all: lint
 	poetry run pylint ${TESTS_DIR} || true
 
 test:
-	poetry run coverage run -m pytest -rP -m 'not slow'
+	poetry run dotenv run coverage run -m pytest -m 'not slow'
 	poetry run coverage report --fail-under=100
 
 test-all:
-	poetry run coverage run -m pytest -rP || poetry run coverage run -a -m pytest -rP --last-failed --last-failed-no-failures none
+	poetry run dotenv run coverage run -m pytest || \
+	poetry run dotenv run coverage run -a -m pytest --last-failed --last-failed-no-failures none
 	poetry run coverage report --fail-under=100
 
 coverage:
