@@ -39,4 +39,6 @@ jobs:
       run: make install
 
     - name: Run tests
+      env:
+        MOXFIELD_USER_AGENT: ${{ secrets.MOXFIELD_USER_AGENT }}
       run: make test-all
