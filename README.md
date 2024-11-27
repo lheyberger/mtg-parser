@@ -6,9 +6,7 @@
 ![GitHub](https://img.shields.io/github/license/lheyberger/mtg-parser)
 
 `mtg_parser` is a Python library to download and parse Magic: The Gathering decklists.
-It supports the most popular decklists hosting websites.
-
-The following section covers the installation of `mtg_parser`.
+It supports the MTGO/MTGA formats as well as the most popular deck building websites.
 
 
 ## Table of contents
@@ -61,10 +59,9 @@ In addition to [MTGO](mtgo.com) and [MTGA](magic.wizards.com/mtgarena) formats, 
 
 ## Known issues
 
-### Moxfield
+Parsing decklists on some websites require a bit more work:
 
-[moxfield.com](moxfield.com) prevents the scraping of their website (it's against their Terms of Service).
-Please contact support@moxfield.com if you want to proceed anyway.
+- Moxfield.com requires a custom User-Agent ([see here](#parsing-from-moxfieldcom))
 
 
 ## Usage
@@ -118,7 +115,7 @@ class Card:
 ```
 
 
-### Parsing textual decklist
+### Parsing MTGO / MTGA
 
 `mtg_parser` can parse textual decklists in either MTGO or MTGA format
 
@@ -139,7 +136,7 @@ for card in cards:
     print(card)
 ```
 
-### Parsing decklists from aetherhub.com
+### Parsing from aetherhub.com
 
 `mtg_parser` can parse public decks from [aetherhub.com](aetherhub.com)
 
@@ -154,7 +151,7 @@ for card in cards:
 ```
 
 
-### Parsing decklists from archidekt.com
+### Parsing from archidekt.com
 
 `mtg_parser` can parse public decks from [archidekt.com](archidekt.com)
 
@@ -169,7 +166,7 @@ for card in cards:
 ```
 
 
-### Parsing decklists from deckstats.net
+### Parsing from deckstats.net
 
 `mtg_parser` can parse public decks from [deckstats.net](deckstats.net)
 
@@ -184,22 +181,33 @@ for card in cards:
 ```
 
 
-### Parsing decklists from moxfield.com
+### Parsing from moxfield.com
 
 `mtg_parser` can parse public decks from [moxfield.com](moxfield.com)
 
+
+> [!IMPORTANT]
+> Moxfield.com prohibits scraping their website, as it violates their Terms of Service.
+>
+> For authorized access, please contact support@moxfield.com to request a custom User-Agent.
+
+
 ```python
 import mtg_parser
+from requests import Session
 
 url = 'https://www.moxfield.com/decks/<deck_id>'
 
-cards = mtg_parser.moxfield.parse_deck(url)
+s = Session()
+s.headers.update({'User-Agent': '<CUSTOM_USER_AGENT>'})
+
+cards = mtg_parser.moxfield.parse_deck(url, session=s)
 for card in cards:
     print(card)
 ```
 
 
-### Parsing decklists from mtggoldfish.com
+### Parsing from mtggoldfish.com
 
 `mtg_parser` can parse public decks from [mtggoldfish.com](mtggoldfish.com)
 
@@ -214,7 +222,7 @@ for card in cards:
 ```
 
 
-### Parsing decklists from mtgjson.com
+### Parsing from mtgjson.com
 
 `mtg_parser` can parse decks from [mtgjson.com](mtgjson.com)
 
@@ -229,7 +237,7 @@ for card in cards:
 ```
 
 
-### Parsing decklists from scryfall.com
+### Parsing from scryfall.com
 
 `mtg_parser` can parse public decks from [scryfall.com](scryfall.com)
 
@@ -244,7 +252,7 @@ for card in cards:
 ```
 
 
-### Parsing decklists from tappedout.net
+### Parsing from tappedout.net
 
 `mtg_parser` can parse public decks from [tappedout.net](tappedout.net)
 
@@ -259,7 +267,7 @@ for card in cards:
 ```
 
 
-### Parsing decklists from infinite.tcgplayer.com
+### Parsing from infinite.tcgplayer.com
 
 `mtg_parser` can parse public decks from [infinite.tcgplayer.com](infinite.tcgplayer.com)
 
@@ -274,7 +282,7 @@ for card in cards:
 ```
 
 
-### Parsing decklists from decks.tcgplayer.com
+### Parsing from decks.tcgplayer.com
 
 `mtg_parser` can parse public decks from [decks.tcgplayer.com](decks.tcgplayer.com)
 
