@@ -1,10 +1,28 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
 import random
 import pytest
 import httpx
 import respx
+from urllib.parse import urlparse
+
+
+class CustomHttpxClient(httpx.Client):
+    def __init__(self, user_agents, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.user_agents = {k.lower(): v for k, v in user_agents.items()}
+    
+    def request(self, method, url, *args, **kwargs):
+        netloc = urlparse(url).netloc.lower()
+        for domain, user_agent in self.user_agents.items():
+            if netloc == domain or netloc.endswith(f".{domain}"):
+                headers = kwargs.get('headers') or {}
+                headers['User-Agent'] = user_agent
+                kwargs['headers'] = headers
+                break
+        return super().request(method, url, *args, **kwargs)
 
 
 @pytest.fixture
@@ -52,5 +70,8 @@ def create_test_http_client():
         'Sec-Fetch-User': '?1',
         'Cache-Control': 'no-cache',
     }
-    client = httpx.Client(headers=headers)
+    client = CustomHttpxClient(
+        user_agents={ 'moxfield.com': os.getenv('MOXFIELD_USER_AGENT') },
+        headers=headers,
+    )
     return client
