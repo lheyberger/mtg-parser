@@ -4,7 +4,6 @@
 import re
 import pytest
 import mtg_parser
-from .utils import test_http_client
 
 
 @pytest.mark.parametrize('parameters, expected', [

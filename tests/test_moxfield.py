@@ -4,7 +4,7 @@
 import pytest
 import httpx
 import mtg_parser
-from .utils import respx_mock, mock_response, assert_deck_is_valid, test_http_client
+from .utils import mock_response, assert_deck_is_valid
 
 
 DECK_INFO = {

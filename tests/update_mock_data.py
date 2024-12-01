@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 from bs4 import BeautifulSoup
-from utils import create_test_http_client, _to_json
+from conftest import create_test_http_client
+from utils import _to_json
 import mtg_parser
 
 
@@ -14,7 +15,7 @@ def update_aetherhub_mock_data(http_client):
     soup = BeautifulSoup(result, features='html.parser')
     element = soup.find(attrs={'data-deckid': True})
     deck_id = element['data-deckid']
-    deck = client.get(
+    deck = http_client.get(
         'https://aetherhub.com/Deck/FetchMtgaDeckJson',
         params={
             'deckId': deck_id,

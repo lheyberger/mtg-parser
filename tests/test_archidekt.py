@@ -3,7 +3,7 @@
 
 import pytest
 import mtg_parser
-from .utils import respx_mock, mock_response, assert_deck_is_valid
+from .utils import mock_response, assert_deck_is_valid
 
 
 DECK_INFO = {
