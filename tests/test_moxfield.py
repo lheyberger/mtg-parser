@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import pytest
-import requests
+import httpx
 import mtg_parser
-from .utils import mock_response, assert_deck_is_valid, requests_session
+from .utils import respx_mock, mock_response, assert_deck_is_valid, test_http_client
 
 
 DECK_INFO = {
@@ -18,31 +18,28 @@ DECK_INFO = {
 }
 
 
-@pytest.mark.parametrize('deck_info', [DECK_INFO])
-def test_can_handle_succdeeds(deck_info):
-    result = mtg_parser.moxfield.can_handle(deck_info['url'])
+def test_can_handle_succdeeds():
+    result = mtg_parser.moxfield.can_handle(DECK_INFO['url'])
 
     assert result
 
 
-@pytest.mark.parametrize('deck_info', [DECK_INFO])
-def test_parse_deck(requests_mock, deck_info):
-    for mocked_response in deck_info['mocked_responses']:
+def test_parse_deck(respx_mock):
+    for mocked_response in DECK_INFO['mocked_responses']:
         mock_response(
-            requests_mock,
+            respx_mock,
             mocked_response['pattern'],
             mocked_response['response'],
         )
 
-    result = mtg_parser.moxfield.parse_deck(deck_info['url'])
+    result = mtg_parser.moxfield.parse_deck(DECK_INFO['url'])
 
     assert_deck_is_valid(result)
 
 
 @pytest.mark.slow
-@pytest.mark.parametrize('deck_info', [DECK_INFO])
-def test_parse_deck_no_mock(requests_session, deck_info):
-    result = mtg_parser.moxfield.parse_deck(deck_info['url'], requests_session)
+def test_parse_deck_no_mock(test_http_client):
+    result = mtg_parser.moxfield.parse_deck(DECK_INFO['url'], test_http_client)
 
     assert_deck_is_valid(result)
 
@@ -51,9 +48,9 @@ def test_parse_deck_no_mock(requests_session, deck_info):
 @pytest.mark.parametrize('src', [
     'https://www.moxfield.com/decks/KJGxdJIxAkqDnowdAjimdg',
 ])
-def test_parse_deck_corner_cases_no_mock(requests_session, src):
-    result = mtg_parser.moxfield.parse_deck(src, requests_session)
+def test_parse_deck_corner_cases_no_mock(test_http_client, src):
+    result = mtg_parser.moxfield.parse_deck(src, test_http_client)
 
     for card in result:
         url = mtg_parser.utils.get_scryfall_url(card.name, card.extension, card.number)
-        requests.get(url, timeout=10).raise_for_status()
+        httpx.get(url, timeout=10).raise_for_status()

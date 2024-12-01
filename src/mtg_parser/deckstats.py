@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import json
-import requests
+import httpx
 from mtg_parser.card import Card
 from mtg_parser.utils import build_pattern, match_pattern
 
@@ -17,18 +17,20 @@ def can_handle(src):
     return match_pattern(src, _PATTERN)
 
 
-def parse_deck(src, session=requests):
+def parse_deck(src, http_client=None):
     deck = None
     if can_handle(src):
-        deck = _parse_deck(_download_deck(src, session))
+        http_client = http_client or httpx.Client()
+        with http_client:
+            deck = _parse_deck(_download_deck(src, http_client))
     return deck
 
 
-def _download_deck(src, session):
+def _download_deck(src, http_client):
     start_token = 'init_deck_data('
     end_token = ');'
 
-    result = session.get(src).text.splitlines()
+    result = http_client.get(src).text.splitlines()
     result = next(line for line in result if start_token in line)
 
     result = result[result.find(start_token) + len(start_token):]

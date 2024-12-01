@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import requests
+import httpx
 from bs4 import BeautifulSoup
 from mtg_parser.card import Card
 from mtg_parser.utils import build_pattern, match_pattern
@@ -17,27 +17,30 @@ def can_handle(src):
     return match_pattern(src, _PATTERN)
 
 
-def parse_deck(src, session=requests):
+def parse_deck(src, http_client=None):
     deck = None
     if can_handle(src):
-        deck = _parse_deck(_download_deck(src, session))
+        http_client = http_client or httpx.Client()
+        with http_client:
+            deck = _parse_deck(_download_deck(src, http_client))
     return deck
 
 
-def _download_deck(src, session):
-    result = session.get(src).text
+def _download_deck(src, http_client):
+    result = http_client.get(src).text
     soup = BeautifulSoup(result, features='html.parser')
     element = soup.find(attrs={'data-deckid': True})
     deck_id = element['data-deckid']
 
-    return session.get(
+    response = http_client.get(
         'https://aetherhub.com/Deck/FetchMtgaDeckJson',
         params={
             'deckId': deck_id,
             'langId': 0,
             'simple': False,
         }
-    ).json()
+    )
+    return response.json()
 
 
 def _parse_deck(deck):

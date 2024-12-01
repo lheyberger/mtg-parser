@@ -66,6 +66,9 @@ Parsing decklists on some websites require a bit more work:
 
 ## Usage
 
+
+### QuickStart
+
 Start by importing the `mtg_parser` module:
 
 ```python
@@ -80,29 +83,6 @@ for card in cards:
     print(card)
 ```
 
-`mtg_parser.parse_deck()` is a shortcut method to the specialized versions.
-Provided that `url` is a valid Moxfield url, the following lines are equivalent:
-
-```python
-cards = mtg_parser.parse_deck(url)
-# is the same as:
-cards = mtg_parser.moxfield.parse_deck(url)
-```
-
-In general, it's advised to use `mtg_parser.parse_deck()` as the overhead is insignificant.
-
-If for any reason, you need to configure how `mtg_parser` is fetching remote decklists, you can provide an optional `requests.Session` object.
-
-```python
-from requests import Session
-
-s = Session()
-# Configure your session here
-cards = mtg_parser.parse_deck(url, session=s)
-for card in cards:
-    print(card)
-```
-
 `parse_deck()` methods return a generator of `Card` objects matching the following description
 
 ```python
@@ -113,6 +93,41 @@ class Card:
     number: Optional[str] = None
     tags: List[str] = []
 ```
+
+
+### Advanced - Parsing
+
+`mtg_parser.parse_deck()` is a shortcut method to the specialized versions.
+If `url` is a valid Moxfield url, the following lines are equivalent:
+
+```python
+cards = mtg_parser.parse_deck(url)
+# is the same as:
+cards = mtg_parser.moxfield.parse_deck(url)
+```
+
+In general, it's advised to use `mtg_parser.parse_deck()` as the overhead is insignificant.
+
+
+### Advanced - Configuration
+
+> [!NOTE]
+> As of `mtg_parser="=>0.0.1a40"` switched to [httpx](https://pypi.org/project/httpx)
+> instead of [requests](https://pypi.org/project/requests).
+
+If for any reason, you need to configure how `mtg_parser` fetches remote decklists, you can provide an optional `httpx.Client` object.
+
+```python
+import httpx
+
+headers = {'user-agent': 'my-custom-user-agent/0.0.1'}
+with httpx.Client(headers=headers) as client:
+    cards = mtg_parser.parse_deck(url, http_client=client)
+    for card in cards:
+        print(card)
+```
+
+If no `httpx.Client` object is provided, one will be created for you.
 
 
 ### Parsing MTGO / MTGA
@@ -131,7 +146,9 @@ decklist = """
     3 Brainstorm #Card Advantage #Draw
 """
 
-cards = mtg_parser.decklist.parse_deck(deck_list)
+cards = mtg_parser.parse_deck(deck_list)
+# or the less recommended form:
+# cards = mtg_parser.decklist.parse_deck(deck_list)
 for card in cards:
     print(card)
 ```
@@ -145,7 +162,9 @@ import mtg_parser
 
 url = 'https://aetherhub.com/Deck/<deck_name>'
 
-cards = mtg_parser.aetherhub.parse_deck(url)
+cards = mtg_parser.parse_deck(url)
+# or the less recommended form:
+# cards = mtg_parser.aetherhub.parse_deck(url)
 for card in cards:
     print(card)
 ```
@@ -160,7 +179,9 @@ import mtg_parser
 
 url = 'https://www.archidekt.com/decks/<deck_id>/'
 
-cards = mtg_parser.archidekt.parse_deck(url)
+cards = mtg_parser.parse_deck(url)
+# or the less recommended form:
+# cards = mtg_parser.archidekt.parse_deck(url)
 for card in cards:
     print(card)
 ```
@@ -175,7 +196,9 @@ import mtg_parser
 
 url = 'https://deckstats.net/decks/<user_id>/<deck_id>'
 
-cards = mtg_parser.deckstats.parse_deck(url)
+cards = mtg_parser.parse_deck(url)
+# or the less recommended form:
+# cards = mtg_parser.deckstats.parse_deck(url)
 for card in cards:
     print(card)
 ```
@@ -193,15 +216,16 @@ for card in cards:
 
 
 ```python
+import httpx
 import mtg_parser
-from requests import Session
 
 url = 'https://www.moxfield.com/decks/<deck_id>'
 
-s = Session()
-s.headers.update({'User-Agent': '<CUSTOM_USER_AGENT>'})
-
-cards = mtg_parser.moxfield.parse_deck(url, session=s)
+headers = {'user-agent': '<MOXFIELD_USER_AGENT>'}
+with httpx.Client(headers=headers) as client:
+    cards = mtg_parser.parse_deck(url, http_client=client)
+    # or the less recommended form:
+    # cards = mtg_parser.moxfield.parse_deck(url, http_client=client)
 for card in cards:
     print(card)
 ```
@@ -216,7 +240,9 @@ import mtg_parser
 
 url = 'https://www.mtggoldfish.com/deck/<deck_id>'
 
-cards = mtg_parser.mtggoldfish.parse_deck(url)
+cards = mtg_parser.parse_deck(url)
+# or the less recommended form:
+# cards = mtg_parser.mtggoldfish.parse_deck(url)
 for card in cards:
     print(card)
 ```
@@ -231,7 +257,9 @@ import mtg_parser
 
 url = 'https://mtgjson.com/api/v5/decks/<deck_name>.json'
 
-cards = mtg_parser.mtgjson.parse_deck(url)
+cards = mtg_parser.parse_deck(url)
+# or the less recommended form:
+# cards = mtg_parser.mtgjson.parse_deck(url)
 for card in cards:
     print(card)
 ```
@@ -246,7 +274,9 @@ import mtg_parser
 
 url = 'https://scryfall.com/<userid>/decks/<deck_id>/'
 
-cards = mtg_parser.scryfall.parse_deck(url)
+cards = mtg_parser.parse_deck(url)
+# or the less recommended form:
+# cards = mtg_parser.scryfall.parse_deck(url)
 for card in cards:
     print(card)
 ```
@@ -261,7 +291,9 @@ import mtg_parser
 
 url = 'https://tappedout.net/mtg-decks/<deck_id>/'
 
-cards = mtg_parser.tappedout.parse_deck(url)
+cards = mtg_parser.parse_deck(url)
+# or the less recommended form:
+# cards = mtg_parser.tappedout.parse_deck(url)
 for card in cards:
     print(card)
 ```
@@ -276,7 +308,9 @@ import mtg_parser
 
 url = 'https://infinite.tcgplayer.com/magic-the-gathering/deck/<deck_name>/<deck_id>'
 
-cards = mtg_parser.tcgplayer_infinite.parse_deck(url)
+cards = mtg_parser.parse_deck(url)
+# or the less recommended form:
+# cards = mtg_parser.tcgplayer_infinite.parse_deck(url)
 for card in cards:
     print(card)
 ```
@@ -291,7 +325,9 @@ import mtg_parser
 
 url = 'https://decks.tcgplayer.com/magic/commander/<user_name>/<deck_name>/<deck_id>'
 
-cards = mtg_parser.tcgplayer.parse_deck(url)
+cards = mtg_parser.parse_deck(url)
+# or the less recommended form:
+# cards = mtg_parser.tcgplayer.parse_deck(url)
 for card in cards:
     print(card)
 ```

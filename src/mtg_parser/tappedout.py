@@ -4,7 +4,7 @@
 import re
 from collections import defaultdict
 
-import requests
+import httpx
 from bs4 import BeautifulSoup
 from mtg_parser.card import Card
 from mtg_parser.utils import build_pattern, match_pattern
@@ -20,17 +20,17 @@ def can_handle(src):
     return match_pattern(src, _PATTERN)
 
 
-def parse_deck(src, session=requests):
+def parse_deck(src, http_client=None):
     deck = None
     if can_handle(src):
-        deck = _parse_deck(_download_deck(src, session))
+        http_client = http_client or httpx.Client()
+        with http_client:
+            deck = _parse_deck(_download_deck(src, http_client))
     return deck
 
 
-def _download_deck(src, session):
-    response = session.head(src, allow_redirects=True)
-    src = response.url
-    response = session.get(src, params={'cat': 'custom'})
+def _download_deck(src, http_client):
+    response = http_client.get(src, params={'cat': 'custom'})
     return response.text
 
 

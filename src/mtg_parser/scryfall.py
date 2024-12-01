@@ -4,7 +4,7 @@
 import io
 import re
 import csv
-import requests
+import httpx
 from mtg_parser.card import Card
 from mtg_parser.utils import build_pattern, match_pattern
 
@@ -22,17 +22,20 @@ def can_handle(src):
     return match_pattern(src, _PATTERN)
 
 
-def parse_deck(src, session=requests):
+def parse_deck(src, http_client=None):
     deck = None
     if can_handle(src):
-        deck = _parse_deck(_download_deck(src, session))
+        http_client = http_client or httpx.Client()
+        with http_client:
+            deck = _parse_deck(_download_deck(src, http_client))
     return deck
 
 
-def _download_deck(src, session):
+def _download_deck(src, http_client):
     deck_id = re.search(_PATTERN, src).group('deck_id')
     url = f"https://api.scryfall.com/decks/{deck_id}/export/csv"
-    return session.get(url).text
+    response = http_client.get(url)
+    return response.text
 
 
 def _parse_deck(deck):

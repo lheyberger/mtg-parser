@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import os
 import re
-import requests
+import httpx
 from mtg_parser.card import Card
 from mtg_parser.utils import build_pattern, match_pattern
 
@@ -18,22 +17,21 @@ def can_handle(src):
     return match_pattern(src, _PATTERN)
 
 
-def parse_deck(src, session=requests):
+def parse_deck(src, http_client=None):
     deck = None
     if can_handle(src):
-        deck = _parse_deck(_download_deck(src, session))
+        http_client = http_client or httpx.Client()
+        with http_client:
+            deck = _parse_deck(_download_deck(src, http_client))
     return deck
 
 
-def _download_deck(src, session):
-    moxfield_user_agent = os.getenv('MOXFIELD_USER_AGENT')
-    headers = {
-        'User-Agent': moxfield_user_agent
-    } if moxfield_user_agent else {}
-
+def _download_deck(src, http_client):
     deck_id = re.search(_PATTERN, src).group('deck_id')
     url = f"https://api.moxfield.com/v2/decks/all/{deck_id}"
-    return session.get(url, headers=headers).json()
+    response = http_client.head(src)
+    response = http_client.get(url)
+    return response.json()
 
 
 def _parse_deck(deck):

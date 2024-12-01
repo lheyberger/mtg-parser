@@ -3,7 +3,7 @@
 
 import pytest
 import mtg_parser
-from .utils import mock_response, assert_deck_is_valid
+from .utils import respx_mock, mock_response, assert_deck_is_valid
 
 
 DECK_INFO = {
@@ -17,30 +17,27 @@ DECK_INFO = {
 }
 
 
-@pytest.mark.parametrize('deck_info', [DECK_INFO])
-def test_can_handle_succdeeds(deck_info):
-    result = mtg_parser.deckstats.can_handle(deck_info['url'])
+def test_can_handle_succdeeds():
+    result = mtg_parser.deckstats.can_handle(DECK_INFO['url'])
 
     assert result
 
 
-@pytest.mark.parametrize('deck_info', [DECK_INFO])
-def test_parse_deck(requests_mock, deck_info):
-    for mocked_response in deck_info['mocked_responses']:
+def test_parse_deck(respx_mock):
+    for mocked_response in DECK_INFO['mocked_responses']:
         mock_response(
-            requests_mock,
+            respx_mock,
             mocked_response['pattern'],
             mocked_response['response'],
         )
 
-    result = mtg_parser.deckstats.parse_deck(deck_info['url'])
+    result = mtg_parser.deckstats.parse_deck(DECK_INFO['url'])
 
     assert_deck_is_valid(result)
 
 
 @pytest.mark.slow
-@pytest.mark.parametrize('deck_info', [DECK_INFO])
-def test_parse_deck_no_mock(deck_info):
-    result = mtg_parser.deckstats.parse_deck(deck_info['url'])
+def test_parse_deck_no_mock():
+    result = mtg_parser.deckstats.parse_deck(DECK_INFO['url'])
 
     assert_deck_is_valid(result)

@@ -66,7 +66,8 @@ coverage:
 # BUILD
 #
 sync-version:
-	sed -i '' "s/^__version__.*/__version__ = \'`poetry version -s`\'/" `find ${SRC_DIR} -type f -print | xargs grep -l "__version__"` || true
+	git grep -l "__version__\s*=" ${SRC_DIR} | xargs -I {} \
+	sed -i '' "s/^\s*__version__.*/__version__ = \'`poetry version -s`\'/" {}
 
 build: sync-version
 	poetry check

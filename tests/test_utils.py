@@ -3,8 +3,8 @@
 
 import re
 import pytest
-import requests
 import mtg_parser
+from .utils import test_http_client
 
 
 @pytest.mark.parametrize('parameters, expected', [
@@ -113,10 +113,10 @@ def test_get_scryfall_url_name_set_code(parameters, expected):
     ['Arcane Signet', 'p30m'],
     ['Arcane Signet', 'p30m', '1F★'],
 ])
-def test_request_urls(parameters):
+def test_request_urls(test_http_client, parameters):
     url = mtg_parser.utils.get_scryfall_url(*parameters)
 
-    requests.get(url, timeout=10).raise_for_status()
+    test_http_client.get(url, timeout=10).raise_for_status()
 
 
 @pytest.mark.parametrize('scheme', [

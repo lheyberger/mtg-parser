@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import re
-import requests
+import httpx
 from mtg_parser.card import Card
 from mtg_parser.utils import build_pattern, match_pattern
 
@@ -20,24 +20,20 @@ def can_handle(src):
     return match_pattern(src, _PATTERN)
 
 
-def parse_deck(src, session=requests):
+def parse_deck(src, http_client=None):
     deck = None
     if can_handle(src):
-        deck = _parse_deck(_download_deck(src, session))
+        http_client = http_client or httpx.Client()
+        with http_client:
+            deck = _parse_deck(_download_deck(src, http_client))
     return deck
 
 
-def _download_deck(src, session):
+def _download_deck(src, http_client):
     deck_id = re.search(_PATTERN, src).group('deck_id')
     url = f'https://infinite-api.tcgplayer.com/deck/magic/{deck_id}/?subDecks=true&cards=true'
-    headers = {}
-    if 'User-Agent' not in getattr(session, 'headers', {}):
-        headers['User-Agent'] = ' '.join([
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
-            'AppleWebKit/537.36 (KHTML, like Gecko)',
-            'Chrome/129.0.0.0 Safari/537.3',
-        ])
-    return session.get(url, headers=headers).json()
+    response = http_client.get(url)
+    return response.json()
 
 
 def _parse_deck(deck):

@@ -6,7 +6,7 @@ from itertools import chain
 import pytest
 import mtg_parser
 from mtg_parser.card import Card
-from .utils import mock_response
+from .utils import respx_mock, mock_response
 from .test_aetherhub import DECK_INFO as aetherhub_deck_info
 from .test_archidekt import DECK_INFO as archidekt_deck_info
 from .test_deckstats import DECK_INFO as deckstats_deck_info
@@ -53,10 +53,10 @@ def test_diff(deck1, deck2):
     tappedout_deck_info,
     tcgplayer_deck_info,
 ])
-def test_diff_decks(requests_mock, deck_info):
+def test_diff_decks(respx_mock, deck_info):
     for mocked_response in chain(moxfield_deck_info['mocked_responses'], deck_info['mocked_responses']):
         mock_response(
-            requests_mock,
+            respx_mock,
             mocked_response['pattern'],
             mocked_response['response'],
         )
