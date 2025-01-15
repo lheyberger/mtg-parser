@@ -28,7 +28,7 @@ def parse_deck(src, http_client=None):
 
 def _download_deck(src, http_client):
     deck_id = re.search(_PATTERN, src).group('deck_id')
-    url = f"https://www.archidekt.com/api/decks/{deck_id}/"
+    url = f"https://archidekt.com/api/decks/{deck_id}/"
     response = http_client.get(url)
     return response.json()
 
