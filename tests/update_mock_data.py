@@ -52,12 +52,23 @@ def update_moxfield_mock_data(http_client):
 
 
 def update_mtggoldfish_mock_data(http_client):
-    deck = mtg_parser.mtggoldfish._download_deck(
+    response = http_client.get(
         'https://www.mtggoldfish.com/deck/3935836',
-        http_client,
+        headers={'Accept': 'text/html'}
     )
     with open('tests/mocks/mock_mtggoldfish_3-amigos', 'w', encoding="utf-8") as mock_file:
-        mock_file.write(deck)
+        mock_file.write(response.text)
+
+    soup = BeautifulSoup(response.text, features='html.parser')
+    csrf_token = (soup.find('meta', attrs={'name': 'csrf-token'}) or {}).get('content')
+    url = f"https://www.mtggoldfish.com/deck/component?id=3935836"
+    headers = {
+        'X-CSRF-Token': csrf_token,
+        'X-Requested-With': 'XMLHttpRequest',
+    }
+    response = http_client.get(url, headers=headers)
+    with open('tests/mocks/mock_mtggoldfish_3-amigos_content', 'w', encoding="utf-8") as mock_file:
+        mock_file.write(response.text)
 
 
 def update_mtgjson_mock_data(http_client):

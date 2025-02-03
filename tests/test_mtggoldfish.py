@@ -10,8 +10,12 @@ DECK_INFO = {
     "url": "https://www.mtggoldfish.com/deck/3935836",
     "mocked_responses": [
         {
-            "pattern": r"(https?://)?(www\.)?mtggoldfish.com",
+            "pattern": r"(https?://)?(www\.)?mtggoldfish.com/deck/(?!component)",
             "response": "mock_mtggoldfish_3-amigos",
+        },
+        {
+            "pattern": r"(https?://)?(www\.)?mtggoldfish.com/deck/component",
+            "response": "mock_mtggoldfish_3-amigos_content",
         }
     ],
 }
