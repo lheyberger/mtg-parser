@@ -86,7 +86,7 @@ test-publish:
 
 publish:
 	poetry publish
-	gh release create -p --generate-notes "v`poetry version -s`" ./${DIST_DIR}/mtg_parser-*
+	gh release create -p "v`poetry version -s`" ./${DIST_DIR}/mtg_parser-* --generate-notes
 
 .PHONY: test-publish publish
 
