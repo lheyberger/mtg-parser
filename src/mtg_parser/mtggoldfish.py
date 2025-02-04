@@ -45,7 +45,6 @@ def _download_deck(src, http_client):
 
 def _parse_deck(deck):
     deck = deck.splitlines()[0]
-    deck = deck.removeprefix("$('#tab-paper').html('").removesuffix("');")
     deck = deck.replace("\\'", "'").replace('\\"', '"').replace("\\/", "/").replace(r"\n", "")
     deck = html.unescape(deck)
 
