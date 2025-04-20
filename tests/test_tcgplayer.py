@@ -37,7 +37,7 @@ def test_parse_deck(respx_mock):
 
 
 @pytest.mark.slow
-def test_parse_deck_no_mock():
-    result = mtg_parser.tcgplayer.parse_deck(DECK_INFO['url'])
+def test_parse_deck_no_mock(test_http_client):
+    result = mtg_parser.tcgplayer.parse_deck(DECK_INFO['url'], test_http_client)
 
     assert_deck_is_valid(result)

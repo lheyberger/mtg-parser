@@ -19,4 +19,4 @@ from mtg_parser.utils import * # noqa
 from mtg_parser.card import * # noqa
 
 
-__version__ = '0.0.1a43'
+__version__ = '0.0.1a44'
