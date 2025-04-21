@@ -26,7 +26,7 @@ release: update test-all lint-all distclean build clean
 # INSTALL
 ##
 install:
-	poetry install --sync
+	poetry sync
 
 update:
 	poetry update
