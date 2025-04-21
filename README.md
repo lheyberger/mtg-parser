@@ -22,7 +22,7 @@ It supports the MTGO/MTGA formats as well as the most popular deck building webs
 The following section covers the installation of `mtg_parser`.
 
 Before using `mtg_parser`, you will need:
-- `python >= 3.8.1`
+- `python >= 3.9`
 
 To install `mtg_parser`, simply run one of the following commands in the terminal of your choice:
 
