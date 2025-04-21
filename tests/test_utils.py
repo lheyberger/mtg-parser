@@ -1,8 +1,9 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 import re
+
 import pytest
+
 import mtg_parser
 
 

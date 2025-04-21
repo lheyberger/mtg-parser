@@ -1,7 +1,7 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 import pytest
+
 import mtg_parser
 from mtg_parser import Card
 

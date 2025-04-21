@@ -1,9 +1,9 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 import pytest
+
 import mtg_parser
-from .utils import mock_response
+
 from .test_aetherhub import DECK_INFO as aetherhub_deck_info
 from .test_archidekt import DECK_INFO as archidekt_deck_info
 from .test_deckstats import DECK_INFO as deckstats_deck_info
@@ -13,6 +13,7 @@ from .test_mtgjson import DECK_INFO as mtgjson_deck_info
 from .test_scryfall import DECK_INFO as scryfall_deck_info
 from .test_tappedout import DECK_INFO as tappedout_deck_info
 from .test_tcgplayer import DECK_INFO as tcgplayer_deck_info
+from .utils import mock_response
 
 
 @pytest.mark.parametrize('deck_info', [

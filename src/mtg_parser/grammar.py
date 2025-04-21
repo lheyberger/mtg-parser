@@ -1,10 +1,18 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
-from pyparsing import ParseException
-from pyparsing import nums, alphanums, pyparsing_unicode
-from pyparsing import OneOrMore, Optional, ZeroOrMore
-from pyparsing import Word, Literal, StringStart, StringEnd
+from pyparsing import (
+    Literal,
+    OneOrMore,
+    Optional,
+    ParseException,
+    StringEnd,
+    StringStart,
+    Word,
+    ZeroOrMore,
+    alphanums,
+    nums,
+    pyparsing_unicode,
+)
 
 
 QUANTITY = (

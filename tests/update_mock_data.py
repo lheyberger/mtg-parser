@@ -1,9 +1,9 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 from bs4 import BeautifulSoup
 from conftest import create_test_http_client
 from utils import _to_json
+
 import mtg_parser
 
 
@@ -61,7 +61,7 @@ def update_mtggoldfish_mock_data(http_client):
 
     soup = BeautifulSoup(response.text, features='html.parser')
     csrf_token = (soup.find('meta', attrs={'name': 'csrf-token'}) or {}).get('content')
-    url = f"https://www.mtggoldfish.com/deck/component?id=3935836"
+    url = 'https://www.mtggoldfish.com/deck/component?id=3935836'
     headers = {
         'X-CSRF-Token': csrf_token,
         'X-Requested-With': 'XMLHttpRequest',

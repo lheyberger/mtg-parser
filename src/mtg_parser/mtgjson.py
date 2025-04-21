@@ -1,7 +1,7 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 import httpx
+
 from mtg_parser.card import Card
 from mtg_parser.utils import build_pattern, match_pattern
 

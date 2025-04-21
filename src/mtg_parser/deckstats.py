@@ -1,8 +1,9 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 import json
+
 import httpx
+
 from mtg_parser.card import Card
 from mtg_parser.utils import build_pattern, match_pattern
 
@@ -36,16 +37,16 @@ def _download_deck(src, http_client):
     result = result[result.find(start_token) + len(start_token):]
     result = result[:result.find(end_token)]
 
-    i = 0
+    _i = 0
     opened = 0
-    for i, char in enumerate(result):
+    for _i, char in enumerate(result):
         if char == '{':
             opened = opened + 1
         if char == '}':
             opened = opened - 1
         if opened <= 0:
             break
-    result = result[:i+1]
+    result = result[:_i+1]
     return json.loads(result)
 
 

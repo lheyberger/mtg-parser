@@ -1,18 +1,18 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 from operator import methodcaller
+
 import mtg_parser.aetherhub
 import mtg_parser.archidekt
+import mtg_parser.decklist
 import mtg_parser.deckstats
 import mtg_parser.moxfield
 import mtg_parser.mtggoldfish
 import mtg_parser.mtgjson
 import mtg_parser.scryfall
 import mtg_parser.tappedout
-import mtg_parser.tcgplayer_infinite
 import mtg_parser.tcgplayer
-import mtg_parser.decklist
+import mtg_parser.tcgplayer_infinite
 
 
 __all__ = [

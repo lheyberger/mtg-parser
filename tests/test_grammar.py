@@ -1,8 +1,9 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 import pytest
+
 import mtg_parser
+
 from .utils import assert_objects_are_equal
 
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 import pytest
+
 from mtg_parser import Card
 
 
@@ -134,7 +134,6 @@ def test_card_equals(left, right):
 ])
 def test_card_not_equals(left, right):
     assert left != right
-    assert not left == right
 
 
 @pytest.mark.parametrize('left, right', [

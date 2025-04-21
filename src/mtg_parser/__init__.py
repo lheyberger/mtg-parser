@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 from mtg_parser.aetherhub import * # noqa
 from mtg_parser.archidekt import * # noqa

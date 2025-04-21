@@ -1,5 +1,4 @@
 #!/usr/bin/make -f
-# -*- coding: utf-8 -*-
 
 SRC_DIR = src
 TESTS_DIR = tests
@@ -39,12 +38,10 @@ update:
 # LINT & TESTS
 ##
 lint:
-	poetry run flake8 ${SRC_DIR}
-	poetry run pylint ${SRC_DIR}
+	poetry run ruff check ${SRC_DIR}
 
 lint-all: lint
-	poetry run flake8 ${TESTS_DIR} || true
-	poetry run pylint ${TESTS_DIR} || true
+	poetry run ruff check ${TESTS_DIR} || true
 
 test:
 	poetry run dotenv run coverage run -m pytest -m 'not slow'
@@ -113,6 +110,7 @@ clean:
 	$(call remove_dir,${TMP_DIR},.)
 	$(call remove_dir,'__pycache__',.)
 	$(call remove_dir,'.pytest_cache',.)
+	$(call remove_dir,'.ruff_cache',.)
 	$(call remove_dir,'*.egg-info',${SRC_DIR} ${TESTS_DIR})
 
 distclean: clean clean-packages

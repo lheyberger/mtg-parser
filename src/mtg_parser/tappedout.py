@@ -1,11 +1,11 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 import re
 from collections import defaultdict
 
 import httpx
 from bs4 import BeautifulSoup
+
 from mtg_parser.card import Card
 from mtg_parser.utils import build_pattern, match_pattern
 

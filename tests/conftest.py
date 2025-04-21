@@ -1,19 +1,20 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# ruff: noqa: E501
 
 import os
 import random
-import pytest
-import httpx
-import respx
 from urllib.parse import urlparse
+
+import httpx
+import pytest
+import respx
 
 
 class CustomHttpxClient(httpx.Client):
     def __init__(self, user_agents, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.user_agents = {k.lower(): v for k, v in user_agents.items()}
-    
+
     def request(self, method, url, *args, **kwargs):
         netloc = urlparse(url).netloc.lower()
         for domain, user_agent in self.user_agents.items():

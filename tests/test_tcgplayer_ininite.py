@@ -1,9 +1,10 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 import pytest
+
 import mtg_parser
-from .utils import mock_response, assert_deck_is_valid
+
+from .utils import assert_deck_is_valid, mock_response
 
 
 DECK_INFO = {

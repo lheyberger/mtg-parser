@@ -1,8 +1,7 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
-from mtg_parser.grammar import parse_line
 from mtg_parser.card import Card
+from mtg_parser.grammar import parse_line
 
 
 __all__ = []
