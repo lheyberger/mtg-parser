@@ -21,7 +21,7 @@ def update_aetherhub_mock_data(http_client):
             'deckId': deck_id,
             'langId': 0,
             'simple': False,
-        }
+        },
     ).json()
     with open('tests/mocks/mock_aetherhub_3-amigos_json', 'w', encoding="utf-8") as mock_file:
         mock_file.write(_to_json(deck))
@@ -54,7 +54,7 @@ def update_moxfield_mock_data(http_client):
 def update_mtggoldfish_mock_data(http_client):
     response = http_client.get(
         'https://www.mtggoldfish.com/deck/3935836',
-        headers={'Accept': 'text/html'}
+        headers={'Accept': 'text/html'},
     )
     with open('tests/mocks/mock_mtggoldfish_3-amigos', 'w', encoding="utf-8") as mock_file:
         mock_file.write(response.text)

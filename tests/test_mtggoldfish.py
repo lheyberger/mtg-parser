@@ -17,7 +17,7 @@ DECK_INFO = {
         {
             "pattern": r"(https?://)?(www\.)?mtggoldfish.com/deck/component",
             "response": "mock_mtggoldfish_3-amigos_content",
-        }
+        },
     ],
 }
 

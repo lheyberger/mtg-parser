@@ -64,7 +64,7 @@ def _parse_deck(deck):
         yield Card(
             card_name,
             quantity=quantities.get(card_name, 1),
-            tags=tags.get(card_name, [])
+            tags=tags.get(card_name, []),
         )
 
 

@@ -30,31 +30,31 @@ def test_mixed_decklist():
         assert card == expected_card
 
 
-@pytest.mark.parametrize('string,expected', [
-    [
+@pytest.mark.parametrize(('string', 'expected'), [
+    (
         """//!Commander
         1 Atraxa, Praetors' Voice""",
         [
-            Card("Atraxa, Praetors' Voice", 1, tags=['commander'])
+            Card("Atraxa, Praetors' Voice", 1, tags=['commander']),
         ],
-    ],
-    [
+    ),
+    (
         """// Card Advantage
         3 Brainstorm #Draw #Card Advantage""",
         [
-            Card('Brainstorm', 3, tags=['card advantage', 'draw'])
+            Card('Brainstorm', 3, tags=['card advantage', 'draw']),
         ],
-    ],
-    [
+    ),
+    (
         """// Tutors
         1 Imperial Seal
         // Ramp
         1 Cultivate""",
         [
             Card('Imperial Seal', 1, tags=['Tutors']),
-            Card('Cultivate', 1, tags=['Ramp'])
+            Card('Cultivate', 1, tags=['Ramp']),
         ],
-    ],
+    ),
 ])
 def test_decklist_sections(string, expected):
     result = mtg_parser.decklist.parse_deck(string)

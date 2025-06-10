@@ -57,7 +57,8 @@ def test_parse_deck(respx_mock, deck_info):
 
     result = mtg_parser.parse_deck(deck_info['url'])
 
-    assert result and all(result)
+    assert result
+    assert all(result)
 
 
 @pytest.mark.parametrize('decklist', [
@@ -73,7 +74,8 @@ def test_parse_deck(respx_mock, deck_info):
 def test_parse_deck_decklist(decklist):
     result = mtg_parser.parse_deck(decklist)
 
-    assert result and all(result)
+    assert result
+    assert all(result)
 
 
 @pytest.mark.parametrize('src', [

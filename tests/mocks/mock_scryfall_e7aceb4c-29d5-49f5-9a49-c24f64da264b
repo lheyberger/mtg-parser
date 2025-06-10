@@ -1,94 +1,94 @@
 section,count,name,mana_cost,type,set,set_code,collector_number,lang,rarity,artist,finish,usd_price,eur_price,tix_price,scryfall_uri,scryfall_id
-nonlands,1,Dualcaster Mage,{1}{R}{R},Creature â Human Wizard,Commander 2021,c21,165,en,rare,Matt Stewart,,2.94,0.45,0.11,https://scryfall.com/card/c21/165/dualcaster-mage,defcc4a3-40e0-4f5d-b23c-6cd6a614abc1
-nonlands,1,Laboratory Maniac,{2}{U},Creature â Human Wizard,Time Spiral Remastered,tsr,309,en,special,Jason Felix,,6.73,3.28,0.29,https://scryfall.com/card/tsr/309/laboratory-maniac,5840b48c-7a14-481e-9d21-0c68aee16020
-nonlands,1,Heartless Hidetsugu,{3}{R}{R},Legendary Creature â Ogre Shaman,Conspiracy,cns,144,en,rare,Carl Critchlow,,1.5,0.76,0.02,https://scryfall.com/card/cns/144/heartless-hidetsugu,46f9aa1d-7ed1-498e-9cdd-45ed4c9e6f43
-nonlands,1,"Kiki-Jiki, Mirror Breaker",{2}{R}{R}{R},Legendary Creature â Goblin Shaman,Time Spiral Remastered,tsr,346,en,special,Pete Venters,,9.61,5.96,0.71,https://scryfall.com/card/tsr/346/kiki-jiki-mirror-breaker,8a30fe7c-3c6b-4d05-adb7-9f87df29cd3b
-nonlands,1,Phyrexian Delver,{3}{B}{B},Creature â Phyrexian Zombie,Commander 2018,c18,115,en,rare,Igor Kieryluk,,0.49,0.57,0.4,https://scryfall.com/card/c18/115/phyrexian-delver,de66606d-6fe2-4c63-8d27-e808da7d4980
-nonlands,1,Demonic Consultation,{B},Instant,Masters Edition II,me2,85,en,uncommon,Rob Alexander,,14.48,10.59,1.55,https://scryfall.com/card/me2/85/demonic-consultation,1d779f19-3068-4976-b96b-8f93d156900b
-nonlands,1,Mystic Remora,{U},Enchantment,Masters Edition,me1,42,en,uncommon,"Ken Meyer, Jr.",,5.94,5.27,3.89,https://scryfall.com/card/me1/42/mystic-remora,13a08c07-e8b8-43bf-99e6-d268c79a62bf
-commanders,1,Vial Smasher the Fierce,{1}{B}{R},Legendary Creature â Goblin Berserker,Commander Legends,cmr,540,en,mythic,Deruchenko Alexander,,1.01,2.75,1.64,https://scryfall.com/card/cmr/540/vial-smasher-the-fierce,a4dc32ca-89c9-4d3a-8809-846c34ef3592
-nonlands,1,Arcum's Astrolabe,{S},Snow Artifact,Modern Horizons,mh1,220,en,common,Igor Kieryluk,,0.07,0.18,0.03,https://scryfall.com/card/mh1/220/arcums-astrolabe,c2462fdf-a594-47d0-8e10-b55901e350d9
-commanders,1,"Kraum, Ludevic's Opus",{3}{U}{R},Legendary Creature â Zombie Horror,Commander Legends,cmr,523,en,mythic,Aaron Miller,,13.32,,2.91,https://scryfall.com/card/cmr/523/kraum-ludevics-opus,20e13fc2-c4dd-4875-be32-e04d954e658d
-outside,1,"Obosh, the Preypiercer",{3}{B/R}{B/R},Legendary Creature â Hellion Horror,Ikoria: Lair of Behemoths,iko,228,en,rare,Daarken,,0.16,0.21,0.02,https://scryfall.com/card/iko/228/obosh-the-preypiercer,451507de-9c42-43ee-b9ba-1f69e9aa29d2
-lands,1,Ancient Tomb,"",Land,Ultimate Masters,uma,236,en,rare,Yeong-Hao Han,,89.21,67.33,10.36,https://scryfall.com/card/uma/236/ancient-tomb,bd3d4b4b-cf31-4f89-8140-9650edb03c7b
-lands,1,Arid Mesa,"",Land,Modern Horizons 2,mh2,244,en,rare,Raymond Swanland,,23.16,20.32,4.84,https://scryfall.com/card/mh2/244/arid-mesa,25ac5405-df7b-4097-914a-022cb18e20d4
-nonlands,1,Back to Basics,{2}{U},Enchantment,Ultimate Masters,uma,46,en,rare,Terese Nielsen,,10.19,7.93,5.97,https://scryfall.com/card/uma/46/back-to-basics,0600d6c2-0f72-4e79-a55d-1f06dffa48c2
-nonlands,1,Blood Moon,{2}{R},Enchantment,Double Masters,2xm,118,en,rare,Franz Vohwinkel,,7.0,8.45,3.43,https://scryfall.com/card/2xm/118/blood-moon,d072e9ca-aae7-45dc-8025-3ce590bae63f
-nonlands,1,Necropotence,{B}{B}{B},Enchantment,Iconic Masters,ima,98,en,mythic,Dave Kendall,,9.29,11.13,0.48,https://scryfall.com/card/ima/98/necropotence,c89c6895-b0f8-444a-9c89-c6b4fd027b3e
-nonlands,1,Ophidian Eye,{2}{U},Enchantment â Aura,Time Spiral,tsp,70,en,common,Zoltan Boros & Gabor Szikszai,,3.35,2.02,0.03,https://scryfall.com/card/tsp/70/ophidian-eye,26836ff5-b3c3-4b10-af1e-df3658781cb2
-nonlands,1,Phyrexian Arena,{1}{B}{B},Enchantment,Commander Collection: Black,cc2,4,en,rare,Vincent Proce,,3.98,3.67,0.02,https://scryfall.com/card/cc2/4/phyrexian-arena,b4142d3b-9c17-4a26-949e-3fc3e600fd1c
-nonlands,1,Rhystic Study,{2}{U},Enchantment,Jumpstart,jmp,169,en,rare,Terese Nielsen,,45.85,37.66,3.72,https://scryfall.com/card/jmp/169/rhystic-study,d6914dba-0d27-4055-ac34-b3ebf5802221
-nonlands,1,Sigil of Sleep,{U},Enchantment â Aura,Duel Decks: Venser vs. Koth,ddi,25,en,common,Greg Hildebrandt & Tim Hildebrandt,,1.83,1.92,0.18,https://scryfall.com/card/ddi/25/sigil-of-sleep,13063520-6e2f-4eaa-b84f-a38e5bf486f8
-nonlands,1,Wheel of Fortune,{2}{R},Sorcery,Vintage Masters,vma,192,en,mythic,John Matson,,271.19,0.02,0.3,https://scryfall.com/card/vma/192/wheel-of-fortune,2597050f-6b1b-474e-aa16-33fd154628ca
-nonlands,1,Yawgmoth's Will,{2}{B},Sorcery,Vintage Masters,vma,148,en,mythic,Ron Spencer,,166.53,99.18,0.5,https://scryfall.com/card/vma/148/yawgmoths-will,337239c7-73c4-4e2d-9160-ed26927dea1d
-nonlands,1,Timetwister,{2}{U},Sorcery,Vintage Masters,vma,3,en,bonus,Matt Stewart,,0.15,3246.45,4.27,https://scryfall.com/card/vma/3/timetwister,fbee1e10-0b8c-44ea-b0e5-44cdd0bfcd76
-lands,1,Volcanic Island,"",Land â Island Mountain,Vintage Masters,vma,324,en,rare,Noah Bradley,,701.14,450.61,10.83,https://scryfall.com/card/vma/324/volcanic-island,2f607e7e-30c0-45e9-8f61-bf6e9fe63f2b
-lands,1,Cephalid Coliseum,"",Land,Odyssey,ody,317,en,uncommon,John Avon,,5.34,3.8,1.53,https://scryfall.com/card/ody/317/cephalid-coliseum,d5d74112-7244-4c3f-a5eb-b6be671aefe8
-nonlands,1,Sol Ring,{1},Artifact,New Capenna Commander,ncc,379,en,uncommon,Mike Bierek,,1.33,0.61,0.02,https://scryfall.com/card/ncc/379/sol-ring,e1187999-521d-4ed0-8673-6eb8f3c58bb8
-nonlands,1,Spell Pierce,{U},Instant,Kamigawa: Neon Dynasty,neo,80,en,common,Lie Setiawan,,0.23,0.17,0.03,https://scryfall.com/card/neo/80/spell-pierce,beb42273-935b-4bda-849e-c163606cf89e
-nonlands,1,Spellseeker,{2}{U},Creature â Human Wizard,Battlebond,bbd,41,en,rare,Igor Kieryluk,,9.46,13.46,5.78,https://scryfall.com/card/bbd/41/spellseeker,74b4c336-5d4c-4bc5-b82a-35084a6ad808
-nonlands,1,Swan Song,{U},Instant,Commander 2016,c16,98,en,rare,Peter Mohrbacher,,14.11,11.63,0.18,https://scryfall.com/card/c16/98/swan-song,9d968dde-c406-48ef-a1ab-373aebc24693
-nonlands,1,Trinisphere,{3},Artifact,Double Masters,2xm,303,en,mythic,Tim Hildebrandt,,32.86,24.81,4.81,https://scryfall.com/card/2xm/303/trinisphere,316caa4e-a53a-460b-978c-5f0fba7bc549
-nonlands,1,Zealous Conscripts,{4}{R},Creature â Human Warrior,Time Spiral Remastered,tsr,354,en,special,Steve Prescott,,1.39,0.78,0.03,https://scryfall.com/card/tsr/354/zealous-conscripts,2576152c-d8c1-4412-89db-6e21295c9b18
-nonlands,1,"Narset, Parter of Veils",{1}{U}{U},Legendary Planeswalker â Narset,War of the Spark,war,61,en,uncommon,Magali Villeneuve,,0.81,0.61,0.03,https://scryfall.com/card/war/61/narset-parter-of-veils,8c39f9b4-02b9-4d44-b8d6-4fd02ebbb0c5
-nonlands,1,Grafdigger's Cage,{1},Artifact,Core Set 2020,m20,227,en,rare,Daniel Ljunggren,,3.36,1.64,0.14,https://scryfall.com/card/m20/227/grafdiggers-cage,0a135e09-b534-4836-9a10-3a9a4a9f8c53
-nonlands,1,Mana Vault,{1},Artifact,Ultimate Masters,uma,229,en,mythic,Christine Choi,,101.33,60.7,4.01,https://scryfall.com/card/uma/229/mana-vault,cfdf9706-acdb-48fc-89db-93bc50b3b9ad
-nonlands,1,Pithing Needle,{1},Artifact,Innistrad: Midnight Hunt,mid,257,en,rare,Ovidio Cartagena,,0.64,0.59,0.02,https://scryfall.com/card/mid/257/pithing-needle,556ec6ab-a19f-4caa-8bfa-145555402caf
-nonlands,1,Curiosity,{U},Enchantment â Aura,Jumpstart,jmp,147,en,uncommon,Igor Kieryluk,,0.29,0.23,0.03,https://scryfall.com/card/jmp/147/curiosity,c5a0be10-c20f-4ac0-89a5-1770ecf48aad
-lands,1,Badlands,"",Land â Swamp Mountain,Vintage Masters,vma,291,en,rare,Daarken,,398.63,0.02,4.84,https://scryfall.com/card/vma/291/badlands,73403d04-fe97-4830-8b80-16dd1a1a6cc1
-nonlands,1,Imperial Seal,{B},Sorcery,Masters Edition II,me2,96,en,rare,Li Tie,,87.94,62.65,2.45,https://scryfall.com/card/me2/96/imperial-seal,6023bfe0-84bf-454c-b29d-5d128fe3e6b5
-lands,1,Underground Sea,"",Land â Island Swamp,Vintage Masters,vma,323,en,rare,Cliff Childs,,777.77,280.0,12.62,https://scryfall.com/card/vma/323/underground-sea,26cee543-6eab-494e-a803-33a5d48d7d74
-nonlands,1,Brainstorm,{U},Instant,Forgotten Realms Commander,afc,79,en,common,Willian Murai,,2.11,2.56,0.52,https://scryfall.com/card/afc/79/brainstorm,48070245-1370-4cf1-be15-d4e8a8b92ba8
-nonlands,1,Chain of Vapor,{U},Instant,Commander 2016,c16,84,en,uncommon,Svetlin Velinov,,14.18,8.2,0.05,https://scryfall.com/card/c16/84/chain-of-vapor,38f741bf-13ee-4384-98ab-27833ebb9f6d
-nonlands,1,Dark Ritual,{B},Instant,Masters 25,a25,82,en,common,Clint Langley,,3.8,4.83,0.04,https://scryfall.com/card/a25/82/dark-ritual,95f27eeb-6f14-4db3-adb9-9be5ed76b34b
-nonlands,1,Dispel,{U},Instant,Battle for Zendikar,bfz,76,en,common,Chase Stone,,0.18,0.33,0.03,https://scryfall.com/card/bfz/76/dispel,bceab6b3-6b64-4964-a501-ce806a6c13ad
-nonlands,1,Flusterstorm,{U},Instant,Iconic Masters,ima,55,en,rare,Erica Yang,,8.33,7.11,2.76,https://scryfall.com/card/ima/55/flusterstorm,f900eeb7-7c45-44bc-ad3a-0bbe594ecf50
-nonlands,1,Mental Misstep,{U/P},Instant,New Phyrexia,nph,38,en,uncommon,Erica Yang,,9.05,5.67,0.03,https://scryfall.com/card/nph/38/mental-misstep,61e9c6df-1c84-4eab-9076-a4feb6347c10
-nonlands,1,Mystical Tutor,{U},Instant,Eternal Masters,ema,62,en,rare,Lindsey Look,,8.85,6.64,0.45,https://scryfall.com/card/ema/62/mystical-tutor,9264ecb7-bfc0-495d-aaaa-829045ea858f
-nonlands,1,Pongify,{U},Instant,Time Spiral Remastered,tsr,79,en,uncommon,Heather Hudson,,2.86,2.0,0.04,https://scryfall.com/card/tsr/79/pongify,a1501dea-4e0e-49b0-86b5-e8a01f77077d
-nonlands,1,Pyroblast,{R},Instant,Signature Spellbook: Chandra,ss3,5,en,rare,Yongjae Choi,,4.23,5.22,11.57,https://scryfall.com/card/ss3/5/pyroblast,93c460dc-cef2-4345-b9b8-a774307ba2d6
-nonlands,1,Rapid Hybridization,{U},Instant,Commander 2021,c21,126,en,uncommon,Jack Wang,,3.16,2.58,0.02,https://scryfall.com/card/c21/126/rapid-hybridization,6b5c6ed5-0fb9-40d4-bdce-bcaff40ef9a6
-nonlands,1,Red Elemental Blast,{R},Instant,Masters 25,a25,147,en,uncommon,Izzy,,8.55,8.22,11.36,https://scryfall.com/card/a25/147/red-elemental-blast,70a45e9b-699e-425a-9f3d-267274830d3e
-nonlands,1,Vampiric Tutor,{B},Instant,Commander Legends,cmr,156,en,mythic,Raymond Swanland,,42.18,32.22,0.67,https://scryfall.com/card/cmr/156/vampiric-tutor,18bd50f2-c3ba-4217-a2d5-bb771e199706
-nonlands,1,Cackling Counterpart,{1}{U}{U},Instant,Modern Masters 2017,mm3,32,en,rare,David Rapoza,,0.95,0.67,0.02,https://scryfall.com/card/mm3/32/cackling-counterpart,02ad8a5a-9814-4fb5-90b1-95c0769be456
-nonlands,1,Counterflux,{U}{U}{R},Instant,Commander 2015,c15,214,en,rare,Scott M. Fischer,,0.47,0.63,0.02,https://scryfall.com/card/c15/214/counterflux,5178d975-88b8-4bd3-a5f5-b84f05172683
-nonlands,1,Deflecting Swat,{2}{R},Instant,Commander 2020,c20,50,en,rare,Izzy,,36.0,33.19,5.58,https://scryfall.com/card/c20/50/deflecting-swat,84f035e1-6c89-457b-b05f-85680a50ed91
-nonlands,1,Fierce Guardianship,{2}{U},Instant,Commander 2020,c20,35,en,rare,Randy Vargas,,31.99,34.87,9.87,https://scryfall.com/card/c20/35/fierce-guardianship,4c5ffa83-c88d-4f5d-851e-a642b229d596
-nonlands,1,Force of Despair,{1}{B}{B},Instant,Modern Horizons,mh1,92,en,rare,Seb McKinnon,,6.13,8.44,0.87,https://scryfall.com/card/mh1/92/force-of-despair,8f497b0d-4448-4201-bd55-c147da1a216d
-nonlands,1,Force of Negation,{1}{U}{U},Instant,Modern Horizons 1 Timeshifts,h1r,9,en,rare,Paul Scott Canavan,,49.3,50.23,11.51,https://scryfall.com/card/h1r/9/force-of-negation,b769ba9e-2ac8-48a9-9f45-23a4ccd0cb96
-nonlands,1,Ghostly Flicker,{2}{U},Instant,Kaldheim Commander,khc,39,en,common,Raymond Swanland,,0.73,1.91,0.04,https://scryfall.com/card/khc/39/ghostly-flicker,485ab561-9c2a-4f99-9317-8726bcdae364
-nonlands,1,Ad Nauseam,{3}{B}{B},Instant,Double Masters,2xm,76,en,rare,Jeremy Jarvis,,18.61,8.79,0.07,https://scryfall.com/card/2xm/76/ad-nauseam,a9f2c53e-ff58-4aa8-89a6-4f45628cc571
-nonlands,1,Force of Will,{3}{U}{U},Instant,Double Masters,2xm,51,en,mythic,Terese Nielsen,,51.36,59.01,14.32,https://scryfall.com/card/2xm/51/force-of-will,dd60b291-0a88-4e8e-bef8-76cdfd6c8183
-nonlands,1,Mystic Confluence,{3}{U}{U},Instant,New Capenna Commander,ncc,227,en,rare,Kieran Yanner,,0.47,0.54,0.7,https://scryfall.com/card/ncc/227/mystic-confluence,95982d63-f825-4e6f-86e5-252394a29476
-nonlands,1,Gitaxian Probe,{U/P},Sorcery,New Phyrexia,nph,35,en,common,Chippy,,2.68,2.37,0.03,https://scryfall.com/card/nph/35/gitaxian-probe,995486ce-58bb-4753-a812-0ca73ef1a235
-nonlands,1,Ponder,{U},Sorcery,New Capenna Commander,ncc,229,en,common,Dan Murayama Scott,,2.92,2.06,0.03,https://scryfall.com/card/ncc/229/ponder,44dcfc0c-b23d-48be-bf3a-a6fc6806c5e1
-nonlands,1,Preordain,{U},Sorcery,New Capenna Commander,ncc,230,en,common,Svetlin Velinov,,0.95,2.19,2.01,https://scryfall.com/card/ncc/230/preordain,d10b9be3-d4ff-4e3c-b0d5-5ab2c4e6d684
-nonlands,1,Reanimate,{B},Sorcery,Commander Collection: Black,cc2,5,en,rare,Nils Hamm,,8.17,8.1,0.24,https://scryfall.com/card/cc2/5/reanimate,d27c6aaa-289e-451e-8fde-97a044c53fc4
-nonlands,1,Rolling Earthquake,{X}{R},Sorcery,Double Masters,2xm,142,en,rare,Yang Hong,,3.02,2.74,0.07,https://scryfall.com/card/2xm/142/rolling-earthquake,69ab37d4-6ba3-404a-8162-f207874738ea
-nonlands,1,Vandalblast,{R},Sorcery,Crimson Vow Commander,voc,152,en,uncommon,Seb McKinnon,,3.14,2.25,0.02,https://scryfall.com/card/voc/152/vandalblast,4ce9072b-58e9-422a-9331-31886c111cfa
-nonlands,1,Anger of the Gods,{1}{R}{R},Sorcery,Time Spiral Remastered,tsr,339,en,special,Noah Bradley,,0.87,0.95,0.5,https://scryfall.com/card/tsr/339/anger-of-the-gods,89888597-e9bf-431a-8664-da66f22c7ea0
-nonlands,1,Buried Alive,{2}{B},Sorcery,Ultimate Masters,uma,88,en,uncommon,Greg Staples,,3.05,0.86,0.2,https://scryfall.com/card/uma/88/buried-alive,c5f51145-aade-4955-b9e7-4a34074253d6
-nonlands,1,Dead of Winter,{2}{B},Sorcery,Modern Horizons,mh1,85,en,rare,Zack Stella,,0.26,0.64,0.02,https://scryfall.com/card/mh1/85/dead-of-winter,f480df6d-e227-4ccb-ad6d-a4ad48a360ad
-nonlands,1,Painful Truths,{2}{B},Sorcery,New Capenna Commander,ncc,255,en,rare,Winona Nelson,,0.17,0.17,0.02,https://scryfall.com/card/ncc/255/painful-truths,770be468-5247-491d-8029-f57111814d60
-nonlands,1,Read the Bones,{2}{B},Sorcery,Time Spiral Remastered,tsr,328,en,special,Lars Grant-West,,2.48,0.59,0.2,https://scryfall.com/card/tsr/328/read-the-bones,4daf00e8-f95b-410f-9e6f-a7fd6c2b8588
-nonlands,1,Toxic Deluge,{2}{B},Sorcery,Commander Collection: Black,cc2,6,en,rare,Yeong-Hao Han,,7.03,6.7,0.3,https://scryfall.com/card/cc2/6/toxic-deluge,db34617f-b04f-4b65-84cf-5c5be1eb7226
-nonlands,1,Victimize,{2}{B},Sorcery,New Capenna Commander,ncc,261,en,uncommon,Craig J Spearing,,0.47,0.93,0.03,https://scryfall.com/card/ncc/261/victimize,22000809-20ff-4620-82e9-ddc4299f6e95
-nonlands,1,Windfall,{2}{U},Sorcery,Kaldheim Commander,khc,46,en,uncommon,Scott Murphy,,2.17,2.07,0.31,https://scryfall.com/card/khc/46/windfall,0846f753-0d53-4bdd-be0e-19d989db5d5f
-nonlands,1,Devastation Tide,{3}{U}{U},Sorcery,Commander 2018,c18,85,en,rare,Raymond Swanland,,0.53,0.6,0.02,https://scryfall.com/card/c18/85/devastation-tide,2d493bd6-af71-45be-bd4c-1d8f94bca19e
-nonlands,1,Coastal Breach,{6}{U},Sorcery,Commander 2016,c16,6,en,rare,Titus Lunter,,2.8,4.37,,https://scryfall.com/card/c16/6/coastal-breach,bf8b550a-c86f-4684-a4f6-14e75172324f
-nonlands,1,Blasphemous Act,{8}{R},Sorcery,New Capenna Commander,ncc,264,en,rare,Daarken,,2.55,2.07,0.02,https://scryfall.com/card/ncc/264/blasphemous-act,0b98a8ac-9255-416d-b86a-46621c4bea4f
-lands,1,Bloodstained Mire,"",Land,Khans of Tarkir,ktk,230,en,rare,Daarken,,10.69,11.16,1.4,https://scryfall.com/card/ktk/230/bloodstained-mire,7f430794-0d86-4f6a-97e0-4bbb6716d613
-lands,1,Flooded Strand,"",Land,Khans of Tarkir,ktk,233,en,rare,Andreas Rocha,,9.83,10.73,1.06,https://scryfall.com/card/ktk/233/flooded-strand,8c2996d9-3287-4480-8c04-7a378e37e3cf
-lands,1,Marsh Flats,"",Land,Modern Horizons 2,mh2,248,en,rare,Izzy,,18.24,14.92,1.04,https://scryfall.com/card/mh2/248/marsh-flats,9db3ba6d-eb7f-4f5b-9a3b-c6239c3baa42
-lands,1,Misty Rainforest,"",Land,Modern Horizons 2,mh2,250,en,rare,Shelly Wan,,20.1,20.46,2.64,https://scryfall.com/card/mh2/250/misty-rainforest,88231c0d-0cc8-44ec-bf95-81d1710ac141
-lands,1,Polluted Delta,"",Land,Khans of Tarkir,ktk,239,en,rare,Vincent Proce,,12.72,14.01,1.84,https://scryfall.com/card/ktk/239/polluted-delta,ff2f5f58-9a95-4ca6-93a0-813738f0072f
-lands,1,Prismatic Vista,"",Land,Modern Horizons 1 Timeshifts,h1r,40,en,rare,Sam Burley,,27.12,27.13,5.43,https://scryfall.com/card/h1r/40/prismatic-vista,991a1790-a3a2-4def-8848-cc698915a242
-lands,1,Scalding Tarn,"",Land,Modern Horizons 2,mh2,254,en,rare,Philip Straub,,20.34,21.88,3.37,https://scryfall.com/card/mh2/254/scalding-tarn,71e491c5-8c07-449b-b2f1-ffa052e6d311
-lands,5,Snow-Covered Island,"",Basic Snow Land â Island,Kaldheim,khm,278,en,common,Piotr Dura,,0.73,1.11,0.05,https://scryfall.com/card/khm/278/snow-covered-island,3bfa5ebc-5623-4eec-89ea-dc187489ee4a
-lands,3,Snow-Covered Mountain,"",Basic Snow Land â Mountain,Kaldheim,khm,282,en,common,Adam Paquette,,0.39,0.55,0.03,https://scryfall.com/card/khm/282/snow-covered-mountain,5474e67c-628f-41b0-aa31-3d85a267265a
-lands,3,Snow-Covered Swamp,"",Basic Snow Land â Swamp,Kaldheim,khm,280,en,common,Adam Paquette,,0.45,0.53,0.03,https://scryfall.com/card/khm/280/snow-covered-swamp,6aa85af8-15f5-4620-8aea-0b45c28372ed
-lands,1,Steam Vents,"",Land â Island Mountain,Guilds of Ravnica,grn,257,en,rare,Jonas De Ro,,11.89,11.79,0.84,https://scryfall.com/card/grn/257/steam-vents,b8ebe3cf-7143-453a-b0ef-2f5bdaac3185
-lands,1,Verdant Catacombs,"",Land,Modern Horizons 2,mh2,260,en,rare,Vance Kovacs,,20.05,16.5,3.04,https://scryfall.com/card/mh2/260/verdant-catacombs,94c229ea-90da-4aa0-bfda-b162fb3b5b8b
-lands,1,Watery Grave,"",Land â Island Swamp,Guilds of Ravnica,grn,259,en,rare,Cliff Childs,,14.36,13.27,0.29,https://scryfall.com/card/grn/259/watery-grave,7d4595f2-9297-40dc-b2dd-7144bbb401f7
-lands,1,Wooded Foothills,"",Land,Khans of Tarkir,ktk,249,en,rare,Jonas De Ro,,10.3,10.95,1.6,https://scryfall.com/card/ktk/249/wooded-foothills,a8503cca-7e7d-44c4-8587-81376b396398
-nonlands,1,Spikefield Hazard // Spikefield Cave,{R},Instant // Land,Zendikar Rising,znr,166,en,uncommon,Tomasz Jedruszek,,0.28,0.33,0.03,https://scryfall.com/card/znr/166/spikefield-hazard-spikefield-cave,a69541db-3f4e-412f-aa8e-dec1e74f74dc
+nonlands,1,Dualcaster Mage,{1}{R}{R},Creature — Human Wizard,Commander 2021,c21,165,en,rare,Matt Stewart,,2.04,0.51,0.36,https://scryfall.com/card/c21/165/dualcaster-mage,defcc4a3-40e0-4f5d-b23c-6cd6a614abc1
+nonlands,1,Laboratory Maniac,{2}{U},Creature — Human Wizard,Time Spiral Remastered,tsr,309,en,special,Jason Felix,,2.43,2.22,0.15,https://scryfall.com/card/tsr/309/laboratory-maniac,5840b48c-7a14-481e-9d21-0c68aee16020
+nonlands,1,Heartless Hidetsugu,{3}{R}{R},Legendary Creature — Ogre Shaman,Conspiracy,cns,144,en,rare,Carl Critchlow,,1.56,1.02,0.02,https://scryfall.com/card/cns/144/heartless-hidetsugu,46f9aa1d-7ed1-498e-9cdd-45ed4c9e6f43
+nonlands,1,"Kiki-Jiki, Mirror Breaker",{2}{R}{R}{R},Legendary Creature — Goblin Shaman,Time Spiral Remastered,tsr,346,en,special,Pete Venters,,12.1,6.52,0.3,https://scryfall.com/card/tsr/346/kiki-jiki-mirror-breaker,8a30fe7c-3c6b-4d05-adb7-9f87df29cd3b
+nonlands,1,Phyrexian Delver,{3}{B}{B},Creature — Phyrexian Zombie,Commander 2018,c18,115,en,rare,Igor Kieryluk,,0.45,0.38,0.49,https://scryfall.com/card/c18/115/phyrexian-delver,de66606d-6fe2-4c63-8d27-e808da7d4980
+nonlands,1,Demonic Consultation,{B},Instant,Masters Edition II,me2,85,en,uncommon,Rob Alexander,,13.61,9.84,1.05,https://scryfall.com/card/me2/85/demonic-consultation,1d779f19-3068-4976-b96b-8f93d156900b
+nonlands,1,Mystic Remora,{U},Enchantment,Masters Edition,me1,42,en,uncommon,"Ken Meyer, Jr.",,7.28,6.53,6.34,https://scryfall.com/card/me1/42/mystic-remora,13a08c07-e8b8-43bf-99e6-d268c79a62bf
+commanders,1,Vial Smasher the Fierce,{1}{B}{R},Legendary Creature — Goblin Berserker,Commander Legends,cmr,540,en,mythic,Deruchenko Alexander,,1.43,1.73,2.26,https://scryfall.com/card/cmr/540/vial-smasher-the-fierce,a4dc32ca-89c9-4d3a-8809-846c34ef3592
+nonlands,1,Arcum's Astrolabe,{S},Snow Artifact,Modern Horizons,mh1,220,en,common,Igor Kieryluk,,0.14,0.16,0.04,https://scryfall.com/card/mh1/220/arcums-astrolabe,c2462fdf-a594-47d0-8e10-b55901e350d9
+commanders,1,"Kraum, Ludevic's Opus",{3}{U}{R},Legendary Creature — Zombie Horror,Commander Legends,cmr,523,en,mythic,Aaron Miller,,2.93,5.47,2.03,https://scryfall.com/card/cmr/523/kraum-ludevics-opus,20e13fc2-c4dd-4875-be32-e04d954e658d
+outside,1,"Obosh, the Preypiercer",{3}{B/R}{B/R},Legendary Creature — Hellion Horror,Ikoria: Lair of Behemoths,iko,228,en,rare,Daarken,,0.14,0.2,0.02,https://scryfall.com/card/iko/228/obosh-the-preypiercer,451507de-9c42-43ee-b9ba-1f69e9aa29d2
+lands,1,Ancient Tomb,"",Land,Ultimate Masters,uma,236,en,rare,Yeong-Hao Han,,114.57,84.45,12.14,https://scryfall.com/card/uma/236/ancient-tomb,bd3d4b4b-cf31-4f89-8140-9650edb03c7b
+lands,1,Arid Mesa,"",Land,Modern Horizons 2,mh2,244,en,rare,Raymond Swanland,,24.95,21.2,3.81,https://scryfall.com/card/mh2/244/arid-mesa,25ac5405-df7b-4097-914a-022cb18e20d4
+nonlands,1,Back to Basics,{2}{U},Enchantment,Ultimate Masters,uma,46,en,rare,Terese Nielsen,,5.72,6.84,6.28,https://scryfall.com/card/uma/46/back-to-basics,0600d6c2-0f72-4e79-a55d-1f06dffa48c2
+nonlands,1,Blood Moon,{2}{R},Enchantment,Double Masters,2xm,118,en,rare,Franz Vohwinkel,,7.22,8.11,3.0,https://scryfall.com/card/2xm/118/blood-moon,d072e9ca-aae7-45dc-8025-3ce590bae63f
+nonlands,1,Necropotence,{B}{B}{B},Enchantment,Iconic Masters,ima,98,en,mythic,Dave Kendall,,15.55,13.12,0.45,https://scryfall.com/card/ima/98/necropotence,c89c6895-b0f8-444a-9c89-c6b4fd027b3e
+nonlands,1,Ophidian Eye,{2}{U},Enchantment — Aura,Time Spiral,tsp,70,en,common,Zoltan Boros & Gabor Szikszai,,11.13,3.95,0.03,https://scryfall.com/card/tsp/70/ophidian-eye,26836ff5-b3c3-4b10-af1e-df3658781cb2
+nonlands,1,Phyrexian Arena,{1}{B}{B},Enchantment,Commander Collection: Black,cc2,4,en,rare,Vincent Proce,,2.62,2.66,0.02,https://scryfall.com/card/cc2/4/phyrexian-arena,b4142d3b-9c17-4a26-949e-3fc3e600fd1c
+nonlands,1,Rhystic Study,{2}{U},Enchantment,Jumpstart,jmp,169,en,rare,Terese Nielsen,,57.66,37.76,2.78,https://scryfall.com/card/jmp/169/rhystic-study,d6914dba-0d27-4055-ac34-b3ebf5802221
+nonlands,1,Sigil of Sleep,{U},Enchantment — Aura,Duel Decks: Venser vs. Koth,ddi,25,en,common,Greg Hildebrandt & Tim Hildebrandt,,9.99,5.28,0.18,https://scryfall.com/card/ddi/25/sigil-of-sleep,13063520-6e2f-4eaa-b84f-a38e5bf486f8
+nonlands,1,Wheel of Fortune,{2}{R},Sorcery,Vintage Masters,vma,192,en,mythic,John Matson,,321.24,0.02,0.39,https://scryfall.com/card/vma/192/wheel-of-fortune,2597050f-6b1b-474e-aa16-33fd154628ca
+nonlands,1,Yawgmoth's Will,{2}{B},Sorcery,Vintage Masters,vma,148,en,mythic,Ron Spencer,,159.8,100.85,1.38,https://scryfall.com/card/vma/148/yawgmoths-will,337239c7-73c4-4e2d-9160-ed26927dea1d
+nonlands,1,Timetwister,{2}{U},Sorcery,Vintage Masters,vma,3,en,bonus,Matt Stewart,,4894.99,3279.47,5.01,https://scryfall.com/card/vma/3/timetwister,fbee1e10-0b8c-44ea-b0e5-44cdd0bfcd76
+lands,1,Volcanic Island,"",Land — Island Mountain,Vintage Masters,vma,324,en,rare,Noah Bradley,,697.11,454.09,15.59,https://scryfall.com/card/vma/324/volcanic-island,2f607e7e-30c0-45e9-8f61-bf6e9fe63f2b
+lands,1,Cephalid Coliseum,"",Land,Odyssey,ody,317,en,uncommon,John Avon,,3.37,3.64,1.27,https://scryfall.com/card/ody/317/cephalid-coliseum,d5d74112-7244-4c3f-a5eb-b6be671aefe8
+nonlands,1,Sol Ring,{1},Artifact,New Capenna Commander,ncc,379,en,uncommon,Mike Bierek,,1.81,0.84,0.02,https://scryfall.com/card/ncc/379/sol-ring,e1187999-521d-4ed0-8673-6eb8f3c58bb8
+nonlands,1,Spell Pierce,{U},Instant,Kamigawa: Neon Dynasty,neo,80,en,common,Lie Setiawan,,0.19,0.19,0.03,https://scryfall.com/card/neo/80/spell-pierce,beb42273-935b-4bda-849e-c163606cf89e
+nonlands,1,Spellseeker,{2}{U},Creature — Human Wizard,Battlebond,bbd,41,en,rare,Igor Kieryluk,,12.48,12.22,9.49,https://scryfall.com/card/bbd/41/spellseeker,74b4c336-5d4c-4bc5-b82a-35084a6ad808
+nonlands,1,Swan Song,{U},Instant,Commander 2016,c16,98,en,rare,Peter Mohrbacher,,14.18,12.02,0.16,https://scryfall.com/card/c16/98/swan-song,9d968dde-c406-48ef-a1ab-373aebc24693
+nonlands,1,Trinisphere,{3},Artifact,Double Masters,2xm,303,en,mythic,Tim Hildebrandt,,24.63,21.81,14.92,https://scryfall.com/card/2xm/303/trinisphere,316caa4e-a53a-460b-978c-5f0fba7bc549
+nonlands,1,Zealous Conscripts,{4}{R},Creature — Human Warrior,Time Spiral Remastered,tsr,354,en,special,Steve Prescott,,0.44,0.71,0.12,https://scryfall.com/card/tsr/354/zealous-conscripts,2576152c-d8c1-4412-89db-6e21295c9b18
+nonlands,1,"Narset, Parter of Veils",{1}{U}{U},Legendary Planeswalker — Narset,War of the Spark,war,61,en,uncommon,Magali Villeneuve,,0.89,0.64,0.03,https://scryfall.com/card/war/61/narset-parter-of-veils,8c39f9b4-02b9-4d44-b8d6-4fd02ebbb0c5
+nonlands,1,Grafdigger's Cage,{1},Artifact,Core Set 2020,m20,227,en,rare,Daniel Ljunggren,,2.69,2.4,0.8,https://scryfall.com/card/m20/227/grafdiggers-cage,0a135e09-b534-4836-9a10-3a9a4a9f8c53
+nonlands,1,Mana Vault,{1},Artifact,Ultimate Masters,uma,229,en,mythic,Christine Choi,,71.53,52.53,4.24,https://scryfall.com/card/uma/229/mana-vault,cfdf9706-acdb-48fc-89db-93bc50b3b9ad
+nonlands,1,Pithing Needle,{1},Artifact,Innistrad: Midnight Hunt,mid,257,en,rare,Ovidio Cartagena,,0.34,0.51,0.03,https://scryfall.com/card/mid/257/pithing-needle,556ec6ab-a19f-4caa-8bfa-145555402caf
+nonlands,1,Curiosity,{U},Enchantment — Aura,Jumpstart,jmp,147,en,uncommon,Igor Kieryluk,,0.3,0.36,0.03,https://scryfall.com/card/jmp/147/curiosity,c5a0be10-c20f-4ac0-89a5-1770ecf48aad
+lands,1,Badlands,"",Land — Swamp Mountain,Vintage Masters,vma,291,en,rare,Daarken,,411.46,0.02,5.85,https://scryfall.com/card/vma/291/badlands,73403d04-fe97-4830-8b80-16dd1a1a6cc1
+nonlands,1,Imperial Seal,{B},Sorcery,Masters Edition II,me2,96,en,rare,Li Tie,,111.35,73.27,5.43,https://scryfall.com/card/me2/96/imperial-seal,6023bfe0-84bf-454c-b29d-5d128fe3e6b5
+lands,1,Underground Sea,"",Land — Island Swamp,Vintage Masters,vma,323,en,rare,Cliff Childs,,788.66,280.0,16.32,https://scryfall.com/card/vma/323/underground-sea,26cee543-6eab-494e-a803-33a5d48d7d74
+nonlands,1,Brainstorm,{U},Instant,Forgotten Realms Commander,afc,79,en,common,Willian Murai,,3.17,2.8,0.8,https://scryfall.com/card/afc/79/brainstorm,48070245-1370-4cf1-be15-d4e8a8b92ba8
+nonlands,1,Chain of Vapor,{U},Instant,Commander 2016,c16,84,en,uncommon,Svetlin Velinov,,8.03,7.14,0.05,https://scryfall.com/card/c16/84/chain-of-vapor,38f741bf-13ee-4384-98ab-27833ebb9f6d
+nonlands,1,Dark Ritual,{B},Instant,Masters 25,a25,82,en,common,Clint Langley,,5.14,5.83,0.09,https://scryfall.com/card/a25/82/dark-ritual,95f27eeb-6f14-4db3-adb9-9be5ed76b34b
+nonlands,1,Dispel,{U},Instant,Battle for Zendikar,bfz,76,en,common,Chase Stone,,0.24,0.29,0.03,https://scryfall.com/card/bfz/76/dispel,bceab6b3-6b64-4964-a501-ce806a6c13ad
+nonlands,1,Flusterstorm,{U},Instant,Iconic Masters,ima,55,en,rare,Erica Yang,,6.25,4.5,2.87,https://scryfall.com/card/ima/55/flusterstorm,f900eeb7-7c45-44bc-ad3a-0bbe594ecf50
+nonlands,1,Mental Misstep,{U/P},Instant,New Phyrexia,nph,38,en,uncommon,Erica Yang,,9.55,5.74,0.03,https://scryfall.com/card/nph/38/mental-misstep,61e9c6df-1c84-4eab-9076-a4feb6347c10
+nonlands,1,Mystical Tutor,{U},Instant,Eternal Masters,ema,62,en,rare,Lindsey Look,,13.72,8.16,0.67,https://scryfall.com/card/ema/62/mystical-tutor,9264ecb7-bfc0-495d-aaaa-829045ea858f
+nonlands,1,Pongify,{U},Instant,Time Spiral Remastered,tsr,79,en,uncommon,Heather Hudson,,2.89,2.04,0.04,https://scryfall.com/card/tsr/79/pongify,a1501dea-4e0e-49b0-86b5-e8a01f77077d
+nonlands,1,Pyroblast,{R},Instant,Signature Spellbook: Chandra,ss3,5,en,rare,Yongjae Choi,,5.06,5.68,13.58,https://scryfall.com/card/ss3/5/pyroblast,93c460dc-cef2-4345-b9b8-a774307ba2d6
+nonlands,1,Rapid Hybridization,{U},Instant,Commander 2021,c21,126,en,uncommon,Jack Wang,,1.94,2.49,0.02,https://scryfall.com/card/c21/126/rapid-hybridization,6b5c6ed5-0fb9-40d4-bdce-bcaff40ef9a6
+nonlands,1,Red Elemental Blast,{R},Instant,Masters 25,a25,147,en,uncommon,Izzy,,9.28,8.12,12.44,https://scryfall.com/card/a25/147/red-elemental-blast,70a45e9b-699e-425a-9f3d-267274830d3e
+nonlands,1,Vampiric Tutor,{B},Instant,Commander Legends,cmr,156,en,mythic,Raymond Swanland,,52.47,36.73,0.64,https://scryfall.com/card/cmr/156/vampiric-tutor,18bd50f2-c3ba-4217-a2d5-bb771e199706
+nonlands,1,Cackling Counterpart,{1}{U}{U},Instant,Modern Masters 2017,mm3,32,en,rare,David Rapoza,,0.58,0.38,0.02,https://scryfall.com/card/mm3/32/cackling-counterpart,02ad8a5a-9814-4fb5-90b1-95c0769be456
+nonlands,1,Counterflux,{U}{U}{R},Instant,Commander 2015,c15,214,en,rare,Scott M. Fischer,,0.51,0.49,0.02,https://scryfall.com/card/c15/214/counterflux,5178d975-88b8-4bd3-a5f5-b84f05172683
+nonlands,1,Deflecting Swat,{2}{R},Instant,Commander 2020,c20,50,en,rare,Izzy,,42.81,33.86,10.18,https://scryfall.com/card/c20/50/deflecting-swat,84f035e1-6c89-457b-b05f-85680a50ed91
+nonlands,1,Fierce Guardianship,{2}{U},Instant,Commander 2020,c20,35,en,rare,Randy Vargas,,38.62,36.66,9.63,https://scryfall.com/card/c20/35/fierce-guardianship,4c5ffa83-c88d-4f5d-851e-a642b229d596
+nonlands,1,Force of Despair,{1}{B}{B},Instant,Modern Horizons,mh1,92,en,rare,Seb McKinnon,,2.73,4.5,1.58,https://scryfall.com/card/mh1/92/force-of-despair,8f497b0d-4448-4201-bd55-c147da1a216d
+nonlands,1,Force of Negation,{1}{U}{U},Instant,Modern Horizons 1 Timeshifts,h1r,9,en,rare,Paul Scott Canavan,,51.5,51.81,19.64,https://scryfall.com/card/h1r/9/force-of-negation,b769ba9e-2ac8-48a9-9f45-23a4ccd0cb96
+nonlands,1,Ghostly Flicker,{2}{U},Instant,Kaldheim Commander,khc,39,en,common,Raymond Swanland,,1.28,2.07,0.05,https://scryfall.com/card/khc/39/ghostly-flicker,485ab561-9c2a-4f99-9317-8726bcdae364
+nonlands,1,Ad Nauseam,{3}{B}{B},Instant,Double Masters,2xm,76,en,rare,Jeremy Jarvis,,17.65,9.37,0.07,https://scryfall.com/card/2xm/76/ad-nauseam,a9f2c53e-ff58-4aa8-89a6-4f45628cc571
+nonlands,1,Force of Will,{3}{U}{U},Instant,Double Masters,2xm,51,en,mythic,Terese Nielsen,,55.46,55.34,19.59,https://scryfall.com/card/2xm/51/force-of-will,dd60b291-0a88-4e8e-bef8-76cdfd6c8183
+nonlands,1,Mystic Confluence,{3}{U}{U},Instant,New Capenna Commander,ncc,227,en,rare,Kieran Yanner,,0.52,0.73,0.29,https://scryfall.com/card/ncc/227/mystic-confluence,95982d63-f825-4e6f-86e5-252394a29476
+nonlands,1,Gitaxian Probe,{U/P},Sorcery,New Phyrexia,nph,35,en,common,Chippy,,3.26,3.17,0.03,https://scryfall.com/card/nph/35/gitaxian-probe,995486ce-58bb-4753-a812-0ca73ef1a235
+nonlands,1,Ponder,{U},Sorcery,New Capenna Commander,ncc,229,en,common,Dan Murayama Scott,,2.48,2.44,0.03,https://scryfall.com/card/ncc/229/ponder,44dcfc0c-b23d-48be-bf3a-a6fc6806c5e1
+nonlands,1,Preordain,{U},Sorcery,New Capenna Commander,ncc,230,en,common,Svetlin Velinov,,0.92,1.53,2.06,https://scryfall.com/card/ncc/230/preordain,d10b9be3-d4ff-4e3c-b0d5-5ab2c4e6d684
+nonlands,1,Reanimate,{B},Sorcery,Commander Collection: Black,cc2,5,en,rare,Nils Hamm,,9.0,7.74,0.02,https://scryfall.com/card/cc2/5/reanimate,d27c6aaa-289e-451e-8fde-97a044c53fc4
+nonlands,1,Rolling Earthquake,{X}{R},Sorcery,Double Masters,2xm,142,en,rare,Yang Hong,,3.23,3.32,0.1,https://scryfall.com/card/2xm/142/rolling-earthquake,69ab37d4-6ba3-404a-8162-f207874738ea
+nonlands,1,Vandalblast,{R},Sorcery,Crimson Vow Commander,voc,152,en,uncommon,Seb McKinnon,,2.95,2.17,0.02,https://scryfall.com/card/voc/152/vandalblast,4ce9072b-58e9-422a-9331-31886c111cfa
+nonlands,1,Anger of the Gods,{1}{R}{R},Sorcery,Time Spiral Remastered,tsr,339,en,special,Noah Bradley,,0.58,0.71,1.12,https://scryfall.com/card/tsr/339/anger-of-the-gods,89888597-e9bf-431a-8664-da66f22c7ea0
+nonlands,1,Buried Alive,{2}{B},Sorcery,Ultimate Masters,uma,88,en,uncommon,Greg Staples,,2.97,0.88,0.22,https://scryfall.com/card/uma/88/buried-alive,c5f51145-aade-4955-b9e7-4a34074253d6
+nonlands,1,Dead of Winter,{2}{B},Sorcery,Modern Horizons,mh1,85,en,rare,Zack Stella,,0.36,0.73,0.02,https://scryfall.com/card/mh1/85/dead-of-winter,f480df6d-e227-4ccb-ad6d-a4ad48a360ad
+nonlands,1,Painful Truths,{2}{B},Sorcery,New Capenna Commander,ncc,255,en,rare,Winona Nelson,,0.35,0.15,0.02,https://scryfall.com/card/ncc/255/painful-truths,770be468-5247-491d-8029-f57111814d60
+nonlands,1,Read the Bones,{2}{B},Sorcery,Time Spiral Remastered,tsr,328,en,special,Lars Grant-West,,2.2,1.27,0.25,https://scryfall.com/card/tsr/328/read-the-bones,4daf00e8-f95b-410f-9e6f-a7fd6c2b8588
+nonlands,1,Toxic Deluge,{2}{B},Sorcery,Commander Collection: Black,cc2,6,en,rare,Yeong-Hao Han,,6.95,6.52,0.2,https://scryfall.com/card/cc2/6/toxic-deluge,db34617f-b04f-4b65-84cf-5c5be1eb7226
+nonlands,1,Victimize,{2}{B},Sorcery,New Capenna Commander,ncc,261,en,uncommon,Craig J Spearing,,0.9,0.52,0.03,https://scryfall.com/card/ncc/261/victimize,22000809-20ff-4620-82e9-ddc4299f6e95
+nonlands,1,Windfall,{2}{U},Sorcery,Kaldheim Commander,khc,46,en,uncommon,Scott Murphy,,3.86,2.97,0.48,https://scryfall.com/card/khc/46/windfall,0846f753-0d53-4bdd-be0e-19d989db5d5f
+nonlands,1,Devastation Tide,{3}{U}{U},Sorcery,Commander 2018,c18,85,en,rare,Raymond Swanland,,1.35,0.63,0.02,https://scryfall.com/card/c18/85/devastation-tide,2d493bd6-af71-45be-bd4c-1d8f94bca19e
+nonlands,1,Coastal Breach,{6}{U},Sorcery,Commander 2016,c16,6,en,rare,Titus Lunter,,3.27,4.97,,https://scryfall.com/card/c16/6/coastal-breach,bf8b550a-c86f-4684-a4f6-14e75172324f
+nonlands,1,Blasphemous Act,{8}{R},Sorcery,New Capenna Commander,ncc,264,en,rare,Daarken,,2.28,2.01,0.02,https://scryfall.com/card/ncc/264/blasphemous-act,0b98a8ac-9255-416d-b86a-46621c4bea4f
+lands,1,Bloodstained Mire,"",Land,Khans of Tarkir,ktk,230,en,rare,Daarken,,12.77,11.06,1.32,https://scryfall.com/card/ktk/230/bloodstained-mire,7f430794-0d86-4f6a-97e0-4bbb6716d613
+lands,1,Flooded Strand,"",Land,Khans of Tarkir,ktk,233,en,rare,Andreas Rocha,,11.63,11.04,3.64,https://scryfall.com/card/ktk/233/flooded-strand,8c2996d9-3287-4480-8c04-7a378e37e3cf
+lands,1,Marsh Flats,"",Land,Modern Horizons 2,mh2,248,en,rare,Izzy,,21.87,18.89,1.04,https://scryfall.com/card/mh2/248/marsh-flats,9db3ba6d-eb7f-4f5b-9a3b-c6239c3baa42
+lands,1,Misty Rainforest,"",Land,Modern Horizons 2,mh2,250,en,rare,Shelly Wan,,25.36,21.09,2.24,https://scryfall.com/card/mh2/250/misty-rainforest,88231c0d-0cc8-44ec-bf95-81d1710ac141
+lands,1,Polluted Delta,"",Land,Khans of Tarkir,ktk,239,en,rare,Vincent Proce,,15.33,13.53,1.71,https://scryfall.com/card/ktk/239/polluted-delta,ff2f5f58-9a95-4ca6-93a0-813738f0072f
+lands,1,Prismatic Vista,"",Land,Modern Horizons 1 Timeshifts,h1r,40,en,rare,Sam Burley,,34.08,32.13,4.72,https://scryfall.com/card/h1r/40/prismatic-vista,991a1790-a3a2-4def-8848-cc698915a242
+lands,1,Scalding Tarn,"",Land,Modern Horizons 2,mh2,254,en,rare,Philip Straub,,26.45,22.4,3.22,https://scryfall.com/card/mh2/254/scalding-tarn,71e491c5-8c07-449b-b2f1-ffa052e6d311
+lands,5,Snow-Covered Island,"",Basic Snow Land — Island,Kaldheim,khm,278,en,common,Piotr Dura,,1.05,1.06,0.03,https://scryfall.com/card/khm/278/snow-covered-island,3bfa5ebc-5623-4eec-89ea-dc187489ee4a
+lands,3,Snow-Covered Mountain,"",Basic Snow Land — Mountain,Kaldheim,khm,282,en,common,Adam Paquette,,0.45,0.65,0.04,https://scryfall.com/card/khm/282/snow-covered-mountain,5474e67c-628f-41b0-aa31-3d85a267265a
+lands,3,Snow-Covered Swamp,"",Basic Snow Land — Swamp,Kaldheim,khm,280,en,common,Adam Paquette,,0.4,0.48,0.03,https://scryfall.com/card/khm/280/snow-covered-swamp,6aa85af8-15f5-4620-8aea-0b45c28372ed
+lands,1,Steam Vents,"",Land — Island Mountain,Guilds of Ravnica,grn,257,en,rare,Jonas De Ro,,14.19,12.26,1.02,https://scryfall.com/card/grn/257/steam-vents,b8ebe3cf-7143-453a-b0ef-2f5bdaac3185
+lands,1,Verdant Catacombs,"",Land,Modern Horizons 2,mh2,260,en,rare,Vance Kovacs,,23.21,17.98,1.09,https://scryfall.com/card/mh2/260/verdant-catacombs,94c229ea-90da-4aa0-bfda-b162fb3b5b8b
+lands,1,Watery Grave,"",Land — Island Swamp,Guilds of Ravnica,grn,259,en,rare,Cliff Childs,,14.8,14.33,0.17,https://scryfall.com/card/grn/259/watery-grave,7d4595f2-9297-40dc-b2dd-7144bbb401f7
+lands,1,Wooded Foothills,"",Land,Khans of Tarkir,ktk,249,en,rare,Jonas De Ro,,11.8,11.96,1.72,https://scryfall.com/card/ktk/249/wooded-foothills,a8503cca-7e7d-44c4-8587-81376b396398
+nonlands,1,Spikefield Hazard // Spikefield Cave,{R},Instant // Land,Zendikar Rising,znr,166,en,uncommon,Tomasz Jedruszek,,0.26,0.44,0.03,https://scryfall.com/card/znr/166/spikefield-hazard-spikefield-cave,a69541db-3f4e-412f-aa8e-dec1e74f74dc

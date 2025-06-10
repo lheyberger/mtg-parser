@@ -38,7 +38,7 @@ def _download_deck(src, http_client):
             'deckId': deck_id,
             'langId': 0,
             'simple': False,
-        }
+        },
     )
     return response.json()
 

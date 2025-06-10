@@ -13,7 +13,7 @@ DECK_INFO = {
         {
             "pattern": r"(https?://)?(www\.)?deckstats.net/",
             "response": "mock_deckstats_30198_2034245",
-        }
+        },
     ],
 }
 

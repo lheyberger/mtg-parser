@@ -13,7 +13,7 @@ DECK_INFO = {
         {
             "pattern": r"(https?://)?(www\.)?mtgjson\.com",
             "response": "mock_mtgjson_breedlethality_cmd2.json",
-        }
+        },
     ],
 }
 

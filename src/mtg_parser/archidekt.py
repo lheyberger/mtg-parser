@@ -46,5 +46,5 @@ def _parse_deck(deck):
                 card['quantity'],
                 card['card']['edition']['editioncode'],
                 card['card'].get('collectorNumber'),
-                card['categories']
+                card['categories'],
             )

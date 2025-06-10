@@ -13,7 +13,7 @@ DECK_INFO = {
         {
             "pattern": r"(https?://)?(www\.)?scryfall.com",
             "response": "mock_scryfall_e7aceb4c-29d5-49f5-9a49-c24f64da264b",
-        }
+        },
     ],
 }
 

@@ -13,7 +13,7 @@ DECK_INFO = {
         {
             "pattern": r"(https?://)?(www\.)?archidekt.com/",
             "response": "mock_archidekt_1365846_small",
-        }
+        },
     ],
 }
 

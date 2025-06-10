@@ -64,7 +64,7 @@ def _parse_deck(deck):
                 row.td.string.strip(),
                 re.search(
                     r'\[(.*?)\]',
-                    row.a.attrs.get('data-card-id')
+                    row.a.attrs.get('data-card-id'),
                 ).group(1).lower(),
                 tags=[current_tag],
             )

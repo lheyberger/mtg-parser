@@ -42,7 +42,48 @@ line-length = 120
 
 
 [tool.ruff.lint]
-select = [ "E", "W", "F", "UP", "B", "SIM", "I", "PL" ]
+select = [
+    "A",  # flake8-builtins codes
+    "ARG",  # flake8-unused-arguments codes
+    "B",  # flake8-bugbear codes
+    "C901",  # Complexity (e.g., C901 for too complex)
+    "COM",  # flake8-commas codes
+    "E",  # Error codes (e.g., E501 for line length)
+    "ERA",  # eradicate codes
+    "F",  # Flake8 codes (e.g., F401 for imported but unused)
+    "G",  # flake8-logging-format codes
+    "INP",  # flake8-no-pep420 codes
+    "ISC",  # flake8-implicit-str-concat codes
+    "N",  # Pep8 naming conventions
+    "PD",  # pandas-vet codes
+    "PIE",  # flake8-pie codes
+    "PL",  # Pylint codes
+    "PT",  # flake8-pytest-style codes
+    "PTH",  # pathlib codes
+    "RET",  # flake8-return codes
+    "RSE",  # flake8-raise codes
+    "S",  # Bandit codes
+    "SIM",  # flake8-simplify codes
+    "SLF",  # flake8-self codes
+    "T10",  # flake8-debugger codes
+    "T20",  # flake8-print codes
+    "TCH",  # flake8-tidy-imports codes
+    "UP",  # Pyupgrade codes
+    "W",  # Warning codes (e.g., W605 for invalid escape sequence)
+    "YTT",  # flake8-2020 codes
+]
+ignore = [
+    "COM819", # flake8-commas, prohibited-trailing-comma
+    "ERA001", # eradicate, commented-out-code
+    "N811", # pep8-naming, constant-imported-as-non-constant
+    "PTH118", # flake8-use-pathlib, os-path-join
+    "PTH123", # flake8-use-pathlib, builtin-open
+    "RET504", # flake8-return, unnecessary-assign
+    "S101", # flake8-bandit, assert
+    "S311", # flake8-bandit, suspicious-non-cryptographic-random-usage
+    "SLF001", # flake8-self, private-member-access
+    "T201", # flake8-print, print
+]
 
 
 [tool.ruff.lint.pylint]

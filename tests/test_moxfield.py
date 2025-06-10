@@ -14,7 +14,7 @@ DECK_INFO = {
         {
             "pattern": r"(https?://)?.*?moxfield.com",
             "response": "mock_moxfield_Agzx8zsi5UezWBUX5hMJPQ",
-        }
+        },
     ],
 }
 

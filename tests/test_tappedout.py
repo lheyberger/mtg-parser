@@ -13,7 +13,7 @@ DECK_INFO = {
         {
             "pattern": r"(https?://)?(www\.)?tappedout.net",
             "response": "mock_tappedout_3-amigos",
-        }
+        },
     ],
 }
 
