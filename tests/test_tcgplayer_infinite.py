@@ -13,13 +13,13 @@ DECK_INFO = {
         {
             "pattern": mtg_parser.utils.build_pattern('tcgplayer.com'),
             "response": "mock_tcgplayer_infinite.json",
-        }
+        },
     ],
 }
 
 
 def test_can_handle_succdeeds():
-    result = mtg_parser.tcgplayer_infinite.can_handle(DECK_INFO['url'])
+    result = mtg_parser.tcgplayer.can_handle(DECK_INFO['url'])
 
     assert result
 
@@ -32,13 +32,13 @@ def test_parse_deck(respx_mock):
             mocked_response['response'],
         )
 
-    result = mtg_parser.tcgplayer_infinite.parse_deck(DECK_INFO['url'])
+    result = mtg_parser.tcgplayer.parse_deck(DECK_INFO['url'])
 
     assert_deck_is_valid(result)
 
 
 @pytest.mark.slow
 def test_parse_deck_no_mock():
-    result = mtg_parser.tcgplayer_infinite.parse_deck(DECK_INFO['url'])
+    result = mtg_parser.tcgplayer.parse_deck(DECK_INFO['url'])
 
     assert_deck_is_valid(result)

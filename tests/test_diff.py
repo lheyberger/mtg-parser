@@ -14,19 +14,11 @@ from .test_moxfield import DECK_INFO as moxfield_deck_info
 from .test_mtggoldfish import DECK_INFO as mtggoldfish_deck_info
 from .test_scryfall import DECK_INFO as scryfall_deck_info
 from .test_tappedout import DECK_INFO as tappedout_deck_info
-from .test_tcgplayer import DECK_INFO as tcgplayer_deck_info
 from .utils import mock_response
 
 
-# Different from the others, by design.
-# from .test_mtgjson import DECK_INFO as mtgjson_deck_info
-
-# Can't post a decklist on this website yet.
-# from .test_tcgplayer_ininite import DECK_INFO as tcgplayer_infinite_deck_info
-
-
-@pytest.mark.parametrize('deck1,deck2', [
-    [
+@pytest.mark.parametrize(('deck1', 'deck2'), [
+    (
         [
             Card('Brainstorm'),
             Card('Portent'),
@@ -37,13 +29,14 @@ from .utils import mock_response
             Card('Ponder'),
             Card('Opt'),
         ],
-    ],
+    ),
 ])
 def test_diff(deck1, deck2):
     result = mtg_parser.diff(deck1, deck2)
 
     for _, value in result.items():
-        assert value and all(value)
+        assert value
+        assert all(value)
 
 
 @pytest.mark.parametrize('deck_info', [
@@ -53,9 +46,13 @@ def test_diff(deck1, deck2):
     mtggoldfish_deck_info,
     scryfall_deck_info,
     tappedout_deck_info,
-    tcgplayer_deck_info,
 ])
 def test_diff_decks(respx_mock, deck_info):
+    """
+        Not tested:
+        - mtgjson: different than the other supported websites
+        - tcgplayer: can't post a decklist on this site
+    """
     for mocked_response in chain(moxfield_deck_info['mocked_responses'], deck_info['mocked_responses']):
         mock_response(
             respx_mock,

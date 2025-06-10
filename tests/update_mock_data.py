@@ -99,7 +99,7 @@ def update_tappedout_mock_data(http_client):
 
 
 def update_tcgplayer_infinite_mock_data(http_client):
-    deck = mtg_parser.tcgplayer_infinite._download_deck(
+    deck = mtg_parser.tcgplayer._download_deck(
         'https://infinite.tcgplayer.com/magic-the-gathering/deck/Cat-Base/465171',
         http_client,
     )
@@ -109,11 +109,11 @@ def update_tcgplayer_infinite_mock_data(http_client):
 
 def update_tcgplayer_mock_data(http_client):
     deck = mtg_parser.tcgplayer._download_deck(
-        'https://decks.tcgplayer.com/magic/commander/gorila/mtg-parser--3-amigos/1432015',
+        'https://www.tcgplayer.com/content/magic-the-gathering/deck/Malcolm-and-Vial-Smasher/496887',
         http_client,
     )
-    with open('tests/mocks/mock_tcgplayer_3-amigos', 'w', encoding="utf-8") as mock_file:
-        mock_file.write(deck)
+    with open('tests/mocks/mock_tcgplayer.json', 'w', encoding="utf-8") as mock_file:
+        mock_file.write(_to_json(deck))
 
 
 def update_mock_data():

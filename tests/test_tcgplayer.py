@@ -8,12 +8,12 @@ from .utils import assert_deck_is_valid, mock_response
 
 
 DECK_INFO = {
-    "url": "https://decks.tcgplayer.com/magic/commander/gorila/mtg-parser--3-amigos/1432015",
+    "url": "https://www.tcgplayer.com/content/magic-the-gathering/deck/Malcolm-and-Vial-Smasher/496887",
     "mocked_responses": [
         {
-            "pattern": r"(https?://)?.*?tcgplayer.com",
-            "response": "mock_tcgplayer_3-amigos",
-        }
+            "pattern": mtg_parser.utils.build_pattern('tcgplayer.com'),
+            "response": "mock_tcgplayer.json",
+        },
     ],
 }
 
@@ -38,7 +38,7 @@ def test_parse_deck(respx_mock):
 
 
 @pytest.mark.slow
-def test_parse_deck_no_mock(test_http_client):
-    result = mtg_parser.tcgplayer.parse_deck(DECK_INFO['url'], test_http_client)
+def test_parse_deck_no_mock():
+    result = mtg_parser.tcgplayer.parse_deck(DECK_INFO['url'])
 
     assert_deck_is_valid(result)

@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
+import re
+
 import httpx
-from bs4 import BeautifulSoup
 
 from mtg_parser.card import Card
 from mtg_parser.utils import build_pattern, match_pattern
@@ -11,8 +12,8 @@ __all__ = []
 
 
 _PATTERN = build_pattern(
-    'decks.tcgplayer.com',
-    r'/magic/commander/(?P<user_id>.+)/(?P<deck_name>.+)/(?P<deck_id>\d+)/?',
+    'tcgplayer.com',
+    r'/(content/)?magic-the-gathering/deck/(?P<deck_name>.+)/(?P<deck_id>\d+)/?',
 )
 
 
@@ -30,49 +31,24 @@ def parse_deck(src, http_client=None):
 
 
 def _download_deck(src, http_client):
-    response = http_client.get(src)
-    return response.text
+    deck_id = re.search(_PATTERN, src).group('deck_id')
+    url = f'https://infinite-api.tcgplayer.com/deck/magic/{deck_id}/?subDecks=true&cards=true'
+    response = http_client.get(url)
+    return response.json()
 
 
 def _parse_deck(deck):
-    soup = BeautifulSoup(deck, features='html.parser')
+    subdecks = deck.get('result', {}).get('deck', {}).get('subDecks', {})
+    all_cards = deck.get('result', {}).get('cards', {})
 
-    for subdeck in soup.find_all('div', class_='subdeck'):
-        subdeck_name = next(
-            subdeck
-            .find('h3', class_='subdeck__name')
-            .stripped_strings
-        )
+    for card in subdecks.get('commandzone', []):
+        card_detail = all_cards.get(str(card['cardID']), {})
+        yield Card(card_detail['name'], card['quantity'], card_detail['set'], tags=['commander'])
 
-        for group in subdeck.find_all('div', class_='subdeck-group'):
-            group_name = group.find('h4', class_='subdeck-group__name')
-            if group_name:
-                group_name = next(group_name.stripped_strings)
+    for card in subdecks.get('sideboard', []):
+        card_detail = all_cards.get(str(card['cardID']), {})
+        yield Card(card_detail['name'], card['quantity'], card_detail['set'], tags=['companion'])
 
-            tags = list(_get_tags(subdeck_name, group_name))
-
-            for card in group.find_all('a', class_='subdeck-group__card'):
-                name = (
-                    card
-                    .find('span', class_='subdeck-group__card-name')
-                    .get_text(strip=True)
-                )
-                quantity = (
-                    card
-                    .find('span', class_='subdeck-group__card-qty')
-                    .get_text(strip=True)
-                )
-                yield Card(
-                    name,
-                    quantity,
-                    tags=tags,
-                )
-
-
-def _get_tags(subdeck_name, group_name):
-    if subdeck_name and subdeck_name.lower() == 'command zone':
-        yield 'commander'
-    if subdeck_name and subdeck_name.lower() == 'sideboard':
-        yield 'companion'
-    if group_name:
-        yield group_name.lower()
+    for card in subdecks.get('maindeck', []):
+        card_detail = all_cards.get(str(card['cardID']), {})
+        yield Card(card_detail['name'], card['quantity'], card_detail['set'])

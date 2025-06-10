@@ -12,6 +12,7 @@ from .test_mtggoldfish import DECK_INFO as mtggoldfish_deck_info
 from .test_mtgjson import DECK_INFO as mtgjson_deck_info
 from .test_scryfall import DECK_INFO as scryfall_deck_info
 from .test_tappedout import DECK_INFO as tappedout_deck_info
+from .test_tcgplayer_infinite import DECK_INFO as tcgplayer_infinite_deck_info
 from .test_tcgplayer import DECK_INFO as tcgplayer_deck_info
 from .utils import mock_response
 
@@ -25,6 +26,7 @@ from .utils import mock_response
     mtgjson_deck_info,
     scryfall_deck_info,
     tappedout_deck_info,
+    tcgplayer_infinite_deck_info,
     tcgplayer_deck_info,
 ])
 def test_can_handle_succdeeds(deck_info):
@@ -42,6 +44,7 @@ def test_can_handle_succdeeds(deck_info):
     mtgjson_deck_info,
     scryfall_deck_info,
     tappedout_deck_info,
+    tcgplayer_infinite_deck_info,
     tcgplayer_deck_info,
 ])
 def test_parse_deck(respx_mock, deck_info):

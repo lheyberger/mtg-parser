@@ -53,8 +53,7 @@ In addition to [MTGO](mtgo.com) and [MTGA](magic.wizards.com/mtgarena) formats, 
 - [mtgjson.com](mtgjson.com)
 - [scryfall.com](scryfall.com)
 - [tappedout.net](tappedout.net)
-- [infinite.tcgplayer.com](infinite.tcgplayer.com)
-- [decks.tcgplayer.com](decks.tcgplayer.com)
+- [tcgplayer.com](tcgplayer.com)
 
 
 ## Known issues
@@ -299,31 +298,15 @@ for card in cards:
 ```
 
 
-### Parsing from infinite.tcgplayer.com
+### Parsing from tcgplayer.com
 
-`mtg_parser` can parse public decks from [infinite.tcgplayer.com](infinite.tcgplayer.com)
-
-```python
-import mtg_parser
-
-url = 'https://infinite.tcgplayer.com/magic-the-gathering/deck/<deck_name>/<deck_id>'
-
-cards = mtg_parser.parse_deck(url)
-# or the less recommended form:
-# cards = mtg_parser.tcgplayer_infinite.parse_deck(url)
-for card in cards:
-    print(card)
-```
-
-
-### Parsing from decks.tcgplayer.com
-
-`mtg_parser` can parse public decks from [decks.tcgplayer.com](decks.tcgplayer.com)
+`mtg_parser` can parse public decks from [tcgplayer.com](tcgplayer.com)
 
 ```python
 import mtg_parser
 
-url = 'https://decks.tcgplayer.com/magic/commander/<user_name>/<deck_name>/<deck_id>'
+url = 'https://www.tcgplayer.com/content/magic-the-gathering/deck/<deck_name>/<deck_id>'
+# or url = 'https://infinite.tcgplayer.com/magic-the-gathering/deck/<deck_name>/<deck_id>'
 
 cards = mtg_parser.parse_deck(url)
 # or the less recommended form:
