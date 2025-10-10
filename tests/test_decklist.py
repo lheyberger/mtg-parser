@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import pytest
-
 import mtg_parser
 from mtg_parser import Card
 
@@ -23,9 +22,8 @@ def test_mixed_decklist():
         Card("Llanowar Elves", 1, extension='M12', number='182'),
         Card("Brainstorm", 3, tags=['card advantage', 'draw']),
     )
-
-    cards = mtg_parser.decklist.parse_deck(decklist)
-
+    parser = mtg_parser.decklist.DecklistDeckParser()
+    cards = parser.parse_deck(decklist)
     for card, expected_card in zip(cards, expected_cards):
         assert card == expected_card
 
@@ -57,8 +55,8 @@ def test_mixed_decklist():
     ),
 ])
 def test_decklist_sections(string, expected):
-    result = mtg_parser.decklist.parse_deck(string)
-
+    parser = mtg_parser.decklist.DecklistDeckParser()
+    result = parser.parse_deck(string)
     for card, expected_card in zip(result, expected):
         assert card == expected_card
 
@@ -71,6 +69,6 @@ def test_decklist_sections(string, expected):
     'https://www.mtggoldfish.com/deck/3862693',
 ])
 def test_parse_decklist_fails(decklist):
-    result = mtg_parser.decklist.parse_deck(decklist)
-
+    parser = mtg_parser.decklist.DecklistDeckParser()
+    result = parser.parse_deck(decklist)
     assert not result or not any(result)

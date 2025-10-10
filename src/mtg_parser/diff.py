@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 
-__all__ = [
-    'diff',
-]
+
+__all__ = ['diff']
 
 
 def _format_name(card_name):

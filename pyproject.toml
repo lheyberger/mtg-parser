@@ -15,7 +15,6 @@ authors = [
 ]
 dependencies = [
     "beautifulsoup4 (>=4.12,<5.0)",
-    "httpx[brotli, http2, zstd] (>=0.28.0,<1.0.0)",
     "pyparsing (>=3.1,<4.0)",
 ]
 
@@ -28,7 +27,9 @@ documentation = "https://github.com/lheyberger/mtg-parser"
 
 [tool.poetry.group.dev.dependencies]
 check-wheel-contents = "^0.6"
+cloudscraper = ">=1.2.71,<2.0.0"
 coverage = {extras = ["toml"], version = "^7.3"}
+httpx = { extras = ["brotli", "http2", "zstd"], version = ">=0.28.0,<1.0.0" }
 more-itertools = "^10.1"
 pytest = "^7.4"
 python-dotenv = "^1.0.1"
@@ -76,8 +77,8 @@ ignore = [
     "COM819", # flake8-commas, prohibited-trailing-comma
     "ERA001", # eradicate, commented-out-code
     "N811", # pep8-naming, constant-imported-as-non-constant
-    "PTH118", # flake8-use-pathlib, os-path-join
-    "PTH123", # flake8-use-pathlib, builtin-open
+    # "PTH118", # flake8-use-pathlib, os-path-join
+    # "PTH123", # flake8-use-pathlib, builtin-open
     "RET504", # flake8-return, unnecessary-assign
     "S101", # flake8-bandit, assert
     "S311", # flake8-bandit, suspicious-non-cryptographic-random-usage
