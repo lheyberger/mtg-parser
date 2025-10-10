@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 
 import json
-import os
-import re
-
 from more_itertools import ilen
 from tabulate import tabulate
 
@@ -39,16 +36,6 @@ def assert_deck_is_valid(cards):
     nb_command_zone = ilen(command_zone)
     assert nb_command_zone >= MIN_COMMANDERS, f"Wrong number of cards in the command zone ({nb_command_zone})"
     assert nb_command_zone <= MAX_COMMANDERS, f"Wrong number of cards in the command zone ({nb_command_zone})"
-
-
-def mock_response(respx_mock, pattern, response, basedir='tests/mocks'):
-    if not response:
-        return
-    with open(os.path.join(basedir, response), encoding="utf-8") as file:
-        body = file.read()
-    matcher = re.compile(pattern)
-    respx_mock.get(matcher).respond(status_code=200, text=body)
-    respx_mock.head(matcher).respond(status_code=200)
 
 
 def print_deck(deck):

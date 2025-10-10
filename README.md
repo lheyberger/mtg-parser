@@ -28,11 +28,9 @@ To install `mtg_parser`, simply run one of the following commands in the termina
 
 ```shell
 $ pip install mtg-parser
-```
-
-or
-
-```shell
+# or
+$ uv add mtg-parser
+# or
 $ poetry add mtg-parser
 ```
 
@@ -58,9 +56,10 @@ In addition to [MTGO](mtgo.com) and [MTGA](magic.wizards.com/mtgarena) formats, 
 
 ## Known issues
 
-Parsing decklists on some websites require a bit more work:
+Parsing decklists on some websites require specific configuration:
 
-- Moxfield.com requires a custom User-Agent ([see here](#parsing-from-moxfieldcom))
+- [aetherhub.com](aetherhub.com) requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`
+- [moxfield.com](moxfield.com) requires a custom User-Agent ([see here](#parsing-from-moxfieldcom))
 
 
 ## Usage
@@ -68,21 +67,46 @@ Parsing decklists on some websites require a bit more work:
 
 ### QuickStart
 
-Start by importing the `mtg_parser` module:
+> [!NOTE]
+> As of `mtg_parser="=>0.0.1a50"` doesn't provide a default http client anymore.
+
+
+To parse a decklist with `mtg_parser`, you need to provide an HTTP client that implements a requests-compatible interface.
+
+#### Parameter
 
 ```python
+import requests
 import mtg_parser
+
+# Start parsing
+cards = mtg_parser.parse_deck(url, http_client=requests.Session())
 ```
 
-Now let's parse a decklist (in any of the supported formats) and display the cards:
+
+#### Global + Local default
 
 ```python
-cards = mtg_parser.parse_deck(url)
-for card in cards:
-    print(card)
+import cloudscraper
+import httpx
+import mtg_parser
+
+# Configure http client facade
+client_facade = mtg_parser.HttpClientFacade(httpx.Client(timeout=10.0))
+client_facade.set_override('aetherhub.com', cloudscraper.create_scraper())
+client_facade.set_override('moxfield.com', httpx.Client(
+    timeout=10.0,
+    headers={'User-Agent': os.getenv('MOXFIELD_USER_AGENT')},
+))
+
+# Start parsing
+cards = mtg_parser.parse_deck(url, http_client=client_facade)
 ```
 
-`parse_deck()` methods return a generator of `Card` objects matching the following description
+
+### Return format
+
+`parse_deck()` returns a generator of `Card` objects matching the following description
 
 ```python
 class Card:
@@ -91,42 +115,11 @@ class Card:
     extension: Optional[str] = None
     number: Optional[str] = None
     tags: List[str] = []
-```
 
-
-### Advanced - Parsing
-
-`mtg_parser.parse_deck()` is a shortcut method to the specialized versions.
-If `url` is a valid Moxfield url, the following lines are equivalent:
-
-```python
 cards = mtg_parser.parse_deck(url)
-# is the same as:
-cards = mtg_parser.moxfield.parse_deck(url)
+for card in cards:
+    print(card)
 ```
-
-In general, it's advised to use `mtg_parser.parse_deck()` as the overhead is insignificant.
-
-
-### Advanced - Configuration
-
-> [!NOTE]
-> As of `mtg_parser="=>0.0.1a40"` switched to [httpx](https://pypi.org/project/httpx)
-> instead of [requests](https://pypi.org/project/requests).
-
-If for any reason, you need to configure how `mtg_parser` fetches remote decklists, you can provide an optional `httpx.Client` object.
-
-```python
-import httpx
-
-headers = {'user-agent': 'my-custom-user-agent/0.0.1'}
-with httpx.Client(headers=headers) as client:
-    cards = mtg_parser.parse_deck(url, http_client=client)
-    for card in cards:
-        print(card)
-```
-
-If no `httpx.Client` object is provided, one will be created for you.
 
 
 ### Parsing MTGO / MTGA
@@ -146,26 +139,23 @@ decklist = """
 """
 
 cards = mtg_parser.parse_deck(deck_list)
-# or the less recommended form:
-# cards = mtg_parser.decklist.parse_deck(deck_list)
-for card in cards:
-    print(card)
 ```
 
 ### Parsing from aetherhub.com
 
 `mtg_parser` can parse public decks from [aetherhub.com](aetherhub.com)
 
+> [!IMPORTANT]
+> aetherhub.com requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`.
+
+
 ```python
+import cloudscraper
 import mtg_parser
 
 url = 'https://aetherhub.com/Deck/<deck_name>'
 
-cards = mtg_parser.parse_deck(url)
-# or the less recommended form:
-# cards = mtg_parser.aetherhub.parse_deck(url)
-for card in cards:
-    print(card)
+cards = mtg_parser.parse_deck(url, http_client=cloudscraper.create_scraper())
 ```
 
 
@@ -174,15 +164,12 @@ for card in cards:
 `mtg_parser` can parse public decks from [archidekt.com](archidekt.com)
 
 ```python
+import requests
 import mtg_parser
 
 url = 'https://www.archidekt.com/decks/<deck_id>/'
 
-cards = mtg_parser.parse_deck(url)
-# or the less recommended form:
-# cards = mtg_parser.archidekt.parse_deck(url)
-for card in cards:
-    print(card)
+cards = mtg_parser.parse_deck(url, http_client=requests)
 ```
 
 
@@ -191,15 +178,12 @@ for card in cards:
 `mtg_parser` can parse public decks from [deckstats.net](deckstats.net)
 
 ```python
+import requests
 import mtg_parser
 
 url = 'https://deckstats.net/decks/<user_id>/<deck_id>'
 
-cards = mtg_parser.parse_deck(url)
-# or the less recommended form:
-# cards = mtg_parser.deckstats.parse_deck(url)
-for card in cards:
-    print(card)
+cards = mtg_parser.parse_deck(url, http_client=requests)
 ```
 
 
@@ -223,10 +207,6 @@ url = 'https://www.moxfield.com/decks/<deck_id>'
 headers = {'user-agent': '<MOXFIELD_USER_AGENT>'}
 with httpx.Client(headers=headers) as client:
     cards = mtg_parser.parse_deck(url, http_client=client)
-    # or the less recommended form:
-    # cards = mtg_parser.moxfield.parse_deck(url, http_client=client)
-for card in cards:
-    print(card)
 ```
 
 
@@ -235,15 +215,12 @@ for card in cards:
 `mtg_parser` can parse public decks from [mtggoldfish.com](mtggoldfish.com)
 
 ```python
+import requests
 import mtg_parser
 
 url = 'https://www.mtggoldfish.com/deck/<deck_id>'
 
-cards = mtg_parser.parse_deck(url)
-# or the less recommended form:
-# cards = mtg_parser.mtggoldfish.parse_deck(url)
-for card in cards:
-    print(card)
+cards = mtg_parser.parse_deck(url, http_client=requests)
 ```
 
 
@@ -252,15 +229,12 @@ for card in cards:
 `mtg_parser` can parse decks from [mtgjson.com](mtgjson.com)
 
 ```python
+import requests
 import mtg_parser
 
 url = 'https://mtgjson.com/api/v5/decks/<deck_name>.json'
 
-cards = mtg_parser.parse_deck(url)
-# or the less recommended form:
-# cards = mtg_parser.mtgjson.parse_deck(url)
-for card in cards:
-    print(card)
+cards = mtg_parser.parse_deck(url, http_client=requests)
 ```
 
 
@@ -269,15 +243,12 @@ for card in cards:
 `mtg_parser` can parse public decks from [scryfall.com](scryfall.com)
 
 ```python
+import requests
 import mtg_parser
 
 url = 'https://scryfall.com/<userid>/decks/<deck_id>/'
 
-cards = mtg_parser.parse_deck(url)
-# or the less recommended form:
-# cards = mtg_parser.scryfall.parse_deck(url)
-for card in cards:
-    print(card)
+cards = mtg_parser.parse_deck(url, http_client=requests)
 ```
 
 
@@ -286,31 +257,25 @@ for card in cards:
 `mtg_parser` can parse public decks from [tappedout.net](tappedout.net)
 
 ```python
+import requests
 import mtg_parser
 
 url = 'https://tappedout.net/mtg-decks/<deck_id>/'
 
-cards = mtg_parser.parse_deck(url)
-# or the less recommended form:
-# cards = mtg_parser.tappedout.parse_deck(url)
-for card in cards:
-    print(card)
+cards = mtg_parser.parse_deck(url, http_client=requests)
 ```
 
 
 ### Parsing from tcgplayer.com
 
-`mtg_parser` can parse public decks from [tcgplayer.com](tcgplayer.com)
+`mtg_parser` can parse public decks from either [tcgplayer.com](tcgplayer.com) or [infinite.tcgplayer.com](infinite.tcgplayer.com)
 
 ```python
+import requests
 import mtg_parser
 
 url = 'https://www.tcgplayer.com/content/magic-the-gathering/deck/<deck_name>/<deck_id>'
 # or url = 'https://infinite.tcgplayer.com/magic-the-gathering/deck/<deck_name>/<deck_id>'
 
-cards = mtg_parser.parse_deck(url)
-# or the less recommended form:
-# cards = mtg_parser.tcgplayer.parse_deck(url)
-for card in cards:
-    print(card)
+cards = mtg_parser.parse_deck(url, http_client=requests)
 ```

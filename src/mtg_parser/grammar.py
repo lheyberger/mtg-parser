@@ -15,6 +15,9 @@ from pyparsing import (
 )
 
 
+__all__ = ['parse_line']
+
+
 QUANTITY = (
     Word(nums)
     .setParseAction(lambda tokens: int(tokens[0]))

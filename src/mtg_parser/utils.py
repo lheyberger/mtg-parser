@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-import re
-from urllib.parse import quote_plus
+from re import escape, match
+from urllib.parse import quote_plus, urlparse
 
 
-__all__ = []
+__all__ = ['get_scryfall_url', 'build_pattern', 'match_pattern', 'HttpClientFacade']
 
 
 def _format_name(card_name):
@@ -43,7 +43,7 @@ def get_scryfall_url(name=None, extension=None, number=None):
 def build_pattern(domain: str, path: str = '') -> str:
     scheme = r'^(?:https?://)?'
     subdomain = r'(?:[a-zA-Z0-9-]+\.)*'
-    domain = re.escape(domain.rstrip('/'))
+    domain = escape(domain.rstrip('/'))
     path_sep = '' if path.startswith('/') else '/'
     return ''.join([
         scheme,
@@ -55,4 +55,31 @@ def build_pattern(domain: str, path: str = '') -> str:
 
 
 def match_pattern(url: str, pattern: str) -> bool:
-    return isinstance(url, str) and isinstance(pattern, str) and re.match(pattern, url)
+    return isinstance(url, str) and isinstance(pattern, str) and match(pattern, url)
+
+
+class HttpClientFacade:
+
+    def __init__(self, default_client):
+        self._default_client = default_client
+        self._overrides = {}
+
+    def set_override(self, domain: str, client):
+        self._overrides[domain] = client
+
+    def get(self, url, *args, **kwargs):
+        domain = urlparse(url).netloc
+        client = self._get_client(domain)
+        return client.get(url, *args, **kwargs)
+
+    def _get_client(self, subdomain: str):
+        for domain, client in self._overrides.items():
+            if self._is_subdomain(subdomain, domain):
+                return client
+        return self._default_client
+
+    @classmethod
+    def _is_subdomain(cls, subdomain: str, domain: str) -> bool:
+        subdomain = subdomain.lower().strip('.')
+        domain = domain.lower().strip('.')
+        return subdomain == domain or subdomain.endswith('.' + domain)
