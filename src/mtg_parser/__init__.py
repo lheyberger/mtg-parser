@@ -4,7 +4,6 @@ from mtg_parser.aetherhub import * # noqa
 from mtg_parser.archidekt import * # noqa
 from mtg_parser.decklist import * # noqa
 from mtg_parser.deckstats import * # noqa
-from mtg_parser.diff import * # noqa
 from mtg_parser.grammar import * # noqa
 from mtg_parser.moxfield import * # noqa
 from mtg_parser.mtggoldfish import * # noqa
