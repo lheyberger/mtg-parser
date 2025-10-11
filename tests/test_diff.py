@@ -2,7 +2,7 @@
 
 import pytest
 import mtg_parser
-from itertools import chain
+from pathlib import Path
 from mtg_parser.card import Card
 from .test_aetherhub import DECK_INFO as aetherhub_deck_info
 from .test_archidekt import DECK_INFO as archidekt_deck_info
@@ -43,14 +43,13 @@ def test_diff(deck1, deck2):
     scryfall_deck_info,
     tappedout_deck_info,
 ])
-def test_diff_decks(respx_mock, http_client_facade, deck_info):
+def test_diff_decks(http_client_facade, deck_info):
     """
         Not tested:
         - mtgjson: different than the other supported websites
         - tcgplayer: can't post a decklist on this site
     """
-    for mocked_response in chain(moxfield_deck_info['mocked_responses'], deck_info['mocked_responses']):
-        respx_mock(mocked_response['pattern'], mocked_response['response'])
+    http_client_facade.read_mocks_from(Path('tests/mocks'))
 
     deck1 = mtg_parser.parse_deck(moxfield_deck_info['url'], http_client_facade)
     deck2 = mtg_parser.parse_deck(deck_info['url'], http_client_facade)

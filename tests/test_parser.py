@@ -2,6 +2,7 @@
 
 import pytest
 import mtg_parser
+from pathlib import Path
 from .test_aetherhub import DECK_INFO as aetherhub_deck_info
 from .test_archidekt import DECK_INFO as archidekt_deck_info
 from .test_deckstats import DECK_INFO as deckstats_deck_info
@@ -56,14 +57,10 @@ def test_parse_deck_fails(deck_info):
     tcgplayer_infinite_deck_info,
     tcgplayer_deck_info,
 ])
-def test_parse_deck(respx_mock, http_client_facade, deck_info):
-    for mocked_response in deck_info['mocked_responses']:
-        respx_mock(mocked_response['pattern'], mocked_response['response'])
-
+def test_parse_deck(http_client_facade, deck_info):
+    http_client_facade.read_mocks_from(Path('tests/mocks'))
     result = mtg_parser.parse_deck(deck_info['url'], http_client_facade)
-
-    assert result
-    assert all(result)
+    assert_deck_is_valid(result)
 
 
 @pytest.mark.parametrize('decklist', [
