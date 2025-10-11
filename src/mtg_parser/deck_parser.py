@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+from typing import Any
 from abc import ABC, abstractmethod
 from collections.abc import Iterable
 from mtg_parser.card import Card
@@ -13,13 +14,13 @@ class BaseParser(ABC):
         pass # pragma: no cover
 
     @abstractmethod
-    def parse_deck(self, src: str, http_client) -> Iterable[Card]:
+    def parse_deck(self, src: str, http_client: Any) -> Iterable[Card]:
         pass # pragma: no cover
 
 
 class OnlineDeckParser(BaseParser):
 
-    def __init__(self, pattern: str):
+    def __init__(self, pattern: str) -> None:
         self.pattern = pattern
 
 
@@ -27,7 +28,7 @@ class OnlineDeckParser(BaseParser):
         return match_pattern(src, self.pattern)
 
 
-    def parse_deck(self, src: str, http_client=None) -> Iterable[Card]:
+    def parse_deck(self, src: str, http_client: Any | None = None) -> Iterable[Card] | None:
         if not self.can_handle(src):
             return None
 
@@ -42,7 +43,7 @@ class OnlineDeckParser(BaseParser):
 
 
     @abstractmethod
-    def _download_deck(self, src: str, http_client) -> str:
+    def _download_deck(self, src: str, http_client: Any) -> str | None:
         pass # pragma: no cover
 
 

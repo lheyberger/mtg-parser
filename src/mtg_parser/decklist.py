@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 from collections.abc import Iterable
+from typing import Any
 from mtg_parser.card import Card
 from mtg_parser.deck_parser import BaseParser
 from mtg_parser.grammar import parse_line
@@ -11,7 +12,7 @@ __all__ = ['DecklistDeckParser']
 
 class DecklistDeckParser(BaseParser):
 
-    def __init__(self):
+    def __init__(self) -> None:
         super().__init__()
 
 
@@ -19,7 +20,7 @@ class DecklistDeckParser(BaseParser):
         return isinstance(src, str) and next(self._parse_deck(src), None)
 
 
-    def parse_deck(self, src: str, *args, **kwargs) -> Iterable[Card]:
+    def parse_deck(self, src: str, *args: Any, **kwargs: Any) -> Iterable[Card] | None:
         del args, kwargs
 
         if not self.can_handle(src):
