@@ -1,24 +1,25 @@
 #!/usr/bin/env python
 
 from collections.abc import Iterable
+from typing import Optional
 
 
 __all__ = ['Card']
 
 
-def _format_extension(extension: str | None) -> str | None:
+def _format_extension(extension: Optional[str]) -> Optional[str]:
     if not extension:
         return extension
     return str(extension).strip()
 
 
-def _format_number(number: str | None) -> str | None:
+def _format_number(number: Optional[str]) -> Optional[str]:
     if not number:
         return number
     return str(number).strip()
 
 
-def _format_tags(tags: Iterable[str] | None) -> set[str]:
+def _format_tags(tags: Optional[Iterable[str]]) -> set[str]:
     if not tags:
         return set()
     tags = filter(bool, tags)
@@ -35,9 +36,9 @@ class Card:
         self,
         name: str,
         quantity: int = 1,
-        extension: str | None = None,
-        number: str | None = None,
-        tags: Iterable[str] | None = None,
+        extension: Optional[str] = None,
+        number: Optional[str] = None,
+        tags: Optional[Iterable[str]] = None,
     ):
         self.name = name
         self.quantity = int(quantity)
@@ -69,7 +70,7 @@ class Card:
     def __ge__(self, other: 'Card') -> bool:
         return self._to_tuple() >= other._to_tuple()
 
-    def _to_tuple(self) -> tuple[str, int, str | None, str | None, set[str]]:
+    def _to_tuple(self) -> tuple[str, int, Optional[str], Optional[str], set[str]]:
         return (
             self.name,
             self.quantity,

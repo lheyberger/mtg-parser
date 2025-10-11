@@ -9,7 +9,7 @@ import zlib
 import pickle
 from urllib.parse import urlparse
 from pathlib import Path
-from mtg_parser.utils import HttpClientFacade
+from mtg_parser.http_client import HttpClientFacade
 from .utils import _to_json
 
 
