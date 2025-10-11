@@ -2,18 +2,18 @@
 
 from collections.abc import Iterable
 from operator import methodcaller
-from .deck_parser import BaseParser
-from .card import Card
-from .aetherhub import AetherhubDeckParser
-from .archidekt import ArchidektDeckParser
-from .decklist import DecklistDeckParser
-from .deckstats import DeckstatsDeckParser
-from .moxfield import MoxfieldDeckParser
-from .mtggoldfish import MtggoldfishDeckParser
-from .mtgjson import MtgjsonDeckParser
-from .scryfall import ScryfallDeckParser
-from .tappedout import TappedoutDeckParser
-from .tcgplayer import TcgplayerDeckParser
+from mtg_parser.deck_parser import BaseParser
+from mtg_parser.card import Card
+from mtg_parser.aetherhub import AetherhubDeckParser
+from mtg_parser.archidekt import ArchidektDeckParser
+from mtg_parser.decklist import DecklistDeckParser
+from mtg_parser.deckstats import DeckstatsDeckParser
+from mtg_parser.moxfield import MoxfieldDeckParser
+from mtg_parser.mtggoldfish import MtggoldfishDeckParser
+from mtg_parser.mtgjson import MtgjsonDeckParser
+from mtg_parser.scryfall import ScryfallDeckParser
+from mtg_parser.tappedout import TappedoutDeckParser
+from mtg_parser.tcgplayer import TcgplayerDeckParser
 
 
 __all__ = ['can_handle', 'parse_deck', 'DeckParser']

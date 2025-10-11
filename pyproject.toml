@@ -75,14 +75,10 @@ select = [
 ]
 ignore = [
     "COM819", # flake8-commas, prohibited-trailing-comma
-    "ERA001", # eradicate, commented-out-code
     "N811", # pep8-naming, constant-imported-as-non-constant
-    # "PTH118", # flake8-use-pathlib, os-path-join
-    # "PTH123", # flake8-use-pathlib, builtin-open
     "RET504", # flake8-return, unnecessary-assign
     "S101", # flake8-bandit, assert
-    "S311", # flake8-bandit, suspicious-non-cryptographic-random-usage
-    "SLF001", # flake8-self, private-member-access
+    "S301", # flake8-bandit, suspicious-pickle-usage
     "T201", # flake8-print, print
 ]
 

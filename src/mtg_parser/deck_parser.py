@@ -2,8 +2,8 @@
 
 from abc import ABC, abstractmethod
 from collections.abc import Iterable
-from .card import Card
-from .utils import match_pattern
+from mtg_parser.card import Card
+from mtg_parser.utils import match_pattern
 
 
 class BaseParser(ABC):
