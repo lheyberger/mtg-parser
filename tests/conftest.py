@@ -21,12 +21,12 @@ def http_client_facade():
 def create_http_client_facade():
     facade = TestsHttpClientFacade(httpx.Client(timeout=10.0))
     facade.set_override('aetherhub.com', cloudscraper.create_scraper())
+    facade.set_override('deckstats.net', cloudscraper.create_scraper())
     facade.set_override('moxfield.com', httpx.Client(
         timeout=10.0,
         headers={'User-Agent': os.getenv('MOXFIELD_USER_AGENT')},
     ))
     return facade
-
 
 
 class TestsHttpClientFacade(HttpClientFacade):

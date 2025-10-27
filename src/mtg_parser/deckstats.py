@@ -22,7 +22,8 @@ class DeckstatsDeckParser(OnlineDeckParser):
         start_token = 'init_deck_data(' # noqa: S105
         end_token = ');' # noqa: S105
 
-        result = http_client.get(src).text.splitlines()
+        result = http_client.get(src).text
+        result = result.splitlines()
         result = next(line for line in result if start_token in line)
 
         result = result[result.find(start_token) + len(start_token):]

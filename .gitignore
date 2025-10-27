@@ -4,3 +4,4 @@ __pycache__/
 .coverage
 .gitignore
 poetry.lock
+.env

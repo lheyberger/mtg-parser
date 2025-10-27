@@ -59,6 +59,7 @@ In addition to [MTGO](mtgo.com) and [MTGA](magic.wizards.com/mtgarena) formats, 
 Parsing decklists on some websites require specific configuration:
 
 - [aetherhub.com](aetherhub.com) requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`
+- [deckstats.net](deckstats.net) requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`
 - [moxfield.com](moxfield.com) requires a custom User-Agent ([see here](#parsing-from-moxfieldcom))
 
 
@@ -81,7 +82,7 @@ import mtg_parser
 cards = mtg_parser.parse_deck(url, requests.Session())
 ```
 
-For conveniency, `mtg_parser` provides an optional HttpClientFacade to facilitate handling of different websites with different http clients.
+For conveniency, `mtg_parser` provides an optional `HttpClientFacade` to facilitate handling of different websites with different http clients.
 
 
 ```python
@@ -173,13 +174,17 @@ cards = mtg_parser.parse_deck(url, requests.Session())
 
 `mtg_parser` can parse public decks from [deckstats.net](deckstats.net)
 
+> [!IMPORTANT]
+> deckstats.net requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`.
+
+
 ```python
-import requests
+import cloudscraper
 import mtg_parser
 
 url = 'https://deckstats.net/decks/<user_id>/<deck_id>'
 
-cards = mtg_parser.parse_deck(url, requests.Session())
+cards = mtg_parser.parse_deck(url, cloudscraper.create_scraper())
 ```
 
 
