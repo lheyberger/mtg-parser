@@ -20,28 +20,28 @@ __all__ = ['parse_line']
 
 QUANTITY = (
     Word(nums)
-    .setParseAction(lambda tokens: int(tokens[0]))
-    .setResultsName('quantity')
+    .set_parse_action(lambda tokens: int(tokens[0]))
+    .set_results_name('quantity')
 )
 COLLECTOR_NUMBER = (
     Word(alphanums)
-    .setResultsName('collector_number')
+    .set_results_name('collector_number')
 )
 EXTENSION = (
     Word(alphanums)
-    .setResultsName('extension')
+    .set_results_name('extension')
 )
 CARD_NAME = (
     OneOrMore(Word(pyparsing_unicode.alphanums + "-,/'\""))
-    .setParseAction(' '.join)
-    .setResultsName('card_name')
+    .set_parse_action(' '.join)
+    .set_results_name('card_name')
 )
 TAG = (
     Literal('#').suppress() +
     Optional(Literal('!')).suppress() +
     OneOrMore(Word(pyparsing_unicode.alphanums + "-_"))
-    .setParseAction(' '.join)
-    .setResultsName('tags', listAllMatches=True)
+    .set_parse_action(' '.join)
+    .set_results_name('tags', list_all_matches=True)
 )
 MTGA_EXTENSION = (
     Literal('(').suppress() + EXTENSION + Literal(')').suppress()
@@ -57,8 +57,8 @@ COMMENT_LINE = (
     + (Literal('//!') | Literal('//') | Literal('#'))
     .suppress()
     + OneOrMore(Word(pyparsing_unicode.alphanums + "-_"))
-    .setParseAction(' '.join)
-    .setResultsName('comment')
+    .set_parse_action(' '.join)
+    .set_results_name('comment')
     + StringEnd()
 )
 LINE = (
