@@ -55,8 +55,7 @@ test:
 	poetry run coverage report --fail-under=100
 
 test-all:
-	poetry run dotenv run coverage run -m pytest || \
-	poetry run dotenv run coverage run -a -m pytest --last-failed --last-failed-no-failures none
+	poetry run dotenv run coverage run -m pytest
 	poetry run coverage report --fail-under=100
 
 coverage:
