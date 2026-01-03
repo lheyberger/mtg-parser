@@ -68,6 +68,6 @@ LINE = (
 
 def parse_line(line):
     try:
-        return LINE.parseString(line)
+        return LINE.parse_string(line)
     except ParseException:
         return None

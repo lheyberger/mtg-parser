@@ -80,7 +80,7 @@ from .utils import assert_objects_are_equal
     ),
 ])
 def test_grammar_succeeds(symbol, string, expected):
-    result = symbol.parseString(string).asDict()
+    result = symbol.parse_string(string).asDict()
 
     assert_objects_are_equal(result, expected)
 
@@ -108,7 +108,7 @@ def test_mtgo_line(quantity, card_name, tags):
     expected = {**quantity[1], **card_name[1], **tags[1]}
     string = ' '.join((quantity[0], card_name[0], tags[0]))
 
-    result = symbol.parseString(string).asDict()
+    result = symbol.parse_string(string).asDict()
 
     assert_objects_are_equal(result, expected)
 
@@ -156,7 +156,7 @@ def test_mtga_line(quantity, card_name, extension, collector_number, tags):
         tags[0],
     ))
 
-    result = symbol.parseString(string).asDict()
+    result = symbol.parse_string(string).asDict()
 
     assert_objects_are_equal(result, expected)
 
@@ -182,7 +182,7 @@ def test_mtga_line(quantity, card_name, extension, collector_number, tags):
 def test_line(string, expected):
     symbol = mtg_parser.grammar.LINE
 
-    result = symbol.parseString(string).asDict()
+    result = symbol.parse_string(string).asDict()
 
     assert_objects_are_equal(result, expected)
 
