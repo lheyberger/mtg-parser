@@ -32,4 +32,4 @@ jobs:
       - name: Run tests
         env:
           MOXFIELD_USER_AGENT: ${{ secrets.MOXFIELD_USER_AGENT }}
-        run: make integration-test WEBSITE=moxfield
+        run: make test-integration WEBSITE=moxfield

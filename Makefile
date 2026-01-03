@@ -43,7 +43,7 @@ lint:
 lint-all: lint
 	poetry run ruff check ${TESTS_DIR} || true
 
-integration-test:
+test-integration:
 ifeq ($(strip $(WEBSITE)),)
 	poetry run dotenv run pytest -m "integration"
 else

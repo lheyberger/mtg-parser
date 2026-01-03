@@ -30,4 +30,4 @@ jobs:
           poetry-version: ${{ matrix.poetry-version }}
 
       - name: Run tests
-        run: make integration-test WEBSITE=tappedout
+        run: make test-integration WEBSITE=tappedout
