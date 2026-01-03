@@ -17,6 +17,8 @@ DECK_INFO = {
 
 
 @pytest.mark.slow
+@pytest.mark.integration
+@pytest.mark.deckstats
 def test_parse_deck_no_mock(http_client_facade):
     parser = mtg_parser.deckstats.DeckstatsDeckParser()
     result = parser.parse_deck(DECK_INFO['url'], http_client_facade)

@@ -102,4 +102,13 @@ source = [ "src" ]
 [tool.pytest.ini_options]
 markers = [
     "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks integration tests (deselect with '-m \"not integration\"')",
+    "aetherhub",
+    "archidekt",
+    "deckstats",
+    "moxfield",
+    "mtggoldfish",
+    "scryfall",
+    "tappedout",
+    "tcgplayer",
 ]

@@ -1,0 +1,47 @@
+name: Integration Moxfield
+
+on:
+  schedule:
+    - cron: '8 7 * * 1' # https://crontab.guru/#8_7_*_*_1
+  workflow_dispatch:
+
+jobs:
+  integration_moxfield:
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        python-version: [
+          3.9.19,
+          3.10.19,
+          3.11.14,
+          3.12.12,
+          3.13.9,
+          3.14.0,
+        ]
+        poetry-version: [
+          2.0.1,
+          2.1.4,
+          2.2.1
+        ]
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install poetry ${{ matrix.poetry-version }}
+      run: curl -sSL https://install.python-poetry.org | python3 - --version ${{ matrix.poetry-version }}
+
+    - name: Install dependencies
+      run: make install
+
+    - name: Run tests
+      env:
+        MOXFIELD_USER_AGENT: ${{ secrets.MOXFIELD_USER_AGENT }}
+      run: make integration-test WEBSITE=moxfield
