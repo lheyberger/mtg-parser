@@ -140,6 +140,8 @@ cards = mtg_parser.parse_deck(deck_list)
 
 ### Parsing from aetherhub.com
 
+![Aetherhub Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_aetherhub.yaml?label=Aetherhub%20integration%20tests)
+
 `mtg_parser` can parse public decks from [aetherhub.com](aetherhub.com)
 
 > [!IMPORTANT]
@@ -158,6 +160,8 @@ cards = mtg_parser.parse_deck(url, cloudscraper.create_scraper())
 
 ### Parsing from archidekt.com
 
+![Archideckt Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_archidekt.yaml?label=Archideckt%20integration%20tests)
+
 `mtg_parser` can parse public decks from [archidekt.com](archidekt.com)
 
 ```python
@@ -171,6 +175,8 @@ cards = mtg_parser.parse_deck(url, requests.Session())
 
 
 ### Parsing from deckstats.net
+
+![Deckstats Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_deckstats.yaml?label=Deckstats%20integration%20tests)
 
 `mtg_parser` can parse public decks from [deckstats.net](deckstats.net)
 
@@ -189,6 +195,8 @@ cards = mtg_parser.parse_deck(url, cloudscraper.create_scraper())
 
 
 ### Parsing from moxfield.com
+
+![Moxfield Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_moxfield.yaml?label=Moxfield%20integration%20tests)
 
 `mtg_parser` can parse public decks from [moxfield.com](moxfield.com)
 
@@ -213,6 +221,8 @@ with httpx.Client(headers=headers) as http_client:
 
 ### Parsing from mtggoldfish.com
 
+![MTGGoldfish Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_mtggoldfish.yaml?label=MTGGoldfish%20integration%20tests)
+
 `mtg_parser` can parse public decks from [mtggoldfish.com](mtggoldfish.com)
 
 ```python
@@ -226,6 +236,8 @@ cards = mtg_parser.parse_deck(url, requests.Session())
 
 
 ### Parsing from mtgjson.com
+
+![mtgjson Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_mtgjson.yaml?label=mtgjson%20integration%20tests)
 
 `mtg_parser` can parse decks from [mtgjson.com](mtgjson.com)
 
@@ -241,6 +253,8 @@ cards = mtg_parser.parse_deck(url, requests.Session())
 
 ### Parsing from scryfall.com
 
+![Scryfall Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_scryfall.yaml?label=Scryfall%20integration%20tests)
+
 `mtg_parser` can parse public decks from [scryfall.com](scryfall.com)
 
 ```python
@@ -255,6 +269,8 @@ cards = mtg_parser.parse_deck(url, requests.Session())
 
 ### Parsing from tappedout.net
 
+![Tappedout Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_tappedout.yaml?label=Tappedout%20integration%20tests)
+
 `mtg_parser` can parse public decks from [tappedout.net](tappedout.net)
 
 ```python
@@ -268,6 +284,8 @@ cards = mtg_parser.parse_deck(url, requests.Session())
 
 
 ### Parsing from tcgplayer.com
+
+![TCGplayer Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_tcgplayer.yaml?label=TCGplayer%20integration%20tests)
 
 `mtg_parser` can parse public decks from either [tcgplayer.com](tcgplayer.com) or [infinite.tcgplayer.com](infinite.tcgplayer.com)
 

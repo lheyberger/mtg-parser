@@ -2,7 +2,7 @@ name: Integration Scryfall
 
 on:
   schedule:
-    - cron: '12 7 * * 1' # https://crontab.guru/#12_7_*_*_1
+    - cron: '14 7 * * 1' # https://crontab.guru/#14_7_*_*_1
   workflow_dispatch:
 
 jobs:

@@ -108,6 +108,7 @@ markers = [
     "deckstats",
     "moxfield",
     "mtggoldfish",
+    "mtgjson",
     "scryfall",
     "tappedout",
     "tcgplayer",

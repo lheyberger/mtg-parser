@@ -1,12 +1,12 @@
-name: Integration Tappedout
+name: Integration MTGJSON
 
 on:
   schedule:
-    - cron: '16 7 * * 1' # https://crontab.guru/#16_7_*_*_1
+    - cron: '12 7 * * 1' # https://crontab.guru/#12_7_*_*_1
   workflow_dispatch:
 
 jobs:
-  integration_tappedout:
+  integration_mtgjson:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,4 +16,4 @@ jobs:
           python-version: 3.14.2
           poetry-version: 2.2.1
       - name: Run tests
-        run: make test-integration WEBSITE=tappedout
+        run: make test-integration WEBSITE=mtgjson
