@@ -7,27 +7,13 @@ on:
 
 jobs:
   integration_mtggoldfish:
-    strategy:
-      fail-fast: false
-      max-parallel: 6
-      matrix:
-        python-version: [
-          3.14.2,
-        ]
-        poetry-version: [
-          2.2.1,
-        ]
-
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
-
       - name: Setup project
         uses: ./.github/actions/setup-project
         with:
-          python-version: ${{ matrix.python-version }}
-          poetry-version: ${{ matrix.poetry-version }}
-
+          python-version: 3.14.2
+          poetry-version: 2.2.1
       - name: Run tests
         run: make test-integration WEBSITE=mtggoldfish
