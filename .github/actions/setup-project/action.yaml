@@ -1,0 +1,23 @@
+name: Setup Project Action
+
+inputs:
+  python-version:
+    required: true
+  poetry-version:
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Setup Python ${{ inputs.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ inputs.python-version }}
+
+    - name: Install Poetry
+      uses: snok/install-poetry@v1
+      with:
+        version: ${{ inputs.poetry-version }}
+
+    - name: Install dependencies
+      run: make install

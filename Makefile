@@ -43,13 +43,19 @@ lint:
 lint-all: lint
 	poetry run ruff check ${TESTS_DIR} || true
 
+test-integration:
+ifeq ($(strip $(WEBSITE)),)
+	poetry run dotenv run pytest -m "integration"
+else
+	poetry run dotenv run pytest -m "integration and $(WEBSITE)"
+endif
+
 test:
 	poetry run dotenv run coverage run -m pytest -m 'not slow'
 	poetry run coverage report --fail-under=100
 
 test-all:
-	poetry run dotenv run coverage run -m pytest || \
-	poetry run dotenv run coverage run -a -m pytest --last-failed --last-failed-no-failures none
+	poetry run dotenv run coverage run -m pytest
 	poetry run coverage report --fail-under=100
 
 coverage:

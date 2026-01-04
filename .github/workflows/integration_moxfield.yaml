@@ -1,0 +1,21 @@
+name: Integration Moxfield
+
+on:
+  schedule:
+    - cron: '8 7 * * 1' # https://crontab.guru/#8_7_*_*_1
+  workflow_dispatch:
+
+jobs:
+  integration_moxfield:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup project
+        uses: ./.github/actions/setup-project
+        with:
+          python-version: 3.14.2
+          poetry-version: 2.2.1
+      - name: Run tests
+        env:
+          MOXFIELD_USER_AGENT: ${{ secrets.MOXFIELD_USER_AGENT }}
+        run: make test-integration WEBSITE=moxfield

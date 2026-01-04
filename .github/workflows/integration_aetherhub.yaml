@@ -1,0 +1,19 @@
+name: Integration Aetherhub
+
+on:
+  schedule:
+    - cron: '2 7 * * 1' # https://crontab.guru/#2_7_*_*_1
+  workflow_dispatch:
+
+jobs:
+  integration_aetherhub:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup project
+        uses: ./.github/actions/setup-project
+        with:
+          python-version: 3.14.2
+          poetry-version: 2.2.1
+      - name: Run tests
+        run: make test-integration WEBSITE=aetherhub

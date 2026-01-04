@@ -78,21 +78,3 @@ def test_parse_deck_decklist(decklist):
 
     assert result
     assert all(result)
-
-
-@pytest.mark.slow
-@pytest.mark.parametrize('deck_info', [
-    aetherhub_deck_info,
-    archidekt_deck_info,
-    deckstats_deck_info,
-    moxfield_deck_info,
-    mtggoldfish_deck_info,
-    mtgjson_deck_info,
-    scryfall_deck_info,
-    tappedout_deck_info,
-    tcgplayer_infinite_deck_info,
-    tcgplayer_deck_info,
-])
-def test_parse_deck_no_mock(http_client_facade, deck_info):
-    result = mtg_parser.parse_deck(deck_info['url'], http_client_facade)
-    assert_deck_is_valid(result)
