@@ -21,3 +21,4 @@ runs:
 
     - name: Install dependencies
       run: make install
+      shell: bash
