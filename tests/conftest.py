@@ -24,7 +24,7 @@ def create_http_client_facade():
     facade.set_override('deckstats.net', cloudscraper.create_scraper())
     facade.set_override('moxfield.com', httpx.Client(
         timeout=10.0,
-        headers={'User-Agent': os.getenv('MOXFIELD_USER_AGENT')},
+        headers={'User-Agent': os.getenv('MOXFIELD_USER_AGENT', 'default')},
     ))
     return facade
 
