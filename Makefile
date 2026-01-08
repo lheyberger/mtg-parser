@@ -35,7 +35,7 @@ update:
 
 
 ##
-# LINT & TESTS
+# LINT
 ##
 lint:
 	poetry run ruff check ${SRC_DIR}
@@ -43,6 +43,11 @@ lint:
 lint-all: lint
 	poetry run ruff check ${TESTS_DIR} || true
 
+.PHONY: lint lint-all
+
+##
+# TESTS
+##
 test-integration:
 ifeq ($(strip $(WEBSITE)),)
 	poetry run dotenv run pytest -m "integration"
@@ -54,6 +59,10 @@ test:
 	poetry run dotenv run coverage run -m pytest -m 'not slow'
 	poetry run coverage report --fail-under=100
 
+test-release:
+	poetry run dotenv run coverage run -m pytest -m 'not integration'
+	poetry run coverage report --fail-under=100
+
 test-all:
 	poetry run dotenv run coverage run -m pytest
 	poetry run coverage report --fail-under=100
@@ -62,7 +71,7 @@ coverage:
 	poetry run coverage html -d ${COVERAGE_DIR}
 	open ${COVERAGE_DIR}/index.html
 
-.PHONY: lint lint-all test test-all coverage
+.PHONY: test-integration test test-release test-all coverage
 
 
 ##

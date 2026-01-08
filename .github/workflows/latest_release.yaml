@@ -1,12 +1,12 @@
-name: Nightly
+name: Latest release
 
 on:
-  schedule:
-    - cron: '0 7 * * 1' # https://crontab.guru/#0_7_*_*_1
+  release:
+    types: [prereleased, published]
   workflow_dispatch:
 
 jobs:
-  nightly:
+  latest_release:
     strategy:
       fail-fast: false
       max-parallel: 6
@@ -37,4 +37,4 @@ jobs:
       - name: Run tests
         env:
           MOXFIELD_USER_AGENT: ${{ secrets.MOXFIELD_USER_AGENT }}
-        run: make test-all
+        run: make test-release
