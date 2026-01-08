@@ -2,7 +2,7 @@
 
 ![PyPI](https://img.shields.io/pypi/v/mtg-parser)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mtg-parser)
-![Github - Nightly Check](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/nightly.yaml?label=Nightly%20check)
+![Github - Latest Release](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/latest_release.yaml?label=Release%20tests)
 ![GitHub](https://img.shields.io/github/license/lheyberger/mtg-parser)
 
 `mtg_parser` is a Python library to download and parse Magic: The Gathering decklists.
