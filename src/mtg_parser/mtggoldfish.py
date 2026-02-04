@@ -48,7 +48,7 @@ class MtggoldfishDeckParser(OnlineDeckParser):
         for row in soup:
             if 'deck-category-header' in row.attrs.get('class', []):
                 category = row.text.lower()
-                current_tag = next((tag for tag in ['commander', 'companion'] if tag in category), None)
+                current_tag = next((tag for tag in ['commander', 'companion', 'sideboard'] if tag in category), None)
             else:
                 yield Card(
                     row.a.string.strip(),
