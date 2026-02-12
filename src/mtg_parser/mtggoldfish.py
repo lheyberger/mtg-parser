@@ -50,12 +50,13 @@ class MtggoldfishDeckParser(OnlineDeckParser):
                 category = row.text.lower()
                 current_tag = next((tag for tag in ['commander', 'companion', 'sideboard'] if tag in category), None)
             else:
+                columns = row.find_all('td')
                 yield Card(
-                    row.a.string.strip(),
-                    row.td.string.strip(),
-                    search(
+                    name=columns[1].get_text(strip=True),
+                    quantity=columns[0].get_text(strip=True),
+                    extension=search(
                         r'\[(.*?)\]',
                         row.a.attrs.get('data-card-id'),
-                    ).group(1).lower(),
+                    ).group(1).lower() if row.a else None,
                     tags=[current_tag],
                 )
