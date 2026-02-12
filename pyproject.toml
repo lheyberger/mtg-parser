@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 
 [project]
 name = "mtg_parser"
-version = "0.0.1a51"
+version = "0.0.1a52"
 requires-python = ">=3.9"
 license = "EUPL-1.2"
 description = "Magic: the Gathering decklist parser"
