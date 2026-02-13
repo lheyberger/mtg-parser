@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 from re import search
+from typing import Any, Optional
 from collections.abc import Iterable
 from mtg_parser.card import Card
 from mtg_parser.deck_parser import OnlineDeckParser
@@ -10,7 +11,7 @@ from mtg_parser.utils import build_pattern
 __all__ = ['TcgplayerDeckParser']
 
 
-class TcgplayerDeckParser(OnlineDeckParser):
+class TcgplayerDeckParser(OnlineDeckParser[dict]):
 
     _PATTERN = build_pattern(
         'tcgplayer.com',
@@ -21,14 +22,17 @@ class TcgplayerDeckParser(OnlineDeckParser):
         super().__init__(self._PATTERN)
 
 
-    def _download_deck(self, src: str, http_client) -> str:
-        deck_id = search(self._PATTERN, src).group('deck_id')
+    def _download_deck(self, src: str, http_client: Any) -> Optional[dict]:
+        match = search(self._PATTERN, src)
+        deck_id = match.group('deck_id') if match else None
+        if not deck_id:
+            return None # pragma: no cover
         url = f'https://infinite-api.tcgplayer.com/deck/magic/{deck_id}/?subDecks=true&cards=true'
         response = http_client.get(url)
         return response.json()
 
 
-    def _parse_deck(self, deck: str) -> Iterable[Card]:
+    def _parse_deck(self, deck: dict) -> Optional[Iterable[Card]]:
         subdecks = deck.get('result', {}).get('deck', {}).get('subDecks', {})
         all_cards = deck.get('result', {}).get('cards', {})
 

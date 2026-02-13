@@ -2,6 +2,7 @@
 
 from json import loads
 from collections.abc import Iterable
+from typing import Any, Optional
 from mtg_parser.card import Card
 from mtg_parser.deck_parser import OnlineDeckParser
 from mtg_parser.utils import build_pattern
@@ -10,7 +11,7 @@ from mtg_parser.utils import build_pattern
 __all__ = ['DeckstatsDeckParser']
 
 
-class DeckstatsDeckParser(OnlineDeckParser):
+class DeckstatsDeckParser(OnlineDeckParser[dict]):
 
     _PATTERN = build_pattern('deckstats.net', r'/decks/(?P<user_id>\d+)/(?P<deck_id>\d+-.*)/?')
 
@@ -18,7 +19,7 @@ class DeckstatsDeckParser(OnlineDeckParser):
         super().__init__(self._PATTERN)
 
 
-    def _download_deck(self, src: str, http_client) -> str:
+    def _download_deck(self, src: str, http_client: Any) -> dict:
         start_token = 'init_deck_data(' # noqa: S105
         end_token = ');' # noqa: S105
 
@@ -42,7 +43,7 @@ class DeckstatsDeckParser(OnlineDeckParser):
         return loads(result)
 
 
-    def _parse_deck(self, deck: str) -> Iterable[Card]:
+    def _parse_deck(self, deck: dict) -> Optional[Iterable[Card]]:
         for section in deck.get('sections', []):
             for card in section.get('cards', {}):
                 yield Card(

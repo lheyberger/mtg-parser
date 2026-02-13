@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 from collections.abc import Iterable
 from html import unescape
 from re import search
+from typing import Any, Optional
 from mtg_parser.card import Card
 from mtg_parser.deck_parser import OnlineDeckParser
 from mtg_parser.utils import build_pattern
@@ -12,7 +13,7 @@ from mtg_parser.utils import build_pattern
 __all__ = ['MtggoldfishDeckParser']
 
 
-class MtggoldfishDeckParser(OnlineDeckParser):
+class MtggoldfishDeckParser(OnlineDeckParser[str]):
 
     _PATTERN = build_pattern('mtggoldfish.com', r'/deck/(?P<deck_id>\d+)/?')
 
@@ -20,12 +21,15 @@ class MtggoldfishDeckParser(OnlineDeckParser):
         super().__init__(self._PATTERN)
 
 
-    def _download_deck(self, src: str, http_client) -> str:
+    def _download_deck(self, src: str, http_client: Any) -> Optional[str]:
         response = http_client.get(src, headers={'Accept': 'text/html'})
         soup = BeautifulSoup(response.text, features='html.parser')
         csrf_token = (soup.find('meta', attrs={'name': 'csrf-token'}) or {}).get('content')
 
-        deck_id = search(self._PATTERN, src).group('deck_id')
+        match = search(self._PATTERN, src)
+        deck_id = match.group('deck_id') if match else None
+        if not deck_id:
+            return None # pragma: no cover
         url = f"https://www.mtggoldfish.com/deck/component?id={deck_id}"
         headers = {
             'X-CSRF-Token': csrf_token,
@@ -35,7 +39,7 @@ class MtggoldfishDeckParser(OnlineDeckParser):
         return response.text
 
 
-    def _parse_deck(self, deck: str) -> Iterable[Card]:
+    def _parse_deck(self, deck: str) -> Optional[Iterable[Card]]:
         deck = deck.splitlines()[0]
         deck = deck.replace("\\'", "'").replace('\\"', '"').replace("\\/", "/").replace(r"\n", "")
         deck = unescape(deck)
@@ -51,12 +55,12 @@ class MtggoldfishDeckParser(OnlineDeckParser):
                 current_tag = next((tag for tag in ['commander', 'companion', 'sideboard'] if tag in category), None)
             else:
                 columns = row.find_all('td')
+                data_card_id = row.a.attrs.get('data-card-id') if row.a else ''
+                match = search(r'\[(.*?)\]', data_card_id)
+                extension = match.group(1).lower() if match else None
                 yield Card(
                     name=columns[1].get_text(strip=True),
                     quantity=columns[0].get_text(strip=True),
-                    extension=search(
-                        r'\[(.*?)\]',
-                        row.a.attrs.get('data-card-id'),
-                    ).group(1).lower() if row.a else None,
+                    extension=extension,
                     tags=[current_tag],
                 )

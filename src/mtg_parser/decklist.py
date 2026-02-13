@@ -17,7 +17,10 @@ class DecklistDeckParser(BaseParser):
 
 
     def can_handle(self, src: str) -> bool:
-        return isinstance(src, str) and next(self._parse_deck(src), None)
+        if not isinstance(src, str):
+            return False
+        deck_iterator = self._parse_deck(src)
+        return next(iter(deck_iterator), None) is not None if deck_iterator else False
 
 
     def parse_deck(self, src: str, *args: Any, **kwargs: Any) -> Optional[Iterable[Card]]:
@@ -30,20 +33,18 @@ class DecklistDeckParser(BaseParser):
 
 
     @classmethod
-    def _parse_deck(cls, deck: str) -> Iterable[Card]:
+    def _parse_deck(cls, deck: str) -> Optional[Iterable[Card]]:
         lines = deck.splitlines()
         lines = map(str.strip, lines)
         lines = filter(len, lines)
         lines = map(parse_line, lines)
         lines = filter(bool, lines)
         lines = map(lambda line: line.asDict(), lines)
-        lines = cls._collapse_comments(lines)
-        lines = map(cls._to_card, lines)
-        return lines
+        return cls._collapse_comments(lines)
 
 
     @classmethod
-    def _collapse_comments(cls, lines):
+    def _collapse_comments(cls, lines: Iterable[dict[str, Any]]) -> Iterable[Card]:
         last_comment = None
         for line in lines:
             if 'comment' in line:
@@ -51,15 +52,10 @@ class DecklistDeckParser(BaseParser):
             else:
                 if last_comment:
                     line.setdefault('tags', []).append(last_comment)
-                yield line
-
-
-    @classmethod
-    def _to_card(cls, line: str) -> Card:
-        return Card(
-            line.get('card_name'),
-            line.get('quantity'),
-            line.get('extension'),
-            line.get('collector_number'),
-            line.get('tags'),
-        )
+                yield Card(
+                    line.get('card_name', 'InvalidCard'),
+                    line.get('quantity', 1),
+                    line.get('extension'),
+                    line.get('collector_number'),
+                    line.get('tags'),
+                )

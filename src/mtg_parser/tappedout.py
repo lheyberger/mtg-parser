@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 
 from bs4 import BeautifulSoup
-from collections import defaultdict
 from collections.abc import Iterable
+from collections import defaultdict
 from re import fullmatch, sub
+from typing import Any, Optional
 from mtg_parser.card import Card
 from mtg_parser.deck_parser import OnlineDeckParser
 from mtg_parser.utils import build_pattern
@@ -12,7 +13,7 @@ from mtg_parser.utils import build_pattern
 __all__ = ['TappedoutDeckParser']
 
 
-class TappedoutDeckParser(OnlineDeckParser):
+class TappedoutDeckParser(OnlineDeckParser[str]):
 
     _PATTERN = build_pattern('tappedout.net', r'/mtg-decks/(?P<deck_id>.+)/?')
 
@@ -20,12 +21,12 @@ class TappedoutDeckParser(OnlineDeckParser):
         super().__init__(self._PATTERN)
 
 
-    def _download_deck(self, src: str, http_client) -> str:
+    def _download_deck(self, src: str, http_client: Any) -> Optional[str]:
         response = http_client.get(src, params={'cat': 'custom'})
         return response.text
 
 
-    def _parse_deck(self, deck: str) -> Iterable[Card]:
+    def _parse_deck(self, deck: str) -> Optional[Iterable[Card]]:
         soup = BeautifulSoup(deck, features='html.parser')
         board_container = soup.find('div', class_='board-container')
 
@@ -62,11 +63,6 @@ class TappedoutDeckParser(OnlineDeckParser):
     @classmethod
     def _format_tag(cls, tag: str) -> str:
         match = fullmatch(r'(.*?)(?:\s+\(\d+\))?', tag)
-        tag = match.group(1)
-        tag = sub(r'[^\w\s]', '', tag)
-        tag = tag.lower()
-        tag = tag.split()
-        tag = map(str.strip, tag)
-        tag = filter(len, tag)
-        tag = '_'.join(tag)
-        return tag
+        base = match.group(1) if match else tag
+        cleaned = sub(r"[^\w\s]", "", base).lower()
+        return "_".join(part for part in cleaned.split() if part)
