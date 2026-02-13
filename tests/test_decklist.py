@@ -62,6 +62,7 @@ def test_decklist_sections(string, expected):
 
 
 @pytest.mark.parametrize('decklist', [
+    42,
     'https://www.archidekt.com/decks/1300410/'
     'https://deckstats.net/decks/30198/1297260-feather-the-redeemed',
     'https://www.moxfield.com/decks/7CBqQtCVKES6e49vKXfIBQ',

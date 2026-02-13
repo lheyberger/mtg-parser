@@ -4,6 +4,7 @@ from collections.abc import Iterable
 from csv import DictReader
 from io import StringIO
 from re import search
+from typing import Any, Optional
 from mtg_parser.card import Card
 from mtg_parser.deck_parser import OnlineDeckParser
 from mtg_parser.utils import build_pattern
@@ -12,7 +13,7 @@ from mtg_parser.utils import build_pattern
 __all__ = ['ScryfallDeckParser']
 
 
-class ScryfallDeckParser(OnlineDeckParser):
+class ScryfallDeckParser(OnlineDeckParser[str]):
 
     _PATTERN = build_pattern(
         'scryfall.com',
@@ -23,14 +24,17 @@ class ScryfallDeckParser(OnlineDeckParser):
         super().__init__(self._PATTERN)
 
 
-    def _download_deck(self, src: str, http_client) -> str:
-        deck_id = search(self._PATTERN, src).group('deck_id')
+    def _download_deck(self, src: str, http_client: Any) -> Optional[str]:
+        match = search(self._PATTERN, src)
+        deck_id = match.group('deck_id') if match else None
+        if not deck_id:
+            return None # pragma: no cover
         url = f"https://api.scryfall.com/decks/{deck_id}/export/csv"
         response = http_client.get(url)
         return response.text
 
 
-    def _parse_deck(self, deck: str) -> Iterable[Card]:
+    def _parse_deck(self, deck: str) -> Optional[Iterable[Card]]:
         deck_csv = StringIO(deck)
         reader = DictReader(deck_csv)
         for card in reader:

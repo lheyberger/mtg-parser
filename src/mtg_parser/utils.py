@@ -1,16 +1,25 @@
 #!/usr/bin/env python
 
+from collections.abc import Iterable
+from typing import Optional
 from re import escape, match
 from urllib.parse import quote_plus
 
 
-__all__ = ['get_scryfall_url', 'build_pattern', 'match_pattern']
+__all__ = ['cleanup_str_list', 'get_scryfall_url', 'build_pattern', 'match_pattern']
+
+
+def cleanup_str_list(tokens: Iterable[Optional[str]]) -> Iterable[str]:
+    tokens = filter(lambda s: bool(s), tokens)
+    tokens = map(str, tokens)
+    tokens = map(str.strip, tokens)
+    tokens = filter(lambda s: len(s), tokens)
+    return tokens
 
 
 def _format_name(card_name):
     card_name = card_name.split()
-    card_name = map(str.strip, card_name)
-    card_name = filter(len, card_name)
+    card_name = cleanup_str_list(card_name)
     card_name = ' '.join(card_name)
     card_name = quote_plus(card_name)
     return card_name
@@ -55,4 +64,4 @@ def build_pattern(domain: str, path: str = '') -> str:
 
 
 def match_pattern(url: str, pattern: str) -> bool:
-    return isinstance(url, str) and isinstance(pattern, str) and match(pattern, url)
+    return isinstance(url, str) and isinstance(pattern, str) and bool(match(pattern, url))

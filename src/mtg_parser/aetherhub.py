@@ -2,6 +2,7 @@
 
 from bs4 import BeautifulSoup
 from collections.abc import Iterable
+from typing import Any, Optional
 from mtg_parser.card import Card
 from mtg_parser.deck_parser import OnlineDeckParser
 from mtg_parser.utils import build_pattern
@@ -10,7 +11,7 @@ from mtg_parser.utils import build_pattern
 __all__ = ['AetherhubDeckParser']
 
 
-class AetherhubDeckParser(OnlineDeckParser):
+class AetherhubDeckParser(OnlineDeckParser[dict]):
 
     _PATTERN = build_pattern('aetherhub.com', r'/Deck/(?P<deck_id>.+)/?')
 
@@ -18,7 +19,7 @@ class AetherhubDeckParser(OnlineDeckParser):
         super().__init__(self._PATTERN)
 
 
-    def _download_deck(self, src: str, http_client) -> str:
+    def _download_deck(self, src: str, http_client: Any) -> Optional[dict]:
         result = http_client.get(src).text
         soup = BeautifulSoup(result, features='html.parser')
         element = soup.find(attrs={'data-deckid': True})
@@ -34,7 +35,7 @@ class AetherhubDeckParser(OnlineDeckParser):
         return response.json()
 
 
-    def _parse_deck(self, deck: str) -> Iterable[Card]:
+    def _parse_deck(self, deck: dict) -> Iterable[Card]:
         last_category = None
         for entry in deck.get('convertedDeck', []):
             quantity = entry.get('quantity')
@@ -45,5 +46,4 @@ class AetherhubDeckParser(OnlineDeckParser):
                 last_category = name
             elif name and quantity:
                 tags = [last_category] if last_category else None
-                card = Card(name, quantity, extension, number, tags)
-                yield card
+                yield Card(name, quantity, extension, number, tags)

@@ -2,6 +2,7 @@
 
 from collections.abc import Iterable
 from typing import Optional
+from mtg_parser.utils import cleanup_str_list
 
 
 __all__ = ['Card']
@@ -19,13 +20,10 @@ def _format_number(number: Optional[str]) -> Optional[str]:
     return str(number).strip()
 
 
-def _format_tags(tags: Optional[Iterable[str]]) -> set[str]:
+def _format_tags(tags: Optional[Iterable[Optional[str]]]) -> set[str]:
     if not tags:
         return set()
-    tags = filter(bool, tags)
-    tags = map(str, tags)
-    tags = map(str.strip, tags)
-    tags = filter(len, tags)
+    tags = cleanup_str_list(tags)
     tags = map(str.lower, tags)
     return set(tags)
 
@@ -38,7 +36,7 @@ class Card:
         quantity: int = 1,
         extension: Optional[str] = None,
         number: Optional[str] = None,
-        tags: Optional[Iterable[str]] = None,
+        tags: Optional[Iterable[Optional[str]]] = None,
     ):
         self.name = name
         self.quantity = int(quantity)
@@ -52,31 +50,38 @@ class Card:
     def __str__(self) -> str:
         return ' '.join(self._get_parts())
 
-    def __eq__(self, other: 'Card') -> bool:
+    def __eq__(self, other: object) -> bool:
+        if not isinstance(other, Card):
+            return False
         return self._to_tuple() == other._to_tuple()
 
-    def __ne__(self, other: 'Card') -> bool:
-        return self._to_tuple() != other._to_tuple()
-
-    def __lt__(self, other: 'Card') -> bool:
+    def __lt__(self, other: object) -> bool:
+        if not isinstance(other, Card):
+            return NotImplemented
         return self._to_tuple() < other._to_tuple()
 
-    def __le__(self, other: 'Card') -> bool:
+    def __le__(self, other: object) -> bool:
+        if not isinstance(other, Card):
+            return NotImplemented
         return self._to_tuple() <= other._to_tuple()
 
-    def __gt__(self, other: 'Card') -> bool:
+    def __gt__(self, other: object) -> bool:
+        if not isinstance(other, Card):
+            return NotImplemented
         return self._to_tuple() > other._to_tuple()
 
-    def __ge__(self, other: 'Card') -> bool:
+    def __ge__(self, other: object) -> bool:
+        if not isinstance(other, Card):
+            return NotImplemented
         return self._to_tuple() >= other._to_tuple()
 
-    def _to_tuple(self) -> tuple[str, int, Optional[str], Optional[str], set[str]]:
+    def _to_tuple(self) -> tuple[str, int, str, str, tuple[str, ...]]:
         return (
             self.name,
             self.quantity,
-            self.extension,
-            self.number,
-            self.tags,
+            self.extension or '',
+            self.number or '',
+            tuple(sorted(self.tags)),
         )
 
     def _get_parts(self) -> Iterable[str]:

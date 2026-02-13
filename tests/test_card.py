@@ -194,3 +194,22 @@ def test_card_strictly_greater_than(left, right):
     assert left != right
     assert not left < right
     assert not left <= right
+
+
+def test_card_againts_invalid_object():
+    card = Card('Sol Ring')
+    invalid_object = 'Invalid Object'
+
+    assert card != invalid_object
+
+    assert card.__lt__(invalid_object) is NotImplemented
+    pytest.raises(TypeError, lambda: card < invalid_object)
+
+    assert card.__le__(invalid_object) is NotImplemented
+    pytest.raises(TypeError, lambda: card <= invalid_object)
+
+    assert card.__gt__(invalid_object) is NotImplemented
+    pytest.raises(TypeError, lambda: card > invalid_object)
+
+    assert card.__ge__(invalid_object) is NotImplemented
+    pytest.raises(TypeError, lambda: card >= invalid_object)

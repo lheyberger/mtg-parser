@@ -35,6 +35,18 @@ update:
 
 
 ##
+# Check
+##
+check:
+	poetry run ty check ${SRC_DIR}
+
+check-all: check
+	poetry run ty check ${TESTS_DIR} || true
+
+.PHONY: check check-all
+
+
+##
 # LINT
 ##
 lint:
@@ -44,6 +56,7 @@ lint-all: lint
 	poetry run ruff check ${TESTS_DIR} || true
 
 .PHONY: lint lint-all
+
 
 ##
 # TESTS

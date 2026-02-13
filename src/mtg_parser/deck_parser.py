@@ -1,10 +1,13 @@
 #!/usr/bin/env python
 
-from typing import Any, Optional
-from abc import ABC, abstractmethod
 from collections.abc import Iterable
+from typing import Any, Generic, Optional, TypeVar
+from abc import ABC, abstractmethod
 from mtg_parser.card import Card
 from mtg_parser.utils import match_pattern
+
+
+DeckType = TypeVar("DeckType")
 
 
 class BaseParser(ABC):
@@ -14,11 +17,11 @@ class BaseParser(ABC):
         pass # pragma: no cover
 
     @abstractmethod
-    def parse_deck(self, src: str, http_client: Any) -> Iterable[Card]:
+    def parse_deck(self, src: str, http_client: Any = None) -> Optional[Iterable[Card]]:
         pass # pragma: no cover
 
 
-class OnlineDeckParser(BaseParser):
+class OnlineDeckParser(BaseParser, Generic[DeckType]):
 
     def __init__(self, pattern: str) -> None:
         self.pattern = pattern
@@ -28,7 +31,7 @@ class OnlineDeckParser(BaseParser):
         return match_pattern(src, self.pattern)
 
 
-    def parse_deck(self, src: str, http_client: Optional[Any] = None) -> Optional[Iterable[Card]]:
+    def parse_deck(self, src: str, http_client: Any = None) -> Optional[Iterable[Card]]:
         if not self.can_handle(src):
             return None
 
@@ -43,10 +46,10 @@ class OnlineDeckParser(BaseParser):
 
 
     @abstractmethod
-    def _download_deck(self, src: str, http_client: Any) -> Optional[str]:
+    def _download_deck(self, src: str, http_client: Any) -> Optional[DeckType]:
         pass # pragma: no cover
 
 
     @abstractmethod
-    def _parse_deck(self, deck: str) -> Iterable[Card]:
+    def _parse_deck(self, deck: DeckType) -> Optional[Iterable[Card]]:
         pass # pragma: no cover
