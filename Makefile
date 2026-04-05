@@ -125,7 +125,7 @@ endef
 
 clean-old-runs:
 	@echo 'Cleaning runs older than 120 days'
-	@gh run list --json startedAt,databaseId --limit 100 \
+	@gh run list --json startedAt,databaseId --limit 1000 \
 	| jq '.[] | select(now - (.startedAt | fromdateiso8601) > 10368000) | .databaseId' \
 	| xargs -I {} gh run delete {}
 
