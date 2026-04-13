@@ -40,7 +40,6 @@ class MtggoldfishDeckParser(OnlineDeckParser[str]):
 
 
     def _parse_deck(self, deck: str) -> Optional[Iterable[Card]]:
-        deck = deck.splitlines()[0]
         deck = deck.replace("\\'", "'").replace('\\"', '"').replace("\\/", "/").replace(r"\n", "")
         deck = unescape(deck)
 
