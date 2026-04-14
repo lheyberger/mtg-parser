@@ -39,9 +39,12 @@ update:
 ##
 check:
 	poetry run ty check ${SRC_DIR}
+	poetry run radon cc ${SRC_DIR}
 
 check-all: check
 	poetry run ty check ${TESTS_DIR} || true
+	poetry run radon cc ${TESTS_DIR} || true
+
 
 .PHONY: check check-all
 
