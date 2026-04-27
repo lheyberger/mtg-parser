@@ -4,13 +4,13 @@ import pytest
 import mtg_parser
 from pathlib import Path
 from mtg_parser.card import Card
-from .test_aetherhub import DECK_INFO as aetherhub_deck_info
-from .test_archidekt import DECK_INFO as archidekt_deck_info
-from .test_deckstats import DECK_INFO as deckstats_deck_info
-from .test_moxfield import DECK_INFO as moxfield_deck_info
-from .test_mtggoldfish import DECK_INFO as mtggoldfish_deck_info
-from .test_scryfall import DECK_INFO as scryfall_deck_info
-from .test_tappedout import DECK_INFO as tappedout_deck_info
+from .test_aetherhub import DECK_URL as aetherhub_deck_url
+from .test_archidekt import DECK_URL as archidekt_deck_url
+from .test_deckstats import DECK_URL as deckstats_deck_url
+from .test_moxfield import DECK_URL as moxfield_deck_url
+from .test_mtggoldfish import DECK_URL as mtggoldfish_deck_url
+from .test_scryfall import DECK_URL as scryfall_deck_url
+from .test_tappedout import DECK_URL as tappedout_deck_url
 
 
 def compare_decks(deck1, deck2, differences_only=False):
@@ -50,15 +50,15 @@ def test_diff(deck1, deck2):
         assert all(value)
 
 
-@pytest.mark.parametrize('deck_info', [
-    aetherhub_deck_info,
-    archidekt_deck_info,
-    deckstats_deck_info,
-    mtggoldfish_deck_info,
-    scryfall_deck_info,
-    tappedout_deck_info,
+@pytest.mark.parametrize('deck_url', [
+    aetherhub_deck_url,
+    archidekt_deck_url,
+    deckstats_deck_url,
+    mtggoldfish_deck_url,
+    scryfall_deck_url,
+    tappedout_deck_url,
 ])
-def test_diff_decks(http_client_facade, deck_info):
+def test_diff_decks(http_client_facade, deck_url):
     """
         Not tested:
         - mtgjson: different than the other supported websites
@@ -66,8 +66,8 @@ def test_diff_decks(http_client_facade, deck_info):
     """
     http_client_facade.read_mocks_from(Path('tests/mocks'))
 
-    deck1 = mtg_parser.parse_deck(moxfield_deck_info['url'], http_client_facade)
-    deck2 = mtg_parser.parse_deck(deck_info['url'], http_client_facade)
+    deck1 = mtg_parser.parse_deck(moxfield_deck_url, http_client_facade)
+    deck2 = mtg_parser.parse_deck(deck_url, http_client_facade)
 
     result = compare_decks(deck1, deck2)
 

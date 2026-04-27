@@ -93,6 +93,9 @@ coverage:
 ##
 # BUILD
 #
+update-mock-data:
+	poetry run dotenv run python -m tests.update_mock_data
+
 sync-version:
 	git grep -l "__version__\s*=" ${SRC_DIR} | xargs -I {} \
 	sed -i '' "s/^\s*__version__.*/__version__ = \'`poetry version -s`\'/" {}
