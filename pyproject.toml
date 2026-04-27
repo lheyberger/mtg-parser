@@ -116,6 +116,7 @@ markers = [
     "moxfield",
     "mtggoldfish",
     "mtgjson",
+    "mtgvault",
     "scryfall",
     "tappedout",
     "tcgplayer",

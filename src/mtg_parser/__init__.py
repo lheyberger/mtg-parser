@@ -9,6 +9,7 @@ from mtg_parser.grammar import * # noqa
 from mtg_parser.http_client import * # noqa
 from mtg_parser.moxfield import * # noqa
 from mtg_parser.mtggoldfish import * # noqa
+from mtg_parser.mtgvault import * # noqa
 from mtg_parser.mtgjson import * # noqa
 from mtg_parser.parser import * # noqa
 from mtg_parser.scryfall import * # noqa

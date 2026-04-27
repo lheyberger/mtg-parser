@@ -12,6 +12,7 @@ from mtg_parser.deckstats import DeckstatsDeckParser
 from mtg_parser.moxfield import MoxfieldDeckParser
 from mtg_parser.mtggoldfish import MtggoldfishDeckParser
 from mtg_parser.mtgjson import MtgjsonDeckParser
+from mtg_parser.mtgvault import MtgvaultDeckParser
 from mtg_parser.scryfall import ScryfallDeckParser
 from mtg_parser.tappedout import TappedoutDeckParser
 from mtg_parser.tcgplayer import TcgplayerDeckParser
@@ -39,6 +40,7 @@ class DeckParser(BaseParser):
         MoxfieldDeckParser(),
         MtggoldfishDeckParser(),
         MtgjsonDeckParser(),
+        MtgvaultDeckParser(),
         ScryfallDeckParser(),
         TappedoutDeckParser(),
         TcgplayerDeckParser(),

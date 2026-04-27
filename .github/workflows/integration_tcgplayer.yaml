@@ -2,7 +2,7 @@ name: Integration TCGPlayer
 
 on:
   schedule:
-    - cron: '18 7 * * 1' # https://crontab.guru/#18_7_*_*_1
+    - cron: '20 7 * * 1' # https://crontab.guru/#20_7_*_*_1
   workflow_dispatch:
 
 jobs:

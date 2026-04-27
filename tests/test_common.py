@@ -9,6 +9,7 @@ from .test_deckstats import DECK_URL as deckstats_deck_url
 from .test_moxfield import DECK_URL as moxfield_deck_url
 from .test_mtggoldfish import DECK_URL as mtggoldfish_deck_url
 from .test_mtgjson import DECK_URL as mtgjson_deck_url
+from .test_mtgvault import DECK_URL as mtgvault_deck_url
 from .test_scryfall import DECK_URL as scryfall_deck_url
 from .test_tappedout import DECK_URL as tappedout_deck_url
 from .test_tcgplayer_infinite import DECK_URL as tcgplayer_infinite_deck_url
@@ -23,6 +24,7 @@ TEST_DATA = [
     (mtg_parser.moxfield.MoxfieldDeckParser, moxfield_deck_url),
     (mtg_parser.mtggoldfish.MtggoldfishDeckParser, mtggoldfish_deck_url),
     (mtg_parser.mtgjson.MtgjsonDeckParser, mtgjson_deck_url),
+    (mtg_parser.mtgvault.MtgvaultDeckParser, mtgvault_deck_url),
     (mtg_parser.scryfall.ScryfallDeckParser, scryfall_deck_url),
     (mtg_parser.tappedout.TappedoutDeckParser, tappedout_deck_url),
     (mtg_parser.tcgplayer.TcgplayerDeckParser, tcgplayer_infinite_deck_url),

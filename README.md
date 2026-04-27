@@ -49,6 +49,7 @@ In addition to [MTGO](mtgo.com) and [MTGA](magic.wizards.com/mtgarena) formats, 
 - [moxfield.com](moxfield.com)
 - [mtggoldfish.com](mtggoldfish.com)
 - [mtgjson.com](mtgjson.com)
+- [mtgvault.com](mtgvault.com)
 - [scryfall.com](scryfall.com)
 - [tappedout.net](tappedout.net)
 - [tcgplayer.com](tcgplayer.com)
@@ -251,6 +252,22 @@ import requests
 import mtg_parser
 
 url = 'https://mtgjson.com/api/v5/decks/<deck_name>.json'
+
+cards = mtg_parser.parse_deck(url, requests.Session())
+```
+
+
+### Parsing from mtgvault.com
+
+![MTGVault Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_mtgvault.yaml?label=mtgvault%20integration%20tests)
+
+`mtg_parser` can parse public decks from [mtgvault.com](mtgvault.com)
+
+```python
+import requests
+import mtg_parser
+
+url = 'https://www.mtgvault.com/<username>/decks/<deck_name>/'
 
 cards = mtg_parser.parse_deck(url, requests.Session())
 ```
