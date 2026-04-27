@@ -43,26 +43,26 @@ $ poetry add mtg-parser
 
 
 In addition to [MTGO](mtgo.com) and [MTGA](magic.wizards.com/mtgarena) formats, `mtg_parser` supports the following websites:
-- [aetherhub.com](aetherhub.com)
-- [archidekt.com](archidekt.com)
-- [deckstats.net](deckstats.net)
-- [moxfield.com](moxfield.com)
-- [mtggoldfish.com](mtggoldfish.com)
-- [mtgjson.com](mtgjson.com)
-- [mtgvault.com](mtgvault.com)
-- [scryfall.com](scryfall.com)
-- [tappedout.net](tappedout.net)
-- [tcgplayer.com](tcgplayer.com)
+- [aetherhub.com](#parsing-from-aetherhubcom)
+- [archidekt.com](#parsing-from-archidektcom)
+- [deckstats.net](#parsing-from-deckstatsnet)
+- [moxfield.com](#parsing-from-moxfieldcom)
+- [mtggoldfish.com](#parsing-from-mtggoldfishcom)
+- [mtgjson.com](#parsing-from-mtgjsoncom)
+- [mtgvault.com](#parsing-from-mtgvaultcom)
+- [scryfall.com](#parsing-from-scryfallcom)
+- [tappedout.net](#parsing-from-tappedoutnet)
+- [tcgplayer.com](#parsing-from-tcgplayercom)
 
 
 ## Known issues
 
 Parsing decklists on some websites require specific configuration:
 
-- [aetherhub.com](aetherhub.com) requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`
-- [deckstats.net](deckstats.net) requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`
-- [mtggoldfish.com](mtggoldfish.com) requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`
-- [moxfield.com](moxfield.com) requires a custom User-Agent ([see here](#parsing-from-moxfieldcom))
+- [aetherhub.com](#parsing-from-aetherhubcom) requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`
+- [deckstats.net](#parsing-from-deckstatsnet) requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`
+- [mtggoldfish.com](#parsing-from-mtggoldfishcom) requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`
+- [moxfield.com](#parsing-from-moxfieldcom) requires a custom User-Agent ([see here](#parsing-from-moxfieldcom))
 
 
 ## Usage
@@ -144,7 +144,7 @@ cards = mtg_parser.parse_deck(deck_list)
 
 ![Aetherhub Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_aetherhub.yaml?label=Aetherhub%20integration%20tests)
 
-`mtg_parser` can parse public decks from [aetherhub.com](aetherhub.com)
+`mtg_parser` can parse public decks from [aetherhub.com](https://aetherhub.com)
 
 > [!IMPORTANT]
 > aetherhub.com requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`.
@@ -164,7 +164,7 @@ cards = mtg_parser.parse_deck(url, cloudscraper.create_scraper())
 
 ![Archideckt Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_archidekt.yaml?label=Archideckt%20integration%20tests)
 
-`mtg_parser` can parse public decks from [archidekt.com](archidekt.com)
+`mtg_parser` can parse public decks from [archidekt.com](https://archidekt.com)
 
 ```python
 import requests
@@ -180,7 +180,7 @@ cards = mtg_parser.parse_deck(url, requests.Session())
 
 ![Deckstats Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_deckstats.yaml?label=Deckstats%20integration%20tests)
 
-`mtg_parser` can parse public decks from [deckstats.net](deckstats.net)
+`mtg_parser` can parse public decks from [deckstats.net](https://deckstats.net)
 
 > [!IMPORTANT]
 > deckstats.net requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`.
@@ -200,7 +200,7 @@ cards = mtg_parser.parse_deck(url, cloudscraper.create_scraper())
 
 ![Moxfield Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_moxfield.yaml?label=Moxfield%20integration%20tests)
 
-`mtg_parser` can parse public decks from [moxfield.com](moxfield.com)
+`mtg_parser` can parse public decks from [moxfield.com](https://moxfield.com)
 
 
 > [!IMPORTANT]
@@ -225,7 +225,7 @@ with httpx.Client(headers=headers) as http_client:
 
 ![MTGGoldfish Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_mtggoldfish.yaml?label=MTGGoldfish%20integration%20tests)
 
-`mtg_parser` can parse public decks from [mtggoldfish.com](mtggoldfish.com)
+`mtg_parser` can parse public decks from [mtggoldfish.com](https://mtggoldfish.com)
 
 > [!IMPORTANT]
 > deckstats.net requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`.
@@ -245,7 +245,7 @@ cards = mtg_parser.parse_deck(url, cloudscraper.create_scraper())
 
 ![mtgjson Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_mtgjson.yaml?label=mtgjson%20integration%20tests)
 
-`mtg_parser` can parse decks from [mtgjson.com](mtgjson.com)
+`mtg_parser` can parse decks from [mtgjson.com](https://mtgjson.com)
 
 ```python
 import requests
@@ -261,7 +261,7 @@ cards = mtg_parser.parse_deck(url, requests.Session())
 
 ![MTGVault Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_mtgvault.yaml?label=mtgvault%20integration%20tests)
 
-`mtg_parser` can parse public decks from [mtgvault.com](mtgvault.com)
+`mtg_parser` can parse public decks from [mtgvault.com](https://www.mtgvault.com)
 
 ```python
 import requests
@@ -277,7 +277,7 @@ cards = mtg_parser.parse_deck(url, requests.Session())
 
 ![Scryfall Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_scryfall.yaml?label=Scryfall%20integration%20tests)
 
-`mtg_parser` can parse public decks from [scryfall.com](scryfall.com)
+`mtg_parser` can parse public decks from [scryfall.com](https://scryfall.com)
 
 ```python
 import requests
@@ -293,7 +293,7 @@ cards = mtg_parser.parse_deck(url, requests.Session())
 
 ![Tappedout Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_tappedout.yaml?label=Tappedout%20integration%20tests)
 
-`mtg_parser` can parse public decks from [tappedout.net](tappedout.net)
+`mtg_parser` can parse public decks from [tappedout.net](https://tappedout.net)
 
 ```python
 import requests
@@ -309,7 +309,7 @@ cards = mtg_parser.parse_deck(url, requests.Session())
 
 ![TCGplayer Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_tcgplayer.yaml?label=TCGplayer%20integration%20tests)
 
-`mtg_parser` can parse public decks from either [tcgplayer.com](tcgplayer.com) or [infinite.tcgplayer.com](infinite.tcgplayer.com)
+`mtg_parser` can parse public decks from either [tcgplayer.com](https://www.tcgplayer.com) or [infinite.tcgplayer.com](https://infinite.tcgplayer.com)
 
 ```python
 import requests
