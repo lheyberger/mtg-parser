@@ -57,11 +57,13 @@ In addition to [MTGO](mtgo.com) and [MTGA](magic.wizards.com/mtgarena) formats, 
 
 ## Known issues
 
-Parsing decklists on some websites require specific configuration:
+Parsing decklists on some websites require specific configuration.
 
-- [aetherhub.com](#parsing-from-aetherhubcom) requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`
-- [deckstats.net](#parsing-from-deckstatsnet) requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`
-- [mtggoldfish.com](#parsing-from-mtggoldfishcom) requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`
+- The following websites require a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`:
+  - [aetherhub.com](#parsing-from-aetherhubcom)
+  - [deckstats.net](#parsing-from-deckstatsnet)
+  - [mtggoldfish.com](#parsing-from-mtggoldfishcom)
+  - [mtgvault.com](#parsing-from-mtgvaultcom)
 - [moxfield.com](#parsing-from-moxfieldcom) requires a custom User-Agent ([see here](#parsing-from-moxfieldcom))
 
 
@@ -228,7 +230,7 @@ with httpx.Client(headers=headers) as http_client:
 `mtg_parser` can parse public decks from [mtggoldfish.com](https://mtggoldfish.com)
 
 > [!IMPORTANT]
-> deckstats.net requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`.
+> mtggoldfish.com requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`.
 
 
 ```python
@@ -263,13 +265,16 @@ cards = mtg_parser.parse_deck(url, requests.Session())
 
 `mtg_parser` can parse public decks from [mtgvault.com](https://www.mtgvault.com)
 
+> [!IMPORTANT]
+> mtgvault.com requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`.
+
 ```python
-import requests
+import cloudscraper
 import mtg_parser
 
 url = 'https://www.mtgvault.com/<username>/decks/<deck_name>/'
 
-cards = mtg_parser.parse_deck(url, requests.Session())
+cards = mtg_parser.parse_deck(url, cloudscraper.create_scraper())
 ```
 
 
