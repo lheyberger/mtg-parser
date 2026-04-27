@@ -60,6 +60,7 @@ Parsing decklists on some websites require specific configuration:
 
 - [aetherhub.com](aetherhub.com) requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`
 - [deckstats.net](deckstats.net) requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`
+- [mtggoldfish.com](mtggoldfish.com) requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`
 - [moxfield.com](moxfield.com) requires a custom User-Agent ([see here](#parsing-from-moxfieldcom))
 
 
@@ -225,13 +226,17 @@ with httpx.Client(headers=headers) as http_client:
 
 `mtg_parser` can parse public decks from [mtggoldfish.com](mtggoldfish.com)
 
+> [!IMPORTANT]
+> deckstats.net requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`.
+
+
 ```python
-import requests
+import cloudscraper
 import mtg_parser
 
 url = 'https://www.mtggoldfish.com/deck/<deck_id>'
 
-cards = mtg_parser.parse_deck(url, requests.Session())
+cards = mtg_parser.parse_deck(url, cloudscraper.create_scraper())
 ```
 
 
