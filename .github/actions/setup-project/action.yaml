@@ -10,12 +10,12 @@ runs:
   using: composite
   steps:
     - name: Setup Python ${{ inputs.python-version }}
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: ${{ inputs.python-version }}
 
     - name: Install Poetry
-      uses: snok/install-poetry@v1
+      uses: snok/install-poetry@v1.4.1
       with:
         version: ${{ inputs.poetry-version }}
 
