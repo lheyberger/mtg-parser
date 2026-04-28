@@ -18,4 +18,4 @@ from mtg_parser.tcgplayer import * # noqa
 from mtg_parser.utils import * # noqa
 
 
-__version__ = '0.0.1a53'
+__version__ = '0.0.1a54'
