@@ -9,7 +9,7 @@ jobs:
   integration_archidekt:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Setup project
         uses: ./.github/actions/setup-project
         with:
