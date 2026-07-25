@@ -63,7 +63,7 @@ $ make publish
 
 Updating mock data can be done with the following command:
 ```shell
-$ poetry run python tests/update_mock_data.py
+$ poetry run python -m tests.update_mock_data
 ```
 
 

@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+from bs4 import BeautifulSoup
 from json import loads
 from collections.abc import Iterable
 from typing import Any, Optional
@@ -20,42 +21,25 @@ class DeckstatsDeckParser(OnlineDeckParser[dict]):
 
 
     def _download_deck(self, src: str, http_client: Any) -> dict:
-        start_token = 'init_deck_data(' # noqa: S105
-        end_token = ');' # noqa: S105
-
         result = http_client.get(src).text
-        result = result.splitlines()
-        result = next(line for line in result if start_token in line)
-
-        result = result[result.find(start_token) + len(start_token):]
-        result = result[:result.find(end_token)]
-
-        _i = 0
-        opened = 0
-        for _i, char in enumerate(result):
-            if char == '{':
-                opened = opened + 1
-            if char == '}':
-                opened = opened - 1
-            if opened <= 0:
-                break
-        result = result[:_i+1]
-        return loads(result)
+        soup = BeautifulSoup(result, features='html.parser')
+        script_tag = soup.find('script', attrs={'data-page': 'app', 'type': 'application/json'})
+        data = loads(script_tag.string)
+        return data
 
 
     def _parse_deck(self, deck: dict) -> Optional[Iterable[Card]]:
-        for section in deck.get('sections', []):
-            for card in section.get('cards', {}):
-                yield Card(
-                    card['name'],
-                    card['amount'],
-                    tags=self._get_tags(card),
-                )
+        for card in deck.get('props', {}).get('entries', []):
+            yield Card(
+                card['name'],
+                card['amount'],
+                tags=self._get_tags(card),
+            )
 
 
     @classmethod
     def _get_tags(cls, card) -> Iterable[str]:
-        if card.get('isCommander', False):
+        if card.get('is_commander', False):
             yield 'commander'
-        if card.get('isCompanion', False):
+        if card.get('comment') == '!Companion':
             yield 'companion'
