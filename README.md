@@ -49,7 +49,6 @@ In addition to [MTGO](mtgo.com) and [MTGA](magic.wizards.com/mtgarena) formats, 
 - [moxfield.com](#parsing-from-moxfieldcom)
 - [mtggoldfish.com](#parsing-from-mtggoldfishcom)
 - [mtgjson.com](#parsing-from-mtgjsoncom)
-- [mtgvault.com](#parsing-from-mtgvaultcom)
 - [scryfall.com](#parsing-from-scryfallcom)
 - [tappedout.net](#parsing-from-tappedoutnet)
 - [tcgplayer.com](#parsing-from-tcgplayercom)
@@ -63,7 +62,6 @@ Parsing decklists on some websites require specific configuration.
   - [aetherhub.com](#parsing-from-aetherhubcom)
   - [deckstats.net](#parsing-from-deckstatsnet)
   - [mtggoldfish.com](#parsing-from-mtggoldfishcom)
-  - [mtgvault.com](#parsing-from-mtgvaultcom)
 - [moxfield.com](#parsing-from-moxfieldcom) requires a custom User-Agent ([see here](#parsing-from-moxfieldcom))
 
 
@@ -256,25 +254,6 @@ import mtg_parser
 url = 'https://mtgjson.com/api/v5/decks/<deck_name>.json'
 
 cards = mtg_parser.parse_deck(url, requests.Session())
-```
-
-
-### Parsing from mtgvault.com
-
-![MTGVault Integration Tests](https://img.shields.io/github/actions/workflow/status/lheyberger/mtg-parser/integration_mtgvault.yaml?label=mtgvault%20integration%20tests)
-
-`mtg_parser` can parse public decks from [mtgvault.com](https://www.mtgvault.com)
-
-> [!IMPORTANT]
-> mtgvault.com requires a Cloudflare-bypass `requests` compatible http client such as `cloudscraper`.
-
-```python
-import cloudscraper
-import mtg_parser
-
-url = 'https://www.mtgvault.com/<username>/decks/<deck_name>/'
-
-cards = mtg_parser.parse_deck(url, cloudscraper.create_scraper())
 ```
 
 
