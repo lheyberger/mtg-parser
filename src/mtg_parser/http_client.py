@@ -20,6 +20,11 @@ class HttpClientFacade:
         client = self._get_client(domain)
         return client.get(url, *args, **kwargs)
 
+    def post(self, url, *args, **kwargs):
+        domain = urlparse(url).netloc
+        client = self._get_client(domain)
+        return client.post(url, *args, **kwargs)
+
     def _get_client(self, subdomain: str):
         for domain, client in self._overrides.items():
             if self._is_subdomain(subdomain, domain):
@@ -31,4 +36,3 @@ class HttpClientFacade:
         subdomain = subdomain.lower().strip('.')
         domain = domain.lower().strip('.')
         return subdomain == domain or subdomain.endswith('.' + domain)
-

@@ -5,53 +5,57 @@ from unittest.mock import Mock
 from mtg_parser import HttpClientFacade
 
 
+@pytest.mark.parametrize("method", ["get", "post"])
 @pytest.mark.parametrize("url", [
-    "https://example.com/deck/123",
+    ("https://example.com/deck/123" ),
     "https://api.example.com/deck/123",
 ])
-def test_get_uses_default_client(url):
+def test_facade_uses_default_client(method, url):
     default_client = Mock()
     facade = HttpClientFacade(default_client)
 
-    facade.get(url)
+    getattr(facade, method)(url)
 
-    default_client.get.assert_called_once_with(url)
+    getattr(default_client, method).assert_called_once_with(url)
 
 
+@pytest.mark.parametrize("method", ["get", "post"])
 @pytest.mark.parametrize(("domain", "url"), [
     ("example.com", "https://example.com/deck/123"),
     ("example.com", "https://api.example.com/deck/123"),
     ("api.example.com", "https://api.example.com/deck/123"),
 ])
-def test_get_uses_override_client(domain, url):
+def test_facade_uses_override_client(method, domain, url):
     default_client = Mock()
     override_client = Mock()
     facade = HttpClientFacade(default_client)
     facade.set_override(domain, override_client)
 
-    facade.get(url)
+    getattr(facade, method)(url)
 
-    override_client.get.assert_called_once_with(url)
-    default_client.get.assert_not_called()
+    getattr(override_client, method).assert_called_once_with(url)
+    getattr(default_client, method).assert_not_called()
 
 
+@pytest.mark.parametrize("method", ["get", "post"])
 @pytest.mark.parametrize(("domain", "url"), [
     ("example.com", "https://different.com/deck/123"),
     ("example.com", "https://test-example.com/deck/123"),
 ])
-def test_get_uses_default_client_for_different_domain(domain, url):
+def test_facade_uses_default_client_for_different_domain(method, domain, url):
     default_client = Mock()
     override_client = Mock()
     facade = HttpClientFacade(default_client)
     facade.set_override(domain, override_client)
 
-    facade.get(url)
+    getattr(facade, method)(url)
 
-    default_client.get.assert_called_once_with(url)
-    override_client.get.assert_not_called()
+    getattr(default_client, method).assert_called_once_with(url)
+    getattr(override_client, method).assert_not_called()
 
 
-def test_multiple_overrides():
+@pytest.mark.parametrize("method", ["get", "post"])
+def test_multiple_overrides(method):
     default_client = Mock()
     override_client_1 = Mock()
     override_client_2 = Mock()
@@ -59,23 +63,24 @@ def test_multiple_overrides():
     facade.set_override("override.client1.com", override_client_1)
     facade.set_override("override.client2.com", override_client_2)
 
-    facade.get("https://example.com/deck/123")
-    facade.get("https://override.client1.com/deck/123")
-    facade.get("https://override.client2.com/deck/123")
+    getattr(facade, method)("https://example.com/deck/123")
+    getattr(facade, method)("https://override.client1.com/deck/123")
+    getattr(facade, method)("https://override.client2.com/deck/123")
 
-    default_client.get.assert_called_once_with("https://example.com/deck/123")
-    override_client_1.get.assert_called_once_with("https://override.client1.com/deck/123")
-    override_client_2.get.assert_called_once_with("https://override.client2.com/deck/123")
+    getattr(default_client, method).assert_called_once_with("https://example.com/deck/123")
+    getattr(override_client_1, method).assert_called_once_with("https://override.client1.com/deck/123")
+    getattr(override_client_2, method).assert_called_once_with("https://override.client2.com/deck/123")
 
 
+@pytest.mark.parametrize("method", ["get", "post"])
 @pytest.mark.parametrize(("url", "args", "kwargs"), [
     ("https://example.com/deck/123", ("arg1", "arg2"), {"timeout": 30, "headers": {"User-Agent": "test"}}),
     ("https://api.example.com/deck/123", ("arg1", "arg2"), {"timeout": 30, "headers": {"User-Agent": "test"}}),
 ])
-def test_get_passes_args_and_kwargs(url, args, kwargs):
+def test_get_passes_args_and_kwargs(method, url, args, kwargs):
     default_client = Mock()
     facade = HttpClientFacade(default_client)
 
-    facade.get(url, *args, **kwargs)
+    getattr(facade, method)(url, *args, **kwargs)
 
-    default_client.get.assert_called_once_with(url, *args, **kwargs)
+    getattr(default_client, method).assert_called_once_with(url, *args, **kwargs)
