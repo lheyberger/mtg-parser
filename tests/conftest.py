@@ -52,13 +52,20 @@ class TestsHttpClientFacade(HttpClientFacade):
 
 
     def get(self, url, *args, **kwargs):
+        return self._cache_aware_request(super().get, url, *args, **kwargs)
 
+
+    def post(self, url, *args, **kwargs):
+        return self._cache_aware_request(super().post, url, *args, **kwargs)
+
+
+    def _cache_aware_request(self, method, url, *args, **kwargs):
         if self._read_mocks:
             key = self._query_key(url, *args, **kwargs)
             with (self._mocks_dir / key).open('rb') as file:
                 return pickle.load(file)
 
-        result = super().get(url, *args, **kwargs)
+        result = method(url, *args, **kwargs)
 
         if self._write_mocks:
             key = self._query_key(url, *args, **kwargs)
