@@ -2,8 +2,7 @@
 
 from bs4 import BeautifulSoup
 from collections.abc import Iterable
-from collections import defaultdict
-from re import fullmatch, sub
+from re import fullmatch, search, sub
 from typing import Any, Optional
 from mtg_parser.card import Card
 from mtg_parser.deck_parser import OnlineDeckParser
@@ -15,49 +14,50 @@ __all__ = ['TappedoutDeckParser']
 
 class TappedoutDeckParser(OnlineDeckParser[str]):
 
-    _PATTERN = build_pattern('tappedout.net', r'/mtg-decks/(?P<deck_id>.+)/?')
+    _PATTERN = build_pattern('tappedout.net', r'/mtg-decks/(?P<deck_id>[a-zA-Z0-9-_]+)/?')
 
     def __init__(self):
         super().__init__(self._PATTERN)
 
 
     def _download_deck(self, src: str, http_client: Any) -> Optional[str]:
-        response = http_client.get(src, params={'cat': 'custom'})
-        return response.text
+        match = search(self._PATTERN, src)
+        deck_id = match.group('deck_id') if match else None
+        if not deck_id:
+            return None # pragma: no cover
+        url = "https://tappedout.net/api/deck/widget/"
+        headers = {
+            "Content-Type": "application/x-www-form-urlencoded",
+        }
+        params = {
+            "deck": deck_id,
+            "cols": 1,
+        }
+        response = http_client.post(url, headers=headers, params=params)
+        response.raise_for_status()
+        return response.json()
 
 
     def _parse_deck(self, deck: str) -> Optional[Iterable[Card]]:
-        soup = BeautifulSoup(deck, features='html.parser')
-        board_container = soup.find('div', class_='board-container')
-
-        quantities = {}
-        for card in board_container.find_all('a', class_="qty board", attrs={
-            'data-name': True,
-            'data-qty': True,
-        }):
-            quantities[card['data-name']] = card['data-qty']
-
-        tags = defaultdict(set)
-        for card in board_container.find_all('a', class_='card-hover', attrs={
-            'data-name': True,
-            'data-url': True,
-        }):
-            tag = card.find_previous('h3')
+        cards = {}
+        soup = BeautifulSoup(deck.get("board"), features='html.parser')
+        for boardlist in soup.find_all("ul", class_="tappedout-boardlist"):
+            tag = boardlist.find_previous("h3")
             tag = self._format_tag(tag.text)
-            if tag in ('commander', 'commanders'):
-                tag = 'commander'
-            elif tag in ('companion', 'companions'):
-                tag = 'companion'
-            else:
-                tag = None
-            tags[card['data-name']].add(tag)
+            for card_li in boardlist.find_all("li", class_="tappedout-member"):
+                qty = int(card_li.find(string=True, recursive=False).strip().strip("x"))
+                name = card_li.find("a").get_text(strip=True)
+                cards[(name, qty)] = tag
 
-        for card_name in sorted(set(quantities.keys()) | set(tags.keys())):
-            yield Card(
-                card_name,
-                quantity=quantities.get(card_name, 1),
-                tags=tags.get(card_name, []),
-            )
+        all_tags = set(cards.values())
+        for (name, qty), tag in cards.items():
+            if tag == "commander":
+                final_tag = "commander"
+            elif tag == "sideboard":
+                final_tag = "companion" if "commander" in all_tags else "sideboard"
+            else:
+                final_tag = None
+            yield Card(name, quantity=qty, tags=[final_tag])
 
 
     @classmethod
