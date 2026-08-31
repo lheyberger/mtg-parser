@@ -29,6 +29,7 @@ class TcgplayerDeckParser(OnlineDeckParser[dict]):
             return None # pragma: no cover
         url = f'https://infinite-api.tcgplayer.com/deck/magic/{deck_id}/?subDecks=true&cards=true'
         response = http_client.get(url)
+        response.raise_for_status()
         return response.json()
 
 

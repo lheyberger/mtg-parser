@@ -26,6 +26,7 @@ class ArchidektDeckParser(OnlineDeckParser[dict]):
             return None # pragma: no cover
         url = f"https://archidekt.com/api/decks/{deck_id}/"
         response = http_client.get(url)
+        response.raise_for_status()
         return response.json()
 
 

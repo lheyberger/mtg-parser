@@ -12,7 +12,7 @@ from mtg_parser.utils import build_pattern
 __all__ = ['TappedoutDeckParser']
 
 
-class TappedoutDeckParser(OnlineDeckParser[str]):
+class TappedoutDeckParser(OnlineDeckParser[dict]):
 
     _PATTERN = build_pattern('tappedout.net', r'/mtg-decks/(?P<deck_id>[a-zA-Z0-9-_]+)/?')
 
@@ -20,9 +20,9 @@ class TappedoutDeckParser(OnlineDeckParser[str]):
         super().__init__(self._PATTERN)
 
 
-    def _download_deck(self, src: str, http_client: Any) -> Optional[str]:
+    def _download_deck(self, src: str, http_client: Any) -> Optional[dict]:
         match = search(self._PATTERN, src)
-        deck_id = match.group('deck_id') if match else None
+        deck_id = match.group("deck_id") if match else None
         if not deck_id:
             return None # pragma: no cover
         url = "https://tappedout.net/api/deck/widget/"
@@ -38,9 +38,9 @@ class TappedoutDeckParser(OnlineDeckParser[str]):
         return response.json()
 
 
-    def _parse_deck(self, deck: str) -> Optional[Iterable[Card]]:
+    def _parse_deck(self, deck: dict) -> Optional[Iterable[Card]]:
         cards = {}
-        soup = BeautifulSoup(deck.get("board"), features='html.parser')
+        soup = BeautifulSoup(deck.get("board", ""), features="html.parser")
         for boardlist in soup.find_all("ul", class_="tappedout-boardlist"):
             tag = boardlist.find_previous("h3")
             tag = self._format_tag(tag.text)

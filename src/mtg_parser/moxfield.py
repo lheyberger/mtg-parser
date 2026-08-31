@@ -26,6 +26,7 @@ class MoxfieldDeckParser(OnlineDeckParser[dict]):
             return None # pragma: no cover
         url = f"https://api.moxfield.com/v2/decks/all/{deck_id}"
         response = http_client.get(url)
+        response.raise_for_status()
         return response.json()
 
 

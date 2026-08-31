@@ -20,6 +20,7 @@ class MtgjsonDeckParser(OnlineDeckParser[dict]):
 
     def _download_deck(self, src: str, http_client: Any) -> Optional[dict]:
         response = http_client.get(src)
+        response.raise_for_status()
         return response.json()
 
 

@@ -20,9 +20,10 @@ class AetherhubDeckParser(OnlineDeckParser[dict]):
 
 
     def _download_deck(self, src: str, http_client: Any) -> Optional[dict]:
-        result = http_client.get(src).text
-        soup = BeautifulSoup(result, features='html.parser')
-        element = soup.find(attrs={'data-deckid': True})
+        response = http_client.get(src)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, features='html.parser')
+        element = soup.find(None, attrs={'data-deckid': True})
         deck_id = element['data-deckid']
         response = http_client.get(
             'https://aetherhub.com/Deck/FetchMtgaDeckJson',
@@ -32,6 +33,7 @@ class AetherhubDeckParser(OnlineDeckParser[dict]):
                 'simple': False,
             },
         )
+        response.raise_for_status()
         return response.json()
 
 
