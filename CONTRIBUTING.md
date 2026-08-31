@@ -42,19 +42,23 @@ $ make lint-all
 Start by updating the version number:
 ```shell
 $ poetry version (premajor|preminor|prepatch|prerelease|major|minor|patch)
-```
-
-Build the release and publish it on [test.pypi.org](https://test.pypi.org):
-```shell
-$ make release
-$ make test-publish
-```
-
-Push the latest files on github and publish the release on [pypi.org](https://pypi.org):
-```shell
 $ git ls-files | xargs grep -l `poetry version -s` | xargs git add
 $ git commit -m "feat: new version mtg-parser v`poetry version -s`"
 $ git push
+```
+
+Build the release:
+```shell
+$ make release
+```
+
+Test the release on [test.pypi.org](https://test.pypi.org):
+```shell
+$ make test-publish
+```
+
+Publish the release on [pypi.org](https://pypi.org):
+```shell
 $ make publish
 ```
 
