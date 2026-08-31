@@ -31,6 +31,7 @@ class ScryfallDeckParser(OnlineDeckParser[str]):
             return None # pragma: no cover
         url = f"https://api.scryfall.com/decks/{deck_id}/export/csv"
         response = http_client.get(url)
+        response.raise_for_status()
         return response.text
 
 

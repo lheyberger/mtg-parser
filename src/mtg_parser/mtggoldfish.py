@@ -22,20 +22,16 @@ class MtggoldfishDeckParser(OnlineDeckParser[str]):
 
 
     def _download_deck(self, src: str, http_client: Any) -> Optional[str]:
-        response = http_client.get(src, headers={'Accept': 'text/html'})
-        soup = BeautifulSoup(response.text, features='html.parser')
-        csrf_token = (soup.find('meta', attrs={'name': 'csrf-token'}) or {}).get('content')
-
         match = search(self._PATTERN, src)
-        deck_id = match.group('deck_id') if match else None
+        deck_id = match.group("deck_id") if match else None
         if not deck_id:
             return None # pragma: no cover
         url = f"https://www.mtggoldfish.com/deck/component?id={deck_id}"
         headers = {
-            'X-CSRF-Token': csrf_token,
-            'X-Requested-With': 'XMLHttpRequest',
+            "X-Requested-With": "XMLHttpRequest",
         }
         response = http_client.get(url, headers=headers)
+        response.raise_for_status()
         return response.text
 
 

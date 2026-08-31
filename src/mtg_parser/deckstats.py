@@ -20,12 +20,12 @@ class DeckstatsDeckParser(OnlineDeckParser[dict]):
         super().__init__(self._PATTERN)
 
 
-    def _download_deck(self, src: str, http_client: Any) -> dict:
-        result = http_client.get(src).text
-        soup = BeautifulSoup(result, features='html.parser')
+    def _download_deck(self, src: str, http_client: Any) -> Optional[dict]:
+        response = http_client.get(src)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, features='html.parser')
         script_tag = soup.find('script', attrs={'data-page': 'app', 'type': 'application/json'})
-        data = loads(script_tag.string)
-        return data
+        return loads(script_tag.string)
 
 
     def _parse_deck(self, deck: dict) -> Optional[Iterable[Card]]:

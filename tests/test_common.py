@@ -3,6 +3,7 @@
 import pytest
 import mtg_parser
 from pathlib import Path
+from unittest.mock import Mock
 from .test_aetherhub import DECK_URL as aetherhub_deck_url
 from .test_archidekt import DECK_URL as archidekt_deck_url
 from .test_deckstats import DECK_URL as deckstats_deck_url
@@ -57,6 +58,18 @@ def test_parser_download_fails(monkeypatch, http_client_facade, parser, deck_url
     monkeypatch.setattr(subject, "_download_deck", lambda _src, _client: None)
     with pytest.raises(RuntimeError):
         subject.parse_deck(deck_url, http_client_facade)
+
+
+@pytest.mark.parametrize(('parser', 'deck_url'), TEST_DATA)
+def test_parse_deck_raises_on_http_error(parser, deck_url):
+    mock_response = Mock()
+    mock_response.raise_for_status.side_effect = Exception('HTTP Error')
+    mock_client = Mock()
+    mock_client.get.return_value = mock_response
+    mock_client.post.return_value = mock_response
+
+    with pytest.raises(Exception, match='HTTP Error'):
+        parser().parse_deck(deck_url, mock_client)
 
 
 @pytest.mark.parametrize(('parser', 'deck_url'), TEST_DATA)
