@@ -17,6 +17,11 @@ from pyparsing import (
 
 __all__ = ['parse_line']
 
+CARD_CHARS = (
+    pyparsing_unicode.Latin1.alphanums
+    + pyparsing_unicode.LatinA.alphanums
+    + pyparsing_unicode.LatinB.alphanums
+)
 
 QUANTITY = (
     Word(nums)
@@ -32,14 +37,14 @@ EXTENSION = (
     .set_results_name('extension')
 )
 CARD_NAME = (
-    OneOrMore(Word(pyparsing_unicode.alphanums + "-,/'\""))
+    OneOrMore(Word(CARD_CHARS + "-,/'\""))
     .set_parse_action(' '.join)
     .set_results_name('card_name')
 )
 TAG = (
     Literal('#').suppress() +
     Optional(Literal('!')).suppress() +
-    OneOrMore(Word(pyparsing_unicode.alphanums + "-_"))
+    OneOrMore(Word(CARD_CHARS + "-_"))
     .set_parse_action(' '.join)
     .set_results_name('tags', list_all_matches=True)
 )
@@ -56,7 +61,7 @@ COMMENT_LINE = (
     StringStart()
     + (Literal('//!') | Literal('//') | Literal('#'))
     .suppress()
-    + OneOrMore(Word(pyparsing_unicode.alphanums + "-_"))
+    + OneOrMore(Word(CARD_CHARS + "-_"))
     .set_parse_action(' '.join)
     .set_results_name('comment')
     + StringEnd()
