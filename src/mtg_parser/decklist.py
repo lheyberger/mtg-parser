@@ -39,7 +39,6 @@ class DecklistDeckParser(BaseParser):
         lines = filter(len, lines)
         lines = map(parse_line, lines)
         lines = filter(bool, lines)
-        lines = map(lambda line: line.asDict(), lines)
         return cls._collapse_comments(lines)
 
 

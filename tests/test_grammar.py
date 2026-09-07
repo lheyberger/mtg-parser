@@ -7,206 +7,206 @@ import mtg_parser
 from .utils import assert_objects_are_equal
 
 
-@pytest.mark.parametrize(('symbol', 'string', 'expected'), [
-    (
-        mtg_parser.grammar.QUANTITY,
-        '1',
-        {'quantity': 1},
-    ),
-    (
-        mtg_parser.grammar.QUANTITY,
-        '2',
-        {'quantity': 2},
-    ),
-    (
-        mtg_parser.grammar.COLLECTOR_NUMBER,
-        '72',
-        {'collector_number': '72'},
-    ),
-    (
-        mtg_parser.grammar.COLLECTOR_NUMBER,
-        '238',
-        {'collector_number': '238'},
-    ),
-    (
-        mtg_parser.grammar.EXTENSION,
-        'USG',
-        {'extension': 'USG'},
-    ),
-    (
-        mtg_parser.grammar.EXTENSION,
-        'J16',
-        {'extension': 'J16'},
-    ),
-    (
-        mtg_parser.grammar.TAG,
-        '#Finish',
-        {'tags': ['Finish']},
-    ),
-    (
-        mtg_parser.grammar.TAG,
-        '#Extra Turn',
-        {'tags': ['Extra Turn']},
-    ),
-    (
-        mtg_parser.grammar.TAG,
-        '#!Ramp',
-        {'tags': ['Ramp']},
-    ),
-    (
-        mtg_parser.grammar.TAG,
-        '#!Card Advantage',
-        {'tags': ['Card Advantage']},
-    ),
-    (
-        mtg_parser.grammar.MTGA_EXTENSION,
-        '(USG)',
-        {'extension': 'USG'},
-    ),
-    (
-        mtg_parser.grammar.MTGA_EXTENSION,
-        '(J16)',
-        {'extension': 'J16'},
-    ),
-    (
-        mtg_parser.grammar.COMMENT_LINE,
-        '//Card Advantage',
-        {'comment': 'Card Advantage'},
-    ),
-    (
-        mtg_parser.grammar.COMMENT_LINE,
-        '// Card Advantage',
-        {'comment': 'Card Advantage'},
-    ),
+@pytest.mark.parametrize(('string', 'expected'), [
+    # comment marker: //
+    ("// test", { "comment": "test"}),
+    ("//test", { "comment": "test"}),
+    ("   // test", { "comment": "test"}),
+    ("// test   ", { "comment": "test"}),
+    ("//    test", { "comment": "test"}),
+    # comment marker: #
+    ("# test", { "comment": "test"}),
+    ("#test", { "comment": "test"}),
+    ("   # test", { "comment": "test"}),
+    ("# test   ", { "comment": "test"}),
+    ("#    test", { "comment": "test"}),
+    # comment marker: //!
+    ("//! test", { "comment": "test"}),
+    ("//!test", { "comment": "test"}),
+    ("   //! test", { "comment": "test"}),
+    ("//! test   ", { "comment": "test"}),
+    ("//!    test", { "comment": "test"}),
 ])
-def test_grammar_succeeds(symbol, string, expected):
-    result = symbol.parse_string(string).asDict()
-
-    assert_objects_are_equal(result, expected)
-
-
-@pytest.mark.parametrize('quantity', [
-    ('1', {'quantity': 1}),
-    ('20', {'quantity': 20}),
-])
-@pytest.mark.parametrize('card_name', [
-    ('Gilded Drake', {'card_name': 'Gilded Drake'}),
-    ('Lim-Dûl\'s Vault', {'card_name': 'Lim-Dûl\'s Vault'}),
-    ('Atraxa, Praetors\' Voice', {'card_name': 'Atraxa, Praetors\' Voice'}),
-    ('Response / Resurgence', {'card_name': 'Response / Resurgence'}),
-    ('Response // Resurgence', {'card_name': 'Response // Resurgence'}),
-])
-@pytest.mark.parametrize('tags', [
-    ('#Finish', {'tags': ['Finish']}),
-    ('#Extra Turn', {'tags': ['Extra Turn']}),
-    ('#!Ramp', {'tags': ['Ramp']}),
-    ('#!Card Advantage', {'tags': ['Card Advantage']}),
-    ('#!Ramp #Draw', {'tags': ['Ramp', 'Draw']}),
-])
-def test_mtgo_line(quantity, card_name, tags):
-    symbol = mtg_parser.grammar.MTGO_LINE
-    expected = {**quantity[1], **card_name[1], **tags[1]}
-    string = ' '.join((quantity[0], card_name[0], tags[0]))
-
-    result = symbol.parse_string(string).asDict()
-
-    assert_objects_are_equal(result, expected)
-
-
-@pytest.mark.parametrize('quantity', [
-    ('1', {'quantity': 1}),
-    ('20', {'quantity': 20}),
-])
-@pytest.mark.parametrize('card_name', [
-    ('Gilded Drake', {'card_name': 'Gilded Drake'}),
-    ('Lim-Dûl\'s Vault', {'card_name': 'Lim-Dûl\'s Vault'}),
-    ('Atraxa, Praetors\' Voice', {'card_name': 'Atraxa, Praetors\' Voice'}),
-    ('Response / Resurgence', {'card_name': 'Response / Resurgence'}),
-    ('Response // Resurgence', {'card_name': 'Response // Resurgence'}),
-])
-@pytest.mark.parametrize('extension', [
-    ('(J16)', {'extension': 'J16'}),
-    ('(TTSR)', {'extension': 'TTSR'}),
-])
-@pytest.mark.parametrize('collector_number', [
-    ('72', {'collector_number': '72'}),
-    ('237a', {'collector_number': '237a'}),
-])
-@pytest.mark.parametrize('tags', [
-    ('#Finish', {'tags': ['Finish']}),
-    ('#Extra Turn', {'tags': ['Extra Turn']}),
-    ('#!Ramp', {'tags': ['Ramp']}),
-    ('#!Card Advantage', {'tags': ['Card Advantage']}),
-    ('#!Ramp #Draw', {'tags': ['Ramp', 'Draw']}),
-])
-def test_mtga_line(quantity, card_name, extension, collector_number, tags):
-    symbol = mtg_parser.grammar.MTGA_LINE
-    expected = {
-        **quantity[1],
-        **card_name[1],
-        **extension[1],
-        **collector_number[1],
-        **tags[1],
-    }
-    string = ' '.join((
-        quantity[0],
-        card_name[0],
-        extension[0],
-        collector_number[0],
-        tags[0],
-    ))
-
-    result = symbol.parse_string(string).asDict()
+def test_comment_markers(string: str, expected: dict[str, str]):
+    result = mtg_parser.parse_line(string)
 
     assert_objects_are_equal(result, expected)
 
 
 @pytest.mark.parametrize(('string', 'expected'), [
-    (
-        '1 Gilded Drake (USG) 76',
-        {
-            'quantity': 1,
-            'card_name': 'Gilded Drake',
-            'extension': 'USG',
-            'collector_number': '76',
-        },
-    ),
-    (
-        '1 Gitaxian Probe',
-        {
-            'quantity': 1,
-            'card_name': 'Gitaxian Probe',
-        },
-    ),
+    ("// word1 word2 word3", { "comment": "word1 word2 word3"}),
+    ("// word1  word2  word3", { "comment": "word1  word2  word3"}),
+    ("// WORD1  WORD2  WORD3", { "comment": "WORD1  WORD2  WORD3"}),
 ])
-def test_line(string, expected):
-    symbol = mtg_parser.grammar.LINE
-
-    result = symbol.parse_string(string).asDict()
+def test_comment_content(string: str, expected: dict[str, str]):
+    result = mtg_parser.parse_line(string)
 
     assert_objects_are_equal(result, expected)
 
 
-@pytest.mark.parametrize('line', [
-    '// Test Comment',
-    '1 Gilded Drake (USG) 76'
-    '1 Gitaxian Probe',
-    '1 Barkchannel Pathway // Tidechannel Pathway',
+@pytest.mark.parametrize(("string", "expected"), [
+    (
+        "1 Gitaxian Probe",
+        {
+            "quantity": "1",
+            "card_name": "Gitaxian Probe",
+        },
+    ),
+    (
+        "1 Barkchannel Pathway // Tidechannel Pathway",
+        {
+            "quantity": "1",
+            "card_name": "Barkchannel Pathway // Tidechannel Pathway",
+        },
+    ),
+    (
+        "1 Lim-Dûl's Vault",
+        {
+            "quantity": "1",
+            "card_name": "Lim-Dûl's Vault",
+        },
+    ),
+    (
+        "1 +2 Mace",
+        {
+            "quantity": "1",
+            "card_name": "+2 Mace",
+        },
+    ),
 ])
-def test_parse_line(line):
-    result = mtg_parser.grammar.parse_line(line)
+def test_quantity_name(string: str, expected: dict[str, str]):
+    result = mtg_parser.parse_line(string)
 
-    assert bool(result)
+    assert_objects_are_equal(result, expected)
 
 
-@pytest.mark.parametrize('line', [
-    'https://www.archidekt.com/decks/1300410/'
-    'https://deckstats.net/decks/30198/1297260-feather-the-redeemed',
-    'https://www.moxfield.com/decks/7CBqQtCVKES6e49vKXfIBQ',
-    'https://tappedout.net/mtg-decks/food-chain-sliver/',
-    'https://www.mtggoldfish.com/deck/3862693',
+@pytest.mark.parametrize(("string", "expected"), [
+    (
+        "1 Gitaxian Probe (PLST)",
+        {
+            "quantity": "1",
+            "card_name": "Gitaxian Probe",
+            "extension": "PLST",
+        },
+    ),
+    (
+        "1 Barkchannel Pathway // Tidechannel Pathway (PKHM)",
+        {
+            "quantity": "1",
+            "card_name": "Barkchannel Pathway // Tidechannel Pathway",
+            "extension": "PKHM",
+        },
+    ),
+    (
+        "1 Lim-Dûl's Vault (C13)",
+        {
+            "quantity": "1",
+            "card_name": "Lim-Dûl's Vault",
+            "extension": "C13",
+        },
+    ),
+    (
+        "1 +2 Mace (AFR)",
+        {
+            "quantity": "1",
+            "card_name": "+2 Mace",
+            "extension": "AFR",
+        },
+    ),
 ])
-def test_parse_line_fails(line):
-    result = mtg_parser.grammar.parse_line(line)
+def test_quantity_name_extension(string: str, expected: dict[str, str]):
+    result = mtg_parser.parse_line(string)
 
-    assert not bool(result)
+    assert_objects_are_equal(result, expected)
+
+
+@pytest.mark.parametrize(("string", "expected"), [
+    (
+        "1 Gitaxian Probe (PLST) NPH-35",
+        {
+            "quantity": "1",
+            "card_name": "Gitaxian Probe",
+            "extension": "PLST",
+            "collector_number": "NPH-35",
+        },
+    ),
+    (
+        "1 Barkchannel Pathway // Tidechannel Pathway (PKHM) 251s",
+        {
+            "quantity": "1",
+            "card_name": "Barkchannel Pathway // Tidechannel Pathway",
+            "extension": "PKHM",
+            "collector_number": "251s",
+        },
+    ),
+    (
+        "1 Lim-Dûl's Vault (C13) 197",
+        {
+            "quantity": "1",
+            "card_name": "Lim-Dûl's Vault",
+            "extension": "C13",
+            "collector_number": "197",
+        },
+    ),
+    (
+        "1 +2 Mace (AFR) 1",
+        {
+            "quantity": "1",
+            "card_name": "+2 Mace",
+            "extension": "AFR",
+            "collector_number": "1",
+        },
+    ),
+])
+def test_quantity_name_extension_collector_number(string: str, expected: dict[str, str]):
+    result = mtg_parser.parse_line(string)
+
+    assert_objects_are_equal(result, expected)
+
+
+@pytest.mark.parametrize(("string", "expected"), [
+    (
+        "1 Gitaxian Probe (PLST) NPH-35 #interaction #!free spell",
+        {
+            "quantity": "1",
+            "card_name": "Gitaxian Probe",
+            "extension": "PLST",
+            "collector_number": "NPH-35",
+            "tags": [ "interaction", "free spell" ],
+        },
+    ),
+    (
+        "1 Barkchannel Pathway // Tidechannel Pathway (PKHM) 251s #fixing #!modal",
+        {
+            "quantity": "1",
+            "card_name": "Barkchannel Pathway // Tidechannel Pathway",
+            "extension": "PKHM",
+            "collector_number": "251s",
+            "tags": [ "fixing", "modal" ],
+        },
+    ),
+    (
+        "1 Lim-Dûl's Vault (C13) 197 #!tutor #card advantage",
+        {
+            "quantity": "1",
+            "card_name": "Lim-Dûl's Vault",
+            "extension": "C13",
+            "collector_number": "197",
+            "tags": [ "tutor", "card advantage" ],
+        },
+    ),
+    (
+        "1 +2 Mace (AFR) 1 #boost #equipment",
+        {
+            "quantity": "1",
+            "card_name": "+2 Mace",
+            "extension": "AFR",
+            "collector_number": "1",
+            "tags": [ "boost", "equipment" ],
+        },
+    ),
+])
+def test_quantity_name_extension_collector_number_tags(string: str, expected: dict[str, str]):
+    result = mtg_parser.parse_line(string)
+
+    assert_objects_are_equal(result, expected)
