@@ -91,6 +91,15 @@ coverage:
 
 
 ##
+# PROFILE
+##
+profile-import:
+	poetry run python -X importtime -c "import mtg_parser.grammar" 2> import.log
+	poetry run tuna import.log
+
+.PHONY: profile-import
+
+##
 # BUILD
 #
 update-mock-data:
