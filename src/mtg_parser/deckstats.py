@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-from bs4 import BeautifulSoup
-from json import loads
 from collections.abc import Iterable
+from json import loads
 from typing import Any, Optional
+from selectolax.lexbor import LexborHTMLParser
 from mtg_parser.card import Card
 from mtg_parser.deck_parser import OnlineDeckParser
 from mtg_parser.utils import build_pattern
@@ -23,9 +23,9 @@ class DeckstatsDeckParser(OnlineDeckParser[dict]):
     def _download_deck(self, src: str, http_client: Any) -> Optional[dict]:
         response = http_client.get(src)
         response.raise_for_status()
-        soup = BeautifulSoup(response.text, features='html.parser')
-        script_tag = soup.find('script', attrs={'data-page': 'app', 'type': 'application/json'})
-        return loads(script_tag.string)
+        tree = LexborHTMLParser(response.text)
+        script_tag = tree.css_first('script[data-page="app"][type="application/json"]')
+        return loads(script_tag.text())
 
 
     def _parse_deck(self, deck: dict) -> Optional[Iterable[Card]]:

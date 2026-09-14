@@ -6,7 +6,7 @@ build-backend = "poetry.core.masonry.api"
 [project]
 name = "mtg_parser"
 version = "0.0.1a58"
-requires-python = ">=3.9"
+requires-python = ">=3.10,<3.15"
 license = "EUPL-1.2"
 description = "Magic: the Gathering decklist parser"
 readme = "README.md"
@@ -14,7 +14,7 @@ authors = [
     { name = "Ludovic Heyberger", email = "940408+lheyberger@users.noreply.github.com" },
 ]
 dependencies = [
-    "beautifulsoup4 (>=4.12,<5.0)",
+    "selectolax (>=0.4.11)",
 ]
 
 
@@ -30,7 +30,7 @@ cloudscraper = "^1.2.71"
 coverage = {extras = ["toml"], version = "^7.10.7"}
 httpx = { extras = ["brotli", "http2", "zstd"], version = "^0.28.1" }
 more-itertools = "^10.8.0"
-pytest = "^7.4.4"
+pytest = "^9.1.1"
 python-dotenv = "^1.2.1"
 radon = "^6.0.1"
 respx = "^0.21.1"

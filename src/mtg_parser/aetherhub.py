@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-from bs4 import BeautifulSoup
 from collections.abc import Iterable
 from typing import Any, Optional
+from selectolax.lexbor import LexborHTMLParser
 from mtg_parser.card import Card
 from mtg_parser.deck_parser import OnlineDeckParser
 from mtg_parser.utils import build_pattern
@@ -22,9 +22,9 @@ class AetherhubDeckParser(OnlineDeckParser[dict]):
     def _download_deck(self, src: str, http_client: Any) -> Optional[dict]:
         response = http_client.get(src)
         response.raise_for_status()
-        soup = BeautifulSoup(response.text, features='html.parser')
-        element = soup.find(None, attrs={'data-deckid': True})
-        deck_id = element['data-deckid']
+        tree = LexborHTMLParser(response.text)
+        element = tree.css_first('[data-deckid]')
+        deck_id = element.attributes['data-deckid']
         response = http_client.get(
             'https://aetherhub.com/Deck/FetchMtgaDeckJson',
             params={

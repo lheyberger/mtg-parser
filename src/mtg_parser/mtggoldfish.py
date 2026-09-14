@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-from bs4 import BeautifulSoup
 from collections.abc import Iterable
 from html import unescape
 from re import search
 from typing import Any, Optional
+from selectolax.lexbor import LexborHTMLParser
 from mtg_parser.card import Card
 from mtg_parser.deck_parser import OnlineDeckParser
 from mtg_parser.utils import build_pattern
@@ -39,23 +39,23 @@ class MtggoldfishDeckParser(OnlineDeckParser[str]):
         deck = deck.replace("\\'", "'").replace('\\"', '"').replace("\\/", "/").replace(r"\n", "")
         deck = unescape(deck)
 
-        soup = BeautifulSoup(deck, features='html.parser')
-        soup = soup.find('table', class_='deck-view-deck-table')
-        soup = soup.find_all('tr', recursive=False)
+        tree = LexborHTMLParser(deck)
+        table = tree.css_first('table.deck-view-deck-table')
 
         current_tag = None
-        for row in soup:
-            if 'deck-category-header' in row.attrs.get('class', []):
-                category = row.text.lower()
-                current_tag = next((tag for tag in ['commander', 'companion', 'sideboard'] if tag in category), None)
+        for row in table.css('tr'):
+            if 'deck-category-header' in row.attributes.get('class', ''):
+                category = row.text().lower()
+                current_tag = next((tag for tag in ('commander', 'companion', 'sideboard') if tag in category), None)
             else:
-                columns = row.find_all('td')
-                data_card_id = row.a.attrs.get('data-card-id') if row.a else ''
+                columns = row.css('td')
+                link = row.css_first('a')
+                data_card_id = link.attributes.get('data-card-id', '') if link else ''
                 match = search(r'\[(.*?)\]', data_card_id)
                 extension = match.group(1).lower() if match else None
                 yield Card(
-                    name=columns[1].get_text(strip=True),
-                    quantity=columns[0].get_text(strip=True),
+                    name=columns[1].text(strip=True),
+                    quantity=columns[0].text(strip=True),
                     extension=extension,
                     tags=[current_tag],
                 )

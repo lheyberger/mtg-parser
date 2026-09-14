@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-from bs4 import BeautifulSoup
 from collections.abc import Iterable
 from re import fullmatch, search, sub
 from typing import Any, Optional
+from selectolax.lexbor import LexborHTMLParser
 from mtg_parser.card import Card
 from mtg_parser.deck_parser import OnlineDeckParser
 from mtg_parser.utils import build_pattern
@@ -40,13 +40,15 @@ class TappedoutDeckParser(OnlineDeckParser[dict]):
 
     def _parse_deck(self, deck: dict) -> Optional[Iterable[Card]]:
         cards = {}
-        soup = BeautifulSoup(deck.get("board", ""), features="html.parser")
-        for boardlist in soup.find_all("ul", class_="tappedout-boardlist"):
-            tag = boardlist.find_previous("h3")
-            tag = self._format_tag(tag.text)
-            for card_li in boardlist.find_all("li", class_="tappedout-member"):
-                qty = int(card_li.find(string=True, recursive=False).strip().strip("x"))
-                name = card_li.find("a").get_text(strip=True)
+        tree = LexborHTMLParser(deck.get("board", ""))
+        for boardlist in tree.css("ul.tappedout-boardlist"):
+            prev_node = boardlist.prev
+            while prev_node and prev_node.tag != "h3":
+                prev_node = prev_node.prev
+            tag = self._format_tag(prev_node.text() if prev_node else "")
+            for card_li in boardlist.css("li.tappedout-member"):
+                qty = int(card_li.child.text(strip=True).strip("x"))
+                name = card_li.css_first("a").text(strip=True)
                 cards[(name, qty)] = tag
 
         all_tags = set(cards.values())
