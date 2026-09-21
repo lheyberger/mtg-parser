@@ -39,12 +39,12 @@ class TcgplayerDeckParser(OnlineDeckParser[dict]):
 
         for card in subdecks.get('commandzone', []):
             card_detail = all_cards.get(str(card['cardID']), {})
-            yield Card(card_detail['name'], card['quantity'], card_detail['set'], tags=['commander'])
+            yield Card(card_detail['name'], card['quantity'], extension=card_detail.get('set'), tags=['commander'])
 
         for card in subdecks.get('sideboard', []):
             card_detail = all_cards.get(str(card['cardID']), {})
-            yield Card(card_detail['name'], card['quantity'], card_detail['set'], tags=['companion'])
+            yield Card(card_detail['name'], card['quantity'], extension=card_detail.get('set'), tags=['companion'])
 
         for card in subdecks.get('maindeck', []):
             card_detail = all_cards.get(str(card['cardID']), {})
-            yield Card(card_detail['name'], card['quantity'], card_detail['set'])
+            yield Card(card_detail['name'], card['quantity'], extension=card_detail.get('set'))
