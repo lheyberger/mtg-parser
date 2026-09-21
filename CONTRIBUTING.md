@@ -39,17 +39,13 @@ $ make lint-all
 
 ## How to publish a new version
 
-Start by updating the version number:
-```shell
-$ poetry version (premajor|preminor|prepatch|prerelease|major|minor|patch)
-$ git ls-files | xargs grep -l `poetry version -s` | xargs git add
-$ git commit -m "feat: new version mtg-parser v`poetry version -s`"
-$ git push
-```
-
 Build the release:
 ```shell
+$ poetry version (premajor|preminor|prepatch|prerelease|major|minor|patch)
 $ make release
+$ git ls-files | xargs grep -l `poetry version -s` | xargs git add
+$ git commit -m "feat: new version mtg-parser v`poetry version -s`"
+$ git push origin main
 ```
 
 Test the release on [test.pypi.org](https://test.pypi.org):
