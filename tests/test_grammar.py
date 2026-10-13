@@ -82,6 +82,42 @@ def test_quantity_name(string: str, expected: dict[str, str]):
 
 @pytest.mark.parametrize(("string", "expected"), [
     (
+        "1 Gitaxian Probe *F*",
+        {
+            "quantity": "1",
+            "card_name": "Gitaxian Probe",
+        },
+    ),
+    (
+        "1 Barkchannel Pathway // Tidechannel Pathway *F*",
+        {
+            "quantity": "1",
+            "card_name": "Barkchannel Pathway // Tidechannel Pathway",
+        },
+    ),
+    (
+        "1 Lim-Dûl's Vault *F*",
+        {
+            "quantity": "1",
+            "card_name": "Lim-Dûl's Vault",
+        },
+    ),
+    (
+        "1 +2 Mace *F*",
+        {
+            "quantity": "1",
+            "card_name": "+2 Mace",
+        },
+    ),
+])
+def test_quantity_name_foil(string: str, expected: dict[str, str]):
+    result = mtg_parser.parse_line(string)
+
+    assert_objects_are_equal(result, expected)
+
+
+@pytest.mark.parametrize(("string", "expected"), [
+    (
         "1 Gitaxian Probe (PLST)",
         {
             "quantity": "1",
@@ -207,6 +243,54 @@ def test_quantity_name_extension_collector_number(string: str, expected: dict[st
     ),
 ])
 def test_quantity_name_extension_collector_number_tags(string: str, expected: dict[str, str]):
+    result = mtg_parser.parse_line(string)
+
+    assert_objects_are_equal(result, expected)
+
+
+@pytest.mark.parametrize(("string", "expected"), [
+    (
+        "1 Gitaxian Probe (PLST) NPH-35 *F* #interaction #!free spell",
+        {
+            "quantity": "1",
+            "card_name": "Gitaxian Probe",
+            "extension": "PLST",
+            "collector_number": "NPH-35",
+            "tags": [ "interaction", "free spell" ],
+        },
+    ),
+    (
+        "1 Barkchannel Pathway // Tidechannel Pathway (PKHM) 251s *F* #fixing #!modal",
+        {
+            "quantity": "1",
+            "card_name": "Barkchannel Pathway // Tidechannel Pathway",
+            "extension": "PKHM",
+            "collector_number": "251s",
+            "tags": [ "fixing", "modal" ],
+        },
+    ),
+    (
+        "1 Lim-Dûl's Vault (C13) 197 *F* #!tutor #card advantage",
+        {
+            "quantity": "1",
+            "card_name": "Lim-Dûl's Vault",
+            "extension": "C13",
+            "collector_number": "197",
+            "tags": [ "tutor", "card advantage" ],
+        },
+    ),
+    (
+        "1 +2 Mace (AFR) 1 *F* #boost #equipment",
+        {
+            "quantity": "1",
+            "card_name": "+2 Mace",
+            "extension": "AFR",
+            "collector_number": "1",
+            "tags": [ "boost", "equipment" ],
+        },
+    ),
+])
+def test_quantity_name_extension_collector_number_foil_tags(string: str, expected: dict[str, str]):
     result = mtg_parser.parse_line(string)
 
     assert_objects_are_equal(result, expected)

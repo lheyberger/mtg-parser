@@ -28,6 +28,7 @@ _CARD_RE = re.compile(
     rf"{_START}"
     rf"{_QUANTITY}\s+{_CARD_NAME}"
     rf"(?:\s+{_EXTENSION}(?:\s+{_COLLECTOR_NUMBER})?)?"
+    rf"(?:\s\*F\*)?"
     rf"(?:\s*{_TAGS_BLOCK})?"
     rf"{_END}",
 )
