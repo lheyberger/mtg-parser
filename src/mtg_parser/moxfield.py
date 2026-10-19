@@ -31,19 +31,29 @@ class MoxfieldDeckParser(OnlineDeckParser[dict]):
 
 
     def _parse_deck(self, deck: dict) -> Optional[Iterable[Card]]:
-        for key, value in deck['commanders'].items():
-            yield Card(key, **self._extract_information(value), tags=['commander'])
+        for card in self._iterate_cards(deck.get('commanders', [])):
+            yield Card(**self._extract_information(card), tags=['commander'])
 
-        for key, value in deck['companions'].items():
-            yield Card(key, **self._extract_information(value), tags=['companion'])
+        for card in self._iterate_cards(deck.get('companions', [])):
+            yield Card(**self._extract_information(card), tags=['companion'])
 
-        for key, value in deck['mainboard'].items():
-            yield Card(key, **self._extract_information(value))
+        for card in self._iterate_cards(deck.get('mainboard', [])):
+            yield Card(**self._extract_information(card))
+
+
+    @classmethod
+    def _iterate_cards(cls, card_list: dict) -> dict:
+        for card in card_list.values():
+            if 'printingData' in card:
+                yield from card['printingData']
+            else:
+                yield card
 
 
     @classmethod
     def _extract_information(cls, card) -> dict:
         return {
+            'name': card.get('card', {}).get('name'),
             'quantity': card.get('quantity', 1),
             'extension': card.get('card', {}).get('set'),
             'number': card.get('card', {}).get('cn'),
