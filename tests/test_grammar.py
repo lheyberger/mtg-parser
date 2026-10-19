@@ -73,6 +73,13 @@ def test_comment_content(string: str, expected: dict[str, str]):
             "card_name": "+2 Mace",
         },
     ),
+    (
+        "1 Summon: G.F. Ifrit",
+        {
+            "quantity": "1",
+            "card_name": "Summon: G.F. Ifrit",
+        },
+    ),
 ])
 def test_quantity_name(string: str, expected: dict[str, str]):
     result = mtg_parser.parse_line(string)
@@ -107,6 +114,13 @@ def test_quantity_name(string: str, expected: dict[str, str]):
         {
             "quantity": "1",
             "card_name": "+2 Mace",
+        },
+    ),
+    (
+        "1 Summon: G.F. Ifrit *F*",
+        {
+            "quantity": "1",
+            "card_name": "Summon: G.F. Ifrit",
         },
     ),
 ])
@@ -147,6 +161,14 @@ def test_quantity_name_foil(string: str, expected: dict[str, str]):
             "quantity": "1",
             "card_name": "+2 Mace",
             "extension": "AFR",
+        },
+    ),
+    (
+        "1 Summon: G.F. Ifrit (FIN)",
+        {
+            "quantity": "1",
+            "card_name": "Summon: G.F. Ifrit",
+            "extension": "FIN",
         },
     ),
 ])
@@ -191,6 +213,15 @@ def test_quantity_name_extension(string: str, expected: dict[str, str]):
             "card_name": "+2 Mace",
             "extension": "AFR",
             "collector_number": "1",
+        },
+    ),
+    (
+        "1 Summon: G.F. Ifrit (FIN) 163",
+        {
+            "quantity": "1",
+            "card_name": "Summon: G.F. Ifrit",
+            "extension": "FIN",
+            "collector_number": "163",
         },
     ),
 ])
@@ -239,6 +270,16 @@ def test_quantity_name_extension_collector_number(string: str, expected: dict[st
             "extension": "AFR",
             "collector_number": "1",
             "tags": [ "boost", "equipment" ],
+        },
+    ),
+    (
+        "1 Summon: G.F. Ifrit (FIN) 163 #card advantage #ramp",
+        {
+            "quantity": "1",
+            "card_name": "Summon: G.F. Ifrit",
+            "extension": "FIN",
+            "collector_number": "163",
+            "tags": [ "card advantage", "ramp" ],
         },
     ),
 ])
