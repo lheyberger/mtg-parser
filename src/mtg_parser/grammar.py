@@ -15,7 +15,7 @@ _COMMENT_RE = re.compile(rf"{_START}{_COMMENT_MARKERS}\s*{_COMMENT_TEXT}{_END}")
 
 _QUANTITY = r"(?P<quantity>\d+)"
 
-_CARD_ATOM = r"(?:\w|[-+,/'\"])"
+_CARD_ATOM = r"(?:\w|[-+,/'\:\.\"])"
 _CARD_NAME = rf"(?P<card_name>{_CARD_ATOM}+(?:\s+{_CARD_ATOM}+)*)"
 
 _EXTENSION = r"\((?P<extension>\w+)\)"
