@@ -49,6 +49,9 @@ class MoxfieldDeckParser(OnlineDeckParser[dict]):
             else:
                 yield card
 
+        for key, value in deck['sideboard'].items():
+            yield Card(key, **self._extract_information(value), tags=['sideboard'])
+
 
     @classmethod
     def _extract_information(cls, card) -> dict:
